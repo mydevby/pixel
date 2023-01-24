@@ -1,0 +1,31 @@
+.title {
+    font-family: "YoungSerif-Regular", serif;
+    font-weight: 600;
+
+    &--level-1,
+	&--level-2 {
+		font-size: 40px;
+		line-height: 1;
+        @media (max-width: 1024px) {
+            font-size: 35px;
+        }
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    &--level-3 {
+        font-size: 28px;
+        line-height: 1.2;
+        @media (max-width: 1024px) {
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            font-size: 22px;
+        }
+    }
+
+    &--accent {
+        color: $clr-accent;
+    }
+}
