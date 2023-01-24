@@ -126,3 +126,18 @@ main {
 	border: 2px solid $clr-accent;
 	cursor: pointer;
 }
+
+.bg {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	object-position: top left;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0% /cover;
+	overflow: hidden;
+}
