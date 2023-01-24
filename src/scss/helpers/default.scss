@@ -75,11 +75,19 @@ textarea {
 	all: revert;
 }
 
+html,
 body {
 	font-family: "Inter", "Roboto", "Arial", sans-serif;
 	background: $clr-white;
 	overflow-x: hidden;
 	max-width: 100%;
+	font-size: calc(100vw / 120);
+	@media (max-width: 1600px) {
+		font-size: calc(100vw / 120);
+	}
+	@media (max-width: 1280px) {
+		font-size: calc(100vw / 100);
+	}
 }
 
 main {

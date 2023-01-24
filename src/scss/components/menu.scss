@@ -1,0 +1,110 @@
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: rem-calc(90);
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem-calc(20);
+    @media (max-width: 1600px) {
+        padding: rem-calc(15);
+    }
+
+    &__logo {
+        width: rem-calc(50);
+        height: rem-calc(50);
+        margin-bottom: rem-calc(45);
+        flex-shrink: 0;
+        @media (max-width: 1600px) {
+            margin-bottom: rem-calc(35);
+        }
+    }
+
+    &__nav {
+        margin-bottom: auto;
+    }
+
+    &__nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__nav-item {
+        margin-bottom: rem-calc(50);
+        @media (max-width: 1600px) {
+            margin-bottom: rem-calc(40);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__nav-link {
+        padding: rem-calc(5);
+        font-size: 0;
+        opacity: .5;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__nav-icon {
+        &--one {width: rem-calc(32); height: rem-calc(26);}
+        &--two {width: rem-calc(18); height: rem-calc(30);}
+        &--three {width: rem-calc(26); height: rem-calc(29);}
+        &--four {width: rem-calc(18); height: rem-calc(25);}
+        &--five {width: rem-calc(26); height: rem-calc(18);}
+        &--six {width: rem-calc(24); height: rem-calc(24);}
+        &--seven {width: rem-calc(32); height: rem-calc(32);}
+        &--eight {width: rem-calc(26); height: rem-calc(26);}
+    }
+
+    &__settings-list {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__settings-item {
+        display: flex;
+        justify-content: center;
+        font-size: 0;
+        margin-bottom: rem-calc(13);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__settings-link,
+    &__settings-btn {
+        padding: rem-calc(3);
+        font-size: 0;
+        opacity: .325;
+        transition: .3s;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__nav-icon {
+        &--telegram {width: rem-calc(23); height: rem-calc(22);}
+        &--light-theme {width: rem-calc(23); height: rem-calc(23);}
+        &--volume {width: rem-calc(23); height: rem-calc(23);}
+        &--other {width: rem-calc(23); height: rem-calc(19);}
+    }
+}
