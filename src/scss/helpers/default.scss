@@ -13,17 +13,7 @@
 	-webkit-tap-highlight-color: transparent;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-weight: 600;
-}
-
 html {
-	font-family: "Inter", "Roboto", "Arial", sans-serif;
-	line-height: 1.7;
-	color: $clr-black;
 	overflow-x: hidden;
 	max-width: 100%;
 }
@@ -78,7 +68,7 @@ textarea {
 html,
 body {
 	font-family: "Space Mono", monospace, sans-serif;
-	background: $clr-white;
+	background: $clr-bg-dark;
 	overflow-x: hidden;
 	max-width: 100%;
 	font-size: calc(100vw / 120);
@@ -145,10 +135,29 @@ main {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	z-index: -1;
-	background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0%;
-	background-size: 100% 100%;
-	overflow: hidden;
+	z-index: 1;
+
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(200,200,200,0.2);
+		z-index: 2;
+	}
+
+	&__video {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0%;
+		background-size: 100% 100%;
+		overflow: hidden;
+	}
 }
 
 .page {
@@ -161,6 +170,7 @@ main {
 	max-height: 100vh;
 	padding-left: rem-calc(160);
 	padding-right: rem-calc(160);
+	z-index: 2;
 }
 
 .main {

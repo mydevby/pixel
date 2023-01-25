@@ -6,17 +6,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<video class="bg" poster="img/bg-poster.min.png" autoplay loop muted>
-	<source src="files/video/background.mp4" type="video/mp4">
-</video>
+<div class="bg">
+	<video  class="bg__video" poster="img/bg-poster.min.png" autoplay loop muted>
+		<source src="files/video/background.mp4" type="video/mp4">
+	</video>
+</div>
 <div class="menu">
 	<svg class="menu__logo"  role="img" aria-labelledby="logoTitleID logoDescID"  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<title id="plimplumTitleID">Mega Casino</title>
@@ -124,10 +122,18 @@
 	<main class="main">
 		<section class="banner">
 			<div class="banner__card mask mask--border">
-
+				<div class="banner__card-content">
+					<h2 class="banner__card-title">Welcome <span class="banner__card-title--big">Bonus</span></h2>
+					<p class="banner__card-text">Win a cut of up to 24000 this monthly leaderboard!</p>
+					<a class="banner__card-link"href="#">Learn More</a>
+				</div>
 			</div>
 			<div class="banner__card mask mask--border">
-
+				<div class="banner__card-content">
+					<h2 class="banner__card-title"><span class="banner__card-title--custom">Crashed</span> <span class="banner__card-title--big">Space</span></h2>
+					<p class="banner__card-text">Win a Cut of up to 24000 This Monthly Leaderboard!</p>
+					<a class="banner__card-link"href="#">Learn More</a>
+				</div>
 			</div>
 			<div class="banner__card mask mask--border">
 

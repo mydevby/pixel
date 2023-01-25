@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "YoungSerif-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arkipelago "), url("../files/fonts/YoungSerif-Regular.woff2") format("woff2"), url("../files/fonts/YoungSerif-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pixel";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../files/fonts/v") format("woff2"), url("../files/fonts/editundo.woff") format("woff");
+  font-display: swap;
+}
 @keyframes bonus-icon {
   from {
     transform: translateY(-50%) scale(1);
@@ -3108,17 +3122,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 600;
-}
-
 html {
-  font-family: "Inter", "Roboto", "Arial", sans-serif;
-  line-height: 1.7;
-  color: #120F1C;
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -3173,7 +3177,7 @@ textarea {
 html,
 body {
   font-family: "Space Mono", monospace, sans-serif;
-  background: #FFFFFF;
+  background: #1e2234;
   overflow-x: hidden;
   max-width: 100%;
   font-size: calc(100vw / 120);
@@ -3226,13 +3230,13 @@ main {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: #FFFFFF url(../img/svg/next-icon.svg) no-repeat 50% 50%;
+  background: white url(../img/svg/next-icon.svg) no-repeat 50% 50%;
   background-size: 50% 50%;
   transition: 0.3s;
   z-index: 2;
   transform: rotate(180deg);
   border-radius: 50%;
-  border: 2px solid #76C1A7;
+  border: 2px solid #447ef7;
   cursor: pointer;
 }
 
@@ -3246,7 +3250,24 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
+}
+.bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(200, 200, 200, 0.2);
+  z-index: 2;
+}
+.bg__video {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0%;
   background-size: 100% 100%;
   overflow: hidden;
@@ -3262,6 +3283,7 @@ main {
   max-height: 100vh;
   padding-left: 10rem;
   padding-right: 10rem;
+  z-index: 2;
 }
 
 .main {
@@ -3288,13 +3310,6 @@ main {
   clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
 }
 
-@font-face {
-  font-family: "YoungSerif-Regular";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Arkipelago "), url("../files/fonts/YoungSerif-Regular.woff2") format("woff2"), url("../files/fonts/YoungSerif-Regular.woff") format("woff");
-  font-display: swap;
-}
 .title {
   font-family: "YoungSerif-Regular", serif;
   font-weight: 600;
@@ -3328,7 +3343,7 @@ main {
   }
 }
 .title--accent {
-  color: #76C1A7;
+  color: #447ef7;
 }
 
 .header {
@@ -3514,7 +3529,7 @@ main {
 .footer {
   padding: 0 20px;
   overflow: hidden;
-  background: #FFFFFF;
+  background: white;
 }
 .footer--dark {
   background: #F7FAF9;
@@ -3556,7 +3571,7 @@ main {
   margin-right: 0;
 }
 .footer__nav-link {
-  color: #120F1C;
+  color: #120f1c;
   padding: 13px 10px;
   font-weight: 600;
   font-size: 18px;
@@ -3589,7 +3604,7 @@ main {
   }
 }
 .footer__subscribe-text {
-  color: #120F1C;
+  color: #120f1c;
   font-size: 16px;
   line-height: 1.375;
   margin-bottom: 15px;
@@ -3601,11 +3616,11 @@ main {
   padding: 13px 30px 13px 13px;
   font-size: 18px;
   line-height: 1.2;
-  border: 1px solid #76C1A7;
+  border: 1px solid #447ef7;
   border-radius: 7px 0 0 7px;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #120F1C;
+  color: #120f1c;
   width: 100%;
 }
 .footer__input::placeholder {
@@ -3625,5 +3640,51 @@ main {
 .banner__card {
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(12.5px);
-  height: 12.5rem;
+  padding: 2.5rem 2.5rem 2.5rem 3.75rem;
+  display: grid;
+  grid-template-columns: 15.625rem 1fr;
+  gap: 3.5rem;
+}
+.banner__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.banner__card-title {
+  font-family: "Pixel", Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 4.1875rem;
+  line-height: 0.895;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  min-height: rem(180);
+}
+.banner__card-title--custom {
+  font-size: 4.375rem;
+}
+.banner__card-title--big {
+  font-size: 6.25rem;
+}
+.banner__card-text {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.banner__card-link {
+  margin-top: 1.875rem;
+  display: inline-block;
+  padding: 0.9375rem 2.3125rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #447ef7;
+  transition: 0.3s;
+}
+.banner__card-link:hover {
+  opacity: 0.7;
 }
