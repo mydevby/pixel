@@ -3269,8 +3269,10 @@ main {
 }
 
 .mask {
-  position: relative;
   clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem));
+}
+.mask--border {
+  position: relative;
 }
 .mask--border:before {
   content: "";
@@ -3279,15 +3281,11 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+  background: white;
   border: 0.0625rem solid white;
-  background: red;
-  /*background-image: url("../img/decor/corner-1.png"), url("../img/decor/corner-2.png"), url("../img/decor/corner-3.png"), url("../img/decor/corner-4.png");
-  background-size: rem-calc(31) rem-calc(31);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-position: 0 0, 0 100%, 100% 100%, 100% 0;
-  opacity: .15;*/
-  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem));
+  opacity: 0.15;
+  pointer-events: none;
+  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
 }
 
 @font-face {
@@ -3628,45 +3626,4 @@ main {
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(12.5px);
   height: 12.5rem;
-  padding: 0.3125rem;
-  position: relative;
-}
-.banner__card-top, .banner__card-bottom {
-  position: absolute;
-  left: 1.9375rem;
-  right: 1.9375rem;
-}
-.banner__card-top:before, .banner__card-top:after, .banner__card-bottom:before, .banner__card-bottom:after {
-  content: "";
-  position: absolute;
-  width: 1.9375rem;
-  height: 1.9375rem;
-  background: url(../img/decor/corner.png) no-repeat 50% 50%/cover;
-  opacity: 0.15;
-}
-.banner__card-top:before, .banner__card-bottom:before {
-  left: -1.9375rem;
-  transform: rotate(90deg);
-}
-.banner__card-top:after, .banner__card-bottom:after {
-  right: -1.9375rem;
-  transform: rotate(180deg);
-}
-.banner__card-top {
-  top: 0;
-}
-.banner__card-top:before, .banner__card-top:after {
-  top: -0.0625rem;
-}
-.banner__card-bottom {
-  bottom: 0;
-}
-.banner__card-bottom:before, .banner__card-bottom:after {
-  bottom: -0.0625rem;
-}
-.banner__card-bottom:before {
-  transform: rotate(0deg);
-}
-.banner__card-bottom:after {
-  transform: rotate(-90deg);
 }
