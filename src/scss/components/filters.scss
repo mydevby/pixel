@@ -1,0 +1,111 @@
+.filters {
+    padding: rem-calc(18);
+    margin-bottom: rem-calc(30);
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(12.5px);
+    min-height: rem-calc(40);
+    display: grid;
+    grid-template-columns: 1fr 1.8fr .6fr;
+    gap: rem-calc(30);
+
+    &__col {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) {
+            justify-content: center;
+        }
+
+        &:nth-child(3) {
+            justify-content: flex-end;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        padding: rem-calc(12) rem-calc(25) rem-calc(14) rem-calc(50);
+        font-weight: 700;
+        font-size: rem-calc(14);
+        line-height: 1.5;
+        cursor: pointer;
+        transition: .3s;
+        margin-right: rem-calc(21);
+        background: rgba(255, 255, 255, .05);
+        color: $clr-white;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:disabled,
+        &[disabled] {
+            color: $clr-gray;
+            pointer-events: none;
+
+            &:before {
+                opacity: .45;
+            }
+        }
+
+        &--accent {
+            background: $clr-accent;
+        }
+
+        &--icon {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 48%;
+                left: rem-calc(18);
+                width: rem-calc(25);
+                height: rem-calc(16);
+                transform: translateY(-50%);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: 50% 50%;
+            }
+        }
+
+        &--all-slots {
+            &:before {
+                background-image: url("../img/svg/filters-btn-all-slots.svg");
+            }
+        }
+
+        &--providers {
+            &:before {
+                background-image: url("../img/svg/filters-btn-providers.svg");
+            }
+        }
+
+        &--favorites {
+            &:before {
+                background-image: url("../img/svg/filters-btn-favorites.svg");
+            }
+        }
+
+        &--live {
+            &:before {
+                background-image: url("../img/svg/filters-btn-live.svg");
+            }
+        }
+
+        &--recently {
+            &:before {
+                background-image: url("../img/svg/filters-btn-recently.svg");
+            }
+        }
+
+        &--search{
+            padding-right: rem-calc(106);
+            &:before {
+                height: rem-calc(24);
+                background-image: url("../img/svg/filters-btn-search.svg");
+            }
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

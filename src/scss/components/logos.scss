@@ -1,0 +1,38 @@
+.logos {
+    margin-bottom: rem-calc(30);
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        align-items: center;
+        gap: rem-calc(37);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $clr-white;
+    }
+
+    &__img {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__count {
+        font-family: "Pixel", Arial, Helvetica, sans-serif;
+        font-size: rem-calc(42);
+        line-height: .9;
+        margin-right: rem-calc(12);
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, .65);
+        font-weight: 700;
+        font-size: rem-calc(12);
+        line-height: 1.17;
+    }
+}

@@ -2,6 +2,7 @@
 @import "helpers/variables";
 @import "helpers/animations";
 @import "helpers/mixins";
+@import "helpers/masks";
 @import "helpers/default";
 @import "helpers/typography";
 
@@ -10,3 +11,6 @@
 @import "components/footer";
 
 @import "components/banner";
+@import "components/logos";
+@import "components/filters";
+@import "components/slots";

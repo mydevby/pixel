@@ -20,6 +20,20 @@
     transform: translateY(-50%) scale(1.2);
   }
 }
+@keyframes spaceship {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes arrow {
   from {
     transform: translate(0, 0);
@@ -3107,6 +3121,54 @@
   }
 }
 /*rem-calc*/
+.mask-card {
+  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem));
+}
+.mask-card--border {
+  position: relative;
+}
+.mask-card--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 0.0625rem solid white;
+  opacity: 0.15;
+  pointer-events: none;
+  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
+}
+
+.mask-banner-link {
+  clip-path: polygon(0% 1rem, 0.25rem 1rem, 0.25rem 0.5rem, 0.5rem 0.5rem, 0.5rem 0.25rem, 1rem 0.25rem, 1rem 0, calc(100% - 1rem) 0, calc(100% - 1rem) 0.25rem, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.5rem) 0.5rem, calc(100% - 0.25rem) 0.5rem, calc(100% - 0.25rem) 1rem, 100% 1rem, 100% calc(100% - 1rem), calc(100% - 0.25rem) calc(100% - 1rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.5rem) calc(100% - 0.5rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 1rem) calc(100% - 0.25rem), calc(100% - 1rem) 100%, 1rem 100%, 1rem calc(100% - 0.25rem), 0.5rem calc(100% - 0.25rem), 0.5rem calc(100% - 0.5rem), 0.25rem calc(100% - 0.5rem), 0.25rem calc(100% - 1rem), 0% calc(100% - 1rem));
+}
+
+.mask-block {
+  clip-path: polygon(0% 1rem, 0.3125rem 1rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 1rem 0.3125rem, 1rem 0, calc(100% - 1rem) 0, calc(100% - 1rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 1rem, 100% 1rem, 100% calc(100% - 1rem), calc(100% - 0.3125rem) calc(100% - 1rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 1rem) calc(100% - 0.3125rem), calc(100% - 1rem) 100%, 1rem 100%, 1rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 1rem), 0% calc(100% - 1rem));
+}
+.mask-block--border {
+  position: relative;
+}
+.mask-block--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 0.0625rem solid white;
+  opacity: 0.15;
+  pointer-events: none;
+  clip-path: polygon(0% 1rem, 0.3125rem 1rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 1rem 0.3125rem, 1rem 0, calc(100% - 1rem) 0, calc(100% - 1rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 1rem, 100% 1rem, 100% calc(100% - 1rem), calc(100% - 0.3125rem) calc(100% - 1rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 1rem) calc(100% - 0.3125rem), calc(100% - 1rem) 100%, 1rem 100%, 1rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 1rem), 0% calc(100% - 1rem), 0% 1rem, 0.0625rem 1rem, 0.0625rem calc(100% - 1rem), 0.375rem calc(100% - 1rem), 0.375rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.375rem), 1rem calc(100% - 0.375rem), 1rem calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 1rem), calc(100% - 0.0625rem) calc(100% - 1rem), calc(100% - 0.0625rem) 1rem, calc(100% - 0.375rem) 1rem, calc(100% - 0.375rem) 0.6875rem, calc(100% - 0.6875rem) 0.6875rem, calc(100% - 0.6875rem) 0.375rem, calc(100% - 1rem) 0.375rem, calc(100% - 1rem) 0.0625rem, 1rem 0.0625rem, 1rem 0.375rem, 0.6875rem 0.375rem, 0.6875rem 0.6875rem, 0.375rem 0.6875rem, 0.375rem 1rem);
+}
+
+.mask-btn {
+  clip-path: polygon(0% 0.4375rem, 0.21875rem 0.4375rem, 0.21875rem 0.21875rem, 0.4375rem 0.21875rem, 0.4375rem 0, calc(100% - 0.4375rem) 0, calc(100% - 0.4375rem) 0.21875rem, calc(100% - 0.21875rem) 0.21875rem, calc(100% - 0.21875rem) 0.4375rem, 100% 0.4375rem, 100% calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) 100%, 0.4375rem 100%, 0.4375rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.4375rem), 0% calc(100% - 0.4375rem));
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -3288,26 +3350,6 @@ main {
 
 .main {
   padding: 1.5rem 0 1.875rem;
-}
-
-.mask {
-  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem));
-}
-.mask--border {
-  position: relative;
-}
-.mask--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  border: 0.0625rem solid white;
-  opacity: 0.15;
-  pointer-events: none;
-  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
 }
 
 .title {
@@ -3636,6 +3678,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 .banner__card {
   background: rgba(255, 255, 255, 0.01);
@@ -3657,7 +3700,7 @@ main {
   line-height: 0.895;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
-  min-height: rem(180);
+  min-height: 11.25rem;
 }
 .banner__card-title--custom {
   font-size: 4.375rem;
@@ -3687,4 +3730,152 @@ main {
 }
 .banner__card-link:hover {
   opacity: 0.7;
+}
+.banner__card-img-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner__card-img-wrapper--hero {
+  align-items: flex-end;
+  margin-top: -1.25rem;
+  margin-bottom: -2.5rem;
+}
+.banner__card-img-wrapper--spaceship {
+  align-items: center;
+  animation: spaceship 3s infinite alternate linear;
+}
+.banner__card-img {
+  max-height: 21.25rem;
+  width: auto;
+}
+
+.logos {
+  margin-bottom: 1.875rem;
+}
+.logos__list {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  align-items: center;
+  gap: 2.3125rem;
+}
+.logos__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.logos__img {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.logos__count {
+  font-family: "Pixel", Arial, Helvetica, sans-serif;
+  font-size: 2.625rem;
+  line-height: 0.9;
+  margin-right: 0.75rem;
+}
+.logos__text {
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.17;
+}
+
+.filters {
+  padding: 1.125rem;
+  margin-bottom: 1.875rem;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(12.5px);
+  min-height: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.8fr 0.6fr;
+  gap: 1.875rem;
+}
+.filters__col {
+  display: flex;
+  align-items: center;
+}
+.filters__col:nth-child(2) {
+  justify-content: center;
+}
+.filters__col:nth-child(3) {
+  justify-content: flex-end;
+}
+.filters__btn {
+  position: relative;
+  padding: 0.75rem 1.5625rem 0.875rem 3.125rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 1.3125rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+}
+.filters__btn:last-child {
+  margin-right: 0;
+}
+.filters__btn:disabled, .filters__btn[disabled] {
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+.filters__btn:disabled:before, .filters__btn[disabled]:before {
+  opacity: 0.45;
+}
+.filters__btn--accent {
+  background: #447ef7;
+}
+.filters__btn--icon:before {
+  content: "";
+  position: absolute;
+  top: 48%;
+  left: 1.125rem;
+  width: 1.5625rem;
+  height: 1rem;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.filters__btn--all-slots:before {
+  background-image: url("../img/svg/filters-btn-all-slots.svg");
+}
+.filters__btn--providers:before {
+  background-image: url("../img/svg/filters-btn-providers.svg");
+}
+.filters__btn--favorites:before {
+  background-image: url("../img/svg/filters-btn-favorites.svg");
+}
+.filters__btn--live:before {
+  background-image: url("../img/svg/filters-btn-live.svg");
+}
+.filters__btn--recently:before {
+  background-image: url("../img/svg/filters-btn-recently.svg");
+}
+.filters__btn--search {
+  padding-right: 6.625rem;
+}
+.filters__btn--search:before {
+  height: 1.5rem;
+  background-image: url("../img/svg/filters-btn-search.svg");
+}
+.filters__btn:hover {
+  opacity: 0.7;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+.slots__group {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(12.5px);
+  padding: 1rem 1.125rem 1.1875rem;
+  min-height: 3.125rem;
 }

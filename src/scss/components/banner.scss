@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem-calc(30);
+    margin-bottom: rem-calc(30);
 
     &__card {
         background: rgba(255, 255, 255, 0.01);
@@ -25,7 +26,7 @@
         line-height: .895;
         text-transform: uppercase;
         margin-bottom: rem-calc(8);
-        min-height: rem(180);
+        min-height: rem-calc(180);
 
         &--custom {
             font-size: rem-calc(70);
@@ -61,4 +62,26 @@
             opacity: .7;
         }
 	}
+
+    &__card-img-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &--hero {
+            align-items: flex-end;
+            margin-top: rem-calc(-20);
+            margin-bottom: rem-calc(-40);
+        }
+
+        &--spaceship {
+            align-items: center;
+            animation: spaceship 3s infinite alternate linear;
+        }
+    }
+
+    &__card-img {
+        max-height: rem-calc(340);
+        width: auto;
+    }
 }
