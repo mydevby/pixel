@@ -1,18 +1,8 @@
 @font-face {
-	font-family: "YoungSerif-Regular";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Arkipelago "),
-		url("../files/fonts/YoungSerif-Regular.woff2") format("woff2"),
-		url("../files/fonts/YoungSerif-Regular.woff") format("woff");
-	font-display: swap;
-}
-
-@font-face {
 	font-family: "Pixel";
 	font-style: normal;
 	font-weight: 400;
-	src: url("../files/fonts/v") format("woff2"),
+	src: url("../files/fonts/editundo.woff2") format("woff2"),
 		url("../files/fonts/editundo.woff") format("woff");
 	font-display: swap;
 }

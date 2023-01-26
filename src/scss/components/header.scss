@@ -1,6 +1,8 @@
 .header {
 	display: flex;
 	align-items: center;
+	position: relative;
+    z-index: 1;
 
 	&__container {		
 		padding: rem-calc(24) 0;

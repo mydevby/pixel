@@ -65,6 +65,22 @@ textarea {
 	all: revert;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #28293e;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #8b8b97;
+}
+
 html,
 body {
 	font-family: "Space Mono", monospace, sans-serif;
@@ -161,16 +177,10 @@ main {
 }
 
 .page {
-	position: fixed;
-	top: 0;
-    bottom: 0;
-	right: 0;
-	left: 0;
-	padding-left: rem-calc(90);
-	max-height: 100vh;
 	padding-left: rem-calc(160);
 	padding-right: rem-calc(160);
 	z-index: 2;
+	overflow-x: hidden;
 }
 
 .main {
