@@ -68,6 +68,8 @@
     }
 
     &--providers {
+        display: flex;
+        align-items: center;
         &:before {
             background-image: url("../img/svg/filters-btn-providers.svg");
         }
@@ -168,5 +170,18 @@
                 $l-2-1 #{rem-calc(1)}, $l-2-1 $l-1-1, $l-1-1 $l-1-1, $l-1-1 $l-2-1, #{rem-calc(1)} $l-2-1
 			)
 		}
+    }
+}
+
+.icon-more {
+    margin-left: rem-calc(9);
+    width: rem-calc(24);
+    height: rem-calc(24);
+    transition: .3s;
+
+    &--providers {
+        width: rem-calc(14);
+        height: rem-calc(8);
+        margin-left: rem-calc(15);
     }
 }

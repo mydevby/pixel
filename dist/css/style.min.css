@@ -3490,6 +3490,10 @@ main {
 .btn--all-slots:before {
   background-image: url("../img/svg/filters-btn-all-slots.svg");
 }
+.btn--providers {
+  display: flex;
+  align-items: center;
+}
 .btn--providers:before {
   background-image: url("../img/svg/filters-btn-providers.svg");
 }
@@ -3539,6 +3543,18 @@ main {
   opacity: 0.15;
   pointer-events: none;
   clip-path: polygon(0% 0.4375rem, 0.21875rem 0.4375rem, 0.21875rem 0.21875rem, 0.4375rem 0.21875rem, 0.4375rem 0, calc(100% - 0.4375rem) 0, calc(100% - 0.4375rem) 0.21875rem, calc(100% - 0.21875rem) 0.21875rem, calc(100% - 0.21875rem) 0.4375rem, 100% 0.4375rem, 100% calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) 100%, 0.4375rem 100%, 0.4375rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.4375rem), 0% calc(100% - 0.4375rem), 0% 0.4375rem, 0.0625rem 0.5rem, 0.0625rem calc(100% - 0.5rem), 0.28125rem calc(100% - 0.5rem), 0.28125rem calc(100% - 0.28125rem), 0.5rem calc(100% - 0.28125rem), 0.5rem calc(100% - 0.0625rem), calc(100% - 0.5rem) calc(100% - 0.0625rem), calc(100% - 0.5rem) calc(100% - 0.28125rem), calc(100% - 0.28125rem) calc(100% - 0.28125rem), calc(100% - 0.28125rem) calc(100% - 0.5rem), calc(100% - 0.0625rem) calc(100% - 0.5rem), calc(100% - 0.0625rem) 0.5rem, calc(100% - 0.28125rem) 0.5rem, calc(100% - 0.28125rem) 0.28125rem, calc(100% - 0.5rem) 0.28125rem, calc(100% - 0.5rem) 0.0625rem, 0.5rem 0.0625rem, 0.5rem 0.28125rem, 0.28125rem 0.28125rem, 0.28125rem 0.5rem, 0.0625rem 0.5rem);
+}
+
+.icon-more {
+  margin-left: 0.5625rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.3s;
+}
+.icon-more--providers {
+  width: 0.875rem;
+  height: 0.5rem;
+  margin-left: 0.9375rem;
 }
 
 .header {
@@ -3605,13 +3621,13 @@ main {
 }
 .header__user-about {
   background: #120f1c;
-  padding-right: 2.8125rem;
+  padding-right: 0.75rem;
   padding-left: 0;
   display: flex;
   align-items: center;
 }
 .header__user-about:hover {
-  opacity: rgba(255, 255, 255, 0.45);
+  opacity: 0.7;
 }
 .header__user-icon {
   display: block;
