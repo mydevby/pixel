@@ -1,0 +1,164 @@
+.btn {
+    display: inline-block;
+    position: relative;
+    padding: rem-calc(12) rem-calc(25) rem-calc(14) rem-calc(50);
+    font-weight: 700;
+    font-size: rem-calc(14);
+    line-height: 1.5;
+    cursor: pointer;
+    transition: .3s;
+    background: rgba(255, 255, 255, .05);
+    color: $clr-white;
+
+    &--small {
+        font-size: rem-calc(12);
+        padding: rem-calc(10) rem-calc(18) rem-calc(10) rem-calc(36);
+    }
+
+    &:disabled,
+    &[disabled] {
+        color: $clr-gray;
+        pointer-events: none;
+
+        &:before {
+            opacity: .45;
+        }
+    }
+
+    &--accent {
+        background: $clr-accent;
+    }
+
+    &--icon {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 48%;
+            left: rem-calc(18);
+            width: rem-calc(25);
+            height: rem-calc(16);
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+    }
+
+    &--icon-small {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: rem-calc(9);
+            width: rem-calc(18);
+            height: rem-calc(14);
+            transform: translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+    }
+
+    &--all-slots {
+        &:before {
+            background-image: url("../img/svg/filters-btn-all-slots.svg");
+        }
+    }
+
+    &--providers {
+        &:before {
+            background-image: url("../img/svg/filters-btn-providers.svg");
+        }
+    }
+
+    &--favorites {
+        &:before {
+            background-image: url("../img/svg/filters-btn-favorites.svg");
+        }
+    }
+
+    &--live {
+        &:before {
+            background-image: url("../img/svg/filters-btn-live.svg");
+        }
+    }
+
+    &--recently {
+        &:before {
+            background-image: url("../img/svg/filters-btn-recently.svg");
+        }
+    }
+
+    &--search{
+        padding-right: rem-calc(106);
+        &:before {
+            height: rem-calc(24);
+            background-image: url("../img/svg/filters-btn-search.svg");
+        }
+    }
+
+    &--email {
+        &:before {
+            background-image: url("../img/svg/footer-btn-email.svg");
+        }
+    }
+
+    &--chat {
+        &:before {
+            background-image: url("../img/svg/footer-btn-chat.svg");
+        }
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &--mask {
+        $l-1: #{rem-calc(3.5)};
+        $l-2: #{rem-calc(7)};
+        $l-1-1: #{rem-calc(4.5)};
+        $l-2-1: #{rem-calc(8)};
+        $l-1: #{rem-calc(3.5)};
+        $l-100-1: calc(100% - #{$l-1});
+        $l-100-2: calc(100% - #{$l-2});
+        clip-path: polygon(
+                0% $l-2, $l-1 $l-2, $l-1 $l-1, $l-2 $l-1, $l-2 0, 
+                $l-100-2 0, $l-100-2 $l-1, $l-100-1 $l-1, $l-100-1 $l-2, 100% $l-2,
+                100% $l-100-2, $l-100-1 $l-100-2, $l-100-1 $l-100-1, $l-100-2 $l-100-1, $l-100-2 100%,
+                $l-2 100%, $l-2 $l-100-1, $l-1 $l-100-1, $l-1 $l-100-2, 0% $l-100-2);
+    }
+
+    &--mask-border {
+        $l-1: #{rem-calc(3.5)};
+        $l-2: #{rem-calc(7)};
+        $l-1-1: #{rem-calc(4.5)};
+        $l-2-1: #{rem-calc(8)};
+        $l-100-1: calc(100% - #{$l-1});
+        $l-100-2: calc(100% - #{$l-2});
+        $l-100-1-1: calc(100% - #{$l-1-1});
+        $l-100-2-1: calc(100% - #{$l-2-1});
+        position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgb(255, 255, 255);
+			border: rem-calc(1) solid rgb(255, 255, 255);
+			opacity: .15;
+			pointer-events: none;
+			clip-path: polygon(
+				0% $l-2, $l-1 $l-2, $l-1 $l-1, $l-2 $l-1, $l-2 0, 
+                $l-100-2 0, $l-100-2 $l-1, $l-100-1 $l-1, $l-100-1 $l-2, 100% $l-2,
+                100% $l-100-2, $l-100-1 $l-100-2, $l-100-1 $l-100-1, $l-100-2 $l-100-1, $l-100-2 100%,
+                $l-2 100%, $l-2 $l-100-1, $l-1 $l-100-1, $l-1 $l-100-2, 0% $l-100-2, 0% $l-2,
+                #{rem-calc(1)} $l-2-1, #{rem-calc(1)} $l-100-2-1, $l-1-1 $l-100-2-1, $l-1-1 $l-100-1-1, $l-2-1 $l-100-1-1, $l-2-1 calc(100% - #{rem-calc(1)}),
+                $l-100-2-1 calc(100% - #{rem-calc(1)}), $l-100-2-1 $l-100-1-1, $l-100-1-1 $l-100-1-1, $l-100-1-1 $l-100-2-1, calc(100% - #{rem-calc(1)}) $l-100-2-1,
+                calc(100% - #{rem-calc(1)}) $l-2-1, $l-100-1-1 $l-2-1, $l-100-1-1 $l-1-1, $l-100-2-1 $l-1-1, $l-100-2-1 #{rem-calc(1)},
+                $l-2-1 #{rem-calc(1)}, $l-2-1 $l-1-1, $l-1-1 $l-1-1, $l-1-1 $l-2-1, #{rem-calc(1)} $l-2-1
+			)
+		}
+    }
+}
