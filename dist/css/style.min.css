@@ -3434,7 +3434,7 @@ main {
 .btn {
   display: inline-block;
   position: relative;
-  padding: 0.75rem 1.5625rem 0.875rem 3.125rem;
+  padding: 0.8125rem 1.5625rem;
   font-weight: 700;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3445,7 +3445,7 @@ main {
 }
 .btn--small {
   font-size: 0.75rem;
-  padding: 0.625rem 1.125rem 0.625rem 2.25rem;
+  padding: 0.625rem 1.125rem;
 }
 .btn:disabled, .btn[disabled] {
   color: rgba(255, 255, 255, 0.45);
@@ -3456,6 +3456,9 @@ main {
 }
 .btn--accent {
   background: #447ef7;
+}
+.btn--icon {
+  padding-left: 3.125rem;
 }
 .btn--icon:before {
   content: "";
@@ -3468,6 +3471,9 @@ main {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
+}
+.btn--icon-small {
+  padding-left: 2.25rem;
 }
 .btn--icon-small:before {
   content: "";
@@ -3509,6 +3515,9 @@ main {
 .btn--chat:before {
   background-image: url("../img/svg/footer-btn-chat.svg");
 }
+.btn--money:before {
+  background-image: url("../img/svg/header-money.svg");
+}
 .btn:hover {
   opacity: 0.7;
 }
@@ -3542,6 +3551,8 @@ main {
   padding: 1.5rem 0;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 .header__nav {
   display: flex;
@@ -3549,6 +3560,7 @@ main {
   line-height: 1.5;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  margin-right: auto;
 }
 .header__nav-item {
   margin-right: 34px;
@@ -3576,6 +3588,38 @@ main {
   height: 1.4375rem;
   background: url("../img/svg/header-bonus.svg") no-repeat 50% 50%/cover;
   animation: bonus-icon 0.3s infinite alternate ease-in;
+}
+.header__user-info {
+  display: flex;
+  align-items: center;
+}
+.header__user-money {
+  display: flex;
+  align-items: center;
+  margin-right: 1.25rem;
+}
+.header__user-ballance {
+  min-width: 9.375rem;
+  margin-right: -1.875rem;
+  padding-right: 2.5rem;
+}
+.header__user-about {
+  background: #120f1c;
+  padding-right: 2.8125rem;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+.header__user-about:hover {
+  opacity: rgba(255, 255, 255, 0.45);
+}
+.header__user-icon {
+  display: block;
+  width: 2.625rem;
+  height: 2.625rem;
+  margin-right: 0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: -0.75rem;
 }
 
 .menu {

@@ -1,7 +1,7 @@
 .btn {
     display: inline-block;
     position: relative;
-    padding: rem-calc(12) rem-calc(25) rem-calc(14) rem-calc(50);
+    padding: rem-calc(13) rem-calc(25);
     font-weight: 700;
     font-size: rem-calc(14);
     line-height: 1.5;
@@ -12,7 +12,7 @@
 
     &--small {
         font-size: rem-calc(12);
-        padding: rem-calc(10) rem-calc(18) rem-calc(10) rem-calc(36);
+        padding: rem-calc(10) rem-calc(18);
     }
 
     &:disabled,
@@ -30,6 +30,7 @@
     }
 
     &--icon {
+        padding-left: rem-calc(50);
         &:before {
             content: "";
             position: absolute;
@@ -45,6 +46,7 @@
     }
 
     &--icon-small {
+        padding-left: rem-calc(36);
         &:before {
             content: "";
             position: absolute;
@@ -106,6 +108,12 @@
     &--chat {
         &:before {
             background-image: url("../img/svg/footer-btn-chat.svg");
+        }
+    }
+
+    &--money {
+        &:before {
+            background-image: url("../img/svg/header-money.svg");
         }
     }
 
