@@ -7,6 +7,9 @@
     display: grid;
     grid-template-columns: 1fr 1.8fr .6fr;
     gap: rem-calc(30);
+    position: relative;
+    z-index: 2;
+    border: rem-calc(1px) solid rgba(255, 255, 255, .15);
 
     &__col {
         display: flex;
@@ -21,6 +24,45 @@
         }
     }
 
+    &__btn-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+    &__btn-list {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        background: $clr-black;
+        width: 100%;
+        transform: translateX(-50%);
+        padding: rem-calc(10);
+        transition: .3;
+        pointer-events: none;
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+
+    &__btn-item {
+        color: $clr-white;
+        transition: .3;
+        margin-bottom: rem-calc(10);
+        transition: .3;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
     &__btn {
         position: relative;
         padding: rem-calc(12) rem-calc(25) rem-calc(14) rem-calc(50);
@@ -32,6 +74,7 @@
         margin-right: rem-calc(21);
         background: rgba(255, 255, 255, .05);
         color: $clr-white;
+        overflow: auto;
 
         &:last-child {
             margin-right: 0;
@@ -73,8 +116,20 @@
         }
 
         &--providers {
+            position: relative;
+            margin-right: 0;
+            padding-right: rem-calc(15);
+            align-items: center;
+            display: flex;
             &:before {
                 background-image: url("../img/svg/filters-btn-providers.svg");
+            }
+
+            &:hover {
+                & + .filters__btn-list {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
             }
         }
 

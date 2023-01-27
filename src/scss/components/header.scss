@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-    z-index: 1;
+    z-index: 2;
 
 	&__container {		
 		padding: rem-calc(24) 0;
@@ -80,6 +80,11 @@
 
 		&:hover {
 			opacity: .7;
+
+			& + .header__user-information {
+				opacity: 1;
+				pointer-events: auto;
+			}
 		}
 	}
 
@@ -92,4 +97,112 @@
 		margin-bottom: rem-calc(-12);
 	}
 
+	&__user-information {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background: rgb(161, 161, 161);
+		color: $clr-black;
+		font-family: "Pixel";
+		min-width: rem-calc(250);
+		text-transform: uppercase;
+		opacity: 0;
+		pointer-events: none;
+		transition: .3s;
+
+		&:hover {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	&__user-information-top {
+		display: flex;
+		padding: rem-calc(20);
+		border-bottom: rem-calc(1) solid rgb(148, 148, 148);
+	}
+
+	&__user-information-icon {
+		display: block;
+		width: rem-calc(50);
+		height: rem-calc(50);
+		margin-right: rem-calc(15);
+	}
+
+	&__user-information-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__user-information-name {
+		font-size: rem-calc(30);
+		line-height: 1;
+
+		&--pro {
+			position: relative;
+			padding-right: rem-calc(40);
+
+			&:before {
+				position: absolute;
+				content: "pro";
+				top: 0;
+				right: 0;
+				font-size: rem-calc(16);
+				line-height: .9;
+				color: green;
+				padding: rem-calc(2) rem-calc(5);
+				background-color: rgb(173, 249, 173);
+			}
+		}
+	}
+
+	&__user-settings-list,
+	&__user-information-list {
+		padding: rem-calc(20);
+		font-size: rem-calc(24);
+		color: $clr-black;
+	}
+
+	&__user-information-list {
+		border-bottom: rem-calc(1) solid rgb(148, 148, 148);
+	}
+
+	&__user-settings-item,
+	&__user-information-item {
+		margin-bottom: rem-calc(15);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__user-settings-link,
+	&__user-information-link {
+		display: flex;
+		align-items: center;
+		transition: .3s;
+		&:hover {
+			opacity: .45;
+		}
+
+		&--pink {
+			display: inline-block;
+			background-color: rgb(251, 177, 230);
+			padding: rem-calc(5);
+			min-width: rem-calc(30);
+			border-radius: 50%;
+			margin-top: rem-calc(-5);
+			margin-bottom: rem-calc(-5);
+			text-align: center;
+			margin-left: rem-calc(5);
+			color: rgb(255, 106, 228);
+		}
+	}
+
+	&__user-information-email {
+		font-size: rem-cacl(15);
+		line-height: 1;
+	}
 }
