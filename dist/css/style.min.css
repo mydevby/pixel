@@ -3161,18 +3161,10 @@
 .mask-btn {
   clip-path: polygon(0% 0.4375rem, 0.21875rem 0.4375rem, 0.21875rem 0.21875rem, 0.4375rem 0.21875rem, 0.4375rem 0, calc(100% - 0.4375rem) 0, calc(100% - 0.4375rem) 0.21875rem, calc(100% - 0.21875rem) 0.21875rem, calc(100% - 0.21875rem) 0.4375rem, 100% 0.4375rem, 100% calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) 100%, 0.4375rem 100%, 0.4375rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.4375rem), 0% calc(100% - 0.4375rem));
 }
-
-.mask-group-logo {
-  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
-}
-
-.mask-link {
-  clip-path: polygon(0% 0.9375rem, 0.3125rem 0.9375rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 0.9375rem 0.3125rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem));
-}
-.mask-link--border {
+.mask-btn--border {
   position: relative;
 }
-.mask-link--border:before {
+.mask-btn--border:before {
   content: "";
   position: absolute;
   top: 0;
@@ -3183,7 +3175,11 @@
   border: 0.0625rem solid white;
   opacity: 0.15;
   pointer-events: none;
-  clip-path: polygon(0% 0.9375rem, 0.3125rem 0.9375rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 0.9375rem 0.3125rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem), 0% 0.9375rem, 0.0625rem 1rem, 0.0625rem calc(100% - 1rem), 0.375rem calc(100% - 1rem), 0.375rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.375rem), 1rem calc(100% - 0.375rem), 1rem calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 1rem), calc(100% - 0.0625rem) calc(100% - 1rem), calc(100% - 0.0625rem) 1rem, calc(100% - 0.375rem) 1rem, calc(100% - 0.375rem) 0.6875rem, calc(100% - 0.6875rem) 0.6875rem, calc(100% - 0.6875rem) 0.375rem, calc(100% - 1rem) 0.375rem, calc(100% - 1rem) 0.0625rem, 1rem 0.0625rem, 1rem 0.375rem, 0.6875rem 0.375rem, 0.6875rem 0.6875rem, 0.375rem 0.6875rem, 0.375rem 1rem);
+  clip-path: polygon(0% 0.4375rem, 0.21875rem 0.4375rem, 0.21875rem 0.21875rem, 0.4375rem 0.21875rem, 0.4375rem 0, calc(100% - 0.4375rem) 0, calc(100% - 0.4375rem) 0.21875rem, calc(100% - 0.21875rem) 0.21875rem, calc(100% - 0.21875rem) 0.4375rem, 100% 0.4375rem, 100% calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.4375rem), calc(100% - 0.21875rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) calc(100% - 0.21875rem), calc(100% - 0.4375rem) 100%, 0.4375rem 100%, 0.4375rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.21875rem), 0.21875rem calc(100% - 0.4375rem), 0% calc(100% - 0.4375rem), 0% 0.4375rem, 0.0625rem 0.5rem, 0.0625rem calc(100% - 0.5rem), 0.28125rem calc(100% - 0.5rem), 0.28125rem calc(100% - 0.28125rem), 0.5rem calc(100% - 0.28125rem), 0.5rem calc(100% - 0.0625rem), calc(100% - 0.5rem) calc(100% - 0.0625rem), calc(100% - 0.5rem) calc(100% - 0.28125rem), calc(100% - 0.28125rem) calc(100% - 0.28125rem), calc(100% - 0.28125rem) calc(100% - 0.5rem), calc(100% - 0.0625rem) calc(100% - 0.5rem), calc(100% - 0.0625rem) 0.5rem, calc(100% - 0.28125rem) 0.5rem, calc(100% - 0.28125rem) 0.28125rem, calc(100% - 0.5rem) 0.28125rem, calc(100% - 0.5rem) 0.0625rem, 0.5rem 0.0625rem, 0.5rem 0.28125rem, 0.28125rem 0.28125rem, 0.28125rem 0.5rem, 0.0625rem 0.5rem);
+}
+
+.mask-group-logo {
+  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
 }
 
 .mask-slot {
@@ -3374,7 +3370,7 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(200, 200, 200, 0.2);
+  background-color: rgba(200, 200, 200, 0.1);
   z-index: 2;
 }
 .bg__video {
@@ -3982,7 +3978,7 @@ main {
 }
 .slots__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.9375rem;
 }
 .slots__item {
