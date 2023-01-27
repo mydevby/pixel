@@ -3986,16 +3986,50 @@ main {
   gap: 0.9375rem;
 }
 .slots__item {
-  display: flex;
-  flex-direction: column;
   background: rgba(30, 34, 52, 0.65);
   backdrop-filter: blur(27.5px);
+  padding-bottom: 1.5625rem;
 }
 .slots__item-img-wrapper {
   height: 0;
   padding-bottom: 100%;
-  position: relative;
   margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.slots__item-img-wrapper:hover .slots__item-bg-hover {
+  opacity: 1;
+}
+.slots__item-bg-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 34, 52, 0.85);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0.9375rem;
+  transition: 0.3s;
+  will-change: opacity;
+  opacity: 0;
+}
+.slots__item-icon-hover {
+  display: inline-block;
+  width: 3.625rem;
+  height: 3.625rem;
+  margin-bottom: 0.875rem;
+  background: url("../img/svg/slots-play.svg") no-repeat 50% 50%/contain;
+}
+.slots__item-text-hover {
+  font-size: 1.25rem;
+  line-height: 0.9;
 }
 .slots__item-img {
   position: absolute;
@@ -4007,7 +4041,7 @@ main {
 }
 .slots__item-info-wrapper {
   display: flex;
-  padding: 0 1.5rem 1.5625rem 1.5rem;
+  padding: 0 1.5rem;
 }
 .slots__item-info {
   flex-grow: 1;
@@ -4041,6 +4075,7 @@ main {
   opacity: 0.25;
   transition: 0.3s;
   cursor: pointer;
+  margin-left: auto;
 }
 .slots__item-more:hover {
   opacity: 1;
