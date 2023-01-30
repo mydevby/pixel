@@ -6,7 +6,7 @@
 
 	&__container {		
 		padding: rem-calc(24) 0;
-		border-bottom: 1px dashed rgba(255, 255, 255, .25);
+		border-bottom: rem-calc(1) dashed rgba(255, 255, 255, .25);
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -23,9 +23,32 @@
 
 	&__nav-item {
 		margin-right: 34px;
+		position: relative;
 
 		&:last-child {
 			margin-right: 0;
+			&:before {
+				left: rem-calc(26);
+			}
+		}
+
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: rem-calc(-5);
+			left: 0;
+			height: rem-calc(1);
+			right: 100%;
+			background-color: $clr-accent;
+			transition: .3s;
+		}
+
+		&:hover {
+			color: rgba(255, 255, 255, .5);
+
+			&:before {
+				right: 0;
+			}
 		}
 	}
 
@@ -33,10 +56,6 @@
 		position: relative;
 		transition: .3s;
 		color: #fff;
-
-		&:hover {
-			color: rgba(255, 255, 255, .5);
-		}
 
 		&--icon-bonus {
 			padding-left: rem-calc(23);
