@@ -90,6 +90,7 @@
 			border: rem-calc(1) solid rgb(255, 255, 255);
 			opacity: .15;
 			pointer-events: none;
+			z-index: 5;
 			clip-path: polygon(
 				0% $l-3, $l-1 $l-3, $l-1 $l-2, $l-2 $l-2, $l-2 $l-1, $l-3 $l-1, $l-3 0, 
 				$l-100-3 0, $l-100-3 $l-1, $l-100-2 $l-1, $l-100-2 $l-2, $l-100-1 $l-2, $l-100-1 $l-3, 100% $l-3,
