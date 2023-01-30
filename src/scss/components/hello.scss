@@ -48,15 +48,6 @@
 
     &__card-link {
         margin-top: rem-calc(30);
-		display: inline-block;
-		padding: rem-calc(15) rem-calc(37);
-		text-align: center;
-        color: $clr-white;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
-        background-color: $clr-accent;
-        transition: .3s;
 
         &:hover {
             opacity: .7;

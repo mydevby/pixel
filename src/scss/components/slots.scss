@@ -52,23 +52,6 @@
         white-space: nowrap;
     }
 
-    &__group-link {
-        position: relative;
-        padding: rem-calc(12) rem-calc(20) rem-calc(14);
-        font-weight: 700;
-        font-size: rem-calc(12);
-        line-height: 1.5;
-        cursor: pointer;
-        transition: .3s;
-        background: rgba(255, 255, 255, 0.01);
-        backdrop-filter: blur(22.5px);
-        color: $clr-white;
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

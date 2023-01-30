@@ -69,6 +69,11 @@
 		min-width: rem-calc(150);
 		margin-right: rem-calc(-30);
 		padding-right: rem-calc(40);
+		color: $clr-white;
+
+		&:before {
+			opacity: 1;
+		}
 	}
 
 	&__user-about {
@@ -79,11 +84,10 @@
 		align-items: center;
 
 		&:hover {
-			opacity: .7;
+			transform: translate(0);
 
-			& + .header__user-information {
+			.icon-more {
 				opacity: 1;
-				pointer-events: auto;
 			}
 		}
 	}
@@ -110,7 +114,7 @@
 		pointer-events: none;
 		transition: .3s;
 
-		&:hover {
+		&--open {
 			opacity: 1;
 			pointer-events: auto;
 		}

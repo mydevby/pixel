@@ -82,7 +82,7 @@
 
     &__support-btn {
         margin-bottom: rem-calc(18);
-        width: 100%;
+        min-width: rem-calc(166);
 
         &:last-child {
             margin-bottom: 0;
@@ -115,18 +115,10 @@
     }
 
     &__social-link {
-        display: inline-block;
         width: rem-calc(42);
         height: rem-calc(42);
         margin-right: rem-calc(10);
-        background-color: rgb(255, 255, 255, .03);
         font-size: 0;
-        position: relative;
-        transition: .3s;
-
-        &:hover {
-            opacity: .45;
-        }
 
         &:last-child {
             margin-right: 0;

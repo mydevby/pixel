@@ -131,17 +131,17 @@
 			</menu>
 			<div class="header__user-info">
 				<div class="header__user-money">
-					<div class="header__user-ballance btn btn--mask btn--icon btn--money btn--mask-border">500.34</div>
-					<a href="#" class="btn btn--accent btn--mask">wallet</a>
+					<div class="header__user-ballance btn btn--icon btn--money btn--header-mask btn--header-mask-border" disabled>500.34</div>
+					<a href="#" class="btn btn--header btn--header-mask">wallet</a>
 				</div>
 
-				<div class="header__user-about btn btn--mask btn--icon">
-					<img class="header__user-icon btn--mask" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
+				<div class="header__user-about btn btn--header-mask btn--icon">
+					<img class="header__user-icon btn--header-mask" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
 					NIKITA
 					<img class="icon-more" src="img/svg/icon-more.svg">
 				</div>
 
-				<div class="header__user-information btn--mask">
+				<div class="header__user-information btn--header-mask">
 					<div class="header__user-information-top">
 						<img class="header__user-information-icon" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
 						<div class="header__user-information-text">
@@ -185,7 +185,7 @@
 				<div class="hello__card-content">
 					<h2 class="hello__card-title">Welcome <span class="hello__card-title--big">Bonus</span></h2>
 					<p class="hello__card-text">Win a cut of up to 24000 this monthly leaderboard!</p>
-					<a class="hello__card-link mask-hello-link"href="#">Learn More</a>
+					<a class="hello__card-link btn mask-hello-link"href="#">Learn More</a>
 				</div>
 				<div class="hello__card-img-wrapper hello__card-img-wrapper--hero">
 					<img class="hello__card-img hello__card-img--hero" src="img/hello/hero.gif" alt="Hero">
@@ -195,7 +195,7 @@
 				<div class="hello__card-content">
 					<h2 class="hello__card-title"><span class="hello__card-title--custom">Crashed</span> <span class="hello__card-title--big">Space</span></h2>
 					<p class="hello__card-text">Win a Cut of up to 24000 This Monthly Leaderboard!</p>
-					<a class="hello__card-link mask-hello-link" href="#">Learn More</a>
+					<a class="hello__card-link btn mask-hello-link" href="#">Learn More</a>
 				</div>
 				<div class="hello__card-img-wrapper hello__card-img-wrapper--spaceship">
 					<img class="hello__card-img" src="img/hello/spaceship.svg" alt="Spaceship">
@@ -250,38 +250,41 @@
 		</section>
 
 		<section class="filters">
-			<div class="filters__col">
-				<button class="filters__btn filters__btn--icon filters__btn--all-slots filters__btn--accent  mask-btn">
-					All slots
-				</button>
-				<div class="filters__btn-wrapper">
-					<div class="filters__btn filters__btn--icon filters__btn--providers mask-btn">
-						PROVIDERS<img class="icon-more icon-more--providers" src="img/svg/icon-more-white.svg">
+			<div class="filters__bg mask-block mask-block--border"></div>
+			<div class="filters__content">
+				<div class="filters__col">
+					<button class="filters__btn btn  btn--active btn--icon btn--all-slots mask-btn">
+						All slots
+					</button>
+					<div class="filters__btn-wrapper">
+						<div class="filters__btn filters__btn-providers btn btn--icon btn--providers mask-btn">
+							PROVIDERS
+						</div>
+						<ul class="filters__list-providers mask-btn">
+							<li class="filters__btn-item">Evoplay</li>
+							<li class="filters__btn-item">Pragmatic Play</li>
+							<li class="filters__btn-item">Betsoft</li>						
+							<li class="filters__btn-item">CT Interactive</li>						
+							<li class="filters__btn-item">NetEnt</li>
+						</ul>
 					</div>
-					<ul class="filters__btn-list btn--mask">
-						<li class="filters__btn-item">Evoplay</li>
-						<li class="filters__btn-item">Pragmatic Play</li>
-						<li class="filters__btn-item">Betsoft</li>						
-						<li class="filters__btn-item">CT Interactive</li>						
-						<li class="filters__btn-item">NetEnt</li>
-					</ul>
 				</div>
-			</div>
-			<div class="filters__col">
-				<button class="filters__btn filters__btn--icon filters__btn--favorites filters__btn--accent mask-btn">
-					Favorites
-				</button>
-				<button class="filters__btn filters__btn--icon filters__btn--live mask-btn">
-					Live Games
-				</button>
-				<button disabled class="filters__btn filters__btn--icon filters__btn--recently mask-btn">
-					Recently played
-				</button>
-			</div>
-			<div class="filters__col">
-				<button disabled class="filters__btn filters__btn--icon filters__btn--search mask-btn">
-					Search
-				</button>
+				<div class="filters__col">
+					<button class="filters__btn btn btn--active btn--icon btn--favorites mask-btn">
+						Favorites
+					</button>
+					<button class="filters__btn btn btn--icon btn--favorites mask-btn">
+						Live Games
+					</button>
+					<button disabled class="filters__btn btn btn--icon btn--favorites mask-btn">
+						Recently played
+					</button>
+				</div>
+				<div class="filters__col">
+					<label class="filters__btn-label btn btn--icon btn--search mask-btn">
+						<input class="filters__input-search" type="text" placeholder="Search">
+					</label>
+				</div>
 			</div>
 		</section>
 
@@ -295,7 +298,7 @@
 						Popular Pragmatic<br>
 						Play Slots
 					</h3>
-					<a class="slots__group-link mask-btn mask-btn--border" href="#">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="#">
 						View all Slots
 					</a>
 				</div>
@@ -365,7 +368,7 @@
 						Popular Pragmatic<br>
 						Play Slots
 					</h3>
-					<a class="slots__group-link mask-btn mask-btn--border" href="#">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="#">
 						View all Slots
 					</a>
 				</div>
@@ -435,7 +438,7 @@
 						Popular Pragmatic<br>
 						Play Slots
 					</h3>
-					<a class="slots__group-link mask-btn mask-btn--border" href="#">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="#">
 						View all Slots
 					</a>
 				</div>
@@ -505,7 +508,7 @@
 						Popular Pragmatic<br>
 						Play Slots
 					</h3>
-					<a class="slots__group-link mask-btn mask-btn--border" href="#">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="#">
 						View all Slots
 					</a>
 				</div>
@@ -586,10 +589,12 @@
 			<div class="footer__support">
 				<div class="footer__col-name footer__col-name--support">Support 24/7</div>
 				<p class="footer__col-text">Write if you still<br>have questions!</p>
-				<a href="mailto:hi@slot.online" class="footer__support-btn btn btn--small btn--icon-small btn--email btn--accent btn--mask">
+				<a href="mailto:hi@slot.online" 
+					class="footer__support-btn btn btn--small-mask btn--small-mask-border btn--icon-small  btn--small btn--email mask-btn mask-btn--border">
 					hi@slot.online
 				</a>
-				<button class="footer__support-btn btn btn--small btn--icon-small btn--chat btn--mask btn--mask-border">
+				<button 
+					class="footer__support-btn btn btn--small-mask btn--small-mask-border btn--icon-small btn--small btn--chat mask-btn mask-btn--borde">
 					Open Chat
 				</button>
 			</div>
@@ -645,11 +650,11 @@
 			</div>
 		</div>
 		<div class="footer__col footer__col--social">
-			<a class="footer__social-link footer__social-link--tg" href="https://t.me/durov" rel="nofollow" target="_blank">Our telegram</a>
-			<a class="footer__social-link footer__social-link--yt" href="https://www.youtube.com/" rel="nofollow" target="_blank">Our youtube</a>
-			<a class="footer__social-link footer__social-link--in" href="https://www.instagram.com/" rel="nofollow" target="_blank">Our instagram</a>
-			<a class="footer__social-link footer__social-link--tw" href="https://twitter.com/" rel="nofollow" target="_blank">Our twitter</a>
-			<a class="footer__social-link footer__social-link--fb" href="https://web.facebook.com/" rel="nofollow" target="_blank">Our facebook</a>
+			<a class="footer__social-link btn footer__social-link--tg" href="https://t.me/durov" rel="nofollow" target="_blank">Our telegram</a>
+			<a class="footer__social-link btn footer__social-link--yt" href="https://www.youtube.com/" rel="nofollow" target="_blank">Our youtube</a>
+			<a class="footer__social-link btn footer__social-link--in" href="https://www.instagram.com/" rel="nofollow" target="_blank">Our instagram</a>
+			<a class="footer__social-link btn footer__social-link--tw" href="https://twitter.com/" rel="nofollow" target="_blank">Our twitter</a>
+			<a class="footer__social-link btn footer__social-link--fb" href="https://web.facebook.com/" rel="nofollow" target="_blank">Our facebook</a>
 		</div>
 	</footer>
 </div>
