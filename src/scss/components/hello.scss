@@ -1,4 +1,4 @@
-.banner {
+.hello {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem-calc(30);
@@ -72,6 +72,7 @@
             align-items: flex-end;
             margin-top: rem-calc(-20);
             margin-bottom: rem-calc(-40);
+            background: url("../img/hello/hero.gif") no-repeat 50% 100% /contain;
         }
 
         &--spaceship {
@@ -83,5 +84,9 @@
     &__card-img {
         max-height: rem-calc(340);
         width: auto;
+
+        &--hero {
+            opacity: 0;
+        }
     }
 }
