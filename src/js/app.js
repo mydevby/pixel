@@ -3,6 +3,7 @@ window.onload = function() {
 		let headerUserAbout  = document.querySelector('.header__user-about');
 		let headerUserInformation = document.querySelector('.header__user-information');
 		headerUserAbout.addEventListener('click', function(e) {
+			headerUserAbout.classList.toggle('header__user-about--active');
 			headerUserInformation.classList.toggle('header__user-information--open');
 		});
 	};

@@ -3496,9 +3496,9 @@ main {
   content: "";
   position: absolute;
   top: 50%;
-  right: 1.375rem;
-  width: 0.875rem;
-  height: 0.5rem;
+  right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background: url("../img/svg/icon-more.svg") no-repeat 50% 50%/contain;
   transform: translateY(-50%);
   transition: 0.3s;
@@ -3668,10 +3668,11 @@ main {
   display: flex;
   align-items: center;
 }
-.header__user-about:hover {
+.header__user-about--active, .header__user-about:hover {
+  color: white;
   transform: translate(0);
 }
-.header__user-about:hover .icon-more {
+.header__user-about--active .icon-more, .header__user-about:hover .icon-more {
   opacity: 1;
 }
 .header__user-icon {
