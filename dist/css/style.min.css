@@ -4203,6 +4203,44 @@ main {
   opacity: 1;
 }
 
+.modals {
+  min-height: calc(100vh - 25.5625rem);
+  position: relative;
+}
+.modals__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.5px);
+  pointer-events: none;
+}
+.modals__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.875rem;
+  padding: 1.125rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.modal--open {
+  pointer-events: auto;
+  background: rgba(33, 38, 58, 0.65);
+  backdrop-filter: blur(17.5px);
+}
+
 .hello {
   display: grid;
   grid-template-columns: 1fr 1fr;

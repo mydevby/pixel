@@ -16,4 +16,13 @@ window.onload = function() {
 			headerListProviders.classList.toggle('filters__list-providers--open');
 		});
 	};
+
+	if (document.querySelector('.modals__btn') !== null) {
+		let modalsBtn  = document.querySelector('.modals__btn');
+		let headerListProviders = document.querySelector('.filters__list-providers');
+		filtersBtnProviders.addEventListener('click', function(e) {
+			filtersBtnProviders.classList.toggle('filters__btn-providers--active');
+			headerListProviders.classList.toggle('filters__list-providers--open');
+		});
+	};
 };
