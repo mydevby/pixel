@@ -19,20 +19,39 @@ window.onload = function() {
 
 	if (document.querySelector('.modals__btn') !== null) {
 		let arrModalsBtn  = document.querySelectorAll('.modals__btn');
-		let modal  = document.querySelector('.modal');
 		arrModalsBtn.forEach(modalBtn => {
 			modalBtn.addEventListener('click', function(e) {
-				let name = modalBtn.dataset.modalName;
-				console.log(name);
+				let modal  = document.querySelector('.modal');
+				let className = modalBtn.dataset.modalContentClass;
+				let modalContent = document.querySelector('.' + className);
 				modal.classList.add('modal--open');
+				modalContent.classList.add('modal__content--active');
 			});
 		});
 	};
 
 	if (document.querySelector('.modal') !== null) {
 		let modal  = document.querySelector('.modal');
+		let modalWindow  = document.querySelector('.modal__window');
+		let arrModalContent  = document.querySelectorAll('.modal__content');
+		let arrModalClaseBtns = document.querySelectorAll('.modal__close-modal');
 		modal.addEventListener('click', function(e) {
 			modal.classList.remove('modal--open');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
 		});
-	}
+		modalWindow.addEventListener('click', function(e) {
+			e.stopPropagation();
+		});
+		arrModalClaseBtns.forEach(modalClaseBtn => {
+			modalClaseBtn.addEventListener('click', function(e) {
+				modal.classList.remove('modal--open');
+				arrModalContent.forEach(modalContent => {
+					modalContent.classList.remove('modal__content--active');
+				});
+			});
+		});
+	};
+
 };

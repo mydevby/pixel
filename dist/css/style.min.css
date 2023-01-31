@@ -4237,12 +4237,94 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .modal--open {
   pointer-events: auto;
   background: rgba(33, 38, 58, 0.65);
   backdrop-filter: blur(17.5px);
   cursor: pointer;
+  opacity: 1;
+}
+.modal__window {
+  position: relative;
+}
+.modal__content {
+  display: none;
+}
+.modal__content--active {
+  display: block;
+}
+.modal__content--login {
+  width: 52.5rem;
+}
+.modal__content--registration {
+  width: 64.375rem;
+}
+.modal__content--code-confirm {
+  width: 22.75rem;
+}
+.modal__content--deposit-cripto, .modal__content--deposit-fiat, .modal__content--deposit-nft, .modal__content--buy-crypto, .modal__content--swap, .modal__content--transfer, .modal__content--withdraw, .modal__content--transactions {
+  width: 34.875rem;
+}
+.modal__grid {
+  display: grid;
+}
+.modal__grid--2-col {
+  grid-template-columns: 26.25rem 1fr;
+}
+.modal__img-wrapper {
+  padding: 0.9375rem 0.9375rem 0 1.875rem;
+  border-right: 0.0625rem solid rgba(255, 255, 255, 0.15);
+}
+.modal__img {
+  max-width: 100%;
+  height: auto;
+}
+.modal__content-wrapper {
+  padding: 1.375rem 5.5rem 2.8125rem 1.875rem;
+}
+.modal__content-wrapper--registration {
+  padding: 1.375rem 1.25rem 1.625rem 1.75rem;
+}
+.modal__content-top {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 1.25rem;
+}
+.modal__content-top-btn {
+  width: 8.875rem;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-right: 1.25rem;
+}
+.modal__content-top-btn:last-child {
+  margin-right: 0;
+}
+.modal__close-modal {
+  position: absolute;
+  display: block;
+  top: 1.375rem;
+  right: 1.25rem;
+  font-size: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+}
+.modal__close-modal:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.4375rem;
+  height: 1.4375rem;
+  background: url("../img/modal/btn-close-big.svg") no-repeat 50% 50%/contain;
+  transition: 0.3s;
 }
 
 .hello {

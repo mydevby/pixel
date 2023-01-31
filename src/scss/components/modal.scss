@@ -10,10 +10,118 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+
     &--open {
         pointer-events: auto;
         background: rgba(33, 38, 58, 0.65);
         backdrop-filter: blur(17.5px);
         cursor: pointer;
+        opacity: 1;
+    }
+
+    &__window {
+        position: relative;
+    }
+
+    &__content {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+
+        &--login{
+            width: rem-calc(840);
+        }
+
+        &--registration  {
+            width: rem-calc(1030);
+        }
+
+        &--code-confirm  {
+            width: rem-calc(364px);
+        }
+
+        &--deposit-cripto,
+        &--deposit-fiat,
+        &--deposit-nft,
+        &--buy-crypto,
+        &--swap,
+        &--transfer,
+        &--withdraw,
+        &--transactions {
+            width: rem-calc(558px);
+        }
+    }
+
+    &__grid {
+        display: grid;
+
+        &--2-col {
+            grid-template-columns: rem-calc(420) 1fr;
+        }
+    }
+
+    &__img-wrapper {
+        padding:  rem-calc(15) rem-calc(15) 0 rem-calc(30);
+        border-right: rem-calc(1) solid rgba(255, 255, 255, .15);
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__content-wrapper {
+        padding:  rem-calc(22) rem-calc(88) rem-calc(45) rem-calc(30);
+
+        &--registration {
+            padding:  rem-calc(22) rem-calc(20) rem-calc(26) rem-calc(28);
+        }
+    }
+
+    &__content-top {
+        display: flex;
+        justify-content: center;
+        padding-bottom: rem-calc(16);
+        border-bottom: rem-calc(1) solid rgba(255, 255, 255, .15);
+        margin-bottom: rem-calc(20);
+    }
+
+    &__content-top-btn {
+        width: rem-calc(142);
+        text-align: center;
+        font-size: rem-calc(12);
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-right: rem-calc(20);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__close-modal {
+        position: absolute;
+        display: block;
+        top: rem-calc(22);
+        right: rem-calc(20);
+        font-size: 0;
+        width: rem-calc(44);
+        height: rem-calc(44);
+        padding: 0;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem-calc(23);
+            height: rem-calc(23);
+            background: url("../img/modal/btn-close-big.svg") no-repeat 50% 50% /contain;
+            transition: .3s;
+        }
     }
 }

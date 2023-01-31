@@ -180,16 +180,40 @@
 	</header>
 	<main class="main">
         <section class="modals">
-            <div class="modals__bg mask-block mask-block--border"></div>
-			<div class="modals__content">
-                <button class="modals__btn btn mask-btn open-modal" data-modal-name="modal--login">
+			<div class="modals__bg"></div>
+			<div class="modals__content mask-btn mask-btn--border">
+                <button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--login">
                     Modal Login
                 </button>
-				<button class="modals__btn btn mask-btn open-modal" data-modal-name="modal--registration">
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--registration">
                     Modal Registration
                 </button>
-				<button class="modals__btn btn mask-btn open-modal" data-modal-name="modal--code-confirm">
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--code-confirm">
                     Modal Code Confirm
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--deposit-cripto">
+                    Modal Deposit Cripto
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--deposit-fiat">
+                    Modal Deposit Fiat
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--deposit-nft">
+                    Modal Deposit NFT
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--buy-crypto">
+                    Modal Buy Crypto
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--swap">
+                    Modal Swap
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--transfer">
+                    Modal Transfer to User
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--withdraw">
+                    Modal Withdraw
+                </button>
+				<button class="modals__btn btn mask-btn open-modal" data-modal-content-class="modal__content--transactions">
+                    Modal Transactions
                 </button>
 			</div>
         </section>
@@ -281,7 +305,66 @@
 	</footer>
 </div>
 
-<div class="modal"></div>
+
+<div class="modal modal--login">
+	<div class="modal__window mask-block mask-block--border">
+		<div class="modal__content modal__content modal__content--login">
+			<button class="modal__close-modal btn mask-btn mask-btn--border">Close</button>
+			<div class="modal__grid modal__grid--2-col">
+				<div class="modal__img-wrapper">
+					<img class="modal__img" src="img/modal/welcome-back-x2.min.png" alt="Welcome Back">
+				</div>
+				<div class="modal__content-wrapper">
+					<div class="modal__content-top">
+						<button class="modal__content-top-btn btn btn--active mask-btn">Login</button>
+						<button  class="modal__content-top-btn btn mask-btn mask-btn--border">Registration</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__content modal__content modal__content--registration">
+			<button class="modal__close-modal btn mask-btn mask-btn--border">Close</button>
+			<div class="modal__grid modal__grid--2-col">
+				<div class="modal__img-wrapper">
+					<img class="modal__img" src="img/modal/welcome-back-x2.min.png" alt="Welcome Back">
+				</div>
+				<div class="modal__content-wrapper modal__content-wrapper--registration">
+					<div class="modal__content-top">
+						<button class="modal__content-top-btn btn mask-btn">Login</button>
+						<button  class="modal__content-top-btn btn btn--active mask-btn mask-btn--border">Registration</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal__content modal__content modal__content--code-confirm">
+			Modal Code Confirm
+		</div>
+		<div class="modal__content modal__content modal__content--deposit-cripto">
+			Modal Deposit Cripto
+		</div>
+		<div class="modal__content modal__content modal__content--deposit-fiat">
+			Modal Deposit Fiat
+		</div>
+		<div class="modal__content modal__content modal__content--deposit-nft">
+			Modal Deposit NFT
+		</div>
+		<div class="modal__content modal__content modal__content--buy-crypto">
+			Modal Buy Crypto
+		</div>
+		<div class="modal__content modal__content modal__content--swap">
+			Modal Swap
+		</div>
+		<div class="modal__content modal__content modal__content--transfer">
+			Modal Transfer to User
+		</div>
+		<div class="modal__content modal__content modal__content--withdraw">
+			Modal Withdraw
+		</div>
+		<div class="modal__content modal__content modal__content--transactions">
+			Modal Transactions
+		</div>
+	</div>
+</div>
 
 <script src="js/app.min.js"></script>
 </body>
