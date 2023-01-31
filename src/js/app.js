@@ -18,11 +18,21 @@ window.onload = function() {
 	};
 
 	if (document.querySelector('.modals__btn') !== null) {
-		let modalsBtn  = document.querySelector('.modals__btn');
-		let headerListProviders = document.querySelector('.filters__list-providers');
-		filtersBtnProviders.addEventListener('click', function(e) {
-			filtersBtnProviders.classList.toggle('filters__btn-providers--active');
-			headerListProviders.classList.toggle('filters__list-providers--open');
+		let arrModalsBtn  = document.querySelectorAll('.modals__btn');
+		let modal  = document.querySelector('.modal');
+		arrModalsBtn.forEach(modalBtn => {
+			modalBtn.addEventListener('click', function(e) {
+				let name = modalBtn.dataset.modalName;
+				console.log(name);
+				modal.classList.add('modal--open');
+			});
 		});
 	};
+
+	if (document.querySelector('.modal') !== null) {
+		let modal  = document.querySelector('.modal');
+		modal.addEventListener('click', function(e) {
+			modal.classList.remove('modal--open');
+		});
+	}
 };
