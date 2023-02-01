@@ -145,8 +145,11 @@
     }
 
     &--email {
+        background-color: $clr-accent;
+        color: $clr-white;
         &:before {
             background-image: url("../img/svg/footer-btn-email.svg");
+            opacity: 1;
         }
     }
 

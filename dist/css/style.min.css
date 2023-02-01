@@ -3265,6 +3265,17 @@ textarea {
   background: #8b8b97;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #27304c inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
 html,
 body {
   font-family: "Space Mono", monospace, sans-serif;
@@ -3523,8 +3534,13 @@ main {
   height: 1.5rem;
   background-image: url("../img/svg/filters-btn-search.svg");
 }
+.btn--email {
+  background-color: #447ef7;
+  color: white;
+}
 .btn--email:before {
   background-image: url("../img/svg/footer-btn-email.svg");
+  opacity: 1;
 }
 .btn--chat:before {
   background-image: url("../img/svg/footer-btn-chat.svg");
@@ -4008,7 +4024,8 @@ main {
 }
 .footer__support-btn {
   margin-bottom: 1.125rem;
-  min-width: 10.375rem;
+  min-width: 100%;
+  max-width: 100%;
 }
 .footer__support-btn:last-child {
   margin-bottom: 0;
@@ -4238,6 +4255,7 @@ main {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  color: white;
 }
 .modal--open {
   pointer-events: auto;
@@ -4251,6 +4269,7 @@ main {
 }
 .modal__content {
   display: none;
+  cursor: default;
 }
 .modal__content--active {
   display: block;
@@ -4264,14 +4283,24 @@ main {
 .modal__content--code-confirm {
   width: 22.75rem;
 }
-.modal__content--deposit-cripto, .modal__content--deposit-fiat, .modal__content--deposit-nft, .modal__content--buy-crypto, .modal__content--swap, .modal__content--transfer, .modal__content--withdraw, .modal__content--transactions {
+.modal__content--deposit-cripto, .modal__content--deposit-fiat, .modal__content--deposit-nft, .modal__content--buy-crypto, .modal__content--swap, .modal__content--transfer, .modal__content--withdraw {
   width: 34.875rem;
+  padding: 1.75rem 1.875rem;
+}
+.modal__content--transactions {
+  width: 55rem;
+  padding: 1.75rem 1.875rem;
 }
 .modal__grid {
   display: grid;
 }
 .modal__grid--2-col {
   grid-template-columns: 26.25rem 1fr;
+}
+.modal__grid--2-col-login {
+  grid-template-columns: 1fr 1fr;
+  gap: 0 1.25rem;
+  margin-bottom: 1.25rem;
 }
 .modal__img-wrapper {
   padding: 0.9375rem 0.9375rem 0 1.875rem;
@@ -4281,11 +4310,14 @@ main {
   max-width: 100%;
   height: auto;
 }
-.modal__content-wrapper {
+.modal__content-wrapper--login {
   padding: 1.375rem 5.5rem 2.8125rem 1.875rem;
 }
 .modal__content-wrapper--registration {
   padding: 1.375rem 1.25rem 1.625rem 1.75rem;
+}
+.modal__content-wrapper--code-confirm {
+  padding: 2.125rem 1.875rem 1.875rem 1.875rem;
 }
 .modal__content-top {
   display: flex;
@@ -4293,6 +4325,41 @@ main {
   padding-bottom: 1rem;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
   margin-bottom: 1.25rem;
+}
+.modal__content-top--big {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2.8125rem;
+}
+.modal__btn-transactions {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-left: 0.9375rem;
+  transition: 0.3s;
+  padding-left: 1.25rem;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+}
+.modal__btn-transactions:before {
+  content: "";
+  position: absolute;
+  transition: 0.3s;
+  opacity: 0.15;
+  top: 46%;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  transform: translateY(-50%);
+  background: url("../img/modal/btn-transaction.svg") no-repeat 50% 50%/contain;
+}
+.modal__btn-transactions:hover {
+  color: white;
+}
+.modal__btn-transactions:hover:before {
+  opacity: 1;
 }
 .modal__content-top-btn {
   width: 8.875rem;
@@ -4305,6 +4372,11 @@ main {
 .modal__content-top-btn:last-child {
   margin-right: 0;
 }
+.modal__title--code-confirm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
+}
 .modal__close-modal {
   position: absolute;
   display: block;
@@ -4314,6 +4386,7 @@ main {
   width: 2.75rem;
   height: 2.75rem;
   padding: 0;
+  z-index: 2;
 }
 .modal__close-modal:after {
   content: "";
@@ -4325,6 +4398,159 @@ main {
   height: 1.4375rem;
   background: url("../img/modal/btn-close-big.svg") no-repeat 50% 50%/contain;
   transition: 0.3s;
+}
+.modal__close-modal--small {
+  width: 1.875rem;
+  height: 1.875rem;
+  top: 1.5625rem;
+  right: 1.875rem;
+}
+.modal__close-modal--small:after {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-image: url("../img/modal/btn-close-small.svg");
+}
+.modal__label {
+  margin-bottom: 1.25rem;
+  padding: 0.3125rem;
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  width: 100%;
+  gap: 0.1875rem;
+  background: rgba(0, 0, 0, 0.15);
+}
+.modal__label:hover {
+  transform: translate(0);
+}
+.modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input-name, .modal__label:has(.modal__input:focus) .modal__input-name {
+  top: 0;
+  transform: translate(0);
+}
+.modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input, .modal__label:has(.modal__input:focus) .modal__input {
+  opacity: 1;
+}
+.modal__label:last-child {
+  margin-bottom: 0;
+}
+.modal__label-icon {
+  width: 2.625rem;
+  height: 2.625rem;
+  background: #447ef7;
+}
+.modal__input-wrapper {
+  position: relative;
+  width: 100%;
+  padding-right: 1.5625rem;
+  display: flex;
+  align-items: center;
+}
+.modal__input-name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  transition: 0.3s;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+}
+.modal__input {
+  padding-top: 0.9375rem;
+  display: inline-block;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 0.8125rem;
+  line-height: 2;
+  color: white;
+}
+.modal__input:not([type=password]) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.modal__line {
+  height: 0.0625rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 1.25rem;
+}
+.modal__text {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 0.9375rem;
+}
+.modal__social-btn-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.modal__social-btn {
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+.modal__btn {
+  display: block;
+  text-transform: uppercase;
+  height: 3.25rem;
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #447ef7;
+  color: white;
+  text-align: center;
+}
+.modal__btn--registration {
+  max-width: 17.5rem;
+  margin: 0 auto;
+}
+.modal__btn--code-confirm {
+  max-width: 10.25rem;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 1.25rem auto 0;
+}
+.modal__nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.9375rem;
+  margin: 0 -1.875rem;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 1.25rem;
+}
+.modal__nav--transactions {
+  margin: 0;
+}
+.modal__nav-btn {
+  height: 2.75rem;
+  max-width: 2.75rem;
+  font-size: 0;
+  white-space: nowrap;
+}
+.modal__nav-btn.btn--active {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  max-width: none;
+  padding: 0.8125rem 1rem 0.8125rem 2.5rem;
+}
+.modal__nav-btn--transactions {
+  max-width: none;
+  width: 10rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0.8125rem 1rem;
+}
+.modal__nav-btn--transactions.btn--active {
+  padding: 0.8125rem 1rem;
+}
+.modal__main-content-bg {
+  background: rgba(30, 34, 52, 0.65);
+  margin: 0 -1.875rem -1.875rem;
+  padding: 0 1.875rem 1.875rem;
 }
 
 .hello {
