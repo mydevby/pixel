@@ -239,6 +239,85 @@
         width: rem-calc(42);
         height: rem-calc(42);
         background: $clr-accent;
+
+        &:after {
+            content: "";
+            top: 50%;
+            left: rem-calc(13);
+            width: rem-calc(16);
+            height: rem-calc(16);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        &--email {
+            &:after {
+                background-image: url("../img/modal/icon-email.svg");
+            }
+        }
+
+        &--password {
+            &:after {
+                background-image: url("../img/modal/icon-password.svg");
+            }
+        }
+
+        &--math {
+            &:after {
+                background-image: url("../img/modal/icon-math.svg");
+            }
+        }
+
+        &--name {
+            &:after {
+                background-image: url("../img/modal/icon-name.svg");
+            }
+        }
+
+        &--flag {
+            &:after {
+                background-image: url("../img/modal/icon-flag.svg");
+            }
+        }
+
+        &--dollar {
+            &:after {
+                background-image: url("../img/modal/icon-dollar.svg");
+            }
+        }
+
+        &--gift {
+            &:after {
+                background-image: url("../img/modal/icon-gift.svg");
+            }
+        }
+
+        &--nickname {
+            &:after {
+                background-image: url("../img/modal/icon-nickname.svg");
+            }
+        }
+
+        &--birthday {
+            &:after {
+                background-image: url("../img/modal/icon-birthday.svg");
+            }
+        }
+
+        &--gender {
+            &:after {
+                background-image: url("../img/modal/icon-gender.svg");
+            }
+        }
+
+        &--code {
+            &:after {
+                background-image: url("../img/modal/icon-code.svg");
+            }
+        }
     }
 
     &__input-wrapper {
@@ -303,6 +382,49 @@
         height: rem-calc(52);
         padding: 0;
         background: rgba(0, 0, 0, .15);
+
+        &:after {
+            content: "";
+            top: 50%;
+            left: 50%;
+            width: rem-calc(18);
+            height: rem-calc(18);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        &--tg {
+            &:after {
+                background-image: url("../img/modal/icon-tg.svg");
+            }
+        }
+
+        &--yt {
+            &:after {
+                background-image: url("../img/modal/icon-yt.svg");
+            }
+        }
+
+        &--in {
+            &:after {
+                background-image: url("../img/modal/icon-in.svg");
+            }
+        }
+
+        &--tw {
+            &:after {
+                background-image: url("../img/modal/icon-tw.svg");
+            }
+        }
+
+        &--fb {
+            &:after {
+                background-image: url("../img/modal/icon-fb.svg");
+            }
+        }
     }
 
     &__btn {
@@ -315,6 +437,8 @@
         background-color: $clr-accent;
         color: $clr-white;
         text-align: center;
+        font-size: rem-calc(14);
+        line-height: 1.5;
 
         &--registration {
             max-width: rem-calc(280);
@@ -366,11 +490,145 @@
                 padding: rem-calc(13) rem-calc(16);
             }
         }
+
+        &:after {
+            content: "";
+            top: 50%;
+            left: rem-calc(16);
+            width: rem-calc(13);
+            height: rem-calc(13);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        &--deposit {
+            &:after {
+                background-image: url("../img/modal/icon-add.svg");
+            }
+        }
+
+        &--buy-cripto {
+            &:after {
+                background-image: url("../img/modal/icon-dollar.svg");
+                width: rem-calc(16);
+                height: rem-calc(16);
+            }
+        }
+
+        &--swap {
+            &:after {
+                background-image: url("../img/modal/icon-swap.svg");
+                width: rem-calc(15);
+                height: rem-calc(15);
+            }
+        }
+
+        &--transfer {
+            &:after {
+                background-image: url("../img/modal/icon-transfer.svg");
+                width: rem-calc(24);
+                height: rem-calc(18);
+                left: rem-calc(12);
+            }
+        }
+
+        &--withdraw {
+            &:after {
+                background-image: url("../img/modal/icon-withdraw.svg");
+                width: rem-calc(15);
+                height: rem-calc(15);
+            }
+        }
     }
 
     &__main-content-bg {
         background: rgba(30, 34, 52, .65);
         margin: 0 rem-calc(-30) rem-calc(-30);
         padding: 0 rem-calc(30) rem-calc(30);
+    }
+
+    &__table {
+        color: #99A3C9;
+        font-size: rem-calc(14);
+        line-height: 1.5;
+    }
+
+    &__table-header {
+        display: flex;
+        justify-content: space-between;
+        padding: rem-calc(14) 0;
+        border-bottom: rem-calc(1) solid rgba(255, 255, 255, 0.15);
+    }
+
+    &__table-content--empty {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: rem-calc(485);
+        max-height: rem-calc(485);
+    }
+
+    &__btn-icon-arrow {
+        display: inline-block;
+        width: rem-calc(18);
+        height: rem-calc(14);
+        transform: translateY(#{rem-calc(2)});
+    }
+
+    &__btn-icon-arrow-back {
+        display: inline-block;
+        width: rem-calc(18);
+        height: rem-calc(14);
+        transform: translateY(#{rem-calc(2)});
+    }
+
+    &__btn-icon-add {
+        display: inline-block;
+        width: rem-calc(14);
+        height: rem-calc(14);
+        transform: translateY(#{rem-calc(1)});
+    }
+
+    &__nav-cripto {
+        display: flex;
+        justify-content: center;
+        gap: rem-calc(25);
+        padding-top: rem-calc(20);
+        margin-bottom: rem-calc(20);
+
+        &--select {
+            gap: rem-calc(10);
+            justify-content: space-between;
+            padding-top: 0;
+        }
+    }
+
+    &__nav-cripto-btn {
+        color: $clr-white;
+        &.btn--active {
+            background: #66BE47;
+        }
+
+        &--select {
+            padding: rem-calc(12) rem-calc(18);
+            &.btn--active {
+                background-color: rgba(255, 255, 255, 0.05);
+
+                &:before {
+                    background: $clr-accent;
+                }
+            }
+        }
+    }
+
+    &__nav-cripto-btn-icon {
+        display: inline-block;
+        width: rem-calc(14);
+        height: auto;
+        transform: translateY(#{rem-calc(2)});
     }
 }
