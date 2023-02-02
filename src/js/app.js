@@ -54,4 +54,14 @@ window.onload = function() {
 		});
 	};
 
+
+	if (document.querySelector('.js-select-providers') !== null) {
+		let selectProviders  = document.querySelector('.js-select-providers');
+		let selectListProviders = document.querySelector('.js-select-list-providers');
+		selectProviders.addEventListener('click', function(e) {
+			selectProviders.classList.toggle('select--active');
+			selectListProviders.classList.toggle('select__list--hidden');
+		});
+	};
+
 };

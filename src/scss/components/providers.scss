@@ -1,0 +1,28 @@
+.providers {
+    padding: rem-calc(46) rem-calc(40) rem-calc(28);
+
+    &__title {
+        font-family: "Pixel";
+        padding-bottom: rem-calc(46);
+        text-align: center;
+        font-size: rem-calc(28);
+        line-height: .9;
+        border-bottom: rem-calc(1) solid rgb(255, 255, 255, .1);
+        margin-bottom: rem-calc(20);
+        color: $clr-white;
+    }
+
+    &__filter-wrapper {
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        gap: rem-calc(15);
+        margin-bottom: rem-calc(30);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: rem-calc(15);
+        margin-bottom: rem-calc(30);
+    }
+}

@@ -1,0 +1,64 @@
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $clr-gray;
+    transition: .3s;
+    padding: rem-calc(10) rem-calc(15);
+    cursor: pointer;
+
+    &--center {
+        margin: 0 auto;
+    }
+
+    &--clr-white {
+        color: $clr-white;
+    }
+
+    &:hover {
+        color: $clr-white;
+
+        &:before {
+            opacity: 1;
+        }
+
+        .mask-btn {
+            &--border {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &--hover {
+        &:hover {
+            transform: translateY(#{rem-calc(-5)});
+        }
+    }
+
+    &--icon {
+        padding-left: rem-calc(50);
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: rem-calc(10);
+            width: rem-calc(30);
+            height: rem-calc(24);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            opacity: .45;
+            transform: translateY(-50%);
+            transition: .3s;
+        }
+    }
+
+    &--icon-favorites {
+        &:before {
+            background-image: url("../img/icons/icon-favorites.svg");
+        }
+    }
+}

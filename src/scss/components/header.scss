@@ -50,6 +50,14 @@
 				right: 0;
 			}
 		}
+
+		&--active {
+			pointer-events: none;
+
+			.header__nav-link {
+				color: rgba(255, 255, 255, .5);
+			}
+		}
 	}
 
 	&__nav-link {

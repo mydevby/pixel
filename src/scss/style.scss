@@ -7,6 +7,8 @@
 @import "helpers/typography";
 
 @import "components/btns";
+@import "components/buttons";
+@import "components/search";
 @import "components/header";
 @import "components/menu";
 @import "components/footer";
@@ -18,3 +20,6 @@
 @import "components/logos";
 @import "components/filters";
 @import "components/slots";
+
+@import "components/providers";
+@import "components/select";

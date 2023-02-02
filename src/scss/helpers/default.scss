@@ -193,3 +193,8 @@ main {
 .main {
 	padding: rem-calc(24) 0 rem-calc(30);
 }
+
+section,
+.select {
+	position: relative;
+}

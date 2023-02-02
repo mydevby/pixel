@@ -3114,6 +3114,64 @@
   }
 }
 /*rem-calc*/
+.mask-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.mask-bg--black {
+  background: rgba(255, 255, 255, 0.01);
+}
+.mask-bg--dark {
+  background: rgba(30, 34, 52, 0.65);
+}
+.mask-bg--accent {
+  background: #447ef7;
+}
+.mask-bg--black-blue {
+  background: #1e2234;
+}
+.mask-bg--filter {
+  backdrop-filter: blur(12.5px);
+}
+
+.mask-section {
+  clip-path: polygon(0% 2.8125rem, 0.9375rem 2.8125rem, 0.9375rem 1.875rem, 1.875rem 1.875rem, 1.875rem 0.9375rem, 2.8125rem 0.9375rem, 2.8125rem 0, calc(100% - 2.8125rem) 0, calc(100% - 2.8125rem) 0.9375rem, calc(100% - 1.875rem) 0.9375rem, calc(100% - 1.875rem) 1.875rem, calc(100% - 0.9375rem) 1.875rem, calc(100% - 0.9375rem) 2.8125rem, 100% 2.8125rem, 100% calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) 100%, 2.8125rem 100%, 2.8125rem calc(100% - 0.9375rem), 1.875rem calc(100% - 0.9375rem), 1.875rem calc(100% - 1.875rem), 0.9375rem calc(100% - 1.875rem), 0.9375rem calc(100% - 2.8125rem), 0% calc(100% - 2.8125rem));
+}
+.mask-section--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border: 0.0625rem solid white;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 2;
+  clip-path: polygon(0% 2.8125rem, 0.9375rem 2.8125rem, 0.9375rem 1.875rem, 1.875rem 1.875rem, 1.875rem 0.9375rem, 2.8125rem 0.9375rem, 2.8125rem 0, calc(100% - 2.8125rem) 0, calc(100% - 2.8125rem) 0.9375rem, calc(100% - 1.875rem) 0.9375rem, calc(100% - 1.875rem) 1.875rem, calc(100% - 0.9375rem) 1.875rem, calc(100% - 0.9375rem) 2.8125rem, 100% 2.8125rem, 100% calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) 100%, 2.8125rem 100%, 2.8125rem calc(100% - 0.9375rem), 1.875rem calc(100% - 0.9375rem), 1.875rem calc(100% - 1.875rem), 0.9375rem calc(100% - 1.875rem), 0.9375rem calc(100% - 2.8125rem), 0% calc(100% - 2.8125rem), 0% 2.8125rem, 0.0625rem 2.875rem, 0.0625rem calc(100% - 2.875rem), 1rem calc(100% - 2.875rem), 1rem calc(100% - 1.9375rem), 1.9375rem calc(100% - 1.9375rem), 1.9375rem calc(100% - 1rem), 2.875rem calc(100% - 1rem), 2.875rem calc(100% - 0.0625rem), calc(100% - 2.875rem) calc(100% - 0.0625rem), calc(100% - 2.875rem) calc(100% - 1rem), calc(100% - 1.9375rem) calc(100% - 1rem), calc(100% - 1.9375rem) calc(100% - 1.9375rem), calc(100% - 1rem) calc(100% - 1.9375rem), calc(100% - 1rem) calc(100% - 2.875rem), calc(100% - 0.0625rem) calc(100% - 2.875rem), calc(100% - 0.0625rem) 2.875rem, calc(100% - 1rem) 2.875rem, calc(100% - 1rem) 1.9375rem, calc(100% - 1.9375rem) 1.9375rem, calc(100% - 1.9375rem) 1rem, calc(100% - 2.875rem) 1rem, calc(100% - 2.875rem) 0.0625rem, 2.875rem 0.0625rem, 2.875rem 1rem, 1.9375rem 1rem, 1.9375rem 1.9375rem, 1rem 1.9375rem, 1rem 2.875rem);
+}
+
+.mask-btn {
+  clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem));
+}
+.mask-btn--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  opacity: 0.15;
+  transition: 0.3s;
+  clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem), 0% 0.5rem, 0.0625rem 0.5625rem, 0.0625rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) 0.5625rem, calc(100% - 0.3125rem) 0.5625rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.5625rem) 0.3125rem, calc(100% - 0.5625rem) 0.0625rem, 0.5625rem 0.0625rem, 0.5625rem 0.3125rem, 0.3125rem 0.3125rem, 0.3125rem 0.5625rem, 0.0625rem 0.5625rem);
+}
+
 .mask-card {
   clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem));
 }
@@ -3134,7 +3192,7 @@
   clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
 }
 
-.mask-hello-link {
+.mask-small {
   clip-path: polygon(0% 1rem, 0.25rem 1rem, 0.25rem 0.5rem, 0.5rem 0.5rem, 0.5rem 0.25rem, 1rem 0.25rem, 1rem 0, calc(100% - 1rem) 0, calc(100% - 1rem) 0.25rem, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.5rem) 0.5rem, calc(100% - 0.25rem) 0.5rem, calc(100% - 0.25rem) 1rem, 100% 1rem, 100% calc(100% - 1rem), calc(100% - 0.25rem) calc(100% - 1rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.5rem) calc(100% - 0.5rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 1rem) calc(100% - 0.25rem), calc(100% - 1rem) 100%, 1rem 100%, 1rem calc(100% - 0.25rem), 0.5rem calc(100% - 0.25rem), 0.5rem calc(100% - 0.5rem), 0.25rem calc(100% - 0.5rem), 0.25rem calc(100% - 1rem), 0% calc(100% - 1rem));
 }
 
@@ -3157,25 +3215,6 @@
   pointer-events: none;
   z-index: 5;
   clip-path: polygon(0% 0.9375rem, 0.3125rem 0.9375rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 0.9375rem 0.3125rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem), 0% 0.9375rem, 0.0625rem 1rem, 0.0625rem calc(100% - 1rem), 0.375rem calc(100% - 1rem), 0.375rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.375rem), 1rem calc(100% - 0.375rem), 1rem calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 1rem), calc(100% - 0.0625rem) calc(100% - 1rem), calc(100% - 0.0625rem) 1rem, calc(100% - 0.375rem) 1rem, calc(100% - 0.375rem) 0.6875rem, calc(100% - 0.6875rem) 0.6875rem, calc(100% - 0.6875rem) 0.375rem, calc(100% - 1rem) 0.375rem, calc(100% - 1rem) 0.0625rem, 1rem 0.0625rem, 1rem 0.375rem, 0.6875rem 0.375rem, 0.6875rem 0.6875rem, 0.375rem 0.6875rem, 0.375rem 1rem);
-}
-
-.mask-btn {
-  clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem));
-}
-.mask-btn--border {
-  position: relative;
-}
-.mask-btn--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: white;
-  opacity: 0.15;
-  pointer-events: none;
-  clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem), 0% 0.5rem, 0.0625rem 0.5625rem, 0.0625rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) 0.5625rem, calc(100% - 0.3125rem) 0.5625rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.5625rem) 0.3125rem, calc(100% - 0.5625rem) 0.0625rem, 0.5625rem 0.0625rem, 0.5625rem 0.3125rem, 0.3125rem 0.3125rem, 0.3125rem 0.5625rem, 0.0625rem 0.5625rem);
 }
 
 .mask-group-logo {
@@ -3380,6 +3419,11 @@ main {
   padding: 1.5rem 0 1.875rem;
 }
 
+section,
+.select {
+  position: relative;
+}
+
 .title {
   font-family: "YoungSerif-Regular", serif;
   font-weight: 600;
@@ -3417,7 +3461,7 @@ main {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 0.8125rem 1.5625rem;
   font-weight: 400;
@@ -3427,6 +3471,13 @@ main {
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.45);
+}
+.btn--center {
+  margin: 0 auto;
+}
+.btn--accent {
+  background: #447ef7;
+  color: white;
 }
 .btn:before {
   transition: 0.3s;
@@ -3594,6 +3645,99 @@ main {
   margin-left: 0.3125rem;
 }
 
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.45);
+  transition: 0.3s;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+}
+.button--center {
+  margin: 0 auto;
+}
+.button--clr-white {
+  color: white;
+}
+.button:hover {
+  color: white;
+}
+.button:hover:before {
+  opacity: 1;
+}
+.button:hover .mask-btn--border:before {
+  opacity: 1;
+}
+.button--hover:hover {
+  transform: translateY(-0.3125rem);
+}
+.button--icon {
+  padding-left: 3.125rem;
+}
+.button--icon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  width: 1.875rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.45;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.button--icon-favorites:before {
+  background-image: url("../img/icons/icon-favorites.svg");
+}
+
+.search {
+  position: relative;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+  transition: 0.3s;
+}
+.search__input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search--icon {
+  padding-left: 3.125rem;
+}
+.search--icon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  width: 1.875rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.45;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.search--icon-search:before {
+  background-image: url("../img/icons/icon-search.svg");
+}
+.search:hover {
+  color: white;
+}
+.search:hover:before {
+  opacity: 1;
+}
+.search:hover .mask-btn--border:before {
+  opacity: 1;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -3640,6 +3784,12 @@ main {
 }
 .header__nav-item:hover:before {
   right: 0;
+}
+.header__nav-item--active {
+  pointer-events: none;
+}
+.header__nav-item--active .header__nav-link {
+  color: rgba(255, 255, 255, 0.5);
 }
 .header__nav-link {
   position: relative;
@@ -4432,6 +4582,24 @@ main {
 .modal__label:last-child {
   margin-bottom: 0;
 }
+.modal__label--flex {
+  display: flex;
+  align-items: center;
+  gap: 0 0.9375rem;
+}
+.modal__label--flex .modal__nav-cripto-btn {
+  display: flex;
+  padding: 0.75rem;
+  align-items: center;
+  gap: 0 0.3125rem;
+  min-width: 5.625rem;
+}
+.modal__label--flex .modal__nav-cripto-btn-icon {
+  transform: translate(0);
+}
+.modal__label--flex .modal__input {
+  padding-top: 0;
+}
 .modal__label-icon {
   width: 2.625rem;
   height: 2.625rem;
@@ -4661,6 +4829,7 @@ main {
   background: rgba(30, 34, 52, 0.65);
   margin: 0 -1.875rem -1.875rem;
   padding: 0 1.875rem 1.875rem;
+  min-height: 35rem;
 }
 .modal__table {
   color: #99A3C9;
@@ -4726,11 +4895,109 @@ main {
 .modal__nav-cripto-btn--select.btn--active:before {
   background: #447ef7;
 }
+.modal__nav-nft-btn {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 0.625rem;
+}
+.modal__nav-nft-btn.btn--active {
+  background: transparent;
+}
+.modal__nav-nft-btn-icon {
+  display: inline-block;
+  width: 1.875rem;
+  height: auto;
+  margin-right: 0.625rem;
+}
 .modal__nav-cripto-btn-icon {
   display: inline-block;
   width: 0.875rem;
   height: auto;
   transform: translateY(0.125rem);
+}
+.modal__qr-wrapper {
+  margin-bottom: 0.9375rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5625rem;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5625rem;
+}
+.modal__qr-info {
+  max-width: 13.75rem;
+}
+.modal__qr-info-text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #99A3C9;
+  margin-bottom: 0.5rem;
+}
+.modal__qr-info-text--accent {
+  color: #447ef7;
+}
+.modal__qr-info-code {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #99A3C9;
+  margin-bottom: 1.125rem;
+  word-wrap: break-word;
+}
+.modal__qr-info-code--green {
+  color: #66BE47;
+}
+.modal__qr-img {
+  display: block;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.modal__about {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #A0ABD1;
+  margin-bottom: 0.9375rem;
+}
+.modal__about--white {
+  color: white;
+}
+.modal__about-more {
+  padding: 1.0625rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #A0ABD1;
+}
+.modal__about-more--accent {
+  color: #447ef7;
+  text-decoration: underline;
+}
+.modal__fiat-text {
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.5;
+  text-align: center;
+  color: #666D8A;
+  margin-bottom: 0.8125rem;
+}
+.modal__fiat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9375rem;
+  margin-bottom: 2.25rem;
+}
+.modal__fiat-btn {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.125rem 0.9375rem;
+  cursor: pointer;
+}
+.modal__fiat-btn--active:before {
+  background: #447ef7;
+}
+.modal__fiat-btn-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .hello {
@@ -4996,4 +5263,111 @@ main {
 }
 .slots__item {
   min-width: calc(100% / 3);
+}
+
+.providers {
+  padding: 2.875rem 2.5rem 1.75rem;
+}
+.providers__title {
+  font-family: "Pixel";
+  padding-bottom: 2.875rem;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 0.9;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.25rem;
+  color: white;
+}
+.providers__filter-wrapper {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  gap: 0.9375rem;
+  margin-bottom: 1.875rem;
+}
+.providers__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.9375rem;
+  margin-bottom: 1.875rem;
+}
+
+.select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.45);
+  transition: 0.3s;
+  padding: 0.625rem 3.125rem;
+  text-transform: uppercase;
+  z-index: 10;
+}
+.select:hover, .select--open {
+  color: white;
+}
+.select:hover:before, .select--open:before {
+  opacity: 1;
+}
+.select:hover:after, .select--open:after {
+  opacity: 1;
+}
+.select:hover .mask-btn--border:before, .select--open .mask-btn--border:before {
+  opacity: 1;
+}
+.select:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  width: 1.875rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.45;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.select:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  width: 1.875rem;
+  height: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.45;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  background-image: url("../img/icons/icon-select-more.svg");
+}
+.select--icon-providers:before {
+  background-image: url("../img/icons/icon-providers.svg");
+}
+.select__list {
+  position: absolute;
+  top: calc(100% - 0.0625rem);
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  pointer-events: auto;
+  opacity: 1;
+  padding: 0.9375rem;
+}
+.select__list--hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+.select__item {
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 0.625rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.select__item:last-child {
+  margin-bottom: 0;
+}
+.select__item:hover {
+  color: white;
 }

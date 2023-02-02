@@ -1,5 +1,5 @@
 .btn {
-    display: inline-block;
+    display: block;
     position: relative;
     padding: rem-calc(13) rem-calc(25);
     font-weight: 400;
@@ -9,6 +9,15 @@
     transition: .3s;
     background-color: rgba(255, 255, 255, .05);
     color: $clr-gray;
+
+    &--center {
+        margin: 0 auto;
+    }
+
+    &--accent {
+        background: $clr-accent;
+        color: $clr-white;
+    }
 
     &:before {
         transition: .3s;
