@@ -3131,7 +3131,7 @@
 .mask-bg--accent {
   background: #447ef7;
 }
-.mask-bg--lignt {
+.mask-bg--light {
   background: rgba(255, 255, 255, 0.03);
 }
 .mask-bg--black-blue {
@@ -3171,6 +3171,9 @@
   background: #3d445c;
   transition: 0.3s;
   clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem), 0% 0.5rem, 0.0625rem 0.5625rem, 0.0625rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) 0.5625rem, calc(100% - 0.3125rem) 0.5625rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.5625rem) 0.3125rem, calc(100% - 0.5625rem) 0.0625rem, 0.5625rem 0.0625rem, 0.5625rem 0.3125rem, 0.3125rem 0.3125rem, 0.3125rem 0.5625rem, 0.0625rem 0.5625rem);
+}
+.mask-btn--border-light:before {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .mask-btn-small {
@@ -3665,6 +3668,9 @@ section,
   padding: 0.625rem 0.9375rem;
   cursor: pointer;
 }
+.button:disabled, .button[disabled] {
+  pointer-events: none;
+}
 .button--center {
   margin: 0 auto;
 }
@@ -3692,6 +3698,12 @@ section,
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform: translateY(-50%);
+}
+.button--icon:disabled, .button--icon[disabled] {
+  color: rgba(255, 255, 255, 0.45);
+}
+.button--icon:disabled:before, .button--icon[disabled]:before {
+  opacity: 0.45;
 }
 .button--icon-favorites:before {
   background-image: url("../img/icons/icon-favorites.svg");
@@ -3732,6 +3744,18 @@ section,
 }
 .button--icon-footer-fb:before {
   background-image: url("../img/icons/icon-footer-fb.svg");
+}
+.button--icon-favorites-index:before {
+  background-image: url("../img/icons/icon-favorites-index.svg");
+}
+.button--icon-live-games:before {
+  background-image: url("../img/icons/icon-live-games.svg");
+}
+.button--icon-recently-played:before {
+  background-image: url("../img/icons/icon-recently-played.svg");
+}
+.button--icon-all-slots:before {
+  background-image: url("../img/icons/icon-all-slots.svg");
 }
 
 .search {
@@ -5031,11 +5055,9 @@ section,
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.hello__card-link {
+.hello__card-btn {
   margin-top: 1.875rem;
-}
-.hello__card-link:hover {
-  opacity: 0.7;
+  padding: 0.9375rem 2.3125rem;
 }
 .hello__card-img-wrapper {
   position: relative;
@@ -5120,6 +5142,7 @@ section,
 .filters__col {
   display: flex;
   align-items: center;
+  gap: 1.25rem;
 }
 .filters__col:nth-child(2) {
   justify-content: center;

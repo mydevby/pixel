@@ -18,7 +18,7 @@
 		background: $clr-accent;
 	}
 
-	&--lignt {
+	&--light {
 		background: rgba(255, 255, 255, .03);
 	}
 
@@ -113,6 +113,12 @@
 			)
 		}
     }
+
+	&--border-light {
+		&:before {
+			background: rgba(255,255,255,.1);
+		}
+	}
 }
 
 .mask-btn-small {

@@ -25,6 +25,7 @@
     &__col {
         display: flex;
         align-items: center;
+        gap: rem-calc(20);
 
         &:nth-child(2) {
             justify-content: center;

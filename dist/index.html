@@ -193,7 +193,10 @@
 				<div class="hello__card-content">
 					<h2 class="hello__card-title">Welcome <span class="hello__card-title--big">Bonus</span></h2>
 					<p class="hello__card-text">Win a cut of up to 24000 this monthly leaderboard!</p>
-					<a class="hello__card-link btn mask-small"href="#">Learn More</a>
+					<a class="hello__card-btn button button--load-more button--hover" href="#">
+						<div class="mask-bg mask-bg--accent mask-small"></div>
+						Learn More
+					</a>
 				</div>
 				<div class="hello__card-img-wrapper hello__card-img-wrapper--hero">
 					<img class="hello__card-img hello__card-img--hero" src="img/hello/hero.gif" alt="Hero">
@@ -203,7 +206,10 @@
 				<div class="hello__card-content">
 					<h2 class="hello__card-title"><span class="hello__card-title--custom">Crashed</span> <span class="hello__card-title--big">Space</span></h2>
 					<p class="hello__card-text">Win a Cut of up to 24000 This Monthly Leaderboard!</p>
-					<a class="hello__card-link btn mask-small" href="#">Learn More</a>
+					<a class="hello__card-btn button button--load-more button--hover" href="#">
+						<div class="mask-bg mask-bg--accent mask-small"></div>
+						Learn More
+					</a>
 				</div>
 				<div class="hello__card-img-wrapper hello__card-img-wrapper--spaceship">
 					<img class="hello__card-img" src="img/hello/spaceship.svg" alt="Spaceship">
@@ -261,36 +267,43 @@
 			<div class="filters__bg mask-block mask-block--border"></div>
 			<div class="filters__content">
 				<div class="filters__col">
-					<button class="filters__btn btn  btn--active btn--icon btn--all-slots mask-btn">
+					<button class="button button--icon button--icon-all-slots">
+						<div class="mask-bg mask-bg--accent mask-btn"></div>
 						All slots
 					</button>
-					<div class="filters__btn-wrapper">
-						<div class="filters__btn filters__btn-providers btn btn--icon btn--providers mask-btn">
-							PROVIDERS
+					<div class="select select--icon-providers js-select-providers">
+						<div class="mask-bg mask-bg--light mask-btn mask-btn--border mask-btn--border-light"></div>
+						<div class="select__text">
+							Providers
 						</div>
-						<ul class="filters__list-providers mask-btn">
-							<li class="filters__btn-item">Evoplay</li>
-							<li class="filters__btn-item">Pragmatic Play</li>
-							<li class="filters__btn-item">Betsoft</li>						
-							<li class="filters__btn-item">CT Interactive</li>						
-							<li class="filters__btn-item">NetEnt</li>
+						<ul class="select__list select__list--hidden js-select-list-providers">
+							<div class="mask-bg mask-bg--black-blue mask-btn mask-btn--border"></div>
+							<li class="select__item">Evoplay</li>
+							<li class="select__item">Pragmatic Play</li>
+							<li class="select__item">Betsoft</li>						
+							<li class="select__item">CT Interactive</li>						
+							<li class="select__item">NetEnt</li>
 						</ul>
 					</div>
 				</div>
 				<div class="filters__col">
-					<button class="filters__btn btn btn--active btn--icon btn--favorites mask-btn">
+					<button class="button button--icon button--icon-favorites-index">
+						<div class="mask-bg mask-bg--accent mask-btn"></div>
 						Favorites
 					</button>
-					<button class="filters__btn btn btn--icon btn--favorites mask-btn">
+					<button class="button button--hover button--icon button--icon-live-games">
+						<div class="mask-bg mask-bg--light mask-btn"></div>
 						Live Games
 					</button>
-					<button disabled class="filters__btn btn btn--icon btn--favorites mask-btn">
+					<button disabled class="button button--icon button--icon-recently-played">
+						<div class="mask-bg mask-bg--light mask-btn"></div>
 						Recently played
 					</button>
 				</div>
 				<div class="filters__col">
-					<label class="filters__btn-label btn btn--icon btn--search mask-btn">
-						<input class="filters__input-search" type="text" placeholder="Search">
+					<label class="search search--icon search--icon-search">
+						<div class="mask-bg mask-bg--light mask-btn mask-btn--border"></div>
+						<input  class="search__input" type="text" placeholder="Search">
 					</label>
 				</div>
 			</div>

@@ -46,12 +46,9 @@
         text-transform: uppercase;
     }
 
-    &__card-link {
+    &__card-btn {
         margin-top: rem-calc(30);
-
-        &:hover {
-            opacity: .7;
-        }
+        padding: rem-calc(15) rem-calc(37);
 	}
 
     &__card-img-wrapper {
