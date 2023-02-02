@@ -37,11 +37,11 @@
     }
 
     &:hover {
-        
+
         .mask-btn {
             &--border {
                 &:before {
-                    opacity: 1;
+                    background: #fff;
                 }
             }
         }

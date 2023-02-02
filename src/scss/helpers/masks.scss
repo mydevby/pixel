@@ -18,6 +18,10 @@
 		background: $clr-accent;
 	}
 
+	&--lignt {
+		background: rgba(255, 255, 255, .03);
+	}
+
 	&--black-blue {
 		background: #1e2234;
 	}
@@ -54,11 +58,10 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(255, 255, 255);
-			border: rem-calc(1) solid rgb(255, 255, 255);
-			opacity: .15;
+			background: #3d445c;
 			pointer-events: none;
 			z-index: 2;
+			transition: .3s;
 			clip-path: polygon(
 				0% $l-3, $l-1 $l-3, $l-1 $l-2, $l-2 $l-2, $l-2 $l-1, $l-3 $l-1, $l-3 0, 
 				$l-100-3 0, $l-100-3 $l-1, $l-100-2 $l-1, $l-100-2 $l-2, $l-100-1 $l-2, $l-100-1 $l-3, 100% $l-3,
@@ -96,8 +99,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(255, 255, 255);
-			opacity: .15;
+			background: #3d445c;
 			transition: .3s;
 			clip-path: polygon(
 				0% $l-2, $l-1 $l-2, $l-1 $l-1, $l-2 $l-1, $l-2 0, 
@@ -136,8 +138,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(255, 255, 255);
-			opacity: .15;
+			background: #3d445c;
 			transition: .3s;
 			clip-path: polygon(
 				0% $l-2, $l-1 $l-2, $l-1 $l-1, $l-2 $l-1, $l-2 0, 
@@ -181,10 +182,9 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(255, 255, 255);
-			border: rem-calc(1) solid rgb(255, 255, 255);
-			opacity: .15;
+			background: #3d445c;
 			pointer-events: none;
+			transition: .3s;
 			clip-path: polygon(
 				0% $l-3, $l-1 $l-3, $l-1 $l-2, $l-2 $l-2, $l-2 $l-1, $l-3 $l-1, $l-3 0, 
 				$l-100-3 0, $l-100-3 $l-1, $l-100-2 $l-1, $l-100-2 $l-2, $l-100-1 $l-2, $l-100-1 $l-3, 100% $l-3,
@@ -241,11 +241,10 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background: rgb(255, 255, 255);
-			border: rem-calc(1) solid rgb(255, 255, 255);
-			opacity: .15;
+			background: #3d445c;
 			pointer-events: none;
 			z-index: 5;
+			transition: .3s;
 			clip-path: polygon(
 				0% $l-3, $l-1 $l-3, $l-1 $l-2, $l-2 $l-2, $l-2 $l-1, $l-3 $l-1, $l-3 0, 
 				$l-100-3 0, $l-100-3 $l-1, $l-100-2 $l-1, $l-100-2 $l-2, $l-100-1 $l-2, $l-100-1 $l-3, 100% $l-3,
