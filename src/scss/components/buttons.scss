@@ -64,6 +64,20 @@
 		}
     }
 
+    &--transactions {
+        min-width: rem-calc(160);
+        text-align: center;
+        padding: rem-calc(13);
+        justify-content: center;
+
+        svg {
+            display: block;
+            width: rem-calc(24);
+            height: rem-calc(24);
+            margin-right: rem-calc(10);
+        }
+    }
+
     &--icon-favorites {
         &:before {
             background-image: url("../img/icons/icon-favorites.svg");
