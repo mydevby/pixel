@@ -122,31 +122,26 @@
         font-size: rem-calc(12);
         line-height: 1.5;
         margin-left: rem-calc(15);
-        transition: .3s;
         padding-left: rem-calc(20);
-        color: $clr-gray;
+        color: #99A3C9;
         cursor: pointer;
-
-        &:before {
-            content: "";
-            position: absolute;
-            transition: .3s;
-            opacity: 0.15;
-            top: 46%;
-            left: 0;
-            width: rem-calc(16);
-            height: rem-calc(16);
-            transform: translateY(-50%);
-            background: url("../img/modal/btn-transaction.svg") no-repeat 50% 50% /contain;
-        }
 
         &:hover {
             color: $clr-white;
-
-            &:before {
-                opacity: 1;
+            svg {
+                path {
+                    fill: $clr-white;
+                }
             }
         }
+    }
+
+    &__btn-transactions-icon {
+        width: rem-calc(16);
+        height: rem-calc(16);
+        transform: translateY(#{rem-calc(4)});
+        display: inline-block;
+        margin-right: rem-calc(5);
     }
 
     &__content-top-btn {
@@ -172,38 +167,18 @@
 
     &__close-modal {
         position: absolute;
-        display: block;
         top: rem-calc(22);
         right: rem-calc(20);
         font-size: 0;
         width: rem-calc(44);
         height: rem-calc(44);
         padding: 0;
-        z-index: 2;
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: rem-calc(23);
-            height: rem-calc(23);
-            background: url("../img/modal/btn-close-big.svg") no-repeat 50% 50% /contain;
-            transition: .3s;
-        }
 
         &--small {
-            width: rem-calc(30);
-            height: rem-calc(30);
             top: rem-calc(25);
             right: rem-calc(30);
-
-            &:after {
-                width: rem-calc(10);
-                height: rem-calc(10);
-                background-image: url("../img/modal/btn-close-small.svg");
-            }
+            width: rem-calc(30);
+            height: rem-calc(30);
         }
     }
 

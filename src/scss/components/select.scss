@@ -2,7 +2,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: $clr-gray;
+    color: $clr-white;
     transition: .3s;
     padding: rem-calc(10) rem-calc(50);
     text-transform: uppercase;
@@ -10,15 +10,6 @@
 
     &:hover,
     &--open {
-        color: $clr-white;
-
-        &:before {
-            opacity: 1;
-        }
-
-        &:after {
-            opacity: 1;
-        }
 
         .mask-btn {
             &--border {
@@ -39,9 +30,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        opacity: .45;
         transform: translateY(-50%);
-        transition: .3s;
     }
 
     &:after {
@@ -54,9 +43,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        opacity: .45;
         transform: translateY(-50%);
-        transition: .3s;
         background-image: url("../img/icons/icon-select-more.svg");
     }
 

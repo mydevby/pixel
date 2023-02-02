@@ -8,7 +8,7 @@
     cursor: pointer;
     transition: .3s;
     background-color: rgba(255, 255, 255, .05);
-    color: $clr-gray;
+    color: $clr-white;
 
     &--center {
         margin: 0 auto;
@@ -25,7 +25,6 @@
     }
 
     &:hover {
-        color: $clr-white;
         transform: translateY(#{rem-calc(-5)});
         &:before {
             opacity: 1;
@@ -33,7 +32,6 @@
     }
     
     &--active {
-        color: $clr-white;
         background-color: $clr-accent;
         pointer-events: none;
         &:before {
