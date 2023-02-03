@@ -3546,6 +3546,9 @@ section,
   background: #447ef7;
   color: white;
 }
+.btn--black {
+  background: #1e2234;
+}
 .btn:before {
   transition: 0.3s;
 }
@@ -4661,6 +4664,9 @@ section,
 .modal__label:last-child {
   margin-bottom: 0;
 }
+.modal__label--custom-buy {
+  margin-bottom: 0.3125rem;
+}
 .modal__label--flex {
   display: flex;
   align-items: center;
@@ -4736,6 +4742,9 @@ section,
 .modal__input-wrapper--money, .modal__input-wrapper--code {
   padding-right: 6.25rem;
 }
+.modal__input-wrapper--money-dollar, .modal__input-wrapper--money-btc {
+  padding-right: 9.375rem;
+}
 .modal__input-text-money {
   position: absolute;
   display: block;
@@ -4745,6 +4754,11 @@ section,
   padding: 0;
   transform: translateY(-50%);
   text-align: right;
+}
+.modal__input-text-money--buy {
+  width: 8.75rem;
+  font-size: 1.125rem;
+  right: 1.5625rem;
 }
 .modal__input-text-money-top {
   font-size: 0.75rem;
@@ -5015,6 +5029,9 @@ section,
   padding-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
+.modal__nav-cripto--buy {
+  margin-bottom: 0.3125rem;
+}
 .modal__nav-cripto--select {
   gap: 0.625rem;
   justify-content: space-between;
@@ -5034,6 +5051,11 @@ section,
 }
 .modal__nav-cripto-btn--select.btn--active:before {
   background: #447ef7;
+}
+.modal__nav-cripto-btn--buy {
+  padding: 0.875rem 1.875rem;
+  font-size: 1rem;
+  pointer-events: auto;
 }
 .modal__nav-nft-btn {
   color: white;
@@ -5124,11 +5146,18 @@ section,
   color: #666D8A;
   margin-bottom: 0.8125rem;
 }
+.modal__fiat-text--buy {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
 .modal__fiat-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.9375rem;
   margin-bottom: 2.25rem;
+}
+.modal__fiat-grid--buy {
+  margin-bottom: 1.5rem;
 }
 .modal__fiat-btn {
   height: 5rem;
@@ -5147,6 +5176,17 @@ section,
 .modal__fiat-btn-img {
   max-width: 100%;
   height: auto;
+}
+.modal__buy-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.modal__buy-text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #99A3C9;
+  margin-bottom: 0.3125rem;
 }
 
 .hello {

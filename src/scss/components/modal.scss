@@ -214,6 +214,10 @@
             margin-bottom: 0;
         }
 
+        &--custom-buy {
+            margin-bottom: rem-calc(5);
+        }
+
         &--flex {
             display: flex;
             align-items: center;
@@ -309,6 +313,11 @@
         &--code {
             padding-right: rem-calc(100);
         }
+
+        &--money-dollar,
+        &--money-btc {
+            padding-right: rem-calc(150);
+        }
     }
 
     &__input-text-money {
@@ -320,6 +329,12 @@
         padding: 0;
         transform: translateY(-50%);
         text-align: right;
+
+        &--buy {
+            width: rem-calc(140);
+            font-size: rem-calc(18);
+            right: rem-calc(25);
+        }
     }
 
     &__input-text-money-top {
@@ -654,6 +669,10 @@
         padding-top: rem-calc(20);
         margin-bottom: rem-calc(20);
 
+        &--buy {
+            margin-bottom: rem-calc(5);
+        }
+
         &--select {
             gap: rem-calc(10);
             justify-content: space-between;
@@ -676,6 +695,12 @@
                     background: $clr-accent;
                 }
             }
+        }
+
+        &--buy {
+            padding: rem-calc(14) rem-calc(30);
+            font-size: rem-calc(16);
+            pointer-events: auto;
         }
     }
 
@@ -781,6 +806,11 @@
         text-align: center;        
         color: #666D8A;
         margin-bottom: rem-calc(13);
+
+        &--buy {
+            text-align: left;
+            margin-bottom: rem-calc(20);
+        }
     }
 
     &__fiat-grid {
@@ -788,6 +818,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: rem-calc(15);
         margin-bottom: rem-calc(36);
+
+        &--buy {
+            margin-bottom: rem-calc(24);
+        }
     }
 
     &__fiat-btn {
@@ -809,5 +843,18 @@
     &__fiat-btn-img {
         max-width: 100%;
         height: auto;
+    }
+
+    &__buy-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem-calc(20);
+    }
+
+    &__buy-text {
+        font-size: rem-calc(12);
+        line-height: 1.5;
+        color: #99A3C9;
+        margin-bottom: rem-calc(5);
     }
 }

@@ -19,6 +19,10 @@
         color: $clr-white;
     }
 
+    &--black {
+        background: #1e2234;
+    }
+
     &:before {
         transition: .3s;
     }

@@ -210,7 +210,7 @@
                     Modal Deposit NFT +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--buy-crypto">
-                    Modal Buy Crypto
+                    Modal Buy Crypto +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--swap">
                     Modal Swap
@@ -644,7 +644,7 @@
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
 					</label>
-					<div class="modal__fiat-text">Select Payment Metho</div>
+					<div class="modal__fiat-text">Select Payment Method</div>
 					<div class="modal__fiat-grid">
 						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-1-x2.min.png" alt="Logo 1">
@@ -769,24 +769,56 @@
 					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
-					<div class="modal__nav-cripto">
+					<div class="modal__nav-cripto modal__nav-cripto--buy">
 						<button class="modal__nav-cripto-btn btn btn--active mask-btn"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-moon-pay.svg" alt="MOON PAY"> MOON PAY</button>
 						<button class="modal__nav-cripto-btn btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-banha.svg" alt="BANXA"> BANXA</button>
 					</div>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--dollar mask-btn mask-btn--border"></div>
-						<div class="modal__input-wrapper">
-							<div class="modal__input-name">Promo-code</div>
+					<div class="modal__buy-text">You pay with</div>
+					<label class="modal__label modal__label--custom-buy modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-cripto-btn btn btn--black mask-btn">
+							<img class="modal__nav-cripto-btn-icon" src="img/icons/icon-buy-dollar.svg" alt="Dollar">
+							USD
+							<img class="modal__nav-cripto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
+						</div>
+						<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
-					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
-						<div class="modal__input-wrapper">
-							<div class="modal__input-name">Promo-code</div>
-							<input class="modal__input" type="text" placeholder=" ">
+						<div class="modal__input-text-money modal__input-text-money--buy">
+							50.00
 						</div>
 					</label>
+					<div class="modal__buy-text">You get</div>
+					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-cripto-btn btn btn--black mask-btn">
+							<img class="modal__nav-cripto-btn-icon" src="img/icons/icon-buy-bitcoin.svg" alt="Bitcoin">
+							BTC
+							<img class="modal__nav-cripto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
+						</div>
+						<div class="modal__input-wrapper modal__input-wrapper--money-btc">
+							<input class="modal__input" type="text" placeholder=" ">
+						</div>
+						<div class="modal__input-text-money modal__input-text-money--buy">
+							0.00228246
+						</div>
+					</label>
+					<div class="modal__fiat-text modal__fiat-text--buy">Payment Method Selection</div>
+					<div class="modal__fiat-grid modal__fiat-grid--buy">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
+							<img class="modal__fiat-btn-img" src="img/modal/logo-1-x2.min.png" alt="Logo 1">
+						</button>
+						<button class="modal__fiat-btn btn modal__fiat-btn--active fiat-btn fiat-btn--border">
+							<img class="modal__fiat-btn-img" src="img/modal/logo-2-x2.min.png" alt="Logo 2">
+						</button>
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
+							<img class="modal__fiat-btn-img" src="img/modal/logo-3-x2.min.png" alt="Logo 3">
+						</button>
+					</div>
+					<div class="modal__buy-btn-wrapper">
+						<button class="modal__nav-cripto-btn modal__nav-cripto-btn--buy btn btn--active mask-btn">Buy Now</button>
+					</div>
+					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
+						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
+					</div>
 				</div>
 			</div>
 		</div>
