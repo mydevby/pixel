@@ -194,6 +194,11 @@
             transform: translate(0);
         }
 
+        &--select {
+            height: rem-calc(52);
+            background: transparent;
+        }
+
         &:has(.modal__input:not(:placeholder-shown)),
         &:has(.modal__input:focus) {
             .modal__input-name {

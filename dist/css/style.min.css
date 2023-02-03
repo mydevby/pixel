@@ -4647,6 +4647,10 @@ section,
 .modal__label:hover {
   transform: translate(0);
 }
+.modal__label--select {
+  height: 3.25rem;
+  background: transparent;
+}
 .modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input-name, .modal__label:has(.modal__input:focus) .modal__input-name {
   top: 0;
   transform: translate(0);
@@ -5475,6 +5479,15 @@ section,
 }
 .select--icon-providers:before {
   background-image: url("../img/icons/icon-providers.svg");
+}
+.select--icon-bayk {
+  padding-left: 3.4375rem;
+}
+.select--icon-bayk:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-bayk.svg");
 }
 .select__list {
   position: absolute;

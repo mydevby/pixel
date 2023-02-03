@@ -207,7 +207,7 @@
                     Modal Deposit Fiat +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-nft">
-                    Modal Deposit NFT
+                    Modal Deposit NFT +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--buy-crypto">
                     Modal Buy Crypto
@@ -703,16 +703,21 @@
 						<button class="modal__nav-cripto-btn btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-dollar.svg" alt="FIAT"> FIAT</button>
 						<button class="modal__nav-cripto-btn btn btn--active mask-btn"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-flag.svg" alt="NFT"> NFT</button>
 					</div>
-					<label class="modal__label modal__label--flex btn mask-btn mask-btn--border">
-						<div class="modal__nav-nft-btn btn btn--active mask-btn">
-							<img class="modal__nav-nft-btn-icon" src="img/modal/icon-bayk.svg" alt="Bayk">
+					<div class="modal__label modal__label--select select select--icon-bayk js-select-providers">
+						<div class="mask-bg mask-bg--light mask-btn mask-btn--border"></div>
+						<div class="select__text">
 							BAYC
 						</div>
-						<div class="modal__input-wrapper">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
+						<ul class="select__list select__list--hidden js-select-list-providers">
+							<div class="mask-bg mask-bg--black-blue mask-btn mask-btn--border"></div>
+							<li class="select__item">Evoplay</li>
+							<li class="select__item">Pragmatic Play</li>
+							<li class="select__item">Betsoft</li>						
+							<li class="select__item">CT Interactive</li>						
+							<li class="select__item">NetEnt</li>
+						</ul>
+					</div>
+					<label class="modal__label modal__label--light btn mask-modal mask-modal--border">
 						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
 						<div class="modal__input-wrapper">
 							<div class="modal__input-name">Promo-code</div>
@@ -731,7 +736,7 @@
 						<span  class="modal__about--white">NOTE:</span> Send only BTC to this address.<br>
 						Coins will be credited after 2 network confirmations.
 					</div>
-					<div class="modal__about-more mask-btn mask-btn--border">
+					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
 						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
 					</div>
 				</div>

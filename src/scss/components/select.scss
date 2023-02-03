@@ -53,6 +53,16 @@
         }
     }
 
+    &--icon-bayk {
+        padding-left: rem-calc(55);
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-bayk.svg");
+        }
+    }
+
     &__list {
         position: absolute;
         top: calc(100% - #{rem-calc(1)});
