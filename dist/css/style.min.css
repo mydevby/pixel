@@ -3172,6 +3172,12 @@
   transition: 0.3s;
   clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem), 0% 0.5rem, 0.0625rem 0.5625rem, 0.0625rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) 0.5625rem, calc(100% - 0.3125rem) 0.5625rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.5625rem) 0.3125rem, calc(100% - 0.5625rem) 0.0625rem, 0.5625rem 0.0625rem, 0.5625rem 0.3125rem, 0.3125rem 0.3125rem, 0.3125rem 0.5625rem, 0.0625rem 0.5625rem);
 }
+.mask-btn--border.mask-btn--border-custom {
+  background-color: transparent;
+}
+.mask-btn--border.mask-btn--border-custom:before {
+  background: rgba(255, 255, 255, 0.15);
+}
 .mask-btn--border-light:before {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -3236,6 +3242,26 @@
 
 .mask-group-logo {
   clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
+}
+
+.mask-modal {
+  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
+}
+.mask-modal--border {
+  position: relative;
+}
+.mask-modal--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  pointer-events: none;
+  z-index: 5;
+  transition: 0.3s;
+  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem), 0% 0.5625rem, 0.0625rem 0.625rem, 0.0625rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) 0.625rem, calc(100% - 0.25rem) 0.625rem, calc(100% - 0.25rem) 0.4375rem, calc(100% - 0.4375rem) 0.4375rem, calc(100% - 0.4375rem) 0.25rem, calc(100% - 0.625rem) 0.25rem, calc(100% - 0.625rem) 0.0625rem, 0.625rem 0.0625rem, 0.625rem 0.25rem, 0.4375rem 0.25rem, 0.4375rem 0.4375rem, 0.25rem 0.4375rem, 0.25rem 0.625rem);
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
@@ -4625,55 +4651,49 @@ section,
 .modal__label--flex .modal__input {
   padding-top: 0;
 }
+.modal__label--light {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(27.5px);
+}
 .modal__label-icon {
   width: 2.625rem;
   height: 2.625rem;
-  background: #447ef7;
-}
-.modal__label-icon:after {
-  content: "";
-  top: 50%;
-  left: 1.125rem;
-  width: 1rem;
-  height: 1rem;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
-  position: absolute;
-  transform: translateY(-50%);
 }
-.modal__label-icon--email:after {
-  background-image: url("../img/modal/icon-email.svg");
+.modal__label-icon--email {
+  background-image: url("../img/icons/icon-blue-email.svg");
 }
-.modal__label-icon--password:after {
-  background-image: url("../img/modal/icon-password.svg");
+.modal__label-icon--password {
+  background-image: url("../img/icons/icon-blue-password.svg");
 }
-.modal__label-icon--math:after {
-  background-image: url("../img/modal/icon-math.svg");
+.modal__label-icon--math {
+  background-image: url("../img/icons/icon-blue-math.svg");
 }
-.modal__label-icon--name:after {
-  background-image: url("../img/modal/icon-name.svg");
+.modal__label-icon--name {
+  background-image: url("../img/icons/icon-blue-name.svg");
 }
-.modal__label-icon--flag:after {
-  background-image: url("../img/modal/icon-flag.svg");
+.modal__label-icon--flag {
+  background-image: url("../img/icons/icon-blue-flag.svg");
 }
-.modal__label-icon--dollar:after {
-  background-image: url("../img/modal/icon-dollar.svg");
+.modal__label-icon--dollar {
+  background-image: url("../img/icons/icon-blue-dollar.svg");
 }
-.modal__label-icon--gift:after {
-  background-image: url("../img/modal/icon-gift.svg");
+.modal__label-icon--gift {
+  background-image: url("../img/icons/icon-blue-gift.svg");
 }
-.modal__label-icon--nickname:after {
-  background-image: url("../img/modal/icon-nickname.svg");
+.modal__label-icon--nickname {
+  background-image: url("../img/icons/icon-blue-nickname.svg");
 }
-.modal__label-icon--birthday:after {
-  background-image: url("../img/modal/icon-birthday.svg");
+.modal__label-icon--birthday {
+  background-image: url("../img/icons/icon-blue-birthday.svg");
 }
-.modal__label-icon--gender:after {
-  background-image: url("../img/modal/icon-gender.svg");
+.modal__label-icon--gender {
+  background-image: url("../img/icons/icon-blue-gender.svg");
 }
-.modal__label-icon--code:after {
-  background-image: url("../img/modal/icon-code.svg");
+.modal__label-icon--code {
+  background-image: url("../img/icons/icon-blue-code.svg");
 }
 .modal__input-wrapper {
   position: relative;
@@ -4681,6 +4701,73 @@ section,
   padding-right: 1.5625rem;
   display: flex;
   align-items: center;
+}
+.modal__input-wrapper--password {
+  padding-right: 3.125rem;
+}
+.modal__input-wrapper--money, .modal__input-wrapper--code {
+  padding-right: 6.25rem;
+}
+.modal__input-text-money {
+  position: absolute;
+  display: block;
+  width: 5rem;
+  top: 50%;
+  right: 1.25rem;
+  padding: 0;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.modal__input-text-money-top {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.35);
+}
+.modal__input-text-money-bottom {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  text-align: right;
+  letter-spacing: -0.05em;
+  color: white;
+  margin-top: -0.3125rem;
+}
+.modal__input-text-money-bottom--green {
+  color: #66BE47;
+  font-size: 0.9375rem;
+}
+.modal__input-btn {
+  position: absolute;
+  display: block;
+  width: 1.625rem;
+  height: 1.625rem;
+  top: 50%;
+  right: 0.8125rem;
+  padding: 0;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+.modal__input-btn:hover {
+  transform: translate(0, -50%);
+}
+.modal__input-btn--password {
+  background-image: url(../img/icons/icon-input-btn-password.svg);
+}
+.modal__input-btn--time {
+  background-image: url(../img/icons/icon-input-btn-time.svg);
+}
+.modal__input-text {
+  position: absolute;
+  top: 50%;
+  right: 3.125rem;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: white;
+  opacity: 0.25;
 }
 .modal__input-name {
   position: absolute;
@@ -4994,6 +5081,12 @@ section,
 .modal__about-more--accent {
   color: #447ef7;
   text-decoration: underline;
+}
+.modal__about-more:hover {
+  transform: translateY(0);
+}
+.modal__about-more:hover:before {
+  background: #3d445c;
 }
 .modal__fiat-text {
   font-size: 0.875rem;

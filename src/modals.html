@@ -187,41 +187,42 @@
 	</header>
 
 	<main class="main">
+
         <section class="modals">
 			<div class="modals__bg"></div>
 			<div class="modals__content mask-btn mask-btn--border">
-                <button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--login">
-                    Modal Login
+                <button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--login">
+                    Modal Login +
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--registration">
-                    Modal Registration
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--registration">
+                    Modal Registration +
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--code-confirm">
-                    Modal Code Confirm
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--code-confirm">
+                    Modal Code Confirm +
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--deposit-cripto">
-                    Modal Deposit Cripto
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-cripto">
+                    Modal Deposit Cripto +
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--deposit-fiat">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-fiat">
                     Modal Deposit Fiat
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--deposit-nft">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-nft">
                     Modal Deposit NFT
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--buy-crypto">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--buy-crypto">
                     Modal Buy Crypto
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--swap">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--swap">
                     Modal Swap
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--transfer">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--transfer">
                     Modal Transfer to User
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--withdraw">
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--withdraw">
                     Modal Withdraw
                 </button>
-				<button class="modals__btn btn mask-btn mask-btn--border open-modal" data-modal-content-class="modal__content--transactions">
-                    Modal Transactions
+				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--transactions">
+                    Modal Transactions +
                 </button>
 			</div>
         </section>
@@ -334,7 +335,7 @@
 
 		<div class="modal__content modal__content modal__content--login">
 			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg mask-bg--dark mask-btn mask-btn--border"></div>
+				<div class="mask-bg mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__grid modal__grid--2-col">
@@ -346,37 +347,38 @@
 						<button class="modal__content-top-btn btn btn--active mask-btn">Login</button>
 						<button  class="modal__content-top-btn btn mask-btn mask-btn--border">Registration</button>
 					</div>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--email mask-btn mask-btn--border"></div>
+					<label class="modal__label btn mask-modal mask-modal--border">
+						<div class="modal__label-icon modal__label-icon--email"></div>
 						<div class="modal__input-wrapper">
 							<div class="modal__input-name">Email or phone</div>
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
 					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--password mask-btn mask-btn--border"></div>
-						<div class="modal__input-wrapper">
+					<label class="modal__label btn mask-modal mask-modal--border">
+						<div class="modal__label-icon modal__label-icon--password"></div>
+						<div class="modal__input-wrapper modal__input-wrapper--password">
 							<div class="modal__input-name">Password</div>
 							<input class="modal__input" type="password" placeholder=" ">
+							<button class="modal__input-btn modal__input-btn--password btn mask-btn-small mask-btn-small--border"></button>
 						</div>
 					</label>
 					<div class="modal__line"></div>
 					<p class="modal__text">Or log in via social networks</p>
 					<div class="modal__social-btn-list">
-						<button class="modal__social-btn modal__social-btn--tg btn mask-btn mask-btn--border"></button>
-						<button class="modal__social-btn modal__social-btn--yt btn mask-btn mask-btn--border"></button>
-						<button class="modal__social-btn modal__social-btn--in btn mask-btn mask-btn--border"></button>
-						<button class="modal__social-btn modal__social-btn--tw btn mask-btn mask-btn--border"></button>
-						<button class="modal__social-btn modal__social-btn--fb btn mask-btn mask-btn--border"></button>
+						<button class="modal__social-btn modal__social-btn--tg btn mask-modal mask-modal--border"></button>
+						<button class="modal__social-btn modal__social-btn--yt btn mask-modal mask-modal--border"></button>
+						<button class="modal__social-btn modal__social-btn--in btn mask-modal mask-modal--border"></button>
+						<button class="modal__social-btn modal__social-btn--tw btn mask-modal mask-modal--border"></button>
+						<button class="modal__social-btn modal__social-btn--fb btn mask-modal mask-modal--border"></button>
 					</div>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--math mask-btn mask-btn--border"></div>
+					<label class="modal__label btn mask-modal mask-modal--border">
+						<div class="modal__label-icon modal__label-icon--math"></div>
 						<div class="modal__input-wrapper">
 							<div class="modal__input-name">How much is 5+6 ?</div>
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
 					</label>
-					<button class="modal__btn btn mask-btn">
+					<button class="modal__btn btn mask-modal">
 						Login to Account <img class="modal__btn-icon-arrow" src="img/modal/icon-arrow.svg" alt="Arrow">
 					</button>
 				</div>
@@ -385,7 +387,7 @@
 
 		<div class="modal__content modal__content modal__content--registration">
 			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg mask-bg--dark mask-btn mask-btn--border"></div>
+				<div class="mask-bg  mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__grid modal__grid--2-col">
@@ -399,36 +401,36 @@
 					</div>
 					<div class="modal__grid modal__grid--2-col-login">
 						<div class="modal__col">
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--name mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--name"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Name</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--email mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--email"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Email or phone</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--flag mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--flag"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Country</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--dollar mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--dollar"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Currencty</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--gift"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Promo-code</div>
 									<input class="modal__input" type="text" placeholder=" ">
@@ -436,36 +438,36 @@
 							</label>
 						</div>
 						<div class="modal__col">
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--nickname mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--nickname"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Nickname</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--birthday mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--birthday"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Birthday</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--gender mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--gender"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Gender</div>
 									<input class="modal__input" type="text" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--password mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--password"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Password</div>
 									<input class="modal__input" type="password" placeholder=" ">
 								</div>
 							</label>
-							<label class="modal__label btn mask-btn mask-btn--border">
-								<div class="modal__label-icon modal__label-icon--password mask-btn mask-btn--border"></div>
+							<label class="modal__label btn mask-modal mask-modal--border">
+								<div class="modal__label-icon modal__label-icon--password"></div>
 								<div class="modal__input-wrapper">
 									<div class="modal__input-name">Password</div>
 									<input class="modal__input" type="password" placeholder=" ">
@@ -473,7 +475,7 @@
 							</label>
 						</div>
 					</div>
-					<button class="modal__btn modal__btn--registration btn mask-btn">
+					<button class="modal__btn modal__btn--registration btn mask-modal">
 						Create New Account <img class="modal__btn-icon-add" src="img/modal/icon-add.svg" alt="Add">
 					</button>
 				</div>
@@ -482,29 +484,31 @@
 
 		<div class="modal__content modal__content modal__content--code-confirm">
 			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg mask-bg--dark mask-btn mask-btn--border"></div>
+				<div class="mask-bg  mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--code-confirm">
 				<h2 class="modal__title--code-confirm">Please confirm your email</h2>
-				<label class="modal__label btn mask-btn mask-btn--border">
-					<div class="modal__label-icon modal__label-icon--email mask-btn mask-btn--border"></div>
+				<label class="modal__label btn mask-modal mask-modal--border">
+					<div class="modal__label-icon modal__label-icon--email"></div>
 					<div class="modal__input-wrapper">
 						<div class="modal__input-name">Email or phone</div>
 						<input class="modal__input" type="text" placeholder=" ">
 					</div>
 				</label>
-				<label class="modal__label btn mask-btn mask-btn--border">
-					<div class="modal__label-icon modal__label-icon--code mask-btn mask-btn--border"></div>
-					<div class="modal__input-wrapper">
+				<label class="modal__label btn mask-modal mask-modal--border">
+					<div class="modal__label-icon modal__label-icon--code"></div>
+					<div class="modal__input-wrapper  modal__input-wrapper--code">
 						<div class="modal__input-name">Code</div>
 						<input class="modal__input" type="text" placeholder=" ">
 					</div>
+					<div class="modal__input-text">00:31</div>
+					<button class="modal__input-btn modal__input-btn--time btn mask-btn-small mask-btn-small--border"></button>
 				</label>
-				<button class="modal__btn btn mask-btn">
+				<button class="modal__btn btn mask-modal">
 					Continue <img class="modal__btn-icon-arrow" src="img/modal/icon-arrow.svg" alt="Continue">
 				</button>
-				<button class="modal__btn modal__btn--code-confirm btn mask-btn mask-btn--border">
+				<button class="modal__btn modal__btn--code-confirm btn mask-modal mask-modal--border">
 					<img class="modal__btn-icon-arrow-back" src="img/modal/icon-arrow-back.svg" alt="Back"> Back
 				</button>
 			</div>
@@ -512,7 +516,7 @@
 
 		<div class="modal__content modal__content modal__content--deposit-cripto">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-bg--black mask-bg--filter mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--deposit-cripto">
@@ -530,10 +534,10 @@
 				</div>
 				<div class="modal__nav">
 					<button class="modal__nav-btn modal__nav-btn--deposit btn btn--active mask-btn">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__nav-cripto">
@@ -548,17 +552,21 @@
 						<button class="modal__nav-cripto-btn modal__nav-cripto-btn--select btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-trx.svg" alt="TRX"> TRX</button>
 						<button class="modal__nav-cripto-btn modal__nav-cripto-btn--select btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-bnb.svg" alt="BNB"> BNB</button>
 					</div>
-					<label class="modal__label modal__label--flex btn mask-btn mask-btn--border">
+					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
 						<div class="modal__nav-cripto-btn btn btn--active mask-btn">
 							<img class="modal__nav-cripto-btn-icon" src="img/modal/btn-transaction.svg" alt="CRYPTO">
 							USD
 							<img class="modal__nav-cripto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper">
+						<div class="modal__input-wrapper modal__input-wrapper--money">
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
+						<div class="modal__input-text-money">
+							<div class="modal__input-text-money-top">Balance</div>
+							<div class="modal__input-text-money-bottom"><span class="modal__input-text-money-bottom--green">$</span>500.34</div>
+						</div>
 					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
+					<label class="modal__label modal__label--light btn mask-modal mask-modal--border">
 						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
 						<div class="modal__input-wrapper">
 							<div class="modal__input-name">Promo-code</div>
@@ -577,7 +585,7 @@
 						<span  class="modal__about--white">NOTE:</span> Send only BTC to this address.<br>
 						Coins will be credited after 2 network confirmations.
 					</div>
-					<div class="modal__about-more mask-btn mask-btn--border">
+					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
 						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
 					</div>
 				</div>
@@ -586,7 +594,7 @@
 
 		<div class="modal__content modal__content modal__content--deposit-fiat">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--deposit-fiat">
@@ -604,10 +612,10 @@
 				</div>
 				<div class="modal__nav">
 					<button class="modal__nav-btn modal__nav-btn--deposit btn btn--active mask-btn">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__nav-cripto">
@@ -662,7 +670,7 @@
 
 		<div class="modal__content modal__content modal__content--deposit-nft">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--deposit-nft">
@@ -680,10 +688,10 @@
 				</div>
 				<div class="modal__nav">
 					<button class="modal__nav-btn modal__nav-btn--deposit btn btn--active mask-btn">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__nav-cripto">
@@ -728,7 +736,7 @@
 
 		<div class="modal__content modal__content modal__content--buy-crypto">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--buy-crypto">
@@ -745,11 +753,11 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
 					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn btn--active">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__nav-cripto">
@@ -775,7 +783,10 @@
 		</div>
 
 		<div class="modal__content modal__content modal__content--swap">
-			<button class="modal__close-modal modal__close-modal--small btn mask-btn mask-btn--border">Close</button>
+			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
+				Close
+			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--swap">
 				<div class="modal__content-top modal__content-top--big">
 					<h2 class="modal__title">Wallet</h2>
@@ -790,11 +801,11 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
 					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn btn--active">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<label class="modal__label btn mask-btn mask-btn--border">
@@ -816,7 +827,10 @@
 		</div>
 
 		<div class="modal__content modal__content modal__content--transfer">
-			<button class="modal__close-modal modal__close-modal--small btn mask-btn mask-btn--border">Close</button>
+			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
+				Close
+			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--transfer">
 				<div class="modal__content-top modal__content-top--big">
 					<h2 class="modal__title">Wallet</h2>
@@ -831,11 +845,11 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
 					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn btn--active">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<label class="modal__label btn mask-btn mask-btn--border">
@@ -858,7 +872,7 @@
 
 		<div class="modal__content modal__content modal__content--withdraw">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--withdraw">
@@ -875,10 +889,10 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn btn mask-btn mask-btn--border">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-cripto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer btn btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
 					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn btn--active">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
@@ -913,7 +927,7 @@
 
 		<div class="modal__content modal__content modal__content--transactions">
 			<button class="modal__close-modal modal__close-modal--small button button--hover button--icon button--icon-close-small">
-				<div class="mask-bg mask-bg--dark mask-btn-small mask-btn-small--border"></div>
+				<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--transactions">
@@ -922,14 +936,14 @@
 				</div>
 				<div class="modal__nav modal__nav--transactions">
 					<button class="button button--transactions button--icon button--icon-transactions-deposit">
-						<div class="mask-bg mask-bg--accent mask-btn-small"></div>
+						<div class="mask-bg mask-bg--accent mask-btn"></div>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12.5 10.8333V5H10.8333V10.8333H5V12.5H10.8333V18.3333H12.5V12.5H18.3333V10.8333H12.5Z" fill="white"/>
 						</svg>
 						DEPOSIT
 					</button>
 					<button class="button button--transactions button--icon button--hover button--icon-transactions-buy-swap">
-						<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
+						<div class="mask-bg mask-btn mask-btn--border mask-btn--border-custom"></div>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M15 4V5H9V4H15Z" fill="white"/><path d="M7 6V5H9V6H7Z" fill="white"/><path d="M6 7V6H7V7H6Z" fill="white"/><path d="M5 9V7H6V9H5Z" fill="white"/><path d="M5 15H4V9H5V15Z" fill="white"/><path d="M6 17H5V15H6V17Z" fill="white"/><path d="M7 18H6V17H7V18Z" fill="white"/><path d="M9 19H7V18H9V19Z" fill="white"/><path d="M15 19V20H9V19H15Z" fill="white"/><path d="M17 18V19H15V18H17Z" fill="white"/><path d="M18 17V18H17V17H18Z" fill="white"/>
 							<path d="M19 15V17H18V15H19Z" fill="white"/>
@@ -942,7 +956,7 @@
 						Buy&Swap
 					</button>
 					<button class="button button--transactions button--icon button--hover button--icon-transactions-withdraw">
-						<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
+						<div class="mask-bg mask-btn mask-btn--border mask-btn--border-custom"></div>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M6.00002 18H4.99998L5 17H5.99998L6.00002 18Z" fill="white"/>
 							<path d="M18 18H17V17H18V18Z" fill="white"/>
@@ -960,7 +974,7 @@
 						Withdraw
 					</button>
 					<button class="button button--transactions button--icon button--hover button--icon-transactions-bill">
-						<div class="mask-bg mask-btn-small mask-btn-small--border"></div>
+						<div class="mask-bg mask-btn mask-btn--border mask-btn--border-custom"></div>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M16 6L15 6L15 7L16 7V6Z" fill="white"/>
 							<path d="M8 17L9 17V18L8 18V17Z" fill="white"/>

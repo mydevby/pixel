@@ -230,90 +230,62 @@
                 padding-top: 0;
             }
         }
+
+        &--light {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(27.5px);
+        }
     }
 
     &__label-icon {
         width: rem-calc(42);
         height: rem-calc(42);
-        background: $clr-accent;
-
-        &:after {
-            content: "";
-            top: 50%;
-            left: rem-calc(18);
-            width: rem-calc(16);
-            height: rem-calc(16);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            background-size: contain;
-            position: absolute;
-            transform: translateY(-50%);
-        }
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
 
         &--email {
-            &:after {
-                background-image: url("../img/modal/icon-email.svg");
-            }
+            background-image: url("../img/icons/icon-blue-email.svg");
         }
 
         &--password {
-            &:after {
-                background-image: url("../img/modal/icon-password.svg");
-            }
+            background-image: url("../img/icons/icon-blue-password.svg");
         }
 
         &--math {
-            &:after {
-                background-image: url("../img/modal/icon-math.svg");
-            }
+            background-image: url("../img/icons/icon-blue-math.svg");
         }
 
         &--name {
-            &:after {
-                background-image: url("../img/modal/icon-name.svg");
-            }
+            background-image: url("../img/icons/icon-blue-name.svg");
         }
 
         &--flag {
-            &:after {
-                background-image: url("../img/modal/icon-flag.svg");
-            }
+            background-image: url("../img/icons/icon-blue-flag.svg");
         }
 
         &--dollar {
-            &:after {
-                background-image: url("../img/modal/icon-dollar.svg");
-            }
+                background-image: url("../img/icons/icon-blue-dollar.svg");
         }
 
         &--gift {
-            &:after {
-                background-image: url("../img/modal/icon-gift.svg");
-            }
+            background-image: url("../img/icons/icon-blue-gift.svg");
         }
 
         &--nickname {
-            &:after {
-                background-image: url("../img/modal/icon-nickname.svg");
-            }
+            background-image: url("../img/icons/icon-blue-nickname.svg");
         }
 
         &--birthday {
-            &:after {
-                background-image: url("../img/modal/icon-birthday.svg");
-            }
+            background-image: url("../img/icons/icon-blue-birthday.svg");
         }
 
         &--gender {
-            &:after {
-                background-image: url("../img/modal/icon-gender.svg");
-            }
+            background-image: url("../img/icons/icon-blue-gender.svg");
         }
 
         &--code {
-            &:after {
-                background-image: url("../img/modal/icon-code.svg");
-            }
+            background-image: url("../img/icons/icon-blue-code.svg");
         }
     }
 
@@ -323,6 +295,85 @@
         padding-right: rem-calc(25);
         display: flex;
         align-items: center;
+
+        &--password {
+            padding-right: rem-calc(50);
+        }
+
+        &--money,
+        &--code {
+            padding-right: rem-calc(100);
+        }
+    }
+
+    &__input-text-money {
+        position: absolute;
+        display: block;
+        width: rem-calc(80);
+        top: 50%;
+        right: rem-calc(20);
+        padding: 0;
+        transform: translateY(-50%);
+        text-align: right;
+    }
+
+    &__input-text-money-top {
+        font-size: rem-calc(12);
+        line-height: 1.5;
+        text-align: right;
+        color: rgba(255, 255, 255, .35);
+    }
+
+    &__input-text-money-bottom {
+        font-size: rem-calc(13);
+        line-height: 1.5;
+        text-align: right;
+        letter-spacing: -0.05em;
+        color: $clr-white;
+        margin-top: rem-calc(-5);
+
+        &--green {
+            color: #66BE47;
+            font-size: rem-calc(15);
+        }
+    }
+
+    &__input-btn {
+        position: absolute;
+        display: block;
+        width: rem-calc(26);
+        height: rem-calc(26);
+        top: 50%;
+        right: rem-calc(13);
+        padding: 0;
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+        background-color: transparent;
+
+        &:hover {
+            transform: translate(0, -50%);
+        }
+
+        &--password {
+            background-image: url(../img/icons/icon-input-btn-password.svg);
+        }
+
+        &--time {
+            background-image: url(../img/icons/icon-input-btn-time.svg);
+        }
+    }
+
+    &__input-text {
+        position: absolute;
+        top: 50%;
+        right: rem-calc(50);
+        transform: translateY(-50%);
+        font-size: rem-calc(12);
+        line-height: 1.5;
+        color: $clr-white;
+        opacity: .25;
     }
 
     &__input-name {
@@ -707,6 +758,14 @@
         &--accent {
             color: $clr-accent;
             text-decoration: underline;
+        }
+
+        &:hover {
+            transform: translateY(0);
+
+            &:before {
+                background: #3d445c;
+            }
         }
     }
 
