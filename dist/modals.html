@@ -204,7 +204,7 @@
                     Modal Deposit Cripto +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-fiat">
-                    Modal Deposit Fiat
+                    Modal Deposit Fiat +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--deposit-nft">
                     Modal Deposit NFT
@@ -623,17 +623,21 @@
 						<button class="modal__nav-cripto-btn btn btn--active mask-btn"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-dollar.svg" alt="FIAT"> FIAT</button>
 						<button class="modal__nav-cripto-btn btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-flag.svg" alt="NFT"> NFT</button>
 					</div>
-					<label class="modal__label modal__label--flex btn mask-btn mask-btn--border">
+					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
 						<div class="modal__nav-cripto-btn btn btn--active mask-btn">
 							<img class="modal__nav-cripto-btn-icon" src="img/modal/btn-transaction.svg" alt="CRYPTO">
 							USD
 							<img class="modal__nav-cripto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper">
+						<div class="modal__input-wrapper modal__input-wrapper--money">
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
+						<div class="modal__input-text-money">
+							<div class="modal__input-text-money-top">Balance</div>
+							<div class="modal__input-text-money-bottom"><span class="modal__input-text-money-bottom--green">$</span>500.34</div>
+						</div>
 					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
+					<label class="modal__label modal__label--light btn mask-modal mask-modal--border">
 						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
 						<div class="modal__input-wrapper">
 							<div class="modal__input-name">Promo-code</div>
@@ -642,26 +646,26 @@
 					</label>
 					<div class="modal__fiat-text">Select Payment Metho</div>
 					<div class="modal__fiat-grid">
-						<button class="modal__fiat-btn mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-1-x2.min.png" alt="Logo 1">
 						</button>
-						<button class="modal__fiat-btn modal__fiat-btn--active mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn modal__fiat-btn--active fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-2-x2.min.png" alt="Logo 2">
 						</button>
-						<button class="modal__fiat-btn mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-3-x2.min.png" alt="Logo 3">
 						</button>
-						<button class="modal__fiat-btn mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-1-x2.min.png" alt="Logo 1">
 						</button>
-						<button class="modal__fiat-btn mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-2-x2.min.png" alt="Logo 2">
 						</button>
-						<button class="modal__fiat-btn mask-btn mask-btn--border">
+						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
 							<img class="modal__fiat-btn-img" src="img/modal/logo-3-x2.min.png" alt="Logo 3">
 						</button>
 					</div>
-					<div class="modal__about-more mask-btn mask-btn--border">
+					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
 						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
 					</div>
 				</div>

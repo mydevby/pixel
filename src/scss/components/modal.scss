@@ -794,6 +794,7 @@
         cursor: pointer;
 
         &--active {
+            pointer-events: none;
             &:before {
                 background: $clr-accent;
             }

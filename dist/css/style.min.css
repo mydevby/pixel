@@ -3264,6 +3264,30 @@
   clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem), 0% 0.5625rem, 0.0625rem 0.625rem, 0.0625rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) 0.625rem, calc(100% - 0.25rem) 0.625rem, calc(100% - 0.25rem) 0.4375rem, calc(100% - 0.4375rem) 0.4375rem, calc(100% - 0.4375rem) 0.25rem, calc(100% - 0.625rem) 0.25rem, calc(100% - 0.625rem) 0.0625rem, 0.625rem 0.0625rem, 0.625rem 0.25rem, 0.4375rem 0.25rem, 0.4375rem 0.4375rem, 0.25rem 0.4375rem, 0.25rem 0.625rem);
 }
 
+.fiat-btn {
+  clip-path: polygon(0% 0.9375rem, 0.46875rem 0.9375rem, 0.46875rem 0.46875rem, 0.9375rem 0.46875rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.46875rem, calc(100% - 0.46875rem) 0.46875rem, calc(100% - 0.46875rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.46875rem) calc(100% - 0.9375rem), calc(100% - 0.46875rem) calc(100% - 0.46875rem), calc(100% - 0.9375rem) calc(100% - 0.46875rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.46875rem), 0.46875rem calc(100% - 0.46875rem), 0.46875rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem));
+}
+.fiat-btn--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  transition: 0.3s;
+  clip-path: polygon(0% 0.9375rem, 0.46875rem 0.9375rem, 0.46875rem 0.46875rem, 0.9375rem 0.46875rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.46875rem, calc(100% - 0.46875rem) 0.46875rem, calc(100% - 0.46875rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.46875rem) calc(100% - 0.9375rem), calc(100% - 0.46875rem) calc(100% - 0.46875rem), calc(100% - 0.9375rem) calc(100% - 0.46875rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.46875rem), 0.46875rem calc(100% - 0.46875rem), 0.46875rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem), 0% 0.9375rem, 0.0625rem 1rem, 0.0625rem calc(100% - 1rem), 0.53125rem calc(100% - 1rem), 0.53125rem calc(100% - 0.53125rem), 1rem calc(100% - 0.53125rem), 1rem calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.53125rem), calc(100% - 0.53125rem) calc(100% - 0.53125rem), calc(100% - 0.53125rem) calc(100% - 1rem), calc(100% - 0.0625rem) calc(100% - 1rem), calc(100% - 0.0625rem) 1rem, calc(100% - 0.53125rem) 1rem, calc(100% - 0.53125rem) 0.53125rem, calc(100% - 1rem) 0.53125rem, calc(100% - 1rem) 0.0625rem, 1rem 0.0625rem, 1rem 0.53125rem, 0.53125rem 0.53125rem, 0.53125rem 1rem, 0.0625rem 1rem);
+}
+.fiat-btn--border.mask-btn--border-custom {
+  background-color: transparent;
+}
+.fiat-btn--border.mask-btn--border-custom:before {
+  background: rgba(255, 255, 255, 0.15);
+}
+.fiat-btn--border-light:before {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -5109,6 +5133,9 @@ section,
   justify-content: center;
   padding: 1.125rem 0.9375rem;
   cursor: pointer;
+}
+.modal__fiat-btn--active {
+  pointer-events: none;
 }
 .modal__fiat-btn--active:before {
   background: #447ef7;
