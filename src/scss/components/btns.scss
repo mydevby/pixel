@@ -42,6 +42,25 @@
         }
     }
 
+    &--active-swap {
+        background-color: $clr-accent;
+        margin: rem-calc(-22) auto;
+        position: relative;
+        z-index: 2;
+        &:before {
+            opacity: 1;           
+        }
+
+        &:after {
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+        }
+
+        &:hover {
+            transform: translate(0);
+        }
+    }
+
     &--header {
         color: $clr-white;
         background-color: $clr-accent;
