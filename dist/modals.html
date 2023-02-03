@@ -219,7 +219,7 @@
                     Modal Transfer to User +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--withdraw">
-                    Modal Withdraw
+                    Modal Withdraw +
                 </button>
 				<button class="modals__btn btn btn--accent mask-modal open-modal" data-modal-content-class="modal__content--transactions">
                     Modal Transactions +
@@ -334,8 +334,8 @@
 	<div class="modal__window mask-block mask-block--border">
 
 		<div class="modal__content modal__content modal__content--login">
-			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
+			<button class="modal__close-modal modal__close-modal button button--hover button--icon button--icon-close">
+				<div class="mask-bg mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__grid modal__grid--2-col">
@@ -386,8 +386,8 @@
 		</div>
 
 		<div class="modal__content modal__content modal__content--registration">
-			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg  mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
+			<button class="modal__close-modal modal__close-modal button button--hover button--icon button--icon-close">
+				<div class="mask-bg mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__grid modal__grid--2-col">
@@ -483,8 +483,8 @@
 		</div>
 
 		<div class="modal__content modal__content modal__content--code-confirm">
-			<button class="modal__close-modal button button--hover button--icon button--icon-close">
-				<div class="mask-bg  mask-bg--black mask-bg--filter mask-btn mask-btn--border"></div>
+			<button class="modal__close-modal modal__close-modal button button--hover button--icon button--icon-close">
+				<div class="mask-bg mask-btn mask-btn--border"></div>
 				Close
 			</button>
 			<div class="modal__content-wrapper modal__content-wrapper--code-confirm">
@@ -997,27 +997,53 @@
 						<button class="modal__nav-cripto-btn btn btn--active mask-btn"><img class="modal__nav-cripto-btn-icon" src="img/modal/btn-transaction.svg" alt="CRYPTO"> CRYPTO</button>
 						<button class="modal__nav-cripto-btn btn mask-btn mask-btn--border"><img class="modal__nav-cripto-btn-icon" src="img/modal/icon-dollar.svg" alt="FIAT"> FIAT</button>
 					</div>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--dollar mask-btn mask-btn--border"></div>
-						<div class="modal__input-wrapper">
-							<div class="modal__input-name">Promo-code</div>
+					<div class="modal__withdraw-text modal__withdraw-text--right">
+						Record
+					</div>
+					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-cripto-btn modal__nav-cripto-btn--swap btn btn--black mask-btn">
+							<img class="modal__nav-cripto-btn-icon" src="img/icons/icon-buy-usdt.svg" alt="Dollar">
+							USDT
+							<img class="modal__nav-cripto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
+						</div>
+						<div class="modal__input-wrapper modal__input-wrapper--money">
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
-					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
-						<div class="modal__input-wrapper">
-							<div class="modal__input-name">Promo-code</div>
-							<input class="modal__input" type="text" placeholder=" ">
+						<div class="modal__input-text-money">
+							<div class="modal__input-text-money-top">Balance</div>
+							<div class="modal__input-text-money-bottom"><span class="modal__input-text-money-bottom--green">$</span>500.34</div>
 						</div>
 					</label>
-					<label class="modal__label btn mask-btn mask-btn--border">
-						<div class="modal__label-icon modal__label-icon--gift mask-btn mask-btn--border"></div>
+					<div class="modal__withdraw-text modal__withdraw-text--left">
+						Withdraw Address
+					</div>
+					<label class="modal__label modal__label--withdraw-full btn mask-btn mask-btn--border">
 						<div class="modal__input-wrapper">
-							<div class="modal__input-name">Promo-code</div>
-							<input class="modal__input" type="text" placeholder=" ">
+							<input class="modal__input modal__input--withdraw" type="text" placeholder=" " value="TRDgb98gqBm2yZMxHDRrvSMwx9ioJCB7S1">
 						</div>
 					</label>
+					<div class="modal__withdraw-text modal__withdraw-text--left">
+						Withdraw amount
+					</div>
+					<label class="modal__label modal__label--withdraw btn mask-btn mask-btn--border">
+						<div class="modal__input-wrapper">
+							<input class="modal__input modal__input--withdraw" type="text" placeholder=" " value="0.000000">
+						</div>
+						<button class="btn btn--withdraw mask-btn mask-btn--border">MIN</button>
+						<button class="btn btn--withdraw mask-btn mask-btn--border">25%</button>
+						<button class="btn btn--withdraw mask-btn mask-btn--border">50%</button>
+						<button class="btn btn--withdraw mask-btn mask-btn--border">MAX</button>
+					</label>
+					<div class="modal__withdraw-text-big">
+						Fee <span class="modal__withdraw-text-big--green">2.221604 USDT</span>
+					</div>
+					<div class="modal__buy-btn-wrapper modal__buy-btn-wrapper--withdraw">
+						<button class="modal__nav-cripto-btn modal__nav-cripto-btn--buy btn btn--active mask-btn">Confirm</button>
+					</div>
+					<div class="modal__withdraw-text">
+						For security purposes, large or suspicious withdrawal<br>
+						may take 1-6 hours for audit process. We appreciate your patience!
+					</div>
 				</div>
 			</div>
 		</div>

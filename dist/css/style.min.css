@@ -3539,6 +3539,16 @@ section,
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
 }
+.btn--withdraw {
+  padding: 0.3125rem;
+  text-align: center;
+  max-height: 1.875rem;
+  margin-top: 0.5rem;
+  transform: translateX(-0.625rem);
+}
+.btn--withdraw:hover {
+  transform: translateX(-0.625rem) translateY(0) !important;
+}
 .btn--center {
   margin: 0 auto;
 }
@@ -4346,6 +4356,7 @@ section,
   margin-right: 0.625rem;
   font-size: 0;
   padding: 0;
+  background-color: rgba(255, 255, 255, 0.03);
 }
 .footer__social-link:before {
   left: 50%;
@@ -4666,6 +4677,17 @@ section,
 .modal__label:hover {
   transform: translate(0);
 }
+.modal__label--withdraw {
+  grid-template-columns: 1fr 2.875rem 2.875rem 2.875rem 2.875rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(27.5px);
+  gap: 0.25rem;
+}
+.modal__label--withdraw-full {
+  grid-template-columns: 1fr;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(27.5px);
+}
 .modal__label--select {
   height: 3.25rem;
   background: transparent;
@@ -4697,6 +4719,9 @@ section,
   align-items: center;
   gap: 0 0.3125rem;
   min-width: 5.625rem;
+}
+.modal__label--flex .modal__nav-cripto-btn:hover {
+  transform: translate(0);
 }
 .modal__label--flex .modal__nav-cripto-btn--swap {
   min-width: 6.25rem;
@@ -4764,6 +4789,9 @@ section,
 }
 .modal__input-wrapper--password {
   padding-right: 3.125rem;
+}
+.modal__input-wrapper--withdraw {
+  padding: 0;
 }
 .modal__input-wrapper--money, .modal__input-wrapper--code {
   padding-right: 6.25rem;
@@ -4869,6 +4897,9 @@ section,
 .modal__input:not([type=password]) {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.modal__input--withdraw {
+  padding: 0.625rem 1.25rem;
 }
 .modal__line {
   height: 0.0625rem;
@@ -5225,6 +5256,9 @@ section,
 .modal__buy-btn-wrapper--transfer {
   margin-bottom: 10.625rem;
 }
+.modal__buy-btn-wrapper--withdraw {
+  margin-bottom: 2.125rem;
+}
 .modal__buy-text {
   font-size: 0.75rem;
   line-height: 1.5;
@@ -5258,6 +5292,32 @@ section,
   color: #99A3C9;
   margin-bottom: 1.75rem;
   margin-top: -0.625rem;
+}
+.modal__withdraw-text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #666D8A;
+}
+.modal__withdraw-text--right {
+  margin-top: -1.25rem;
+  text-align: right;
+  margin-bottom: 0.3125rem;
+}
+.modal__withdraw-text--left {
+  margin-top: -0.3125rem;
+  text-align: left;
+  margin-bottom: 0.625rem;
+}
+.modal__withdraw-text-big {
+  margin-bottom: 2.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #666D8A;
+}
+.modal__withdraw-text-big--green {
+  color: #66BE47;
 }
 
 .hello {

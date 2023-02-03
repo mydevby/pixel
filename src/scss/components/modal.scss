@@ -194,6 +194,19 @@
             transform: translate(0);
         }
 
+        &--withdraw {
+            grid-template-columns: 1fr rem-calc(46) rem-calc(46) rem-calc(46) rem-calc(46);
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(27.5px);
+            gap: rem-calc(4);
+        }
+
+        &--withdraw-full {
+            grid-template-columns: 1fr;
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(27.5px);
+        }
+
         &--select {
             height: rem-calc(52);
             background: transparent;
@@ -233,6 +246,10 @@
                 align-items: center;
                 gap: 0 rem-calc(5);
                 min-width: rem-calc(90);
+
+                &:hover {
+                    transform: translate(0);
+                }
 
                 &--swap {
                     min-width: rem-calc(100);
@@ -320,6 +337,10 @@
 
         &--password {
             padding-right: rem-calc(50);
+        }
+
+        &--withdraw {
+            padding: 0;
         }
 
         &--money,
@@ -443,6 +464,10 @@
         &:not([type="password"]) {
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        &--withdraw {
+            padding: rem-calc(10) rem-calc(20);
         }
     }
 
@@ -885,6 +910,10 @@
         &--transfer {
             margin-bottom: rem-calc(170);
         }
+
+        &--withdraw {
+            margin-bottom: rem-calc(34);
+        }
     }
 
     &__buy-text {
@@ -926,5 +955,36 @@
         color: #99A3C9;
         margin-bottom: rem-calc(28);
         margin-top: rem-calc(-10);
+    }
+
+    &__withdraw-text {
+        font-size: rem-calc(12);
+        line-height: 1.5;
+        text-align: center;        
+        color: #666D8A;
+
+        &--right {
+            margin-top: rem-calc(-20);
+            text-align: right;
+            margin-bottom: rem-calc(5);
+        }
+
+        &--left {
+            margin-top: rem-calc(-5);
+            text-align: left;
+            margin-bottom: rem-calc(10);
+        }
+    }
+
+    &__withdraw-text-big {
+        margin-bottom: rem-calc(36);
+        font-size: rem-calc(16);
+        line-height: 1.5;
+        text-align: center;        
+        color: #666D8A;
+
+        &--green {
+            color: #66BE47;
+        }
     }
 }
