@@ -5,8 +5,7 @@
     margin-bottom: rem-calc(30);
 
     &__card {
-        background: rgba(255, 255, 255, 0.01);
-        backdrop-filter: blur(12.5px);
+        position: relative;
         padding: rem-calc(40) rem-calc(40) rem-calc(40) rem-calc(60);
         display: grid;
         grid-template-columns: rem-calc(250) 1fr;

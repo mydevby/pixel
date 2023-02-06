@@ -2,6 +2,20 @@
     position: relative;
     border-radius: rem-calc(10);
     background: transparent;
+
+    &__btn-fafourites {
+        position: absolute;
+        width: rem-calc(35);
+        height: rem-calc(35);
+        background: url("../img/icons/icon-slot-favorites.svg") no-repeat 50% 50% /contain;
+        z-index: 5;
+        top: rem-calc(18);
+        right: rem-calc(20);
+        font-size: 0;
+        cursor: pointer;
+        transition: .3s;
+    }
+
     &:before {
         content: "";
         position: absolute;

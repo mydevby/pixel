@@ -1,0 +1,46 @@
+.slot-open {
+    padding: rem-calc(40) rem-calc(40) rem-calc(52);
+
+    &__iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: rem-calc(35);
+        border-radius: rem-calc(10) rem-calc(10) 0 0;
+    }
+
+    &__info {
+        padding: rem-calc(45) rem-calc(45) rem-calc(25);
+        position: relative;        
+    }
+
+    &__info-title {
+        font-family: "Pixel";
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: rem-calc(28);
+        line-height: .9;
+        margin-bottom: rem-calc(15);
+        color: $clr-white;
+    }
+
+    &__info-text {
+        font-weight: 700;
+        font-size: rem-calc(14);
+        line-height: 1.79;
+        color: #99A3C9;
+        padding-bottom: rem-calc(15);
+        margin-bottom: rem-calc(20);
+        border-bottom: rem-calc(1) solid rgba(255, 255, 255, .15);
+    }
+
+    &__info-title-settings {
+        font-family: "Pixel";
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: rem-calc(16);
+        line-height: 1.5;
+        margin-bottom: rem-calc(15);
+        color: $clr-white;
+    }
+}

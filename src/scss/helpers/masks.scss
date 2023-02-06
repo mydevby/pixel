@@ -26,6 +26,10 @@
 		background: #1e2234;
 	}
 
+	&--black-slot-open {
+		background: rgba(30, 34, 52, 0.65);
+	}
+
 	&--filter {
 		backdrop-filter: blur(12.5px);
 	}
@@ -187,7 +191,7 @@
 			$l-3 100%, $l-3 $l-100-1, $l-2 $l-100-1, $l-2 $l-100-2, $l-1 $l-100-2, $l-1 $l-100-3, 0% $l-100-3);
 
 	&--border {
-		position: relative;
+		position: absolute;
 		&:before {
 			content: "";
 			position: absolute;
@@ -246,7 +250,7 @@
 			$l-3 100%, $l-3 $l-100-1, $l-2 $l-100-1, $l-2 $l-100-2, $l-1 $l-100-2, $l-1 $l-100-3, 0% $l-100-3);
 
 	&--border {
-		position: relative;
+		position: absolute;
 		&:before {
 			content: "";
 			position: absolute;

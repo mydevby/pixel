@@ -64,4 +64,14 @@ window.onload = function() {
 		});
 	};
 
+	if (document.querySelector('.documents__nav-link') !== null) {
+		let arrNavLinks  = document.querySelectorAll('.documents__nav-link');
+		arrNavLinks.forEach(navLink => {
+			navLink.addEventListener('click', function(e) {
+				document.querySelector('.documents__nav-link--active').classList.remove('documents__nav-link--active');
+				this.classList.add('documents__nav-link--active');		
+			});
+		});
+	};
+
 };

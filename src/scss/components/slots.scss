@@ -5,10 +5,8 @@
     margin-bottom: rem-calc(30);
 
     &__group {
-        background: rgba(255, 255, 255, 0.01);
-        backdrop-filter: blur(12.5px);
         padding: rem-calc(16) rem-calc(18) rem-calc(19);
-        min-height: rem-calc(50);
+        position: relative;
     }
 
     &__group-info {
