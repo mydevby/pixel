@@ -326,6 +326,10 @@
         &--code {
             background-image: url("../img/icons/icon-blue-code.svg");
         }
+
+        &--ukraine {
+            background-image: url("../img/user/icon-ukraine.svg");
+        }
     }
 
     &__input-wrapper {
@@ -421,6 +425,17 @@
             background-image: url(../img/icons/icon-input-btn-password.svg);
         }
 
+        &--key {
+            width: rem-calc(34);
+            height: rem-calc(34);
+            background-image: url("../img/icons/icon-input-btn-key.svg");
+            opacity: .25;
+        }
+
+        &--good {
+            background-image: url(../img/icons/icon-input-btn-good.svg);
+        }
+
         &--time {
             background-image: url(../img/icons/icon-input-btn-time.svg);
         }
@@ -468,6 +483,10 @@
 
         &--withdraw {
             padding: rem-calc(10) rem-calc(20);
+        }
+
+        &--code {
+            letter-spacing: rem-calc(24);
         }
     }
 

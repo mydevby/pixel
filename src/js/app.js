@@ -74,4 +74,14 @@ window.onload = function() {
 		});
 	};
 
+	if (document.querySelector('.profile__nav-link') !== null) {
+		let arrNavLinks  = document.querySelectorAll('.profile__nav-link');
+		arrNavLinks.forEach(navLink => {
+			navLink.addEventListener('click', function(e) {
+				document.querySelector('.profile__nav-link--active').classList.remove('profile__nav-link--active');
+				this.classList.add('profile__nav-link--active');		
+			});
+		});
+	};
+
 };
