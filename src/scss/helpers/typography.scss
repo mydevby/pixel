@@ -1,17 +1,11 @@
 .title {
-    font-family: "YoungSerif-Regular", serif;
-    font-weight: 600;
+    font-family: "Pixel", Arial, Helvetica, sans-serif;
+    font-weight: 400;
 
     &--level-1,
-	&--level-2 {
-		font-size: 40px;
-		line-height: 1;
-        @media (max-width: 1024px) {
-            font-size: 35px;
-        }
-        @media (max-width: 768px) {
-            font-size: 30px;
-        }
+    &--level-2 {
+		font-size: rem-calc(28);
+        line-height: .9;
     }
 
     &--level-3 {
@@ -28,8 +22,75 @@
     &--accent {
         color: $clr-accent;
     }
+
+    &--white {
+        color: $clr-white;
+    }
+
+    &--gray {
+        color: $clr-gray;
+    }
+
+    &--upp {
+        text-transform: uppercase;
+    }
+    
+    &--center {
+        text-align: center;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
+    }
+
+    &--section {
+        padding-bottom: rem-calc(46);
+        border-bottom: rem-calc(1) solid rgba(255, 255, 255, .1);
+        margin-bottom: rem-calc(30);
+    }    
 }
 
-.text-upp {
-    text-transform: uppercase;
+.text {
+    font-size: rem-calc(16);
+    line-height: 1.5;
+
+    &--small {
+        font-size: rem-calc(12);
+    }
+
+    &--accent {
+        color: $clr-accent;
+    }
+
+    &--white {
+        color: $clr-white;
+    }
+
+    &--gray {
+        color: $clr-gray;
+    }
+
+    &--green {
+        color: #66BE47;
+    }
+
+    &--upp {
+        text-transform: uppercase;
+    }
+    
+    &--center {
+        text-align: center;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
+    }
 }

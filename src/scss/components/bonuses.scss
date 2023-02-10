@@ -1,0 +1,77 @@
+.bonuses {
+    padding: rem-calc(46) rem-calc(40) rem-calc(60);
+
+    &__list {
+        gap: rem-calc(20);
+    }
+
+    &__item {
+        min-height: rem-calc(223);
+        padding: rem-calc(40);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-repeat: no-repeat;
+        cursor: pointer;
+
+        &--1 {
+            background-image: url(../img/bonuses/bonus-1-x2.min.png);
+            background-size: rem-calc(287) rem-calc(163);
+            background-position: calc(100% - #{rem-calc(44)}) rem-calc(58);
+            justify-content: flex-start;
+        }
+
+        &--2 {
+            background-image: url(../img/bonuses/bonus-2-x2.min.png);
+            background-size: rem-calc(215) rem-calc(216);
+            background-position: calc(100% - #{rem-calc(40)}) 0%; 
+        }
+
+        &--3 {
+            background-image: url(../img/bonuses/bonus-3-x2.min.png);
+            background-size: rem-calc(264) rem-calc(162);
+            background-position: calc(100% - #{rem-calc(34)}) rem-calc(35); 
+        }
+
+        &--4 {
+            background-image: url(../img/bonuses/bonus-4-x2.min.png);
+            background-size: rem-calc(235) rem-calc(215);
+            background-position: calc(100% - #{rem-calc(40)}) 0%; 
+        }
+
+        &--5 {
+            background-image: url(../img/bonuses/bonus-5-x2.min.png);
+            background-size: rem-calc(135) rem-calc(120);
+            background-position: calc(100% - #{rem-calc(40)}) rem-calc(45);
+        }
+
+        &--6 {
+            background-image: url(../img/bonuses/bonus-6-x2.min.png);
+            background-size: rem-calc(120) rem-calc(120);
+            background-position: calc(100% - #{rem-calc(40)}) rem-calc(45); 
+        }
+
+        &--7 {
+            background-image: url(../img/bonuses/bonus-7-x2.min.png);
+            background-size: rem-calc(139) rem-calc(120);
+            background-position: calc(100% - #{rem-calc(40)}) 50%;
+        }
+    }
+
+    &__title {
+        margin-bottom: rem-calc(10);
+    }
+
+    &__text {
+        &--timer {
+            margin-top: rem-calc(17);
+            margin-bottom: rem-calc(5);
+        }
+    }
+
+    &__item-btn {
+        padding: rem-calc(12) rem-calc(28) rem-calc(15);
+        margin-top: rem-calc(10);
+    }
+}
