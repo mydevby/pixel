@@ -3167,6 +3167,9 @@
 .mask-bg--filter {
   backdrop-filter: blur(0.78125rem);
 }
+.mask-bg--filter-22 {
+  backdrop-filter: blur(1.40625rem);
+}
 .mask-bg--filter-27 {
   backdrop-filter: blur(1.71875rem);
 }
@@ -3951,6 +3954,12 @@ section,
 }
 .button--icon-favorites:before {
   background-image: url("../img/icons/icon-favorites.svg");
+}
+.button--icon-back:before {
+  width: 1.25rem;
+  height: 0.9375rem;
+  background-image: url("../img/icons/icon-back.svg");
+  left: 1.25rem;
 }
 .button--icon-close {
   z-index: 5;
@@ -6938,4 +6947,233 @@ section,
   font-size: 0.875rem;
   padding: 0.9375rem 2rem;
   min-width: 10rem;
+}
+
+.contacts-and-support {
+  display: grid;
+  grid-template-columns: 31.25rem 1fr;
+  gap: 1.875rem;
+}
+.contacts-and-support__nav-list {
+  position: relative;
+  padding: 2.5rem 3.125rem;
+  align-self: start;
+}
+.contacts-and-support__nav-link {
+  position: relative;
+  display: block;
+  margin-bottom: 1.25rem;
+  padding: 0.625rem;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+.contacts-and-support__nav-link:last-child {
+  margin-bottom: 0;
+}
+.contacts-and-support__nav-link .mask-block {
+  background: rgba(30, 34, 52, 0.65);
+}
+.contacts-and-support__nav-link--active {
+  pointer-events: none;
+}
+.contacts-and-support__nav-link--active .mask-block {
+  background: #447ef7;
+}
+.contacts-and-support__nav-link--active .mask-block--border:before {
+  background: transparent;
+}
+.contacts-and-support__nav-link--active .profile__nav-link-icon-img {
+  fill: #447ef7;
+}
+.contacts-and-support__nav-link--active .profile__nav-link-icon-bg {
+  fill: white;
+}
+.contacts-and-support__nav-link:hover .profile__nav-link-icon-more path, .contacts-and-support__nav-link--active .profile__nav-link-icon-more path {
+  fill: white;
+}
+.contacts-and-support__nav-link:hover .mask-block--border:before {
+  background: white;
+}
+.contacts-and-support__nav-link:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1.4375rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  transform: translateY(-50%);
+  background: url("../img/contacts-and-support/icon-nav.svg") no-repeat 50% 50%/contain;
+}
+.contacts-and-support__nav-link-icon {
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-right: 0.625rem;
+}
+.contacts-and-support__nav-link-icon path {
+  transition: 0.3s;
+}
+.contacts-and-support__info {
+  position: relative;
+  padding: 1.875rem 2.5rem 2.5rem;
+  min-height: 37.5rem;
+}
+.contacts-and-support__title {
+  padding-bottom: 1.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.contacts-and-support__social-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.0625rem;
+}
+.contacts-and-support__contacts-content-btn-wrapper {
+  max-width: 9.375rem;
+  margin: 0 auto;
+}
+.contacts-and-support__nav-btns-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.contacts-and-support__nav-btns-top-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.125rem;
+}
+.contacts-and-support__nav-btns-bottom-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.contacts-and-support__nav-link-text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-and-support__nav-link-top {
+  display: flex;
+  align-items: flex-end;
+}
+.contacts-and-support__nav-link-top--small {
+  margin-left: 0.9375rem;
+}
+.contacts-and-support__chat-wrapper {
+  position: relative;
+  min-height: calc(100% - 6.25rem);
+  padding-bottom: 6.25rem;
+  margin-bottom: 3.125rem;
+}
+.contacts-and-support__chat-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4.375rem;
+}
+.contacts-and-support__chat-input {
+  padding: 1.375rem 5.125rem 1.375rem 1.875rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.45);
+  transition: 0.3s;
+}
+.contacts-and-support__chat-input:focus, .contacts-and-support__chat-input:hover {
+  color: white;
+}
+.contacts-and-support__chat-btn {
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: url("../img/contacts-and-support/icon-chat-new-message.svg") no-repeat 50% 50%/contain;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.contacts-and-support__message {
+  position: relative;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
+  color: white;
+}
+.contacts-and-support__message:last-child {
+  border-bottom-color: transparent;
+  margin-bottom: 0;
+}
+.contacts-and-support__message--user {
+  padding-left: 1.25rem;
+  padding-right: 4.0625rem;
+  text-align: right;
+}
+.contacts-and-support__message--user:before {
+  right: 0;
+  background-image: url("../img/contacts-and-support/icon-chat-user.svg");
+}
+.contacts-and-support__message--support {
+  padding-right: 1.25rem;
+  padding-left: 4.0625rem;
+  text-align: left;
+}
+.contacts-and-support__message--support:before {
+  left: 0;
+  background-image: url("../img/contacts-and-support/icon-chat-support.svg");
+}
+.contacts-and-support__message:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 3.125rem;
+  height: 3.125rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.contacts-and-support__message-user-name {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.contacts-and-support__message-user-text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.contacts-and-support__message-time {
+  position: absolute;
+  pointer-events: none;
+  top: 100%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.contacts-and-support__select {
+  position: relative;
+  margin-bottom: 0.9375rem;
+  padding: 1.375rem 5rem;
+}
+.contacts-and-support__select:last-child {
+  margin-right: 0;
+}
+.contacts-and-support__select:before {
+  background-image: url("../img/contacts-and-support/icon-wtf.svg");
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.contacts-and-support__select:after {
+  width: 1.875rem;
+  height: 1.875rem;
+  opacity: 0.65;
+  right: 1rem;
+}
+.contacts-and-support__select .select__text {
+  text-transform: none;
 }

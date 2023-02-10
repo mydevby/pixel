@@ -1,0 +1,284 @@
+.contacts-and-support {
+    display: grid;
+    grid-template-columns: rem-calc(500) 1fr;
+    gap: rem-calc(30);
+
+    &__nav-list {
+        position: relative;
+        padding: rem-calc(40) rem-calc(50);
+        align-self: start;
+    }
+
+    &__nav-link {
+        position: relative;
+        display: block;
+        margin-bottom: rem-calc(20);
+        padding: rem-calc(10);
+        color: $clr-white;
+        font-weight: 400;
+        font-size: rem-calc(16);
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .mask-block {
+            background: rgba(30, 34, 52, 0.65);
+        }
+
+        &--active {
+            pointer-events: none;
+
+            .mask-block {
+                background: $clr-accent;
+            }
+
+            .mask-block--border {
+                &:before {
+                    background: transparent;
+                }
+            }
+
+            .profile__nav-link-icon-img {
+                fill: $clr-accent;
+            }
+
+            .profile__nav-link-icon-bg {
+                fill: $clr-white;
+            }
+        }
+
+        &:hover,
+        &--active {
+            .profile__nav-link-icon-more {
+                path {
+                    fill: $clr-white;
+                }
+            }
+        }
+
+        &:hover {
+            .mask-block--border {
+                &:before {
+                    background: $clr-white;
+                }
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: rem-calc(23);
+            width: rem-calc(34);
+            height: rem-calc(34);
+            transform: translateY(-50%);
+            background: url("../img/contacts-and-support/icon-nav.svg") no-repeat 50% 50% /contain;
+        }
+    }
+
+    &__nav-link-icon {
+        width: rem-calc(50);
+        height: rem-calc(50);
+        margin-right: rem-calc(10);
+
+        path {
+            transition: .3s;
+        }
+    }
+
+    &__info {
+        position: relative;
+        padding: rem-calc(30) rem-calc(40) rem-calc(40);
+        min-height: rem-calc(600);
+    }
+
+    &__title  {
+        padding-bottom: rem-calc(26);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        font-family: inherit;
+        font-size: rem-calc(18);
+        line-height: 1.5;
+    }
+
+    &__social-btn-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem-calc(33);
+    }
+
+    &__contacts-content-btn-wrapper {
+        max-width: rem-calc(150);
+        margin: 0 auto;
+    }
+
+    &__nav-btns-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem-calc(20);
+    }
+
+    &__nav-btns-top-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: rem-calc(20);
+        margin-bottom: rem-calc(18);
+    }
+
+    &__nav-btns-bottom-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem-calc(20);
+        margin-top: rem-calc(20);
+    }
+
+    &__nav-link-text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__nav-link-top {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__nav-link-top--small {
+        margin-left: rem-calc(15);
+    }
+
+    &__chat-wrapper {
+        position: relative;
+        min-height: calc(100% - #{rem-calc(100)});
+        padding-bottom: rem-calc(100);
+        margin-bottom: rem-calc(50);
+    }
+
+    &__chat-label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: rem-calc(70);
+    }
+
+    &__chat-input {
+        padding: rem-calc(22) rem-calc(82) rem-calc(22) rem-calc(30);
+        font-size: rem-calc(16);
+        line-height: 1.5;
+        color: $clr-gray;
+        transition: .3s;
+
+        &:focus,
+        &:hover {
+            color: $clr-white;
+        }
+    }
+
+    &__chat-btn {
+        position: absolute;
+        top: 50%;
+        right: rem-calc(10);
+        width: rem-calc(50);
+        height: rem-calc(50);
+        background: url("../img/contacts-and-support/icon-chat-new-message.svg") no-repeat 50% 50% /contain;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    &__message {
+        position: relative;
+        border-bottom: rem-calc(1) solid rgba(255,255,255,.1);
+        padding-bottom: rem-calc(36);
+        margin-bottom: rem-calc(36);
+        color: $clr-white;
+
+        &:last-child {
+            border-bottom-color: transparent;
+            margin-bottom: 0;
+        }
+
+        &--user {
+            padding-left: rem-calc(20);
+            padding-right: rem-calc(65);
+            text-align: right;
+
+            &:before {
+                right: 0;
+                background-image: url("../img/contacts-and-support/icon-chat-user.svg");
+            }
+        }
+
+        &--support {
+            padding-right: rem-calc(20);
+            padding-left: rem-calc(65);
+            text-align: left;
+
+            &:before {
+                left: 0;
+                background-image: url("../img/contacts-and-support/icon-chat-support.svg");
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: rem-calc(50);
+            height: rem-calc(50);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+    }
+
+    &__message-user-name {
+        font-size: rem-calc(16);
+        line-height: 1.5;
+    }
+
+    &__message-user-text {
+        font-size: rem-calc(14);
+        line-height: 1.5;
+    }
+
+    &__message-time {
+        position: absolute;
+        pointer-events: none;
+        top: 100%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__select {
+        position: relative;
+        margin-bottom: rem-calc(15);
+        padding: rem-calc(22) rem-calc(80);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            background-image: url("../img/contacts-and-support/icon-wtf.svg");
+            width: rem-calc(50);
+            height: rem-calc(50);
+        }
+
+        &:after {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            opacity: .65;
+            right: rem-calc(16);
+        }
+
+        .select__text {
+            text-transform: none;
+        }
+    }
+}

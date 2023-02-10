@@ -85,6 +85,15 @@
         }
     }
 
+    &--icon-back {
+        &:before {
+            width: rem-calc(20);
+            height: rem-calc(15);
+            background-image: url("../img/icons/icon-back.svg");
+            left: rem-calc(20);
+        }
+    }
+
 	&--icon-close {
 		z-index: 5;
         &:before {
