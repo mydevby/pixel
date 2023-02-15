@@ -1,4 +1,4 @@
-.documents {
+.guides {
     display: grid;
     grid-template-columns: rem-calc(500) 1fr;
     gap: rem-calc(30);
@@ -43,18 +43,18 @@
                 }
             }
 
-            .documents__nav-link-icon-img {
+            .guides__nav-link-icon-img {
                 fill: $clr-accent;
             }
 
-            .documents__nav-link-icon-bg {
+            .guides__nav-link-icon-bg {
                 fill: $clr-white;
             }
         }
 
         &:hover,
         &--active {
-            .documents__nav-link-icon-more {
+            .guides__nav-link-icon-more {
                 path {
                     fill: $clr-white;
                 }
