@@ -133,7 +133,7 @@ window.onload = function() {
 
 	// Audio
 	const audioPlayer = document.querySelector(".js-audio-player");
-	const audio = new Audio('../files/audio/vegas-live.mp3');
+	const audio = new Audio('files/audio/vegas-live.mp3');
 
 	audio.addEventListener( "loadeddata", () => {
 		audio.volume = 0.75;
