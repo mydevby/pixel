@@ -73,6 +73,10 @@
 	&--filter-27 {
 		backdrop-filter: blur(#{rem-calc(27.5)});
 	}
+
+	&--filter-32 {
+		backdrop-filter: blur(#{rem-calc(32.5)});
+	}
 }
 
 .mask-section {
@@ -420,7 +424,7 @@
 		}
 
 		&.mask-btn--border-custom {
-			background-color: transparent;
+			background-color: red;
 			&:before {
 				background: rgb(255, 255, 255, .15);
 			}

@@ -92,7 +92,7 @@
 
     &__info {
         position: relative;
-        padding: rem-calc(30) rem-calc(40) rem-calc(40);
+        padding: rem-calc(45) rem-calc(40) rem-calc(40);
         min-height: rem-calc(600);
     }
 
@@ -280,5 +280,11 @@
         .select__text {
             text-transform: none;
         }
+    }
+
+    &__btn-back {
+        position: absolute;
+        top: rem-calc(30);
+        right: rem-calc(40);
     }
 }

@@ -62,6 +62,8 @@
         margin-bottom: rem-calc(16);
         color: $clr-white;
         text-transform: uppercase;
+        transition: .3s;
+        display: inline-block;
 
         &--support {
             margin-bottom: rem-calc(9);
