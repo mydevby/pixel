@@ -74,4 +74,22 @@
         padding: rem-calc(12) rem-calc(28) rem-calc(15);
         margin-top: rem-calc(10);
     }
+
+    &__timer {
+        color: $clr-white;
+        display: flex;
+        align-items: center;
+        font-size: rem-calc(18);
+        margin-bottom: rem-calc(-10);
+    }
+
+    &__time {
+        position: relative;
+        width: rem-calc(44);
+        height: rem-calc(44);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
