@@ -2,6 +2,10 @@
     display: grid;
     position: relative;
 
+    &--gap-20 {
+        gap: rem-calc(20);
+    }
+
     &--col-2 {
         grid-template-columns: repeat(2, 1fr);
     }

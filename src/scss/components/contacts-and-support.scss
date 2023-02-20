@@ -255,33 +255,6 @@
         transform: translateY(-50%);
     }
 
-    &__select {
-        position: relative;
-        margin-bottom: rem-calc(15);
-        padding: rem-calc(22) rem-calc(80);
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-        &:before {
-            background-image: url("../img/contacts-and-support/icon-wtf.svg");
-            width: rem-calc(50);
-            height: rem-calc(50);
-        }
-
-        &:after {
-            width: rem-calc(30);
-            height: rem-calc(30);
-            opacity: .65;
-            right: rem-calc(16);
-        }
-
-        .select__text {
-            text-transform: none;
-        }
-    }
-
     &__btn-back {
         position: absolute;
         top: rem-calc(30);

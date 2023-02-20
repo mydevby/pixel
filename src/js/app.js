@@ -153,6 +153,24 @@ window.onload = function() {
 		}
 	}, false );
 
+	//Copy
+	new ClipboardJS('.js-btn-copy');
+
+
+	//FAQ
+	if (document.querySelector('.js-faq-item') !== null) {
+		let faqItems  = document.querySelectorAll('.js-faq-item');
+		faqItems.forEach(faqItem => {
+			faqItem.addEventListener('click', function(e) {
+				if (faqItem.classList.contains('faq__item--open')) {
+					faqItem.classList.remove('faq__item--open');
+				} else {
+					faqItem.classList.add('faq__item--open');
+				}
+			});
+		});
+	};
+
 
 	// Bonus timer
 	if (document.querySelector('.bonuses__timer') !== null ) {

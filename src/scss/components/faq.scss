@@ -1,0 +1,108 @@
+.faq {
+    &__nav-link {
+        position: relative;
+        padding: rem-calc(80) rem-calc(10) rem-calc(20) rem-calc(15);
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: rem-calc(50);
+            height: rem-calc(50);
+            top: rem-calc(20);
+            left: rem-calc(20);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+
+        &--account {
+            &:before {
+                background-image: url("../img/faq/icon-account.svg");
+            }
+        }
+
+        &--website {
+            &:before {
+                background-image: url("../img/faq/icon-website.svg");
+            }
+        }
+
+        &--deposits {
+            &:before {
+                background-image: url("../img/faq/icon-deposits.svg");
+            }
+        }
+
+        &--withdrawals {
+            &:before {
+                background-image: url("../img/faq/icon-withdrawals.svg");
+            }
+        }
+    }
+
+    &__item {
+        color: $clr-white;
+        position: relative;
+        margin-bottom: rem-calc(15);
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: rem-calc(10);
+            left: rem-calc(10);
+            background: url("../img/contacts-and-support/icon-wtf.svg") no-repeat 50% 50% /contain;
+            width: rem-calc(50);
+            height: rem-calc(50);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: rem-calc(30);
+            height: rem-calc(30);
+            opacity: .65;
+            top: rem-calc(20);
+            right: rem-calc(16);
+            background: url("../img/icons/icon-select-more.svg") no-repeat 50% 50% /contain;
+        }
+
+        &--open {
+            & > .faq__answer {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__question {
+        font-size: rem-calc(18);
+        line-height: rem-calc(27);
+        padding: rem-calc(22) rem-calc(80);
+    }
+
+    &__answer {
+        border-top: rem-calc(1) solid $clr-gray;
+        font-size: rem-calc(14);
+        line-height: 1.5;
+        color: $clr-gray;
+        padding: rem-calc(25) rem-calc(30);
+        display: none;
+        p,
+        ul {
+            margin-bottom: rem-calc(21);
+        }
+
+        a {
+            margin-left: auto;
+        }
+    }
+}
