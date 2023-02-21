@@ -74,6 +74,35 @@ window.onload = function() {
 		});
 	};
 
+	//Page Slot Providers
+	if (document.querySelector('.providers__select') !== null) {
+		new Swiper(".providers__swiper", {
+			slidesPerView: 1,
+			effect: "fade",
+			hashNavigation: {
+				watchState: true,
+			},
+		});
+	};
+
+	if (document.querySelector('.providers__select') !== null) {
+		let providersSelect  = document.querySelector('.providers__select');
+		let providersSelectList = document.querySelector('.providers__select-list');
+		providersSelect.addEventListener('click', function(e) {
+			providersSelect.classList.toggle('providers__select--active');
+			providersSelectList.classList.toggle('providers__select-list--hidden');
+		});
+	};
+
+	if (document.querySelector('.providers__select-item') !== null) {
+		let selectItems  = document.querySelectorAll('.providers__select-item');
+		let providersSelectText  = document.querySelector('.providers__select-text');
+		selectItems.forEach(selectItem => {
+			selectItem.addEventListener('click', function(e) {
+				providersSelectText.textContent = this.dataset.providerName;
+			});
+		});
+	}
 
 	//Page Documents
 

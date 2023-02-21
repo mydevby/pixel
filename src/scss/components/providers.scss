@@ -19,10 +19,102 @@
         margin-bottom: rem-calc(30);
     }
 
+    &__select {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $clr-white;
+        transition: 0.3s;
+        text-transform: uppercase;
+        z-index: 10;
+        cursor: pointer;
+        padding: rem-calc(10) rem-calc(50);
+
+        &:hover,
+        &--open {
+
+            .mask-btn {
+                &--border {
+                    &:before {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: rem-calc(10);
+            width: rem-calc(30);
+            height: rem-calc(24);
+            background: url("../img/icons/icon-providers.svg") no-repeat 50% 50% /contain;
+            transform: translateY(-50%);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: rem-calc(10);
+            width: rem-calc(30);
+            height: rem-calc(24);
+            transform: translateY(-50%);
+            background: url("../img/icons/icon-select-more.svg") no-repeat 50% 50% /contain;
+        }
+    }
+
+    &__select-list {
+        position: absolute;
+        top: calc(100% - #{rem-calc(1)});
+        left: 0;
+        right: 0;
+        transition: .3s;
+        pointer-events: auto;
+        opacity: 1;
+        padding: rem-calc(15);
+
+        &--hidden {
+            pointer-events: none;
+            opacity: 0;
+        }
+    }
+
+    &__select-item {
+        color: $clr-gray;
+        margin-bottom: rem-calc(10);
+        transition: .3s;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: $clr-white;
+        }
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: rem-calc(15);
         margin-bottom: rem-calc(30);
+        padding: 0 rem-calc(40);
+    }
+
+    &__swiper {
+        margin-left: rem-calc(-40);
+        margin-right: rem-calc(-40);
+    }
+
+    &__swiper-slide {
+        max-height: 0;
+        overflow: hidden;
+
+        &.swiper-slide-active {
+            max-height: none;
+        }
     }
 }
