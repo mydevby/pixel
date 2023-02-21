@@ -5,7 +5,7 @@
 
     &__nav-list {
         position: relative;
-        padding: rem-calc(40) rem-calc(50);
+        padding: rem-calc(30) rem-calc(20) rem-calc(30);
         align-self: start;
     }
 
@@ -13,7 +13,7 @@
         position: relative;
         display: block;
         margin-bottom: rem-calc(20);
-        padding: rem-calc(10);
+        padding: rem-calc(15);
         color: $clr-white;
         font-weight: 400;
         font-size: rem-calc(16);
@@ -97,7 +97,7 @@
     }
 
     &__title  {
-        padding-bottom: rem-calc(26);
+        padding-bottom: rem-calc(44);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -111,11 +111,29 @@
         display: flex;
         justify-content: center;
         margin-bottom: rem-calc(33);
+
+        .footer__social-link {
+            width: rem-calc(52);
+            height: rem-calc(52);
+        }
     }
 
     &__contacts-content-btn-wrapper {
         max-width: rem-calc(150);
         margin: 0 auto;
+
+        .footer__support-btn {
+            padding-top: rem-calc(15);
+            padding-bottom: rem-calc(17);
+            padding-left: rem-calc(60);
+            justify-content: flex-start;
+            font-size: rem-calc(14);
+            min-width: rem-calc(212);
+
+            &:before {
+                left: rem-calc(25);
+            }
+        }
     }
 
     &__nav-btns-wrapper {
@@ -259,5 +277,7 @@
         position: absolute;
         top: rem-calc(30);
         right: rem-calc(40);
+        min-width: rem-calc(115);
+        justify-content: flex-start;
     }
 }

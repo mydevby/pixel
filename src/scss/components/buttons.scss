@@ -14,6 +14,22 @@
         pointer-events: none;
     }
 
+    &--middle {
+        font-size: rem-calc(16);
+        line-height: 1.5;
+        padding: rem-calc(18) rem-calc(15);
+        min-width: rem-calc(122);
+        color: $clr-gray-blue;
+
+        &:hover {
+            color: $clr-white;
+        }
+    }
+
+    &--color-white {
+        color: $clr-white;
+    }
+
     &--center {
         margin: 0 auto;
     }
