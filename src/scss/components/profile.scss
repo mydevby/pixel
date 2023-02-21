@@ -86,6 +86,15 @@
         }
     }
 
+    &__swiper-slide {
+        max-height: 0;
+        overflow: hidden;
+
+        &.swiper-slide-active {
+            max-height: none;
+        }
+    }
+
     &__nav-user-col-name {
         font-size: rem-calc(14);
         color: #767E9B;
@@ -169,7 +178,11 @@
 
     &__info {
         position: relative;
-        padding: 0 rem-calc(40) rem-calc(40);
+        padding: 0 0 rem-calc(40);
+    }
+
+    &__swiper-slide {
+        padding: 0 rem-calc(40);
     }
 
     &__info-title {
@@ -207,9 +220,9 @@
             }
         }
 
-        &--verification {
+        &--verifications {
             &:before {
-                background-image: url("../img/user/icon-title-verification.svg");
+                background-image: url("../img/user/icon-title-verifications.svg");
             }
         }
 
@@ -629,7 +642,7 @@
         }
     }
 
-    &__info-title-natification {
+    &__info-title-notification {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -639,21 +652,21 @@
         position: relative;
     }
 
-    &__info-title-natification-text {
+    &__info-title-notification-text {
         margin-right: auto;
         font-size: rem-calc(16);
         line-height: 1.5;
         color: $clr-white;
     }
 
-    &__info-title-natification-icon {
+    &__info-title-notification-icon {
         display: inline-block;
         width: rem-calc(72);
         height: rem-calc(42);
         cursor: pointer;
     }
 
-    &__info-natification-example-item {
+    &__info-notification-example-item {
         position: relative;
         display: flex;
         align-items: center;
@@ -673,7 +686,7 @@
         margin-bottom: rem-calc(25);
     }
 
-    &__info-natification-example-icon,
+    &__info-notification-example-icon,
     &__info-security-example-icon {
         display: inline-block;
         width: rem-calc(45);
@@ -681,7 +694,7 @@
         margin-right: rem-calc(17);
     }
 
-    &__info-natification-example-text,
+    &__info-notification-example-text,
     &__info-security-example-text  {
         margin-right: auto;
         font-size: rem-calc(14);
@@ -689,7 +702,7 @@
         color: $clr-white;
     }
 
-    &__info-natification-example-time {
+    &__info-notification-example-time {
         font-size: rem-calc(14);
         line-height: 1.5;
         color: $clr-white;

@@ -6606,6 +6606,13 @@ section,
 .profile__nav-user-info-col:last-child {
   margin-right: 0;
 }
+.profile__swiper-slide {
+  max-height: 0;
+  overflow: hidden;
+}
+.profile__swiper-slide.swiper-slide-active {
+  max-height: none;
+}
 .profile__nav-user-col-name {
   font-size: 0.875rem;
   color: #767E9B;
@@ -6664,7 +6671,10 @@ section,
 }
 .profile__info {
   position: relative;
-  padding: 0 2.5rem 2.5rem;
+  padding: 0 0 2.5rem;
+}
+.profile__swiper-slide {
+  padding: 0 2.5rem;
 }
 .profile__info-title {
   padding: 2.5rem 0;
@@ -6696,8 +6706,8 @@ section,
 .profile__info-title-text--profile:before {
   background-image: url("../img/user/icon-title-profile.svg");
 }
-.profile__info-title-text--verification:before {
-  background-image: url("../img/user/icon-title-verification.svg");
+.profile__info-title-text--verifications:before {
+  background-image: url("../img/user/icon-title-verifications.svg");
 }
 .profile__info-title-text--security:before {
   background-image: url("../img/user/icon-title-security.svg");
@@ -7028,7 +7038,7 @@ section,
 .profile__info-content--social {
   padding-bottom: 0.625rem;
 }
-.profile__info-title-natification {
+.profile__info-title-notification {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -7037,26 +7047,26 @@ section,
   padding: 0.75rem 0.75rem 0.75rem 1.5rem;
   position: relative;
 }
-.profile__info-title-natification-text {
+.profile__info-title-notification-text {
   margin-right: auto;
   font-size: 1rem;
   line-height: 1.5;
   color: white;
 }
-.profile__info-title-natification-icon {
+.profile__info-title-notification-icon {
   display: inline-block;
   width: 4.5rem;
   height: 2.625rem;
   cursor: pointer;
 }
-.profile__info-natification-example-item {
+.profile__info-notification-example-item {
   position: relative;
   display: flex;
   align-items: center;
   padding: 1.125rem 1.875rem 1.0625rem 0.9375rem;
   margin-bottom: 0.625rem;
 }
-.profile__info-natification-example-item:last-child {
+.profile__info-notification-example-item:last-child {
   margin-bottom: 0;
 }
 .profile__info-security-example-item {
@@ -7066,19 +7076,19 @@ section,
   padding: 0.875rem;
   margin-bottom: 1.5625rem;
 }
-.profile__info-natification-example-icon, .profile__info-security-example-icon {
+.profile__info-notification-example-icon, .profile__info-security-example-icon {
   display: inline-block;
   width: 2.8125rem;
   height: 2.8125rem;
   margin-right: 1.0625rem;
 }
-.profile__info-natification-example-text, .profile__info-security-example-text {
+.profile__info-notification-example-text, .profile__info-security-example-text {
   margin-right: auto;
   font-size: 0.875rem;
   line-height: 1.5;
   color: white;
 }
-.profile__info-natification-example-time {
+.profile__info-notification-example-time {
   font-size: 0.875rem;
   line-height: 1.5;
   color: white;

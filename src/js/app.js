@@ -64,6 +64,18 @@ window.onload = function() {
 		});
 	};
 
+	//Page Profile
+
+	if (document.querySelector('.profile__swiper') !== null) {
+		new Swiper('.profile__swiper', {
+			slidesPerView: 1,
+			effect: "fade",
+			hashNavigation: {
+				watchState: true,
+			},
+		});
+	};
+
 	if (document.querySelector('.profile__nav-link') !== null) {
 		let arrNavLinks  = document.querySelectorAll('.profile__nav-link');
 		arrNavLinks.forEach(navLink => {
@@ -102,7 +114,7 @@ window.onload = function() {
 
 	//Page Slot Providers
 	if (document.querySelector('.providers__select') !== null) {
-		new Swiper(".providers__swiper", {
+		new Swiper('.providers__swiper', {
 			slidesPerView: 1,
 			effect: "fade",
 			hashNavigation: {
