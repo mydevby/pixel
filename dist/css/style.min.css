@@ -4587,7 +4587,23 @@ section,
   border-radius: 0.625rem;
   background: transparent;
 }
-.slot__btn-fafourites {
+.slot--favourite .slot__btn-favourites {
+  display: block;
+}
+.slot--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.slot__btn-favourites {
+  display: none;
   position: absolute;
   width: 2.1875rem;
   height: 2.1875rem;
@@ -4598,6 +4614,9 @@ section,
   font-size: 0;
   cursor: pointer;
   transition: 0.3s;
+}
+.slot__btn-favourites--active {
+  opacity: 0.5;
 }
 .slot:before {
   content: "";

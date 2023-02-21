@@ -156,6 +156,27 @@ window.onload = function() {
 	//Copy
 	new ClipboardJS('.js-btn-copy');
 
+	//Slot Favourite
+	if (document.querySelector('.js-slot-favourite-load-more') !== null)  {
+		let favouriteLoadMore  = document.querySelector('.js-slot-favourite-load-more');
+		let arrSlots  = document.querySelectorAll('.slot');
+		favouriteLoadMore.addEventListener('click', function(e) {
+			arrSlots.forEach(slot => {
+				slot.classList.remove('slot--visually-hidden');
+			});
+			favouriteLoadMore.classList.add('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.slot__btn-favourites') !== null)  {
+		let arrSlotBtnFavourites = document.querySelectorAll('.slot__btn-favourites');
+		arrSlotBtnFavourites.forEach(slotBtnFavourites => {
+			slotBtnFavourites.addEventListener('click', function(e) {
+				this.classList.toggle('slot__btn-favourites--active');
+			});
+		});
+	};
+
 
 	//FAQ
 	if (document.querySelector('.js-faq-item') !== null) {
