@@ -74,6 +74,16 @@ window.onload = function() {
 		});
 	};
 
+	//Index Page
+	if (document.querySelector('.filters__select') !== null) {
+		let filtersSelect  = document.querySelector('.filters__select');
+		let filtersSelectList = document.querySelector('.filters__select-list');
+		filtersSelect.addEventListener('click', function(e) {
+			filtersSelect.classList.toggle('filters__select--active');
+			filtersSelectList.classList.toggle('filters__select-list--hidden');
+		});
+	};
+
 	//Page Slot Providers
 	if (document.querySelector('.providers__select') !== null) {
 		new Swiper(".providers__swiper", {

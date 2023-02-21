@@ -279,18 +279,18 @@
 						<div class="mask-bg mask-bg--accent mask-btn"></div>
 						All slots
 					</button>
-					<div class="select select--icon-providers js-select-providers">
+					<div class="filters__select select--icon-providers">
 						<div class="mask-bg mask-bg--light mask-btn mask-btn--border mask-btn--border-light"></div>
-						<div class="select__text">
+						<div class="filters__select-text">
 							Providers
 						</div>
-						<ul class="select__list select__list--hidden js-select-list-providers">
+						<ul class="filters__select-list filters__select-list--hidden">
 							<div class="mask-bg mask-bg--black-blue mask-btn mask-btn--border"></div>
-							<li class="select__item">Evoplay</li>
-							<li class="select__item">Pragmatic Play</li>
-							<li class="select__item">Betsoft</li>						
-							<li class="select__item">CT Interactive</li>						
-							<li class="select__item">NetEnt</li>
+							<a class="filters__select-item" href="slot-providers.html">All</a>
+							<a class="filters__select-item" href="slot-providers.html#evoplay">Evoplay</a>
+							<a class="filters__select-item" href="slot-providers.html#pragmatic-play">Pragmatic Play</a>
+							<a class="filters__select-item" href="slot-providers.html#betsoft">Betsoft</a>						
+							<a class="filters__select-item" href="slot-providers.html#ct-interactive">CT Interactive</a>
 						</ul>
 					</div>
 				</div>
@@ -329,36 +329,19 @@
 						Popular Pragmatic<br>
 						Play Slots
 					</h3>
-					<a class="slots__group-link btn mask-btn mask-btn--border" href="slots.html">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="slot-providers.html#pragmatic-play">
 						View all Slots
 					</a>
 				</div>
 				<div class="slots__list">
-					<div class="slots__item slot">
+
+					<div class="slot" data-provider="pragmatic-play">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-1-1-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Massive Luck</h4>
-									<div class="slot__provider">Evoplay</div>
 								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
 								<img class="slot__img" src="img/slots/slot-1-2-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
@@ -370,139 +353,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="slots__item slot">
+	
+					<div class="slot" data-provider="pragmatic-play">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-1-3-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Captain's Quest</h4>
-									<div class="slot__provider">Betsoft</div>
 								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slots__group">
-				<div class="mask-bg mask-bg--filter mask-block mask-block--border"></div>
-				<div class="slots__group-info">
-					<div class="slots__group-logo mask-group-logo">
-						<img class="slots__group-logo-img" src="img/svg/logos-slots-group-logo-1.svg" alt="Logo Slots Group">
-					</div>
-					<h3 class="slots__group-name">
-						Popular Pragmatic<br>
-						Play Slots
-					</h3>
-					<a class="slots__group-link btn mask-btn mask-btn--border" href="slots.html">
-						View all Slots
-					</a>
-				</div>
-				<div class="slots__list">
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-2-1-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Wolf Hiding</h4>
-									<div class="slot__provider">Evoplay</div>
-								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-2-2-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Rags to Witches</h4>
-									<div class="slot__provider">Betsoft</div>
-								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-2-3-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Doctor Winstein</h4>
-									<div class="slot__provider">CT Interactive</div>
-								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="slots__group">
-				<div class="mask-bg mask-bg--filter mask-block mask-block--border"></div>
-				<div class="slots__group-info">
-					<div class="slots__group-logo mask-group-logo">
-						<img class="slots__group-logo-img" src="img/svg/logos-slots-group-logo-1.svg" alt="Logo Slots Group">
-					</div>
-					<h3 class="slots__group-name">
-						Popular Pragmatic<br>
-						Play Slots
-					</h3>
-					<a class="slots__group-link btn mask-btn mask-btn--border" href="slots.html">
-						View all Slots
-					</a>
-				</div>
-				<div class="slots__list">
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-1-1-x2.min.png" alt="Title">
-							</div>
-							<div  class="slot__info-wrapper">
-								<div class="slot__info">
-									<h4 class="slot__name">Massive Luck</h4>
-									<div class="slot__provider">Evoplay</div>
-								</div>
-								<div class="slot__more"></div>
-							</div>
-						</div>
-					</div>
-					<div class="slots__item slot">
-						<div class="slot__card mask-block mask-block--border">
-							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
-									<span class="slot__icon-hover"></span>
-									<span class="slot__text-hover">Play game</span>
-								</a>
 								<img class="slot__img" src="img/slots/slot-1-2-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
@@ -514,19 +372,96 @@
 							</div>
 						</div>
 					</div>
-					<div class="slots__item slot">
+	
+					<div class="slot" data-provider="pragmatic-play">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-1-3-x2.min.png" alt="Title">
+								</div>
+								<img class="slot__img" src="img/slots/slot-1-2-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
 								<div class="slot__info">
-									<h4 class="slot__name">Captain's Quest</h4>
-									<div class="slot__provider">Betsoft</div>
+									<h4 class="slot__name">Book of Golden Sands</h4>
+									<div class="slot__provider">Pragmatic Play</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="slots__group">
+				<div class="mask-bg mask-bg--filter mask-block mask-block--border"></div>
+				<div class="slots__group-info">
+					<div class="slots__group-logo mask-group-logo">
+						<img class="slots__group-logo-img" src="img/svg/logos-slots-group-logo-1.svg" alt="Logo Slots Group">
+					</div>
+					<h3 class="slots__group-name">
+						Popular Evoplay<br>
+						Slots
+					</h3>
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="slot-providers.html#evoplay">
+						View all Slots
+					</a>
+				</div>
+				<div class="slots__list">
+
+					<div class="slot" data-provider="evoplay">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
+								<img class="slot__img" src="img/slots/slot-1-1-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Massive Luck</h4>
+									<div class="slot__provider">Evoplay</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slot" data-provider="evoplay">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
+								<img class="slot__img" src="img/slots/slot-2-1-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Wolf Hiding</h4>
+									<div class="slot__provider">Evoplay</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slot" data-provider="evoplay">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
+								<img class="slot__img" src="img/slots/slot-2-1-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Wolf Hiding</h4>
+									<div class="slot__provider">Evoplay</div>
 								</div>
 								<div class="slot__more"></div>
 							</div>
@@ -542,39 +477,41 @@
 						<img class="slots__group-logo-img" src="img/svg/logos-slots-group-logo-1.svg" alt="Logo Slots Group">
 					</div>
 					<h3 class="slots__group-name">
-						Popular Pragmatic<br>
-						Play Slots
+						Popular Betsoft<br>
+						Slots
 					</h3>
-					<a class="slots__group-link btn mask-btn mask-btn--border" href="slots.html">
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="slot-providers.html#betsoft">
 						View all Slots
 					</a>
 				</div>
 				<div class="slots__list">
-					<div class="slots__item slot">
+					
+					<div class="slot" data-provider="betsoft">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
-								<img class="slot__img" src="img/slots/slot-2-1-x2.min.png" alt="Title">
+								</div>
+								<img class="slot__img" src="img/slots/slot-1-3-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
 								<div class="slot__info">
-									<h4 class="slot__name">Wolf Hiding</h4>
-									<div class="slot__provider">Evoplay</div>
+									<h4 class="slot__name">Captain's Quest</h4>
+									<div class="slot__provider">Betsoft</div>
 								</div>
 								<div class="slot__more"></div>
 							</div>
 						</div>
 					</div>
-					<div class="slots__item slot">
+	
+					<div class="slot" data-provider="betsoft">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
+								</div>
 								<img class="slot__img" src="img/slots/slot-2-2-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
@@ -586,13 +523,52 @@
 							</div>
 						</div>
 					</div>
-					<div class="slots__item slot">
+	
+					<div class="slot" data-provider="betsoft">
 						<div class="slot__card mask-block mask-block--border">
 							<div class="slot__img-wrapper mask-block">
-								<a class="slot__bg-hover">
+								<div class="slot__bg-hover">
 									<span class="slot__icon-hover"></span>
 									<span class="slot__text-hover">Play game</span>
-								</a>
+								</div>
+								<img class="slot__img" src="img/slots/slot-2-2-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Rags to Witches</h4>
+									<div class="slot__provider">Betsoft</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="slots__group">
+				<div class="mask-bg mask-bg--filter mask-block mask-block--border"></div>
+				<div class="slots__group-info">
+					<div class="slots__group-logo mask-group-logo">
+						<img class="slots__group-logo-img" src="img/svg/logos-slots-group-logo-1.svg" alt="Logo Slots Group">
+					</div>
+					<h3 class="slots__group-name">
+						Popular CT Interactive<br>
+						Slots
+					</h3>
+					<a class="slots__group-link btn mask-btn mask-btn--border" href="slot-providers.html#ct-interactive">
+						View all Slots
+					</a>
+				</div>
+				<div class="slots__list">
+					
+					<div class="slot" data-provider="ct-interactive">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
 								<img class="slot__img" src="img/slots/slot-2-3-x2.min.png" alt="Title">
 							</div>
 							<div  class="slot__info-wrapper">
@@ -604,6 +580,45 @@
 							</div>
 						</div>
 					</div>
+	
+					<div class="slot" data-provider="ct-interactive">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
+								<img class="slot__img" src="img/slots/slot-2-3-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Doctor Winstein</h4>
+									<div class="slot__provider">CT Interactive</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="slot" data-provider="ct-interactive">
+						<div class="slot__card mask-block mask-block--border">
+							<div class="slot__img-wrapper mask-block">
+								<div class="slot__bg-hover">
+									<span class="slot__icon-hover"></span>
+									<span class="slot__text-hover">Play game</span>
+								</div>
+								<img class="slot__img" src="img/slots/slot-2-3-x2.min.png" alt="Title">
+							</div>
+							<div  class="slot__info-wrapper">
+								<div class="slot__info">
+									<h4 class="slot__name">Doctor Winstein</h4>
+									<div class="slot__provider">CT Interactive</div>
+								</div>
+								<div class="slot__more"></div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
