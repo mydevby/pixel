@@ -1,5 +1,5 @@
 {
-  "name": "mydevby.github.io",
+  "name": "pixel",
   "version": "1.0.0",
   "description": "html-test",
   "main": "gulpfile.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mydevby/mydevby.github.io.git"
+    "url": "git+https://github.com/"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mydevby/mydevby.github.io/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/mydevby/mydevby.github.io#readme",
+  "homepage": "",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",

@@ -74,6 +74,22 @@ window.onload = function() {
 		});
 	};
 
+	//Page Slot
+
+	if (document.querySelector('.slot-open__button-demo') !== null) {
+		let slotOpenButtonDemo  = document.querySelector('.slot-open__button-demo');
+		slotOpenButtonDemo.addEventListener('click', function(e) {
+			slotOpenButtonDemo.classList.toggle('slot-open__button-demo--active');
+		});
+	};
+
+	if (document.querySelector('.slot-open__button-favourite') !== null) {
+		let slotOpenButtonFavourite  = document.querySelector('.slot-open__button-favourite');
+		slotOpenButtonFavourite.addEventListener('click', function(e) {
+			slotOpenButtonFavourite.classList.toggle('slot-open__button-favourite--active');
+		});
+	};
+
 	//Index Page
 	if (document.querySelector('.filters__select') !== null) {
 		let filtersSelect  = document.querySelector('.filters__select');
