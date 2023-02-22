@@ -138,7 +138,14 @@ window.onload = function() {
 			document.querySelector('.profile__nav-link--active').classList.remove('profile__nav-link--active');
 			document.querySelector('.profile__nav-link[href="profile.html' + hashProfile + '"]').classList.add('profile__nav-link--active');
 		};
-	}
+	};
+
+	if (document.querySelector('.profile__notifications-btn') !== null) {
+		let profileNotificationsButton  = document.querySelector('.profile__notifications-btn');
+		profileNotificationsButton.addEventListener('click', function(e) {
+			profileNotificationsButton.classList.toggle('profile__notifications-btn--active');
+		});
+	};
 
 
 	//Page Slot

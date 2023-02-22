@@ -7154,6 +7154,27 @@ section,
   max-width: 27.5rem;
   margin: 0 auto;
 }
+.profile__notifications-btn {
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  padding: 1.3125rem 1.5625rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.profile__notifications-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.75rem;
+  width: 4.6875rem;
+  height: 2.625rem;
+  background: url("../img/icons/icon-slot-open-demo-off.svg") no-repeat 50% 50%/contain;
+}
+.profile__notifications-btn--active:before {
+  background-image: url("../img/icons/icon-slot-open-demo-on.svg");
+}
 
 .bonuses {
   padding: 2.875rem 2.5rem 3.75rem;

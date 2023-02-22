@@ -783,4 +783,30 @@
         max-width: rem-calc(440px);
         margin: 0 auto;
     }
+
+    &__notifications-btn {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: rem-calc(24);
+        padding: rem-calc(21) rem-calc(25);
+        font-size: rem-calc(16);
+        line-height: 1.5;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: rem-calc(12);
+            width: rem-calc(75);
+            height: rem-calc(42);
+            background: url("../img/icons/icon-slot-open-demo-off.svg") no-repeat 50% 50% /contain;            
+        }
+
+        &--active {
+            &:before {
+                background-image: url("../img/icons/icon-slot-open-demo-on.svg");
+            }
+        }
+    }
 }    
