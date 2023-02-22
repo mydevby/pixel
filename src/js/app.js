@@ -64,11 +64,27 @@ window.onload = function() {
 		});
 	};
 
-	//Page Modals 
+	//Page Modals
+	
+	if (document.querySelector('.modal__btn-nav-transactions') !== null) {
+		document.querySelectorAll('.modal__btn-nav-transactions').forEach(modalBtnNavTransactions => {
+			modalBtnNavTransactions.addEventListener('click', function(e) {
+				document.querySelectorAll('.modal__btn-nav-transactions').forEach(modalBtnNavTransactionsOver => {
+					modalBtnNavTransactionsOver.classList.add('button--hover');
+					modalBtnNavTransactionsOver.classList.remove('button--disabled');
+					modalBtnNavTransactionsOver.children[0].classList.remove('mask-bg--accent');
+					modalBtnNavTransactionsOver.children[0].classList.add('mask-btn--border', 'mask-btn--border-custom');
+				});
+				this.classList.remove('button--hover');
+				this.classList.add('button--disabled');
+				this.children[0].classList.add('mask-bg--accent');
+				this.children[0].classList.remove('mask-btn--border', 'mask-btn--border-custom');
+			});
+		});
+	};
 
 	if (document.querySelector('.modal__button--go-to-login') !== null) {
 		document.querySelector('.modal__button--go-to-login').addEventListener('click', () => {
-			console.log('asdsadsad');
 			let arrModalContent  = document.querySelectorAll('.modal__content');
 			arrModalContent.forEach(modalContent => {
 				modalContent.classList.remove('modal__content--active');
@@ -84,6 +100,220 @@ window.onload = function() {
 				modalContent.classList.remove('modal__content--active');
 			});
 			document.querySelector('.modal__content--registration').classList.add('modal__content--active');
+		});
+	};
+
+	if (document.querySelector('.modal__nav-crypto-btn--crypto-go-to-deposit-fiat') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--crypto-go-to-deposit-fiat').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-fiat').classList.add('modal__content--active');
+		});
+	};
+
+	//deposit-crypto modal
+	if (document.querySelector('.modal__nav-btn--crypto-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--crypto-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--crypto-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--crypto-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--crypto-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--crypto-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--crypto-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--crypto-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn--crypto-go-to-deposit-nft') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--crypto-go-to-deposit-nft').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-nft').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn--fiat-go-to-deposit-crypto') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--fiat-go-to-deposit-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn--select') !== null) {
+		let arrNavCryptoBtnSelect  = document.querySelectorAll('.modal__nav-crypto-btn--select');
+		arrNavCryptoBtnSelect.forEach(navCryptoBtnSelect => {
+			navCryptoBtnSelect.addEventListener('click', (e) => {
+				arrNavCryptoBtnSelect.forEach(navCryptoBtnSelectOver => {
+					navCryptoBtnSelectOver.classList.remove('btn--active');
+				});
+				navCryptoBtnSelect.classList.add('btn--active');
+			});
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money') !== null) {
+		let modalNavCryptoBtnSelectMoney  = document.querySelector('.modal__nav-crypto-btn-select-money');
+		modalNavCryptoBtnSelectMoney.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-text').forEach(modalNavCryptoBtnSelectMoneyText =>{
+				modalNavCryptoBtnSelectMoneyText.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	//deposit-fiat modal
+	if (document.querySelector('.modal__nav-btn--fiat-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--fiat-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--fiat-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--fiat-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--fiat-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--fiat-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--fiat-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--fiat-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn--fiat-go-to-deposit-nft') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--fiat-go-to-deposit-nft').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-nft').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-crypto') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-fiat-btn-select-money') !== null) {
+		let modalNavFiatBtnSelectMoney  = document.querySelector('.modal__nav-fiat-btn-select-money');
+		modalNavFiatBtnSelectMoney.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-fiat-btn-select-money-text').forEach(modalNavFiatBtnSelectMoneyText =>{
+				modalNavFiatBtnSelectMoneyText.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	if (document.querySelector('.modal__fiat-btn') !== null) {
+		let arrNavFiatBtnSelect  = document.querySelectorAll('.modal__fiat-btn');
+		arrNavFiatBtnSelect.forEach(navFiatBtnSelect => {
+			navFiatBtnSelect.addEventListener('click', (e) => {
+				arrNavFiatBtnSelect.forEach(navFiatBtnSelectOver => {
+					navFiatBtnSelectOver.classList.remove('modal__fiat-btn--active');
+				});
+				navFiatBtnSelect.classList.add('modal__fiat-btn--active');
+			});
+		});
+	};
+	//deposit-nft modal
+	if (document.querySelector('.modal__nav-btn--nft-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--nft-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--nft-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--nft-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--nft-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--nft-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--nft-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--nft-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-nft-btn-select-money') !== null) {
+		let modalNavNftBtnSelectMoney  = document.querySelector('.modal__nav-nft-btn-select-money');
+		modalNavNftBtnSelectMoney.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-nft-btn-select-money-text').forEach(modalNavNftBtnSelectMoneyText =>{
+				modalNavNftBtnSelectMoneyText.classList.toggle('visually-hidden');
+			});
+		});
+	};
+
+	if (document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-fiat') !== null) {
+		document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-fiat').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-fiat').classList.add('modal__content--active');
 		});
 	};
 

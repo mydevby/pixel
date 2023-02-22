@@ -4786,9 +4786,14 @@ section,
   transition: 0.3s;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
   opacity: 0;
   color: white;
+}
+.modal__nav-fiat-btn-select-money, .modal__nav-crypto-btn-select-money {
+  pointer-events: auto;
 }
 .modal__button {
   padding: 0.8125rem 1.25rem;
@@ -4837,7 +4842,7 @@ section,
 .modal__content--code-confirm {
   width: 22.75rem;
 }
-.modal__content--deposit-cripto, .modal__content--deposit-fiat, .modal__content--deposit-nft, .modal__content--buy-crypto, .modal__content--swap, .modal__content--transfer, .modal__content--withdraw {
+.modal__content--deposit-crypto, .modal__content--deposit-fiat, .modal__content--deposit-nft, .modal__content--buy-crypto, .modal__content--swap, .modal__content--transfer, .modal__content--withdraw {
   width: 34.875rem;
   padding: 1.75rem 1.875rem;
 }
@@ -4905,6 +4910,61 @@ section,
 }
 .modal__btn-transactions:hover svg path {
   fill: white;
+}
+.modal__btn-nav-transactions {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: white;
+  cursor: pointer;
+  padding: 0.8125rem 2.375rem;
+  min-width: 10rem;
+}
+.modal__btn-nav-transactions:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.modal__btn-nav-transactions--deposit {
+  padding-left: 4.3125rem;
+}
+.modal__btn-nav-transactions--deposit:before {
+  background-image: url("../img/modal/icon-transactions-deposit.svg");
+  width: 0.875rem;
+  height: 0.875rem;
+  left: 2.375rem;
+}
+.modal__btn-nav-transactions--buy-and-swap {
+  padding-left: 3.9375rem;
+}
+.modal__btn-nav-transactions--buy-and-swap:before {
+  background-image: url("../img/modal/icon-transactions-buy-swap.svg");
+  width: 1rem;
+  height: 1rem;
+  left: 2.375rem;
+}
+.modal__btn-nav-transactions--withdraw {
+  padding-left: 3.9375rem;
+}
+.modal__btn-nav-transactions--withdraw:before {
+  background-image: url("../img/modal/icon-transactions-withdraw.svg");
+  width: 0.9375rem;
+  height: 0.9375rem;
+  left: 2.375rem;
+}
+.modal__btn-nav-transactions--bill {
+  padding-left: 4.8125rem;
+}
+.modal__btn-nav-transactions--bill:before {
+  background-image: url("../img/modal/icon-transactions-bill.svg");
+  width: 0.875rem;
+  height: 0.875rem;
+  left: 3.3125rem;
 }
 .modal__btn-transactions-icon {
   width: 1rem;
@@ -4993,24 +5053,24 @@ section,
   align-items: center;
   gap: 0 0.9375rem;
 }
-.modal__label--flex .modal__nav-cripto-btn {
+.modal__label--flex .modal__nav-crypto-btn {
   display: flex;
   padding: 0.75rem;
   align-items: center;
   gap: 0 0.3125rem;
   min-width: 5.625rem;
 }
-.modal__label--flex .modal__nav-cripto-btn:hover {
+.modal__label--flex .modal__nav-crypto-btn:hover {
   transform: translate(0);
 }
-.modal__label--flex .modal__nav-cripto-btn--swap {
+.modal__label--flex .modal__nav-crypto-btn--swap {
   min-width: 6.25rem;
 }
-.modal__label--flex .modal__nav-cripto-btn--transfer {
+.modal__label--flex .modal__nav-crypto-btn--transfer {
   justify-content: space-between;
   min-width: 8.75rem;
 }
-.modal__label--flex .modal__nav-cripto-btn-icon {
+.modal__label--flex .modal__nav-crypto-btn-icon {
   transform: translate(0);
 }
 .modal__label--flex .modal__input {
@@ -5327,7 +5387,7 @@ section,
 .modal__nav-btn--deposit:after {
   background-image: url("../img/modal/icon-add.svg");
 }
-.modal__nav-btn--buy-cripto:after {
+.modal__nav-btn--buy-crypto:after {
   background-image: url("../img/modal/icon-dollar.svg");
   width: 1rem;
   height: 1rem;
@@ -5396,37 +5456,37 @@ section,
   height: 0.875rem;
   transform: translateY(0.0625rem);
 }
-.modal__nav-cripto {
+.modal__nav-crypto {
   display: flex;
   justify-content: center;
   gap: 1.5625rem;
   padding-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
-.modal__nav-cripto--buy {
+.modal__nav-crypto--buy {
   margin-bottom: 0.3125rem;
 }
-.modal__nav-cripto--select {
+.modal__nav-crypto--select {
   gap: 0.625rem;
   justify-content: space-between;
   padding-top: 0;
 }
-.modal__nav-cripto-btn {
+.modal__nav-crypto-btn {
   color: white;
 }
-.modal__nav-cripto-btn.btn--active {
+.modal__nav-crypto-btn.btn--active {
   background: #66BE47;
 }
-.modal__nav-cripto-btn--select {
+.modal__nav-crypto-btn--select {
   padding: 0.75rem 1.125rem;
 }
-.modal__nav-cripto-btn--select.btn--active {
+.modal__nav-crypto-btn--select.btn--active {
   background-color: rgba(255, 255, 255, 0.05);
 }
-.modal__nav-cripto-btn--select.btn--active:before {
+.modal__nav-crypto-btn--select.btn--active:before {
   background: #447ef7;
 }
-.modal__nav-cripto-btn--buy {
+.modal__nav-crypto-btn--buy {
   padding: 0.875rem 1.875rem;
   font-size: 1rem;
   pointer-events: auto;
@@ -5446,7 +5506,7 @@ section,
   height: auto;
   margin-right: 0.625rem;
 }
-.modal__nav-cripto-btn-icon {
+.modal__nav-crypto-btn-icon {
   display: inline-block;
   width: 0.875rem;
   height: auto;
