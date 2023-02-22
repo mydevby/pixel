@@ -344,7 +344,7 @@
 	<div class="modal__window mask-block mask-block--border">
 
 		<div class="modal__content modal__content modal__content--login">
-			<button class="modal__close-modal modal__close-modal button button--hover button--icon button--icon-close">
+			<button class="modal__close-modal button button--hover button--icon button--icon-close">
 				<div class="mask-bg mask-btn mask-btn--border"></div>
 				Close
 			</button>
@@ -354,8 +354,14 @@
 				</div>
 				<div class="modal__content-wrapper modal__content-wrapper--login">
 					<div class="modal__content-top">
-						<button class="modal__content-top-btn btn btn--active mask-btn">Login</button>
-						<button  class="modal__content-top-btn btn mask-btn mask-btn--border">Registration</button>
+						<button class="modal__button modal__button--login button button--disabled ">
+							<div class="mask-bg mask-bg--accent mask-btn"></div>
+							Login
+						</button>
+						<button class="modal__button modal__button-registration button button-hover modal__button--go-to-registration">
+							<div class="mask-bg mask-bg--extra-dark mask-btn mask-btn--border mask-btn--border-custom"></div>
+							Registration
+						</button>
 					</div>
 					<label class="modal__label btn mask-modal mask-modal--border">
 						<div class="modal__label-icon modal__label-icon--email"></div>
@@ -388,7 +394,7 @@
 							<input class="modal__input" type="text" placeholder=" ">
 						</div>
 					</label>
-					<button class="modal__btn btn mask-modal">
+					<button class="modal__btn btn mask-modal modal__btn-login-to-account button button--disabled">
 						Login to Account <img class="modal__btn-icon-arrow" src="img/modal/icon-arrow.svg" alt="Arrow">
 					</button>
 				</div>
@@ -405,9 +411,15 @@
 					<img class="modal__img" src="img/modal/welcome-back-x2.min.png" alt="Welcome Back">
 				</div>
 				<div class="modal__content-wrapper modal__content-wrapper--registration">
-					<div class="modal__content-top">
-						<button class="modal__content-top-btn btn mask-btn">Login</button>
-						<button  class="modal__content-top-btn btn btn--active mask-btn">Registration</button>
+					<div class="modal__content-top modal__content-top--registration">
+						<button class="modal__button modal__button--login button button--hover modal__button--go-to-login">
+							<div class="mask-bg mask-bg--extra-dark mask-btn mask-btn--border mask-btn--border-custom"></div>
+							Login
+						</button>
+						<button class="modal__button modal__button--registration button button--disabled">
+							<div class="mask-bg mask-bg--accent mask-btn"></div>
+							Registration
+						</button>
 					</div>
 					<div class="modal__grid modal__grid--2-col-login">
 						<div class="modal__col">
@@ -485,7 +497,7 @@
 							</label>
 						</div>
 					</div>
-					<button class="modal__btn modal__btn--registration btn mask-modal">
+					<button class="modal__btn btn mask-modal modal__btn-create-new-account button button--disabled">
 						Create New Account <img class="modal__btn-icon-add" src="img/modal/icon-add.svg" alt="Add">
 					</button>
 				</div>

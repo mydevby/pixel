@@ -64,6 +64,29 @@ window.onload = function() {
 		});
 	};
 
+	//Page Modals 
+
+	if (document.querySelector('.modal__button--go-to-login') !== null) {
+		document.querySelector('.modal__button--go-to-login').addEventListener('click', () => {
+			console.log('asdsadsad');
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--login').classList.add('modal__content--active');
+		});
+	};
+
+	if (document.querySelector('.modal__button--go-to-registration') !== null) {
+		document.querySelector('.modal__button--go-to-registration').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--registration').classList.add('modal__content--active');
+		});
+	};
+
 	//Page Profile
 
 	if (document.querySelector('.profile__swiper') !== null) {

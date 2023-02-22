@@ -13,6 +13,33 @@
     opacity: 0;
     color: $clr-white;
 
+    &__button {
+        padding: rem-calc(13) rem-calc(20);
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+
+        &--registration {
+            width: rem-calc(142);
+        }
+
+        &--login {
+            width: rem-calc(142);
+        }
+    }
+
+    &__btn-create-new-account,
+    &__btn-login-to-account {
+        font-size: rem-calc(14);
+        line-height: 1.5;
+        padding-top: rem-calc(15);
+        padding-bottom: rem-calc(16);
+    }
+
+    &__btn-create-new-account {
+        max-width: rem-calc(280);
+        margin: 0 auto;
+    }
+
     &--open {
         pointer-events: auto;
         background: rgba(33, 38, 58, 0.65);
@@ -103,10 +130,15 @@
 
     &__content-top {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding-bottom: rem-calc(16);
         border-bottom: rem-calc(1) solid rgba(255, 255, 255, .15);
+        gap: rem-calc(20);
         margin-bottom: rem-calc(20);
+
+        &--registration {
+            justify-content: center;
+        }
 
         &--big {
             position: relative;

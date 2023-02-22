@@ -3208,9 +3208,6 @@
   transition: 0.3s;
   clip-path: polygon(0% 0.5rem, 0.25rem 0.5rem, 0.25rem 0.25rem, 0.5rem 0.25rem, 0.5rem 0, calc(100% - 0.5rem) 0, calc(100% - 0.5rem) 0.25rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.25rem) 0.5rem, 100% 0.5rem, 100% calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.5rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.5rem) calc(100% - 0.25rem), calc(100% - 0.5rem) 100%, 0.5rem 100%, 0.5rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.25rem), 0.25rem calc(100% - 0.5rem), 0% calc(100% - 0.5rem), 0% 0.5rem, 0.0625rem 0.5625rem, 0.0625rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.5625rem), 0.3125rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.3125rem), 0.5625rem calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.0625rem), calc(100% - 0.5625rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.3125rem), calc(100% - 0.3125rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) calc(100% - 0.5625rem), calc(100% - 0.0625rem) 0.5625rem, calc(100% - 0.3125rem) 0.5625rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.5625rem) 0.3125rem, calc(100% - 0.5625rem) 0.0625rem, 0.5625rem 0.0625rem, 0.5625rem 0.3125rem, 0.3125rem 0.3125rem, 0.3125rem 0.5625rem, 0.0625rem 0.5625rem);
 }
-.mask-btn--border.mask-btn--border-custom {
-  background-color: transparent;
-}
 .mask-btn--border.mask-btn--border-custom:before {
   background: rgba(255, 255, 255, 0.15);
 }
@@ -4793,6 +4790,27 @@ section,
   opacity: 0;
   color: white;
 }
+.modal__button {
+  padding: 0.8125rem 1.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.modal__button--registration {
+  width: 8.875rem;
+}
+.modal__button--login {
+  width: 8.875rem;
+}
+.modal__btn-create-new-account, .modal__btn-login-to-account {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-top: 0.9375rem;
+  padding-bottom: 1rem;
+}
+.modal__btn-create-new-account {
+  max-width: 17.5rem;
+  margin: 0 auto;
+}
 .modal--open {
   pointer-events: auto;
   background: rgba(33, 38, 58, 0.65);
@@ -4857,10 +4875,14 @@ section,
 }
 .modal__content-top {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding-bottom: 1rem;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.15);
+  gap: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.modal__content-top--registration {
+  justify-content: center;
 }
 .modal__content-top--big {
   position: relative;
