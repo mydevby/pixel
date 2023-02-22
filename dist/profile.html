@@ -363,14 +363,15 @@
                                         </label>
                                     </div>
                                 </div>
-                                <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
+                                <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small" disabled>
                                     Save
                                 </button>
                             </div> 
                         </div>
 
                         <div class="profile__swiper-slide swiper-slide" data-hash="verification">
-                            <div class="profile__info-content profile__info-content--verification">
+
+                            <div class="profile__info-content profile__info-content--verification-step-1">
                                 <h2 class="profile__info-title">
                                     <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
                                 </h2>
@@ -387,19 +388,208 @@
                                             <div class="checkbox__pseudo-checkbox">
                                                 <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
                                             </div>
-                                            <div class="profile__info-verification-about-text profile__info-verification-about-text--four">I consent to the processing of my personal<br>data in accordance with <a class="profile__info-verification-abot-link" href="#">Privacy Policy</a></div>
+                                            <div class="profile__info-verification-about-text profile__info-verification-about-text--four">I consent to the processing of my personal<br>data in accordance with <a class="profile__info-verification-abot-link" href="documents.html#privacy-policy" target="_blank">Privacy Policy</a></div>
                                         </label>
                                     </div>
             
-                                    <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
+                                    <button class="profile__info-btn profile__go-to-verification-step-2 button button--center button--hover button--disabled">
+                                        <div class="mask-bg mask-bg--accent mask-small"></div>
                                         Start
                                     </button>
                                 </div>
                             </div>
+
+                            <div class="profile__info-content profile__info-content--verification-step-2 visually-hidden">
+                                <h2 class="profile__info-title">
+                                    <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
+                                </h2>
+                                <div class="profile__info-persent-wrapper">
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                    <div class="profile__info-persent-line">
+                                        <div class="profile__info-persent-line-persent profile__info-persent-line-persent--25"></div>
+                                    </div>
+                                    <div class="profile__info-persent-text">ID CARD</div>
+                                    <div class="profile__info-persent-text">SELFIE</div>
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--finish">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                </div>
+                                <div class="profile__info-verification-about">
+                                    <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
+                                    <div class="profile__info-verification-content profile__info-verification-content--step-2">
+                                        <h2 class="profile__info-verification-title">ID CARD</h2>
+                                        <div class="profile__info-verification-country-wrapper">
+                                            <label class="modal__label btn mask-modal mask-modal--border">
+                                                <div class="modal__label-icon modal__label-icon--ukraine"></div>
+                                                <div class="modal__input-wrapper">
+                                                    <div class="modal__input-name">Select the country of issue</div>
+                                                    <input class="modal__input" type="text" placeholder=" ">
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <h3 class="profile__info-verification-title">Select the document type</h3>
+                                        <div class="profile__info-verification-checkbox-wrapper">
+                                            <div class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" id="verification-step-2-1" checked>
+                                                <label class="checkbox__label" for="verification-step-2-1">
+                                                    <div class="checkbox__pseudo-checkbox">
+                                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                                    </div>
+                                                    <div class="profile__info-verification-checkbox-text">ID CARD</div>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" id="verification-step-2-2">
+                                                <label class="checkbox__label" for="verification-step-2-2">
+                                                    <div class="checkbox__pseudo-checkbox">
+                                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                                    </div>
+                                                    <div class="profile__info-verification-checkbox-text">PASSPORT</div>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" id="verification-step-2-3">
+                                                <label class="checkbox__label" for="verification-step-2-3">
+                                                    <div class="checkbox__pseudo-checkbox">
+                                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                                    </div>
+                                                    <div class="profile__info-verification-checkbox-text">RESIDENCE PERMIT</div>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <input class="checkbox__input" type="checkbox" id="verification-step-2-4">
+                                                <label class="checkbox__label" for="verification-step-2-4">
+                                                    <div class="checkbox__pseudo-checkbox">
+                                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                                    </div>
+                                                    <div class="profile__info-verification-checkbox-text">DRIVING LICENSE</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h3 class="profile__info-verification-title profile__info-verification-title--left">Take a photo of the ID card. The photo must be:</h3>
+                                        <ul class="profile__info-verification-list profile__info-verification-list--left">
+                                            <li class="profile__info-verification-item">Light and clear (good quality),</li>
+                                            <li class="profile__info-verification-item">uncropped (all corners of the document are visible).</li>
+                                        </ul>
+                                        <div class="profile__info-verification-example-wrapper">
+                                            <img class="profile__info-verification-example-img" src="img/user/icon-example-1.svg" alt="Good photo">
+                                            <img class="profile__info-verification-example-img" src="img/user/icon-example-2.svg" alt="Bad photo">
+                                            <img class="profile__info-verification-example-img" src="img/user/icon-example-3.svg" alt="Bad photo">
+                                        </div>
+                                        <img  class="profile__info-verification-img-tmp" src="img/user/tmp.svg" alt="tmp">
+                                        <button class="profile__go-to-verification-step-3 button button--center button--hover">
+                                            <div class="mask-bg mask-bg--accent mask-small"></div>
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile__info-content profile__info-content--verification-step-3 visually-hidden">
+                                <h2 class="profile__info-title">
+                                    <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
+                                </h2>
+                                <div class="profile__info-persent-wrapper">
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                    <div class="profile__info-persent-line">
+                                        <div class="profile__info-persent-line-persent profile__info-persent-line-persent--50"></div>
+                                    </div>
+                                    <div class="profile__info-persent-text">ID CARD</div>
+                                    <div class="profile__info-persent-text">SELFIE</div>
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--finish">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                </div>
+                                <div class="profile__info-verification-about">
+                                    <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
+                                    <div class="profile__info-verification-content profile__info-verification-content--step-3">
+                                        <h2 class="profile__info-verification-title">SELFI</h2>
+                                        <p  class="profile__info-verification-text profile__info-verification-text--step-5">Look into the camera. Make a slight spinning motion<br>with your head in a circle, and that's it!</p>
+                                        <div class="profile__info-verification-icon-selfi"></div>
+                                        <button class="profile__go-to-verification-step-4 button button--center button--hover">
+                                            <div class="mask-bg mask-bg--accent mask-small"></div>
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile__info-content profile__info-content--verification-step-4 visually-hidden">
+                                <h2 class="profile__info-title">
+                                    <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
+                                </h2>
+                                <div class="profile__info-persent-wrapper">
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                    <div class="profile__info-persent-line">
+                                        <div class="profile__info-persent-line-persent profile__info-persent-line-persent--75"></div>
+                                    </div>
+                                    <div class="profile__info-persent-text">ID CARD</div>
+                                    <div class="profile__info-persent-text">SELFIE</div>
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--finish">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                </div>
+                                <div class="profile__info-verification-about">
+                                    <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
+                                    <div class="profile__info-verification-content profile__info-verification-content--step-4">
+                                        <h2 class="profile__info-verification-title">Warning!</h2>
+                                        <p  class="profile__info-verification-text profile__info-verification-text--step-4">Access to the camera is required to successfully complete the test.<br>Follow the steps below to turn on the camera:</p>
+                                        <div class="profile__info-verification-icon-warning"></div>
+                                        <ul class="profile__info-verification-list">
+                                            <li class="profile__info-verification-item">In the address bar of your browser, click on the <img class="profile__info-verification-item-camera" src="img/user/icon-camera.svg" alt="Camera"></li>
+                                            <li class="profile__info-verification-item">Select the Always provide ... access to my camera option.</li>
+                                            <li class="profile__info-verification-item">Click Done</li>
+                                        </ul>
+                                        <button class="profile__go-to-verification-step-5 button button--center button--hover">
+                                            <div class="mask-bg mask-bg--accent mask-small"></div>
+                                            Next
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile__info-content profile__info-content--verification-step-5 visually-hidden">
+                                <h2 class="profile__info-title">
+                                    <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
+                                </h2>
+                                <div class="profile__info-persent-wrapper">
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                    <div class="profile__info-persent-line">
+                                        <div class="profile__info-persent-line-persent profile__info-persent-line-persent--100"></div>
+                                    </div>
+                                    <div class="profile__info-persent-text">ID CARD</div>
+                                    <div class="profile__info-persent-text">SELFIE</div>
+                                    <div class="profile__info-persent-icon profile__info-persent-icon--finish profile__info-persent-icon--active">
+                                        <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
+                                    </div>
+                                </div>
+                                <div class="profile__info-verification-about">
+                                    <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
+                                    <div class="profile__info-verification-content profile__info-verification-content--step-5">
+                                        <div class="profile__info-verification-icon-done"></div>
+                                        <h2 class="profile__info-verification-title">Done!</h2>
+                                        <p  class="profile__info-verification-text profile__info-verification-text--step-5">Your application has been sent for consideration!</p>
+                                        <button class="profile__go-to-verification-done button button--center button--disabled">
+                                            <div class="mask-bg mask-bg--accent mask-small"></div>
+                                            Done
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+
                         </div>
 
                         <div class="profile__swiper-slide swiper-slide" data-hash="security">
-                            <div class="profile__info-content">
+                            
+                            <div class="profile__info-content profile__info-content--2fa-step-1">
                                 <h2 class="profile__info-title">
                                     <span class="profile__info-title-text profile__info-title-text--security">SECURITY</span>
                                 </h2>
@@ -438,11 +628,58 @@
                                 <div class="profile__info-security-example-item profile__info-security-example-item-2">
                                     <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
                                     <p class="profile__info-security-example-text">Protect your MegaCasino account with an extra layer of security</p>
-                                    <button class="profile__info-btn profile__info-btn--security-2 button modals__btn btn btn--accent mask-small">
-                                        Enable 2FA <img class="profile__info-btn-icon" src="img/user/icon-checked.svg" alt="Done">
+                                    <button class="profile__go-to-2fa-step-2 button button--right">
+                                        <div class="mask-bg mask-bg--accent mask-small"></div>
+                                        Enable 2FA 
                                     </button>
                                 </div>
                             </div>
+
+                            <div class="profile__info-content profile__info-content--2fa-step-2 visually-hidden">
+                                <h2 class="profile__info-title">
+                                    <span class="profile__info-title-text profile__info-title-text--2fa">Two-factor authentication</span>
+                                </h2>
+                                <h2 class="profile__info-verification-title profile__info-verification-title--center">DOWNLOAD THE APP</h2>
+                                <p class="profile__info-verification-text profile__info-verification-text--2fa">Download and install Authy or Google<br>2FA for your phone or tablet</p>
+                                <div class="profile__info-line"></div>
+                                <div class="profile__info-qr-wrapper">
+                                    <img class="profile__info-qr-img" src="img/user/icon-qr.svg" alt="QR-Code for 2fa">
+                                    <div class="profile__info-qr-text">
+                                        <h3 class="profile__info-verification-title profile__info-verification-title--qr">SCAN THE QR CODE</h3>
+                                        <p class="profile__info-verification-text profile__info-verification-text--2fa-2">Scan the QR code on the<br>left with your phone camera.</p>
+                                        <label class="modal__label btn mask-modal mask-modal--border">
+                                            <div class="modal__label-icon modal__label-icon--password"></div>
+                                            <div class="modal__input-wrapper modal__input-wrapper--password">
+                                                <div class="modal__input-name">2FA KEY (MANUAL INPUT)</div>
+                                                <input class="modal__input" type="text" placeholder=" ">
+                                                <div class="modal__input-btn modal__input-btn--key btn btn--small-mask btn--small-mask--border"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="profile__info-line"></div>
+                                <div class="profile__info-qr-bottom">
+                                    <label class="modal__label btn mask-modal mask-modal--border">
+                                        <div class="modal__label-icon modal__label-icon--password"></div>
+                                        <div class="modal__input-wrapper modal__input-wrapper--password">
+                                            <div class="modal__input-name">Enter your password</div>
+                                            <input class="modal__input" type="text" placeholder=" ">
+                                        </div>
+                                    </label>
+                                    <label class="modal__label btn mask-modal mask-modal--border">
+                                        <div class="modal__label-icon modal__label-icon--code"></div>
+                                        <div class="modal__input-wrapper  modal__input-wrapper--code">
+                                            <div class="modal__input-name">Enter the 6-digit code from the application</div>
+                                            <input class="modal__input modal__input--code" type="password" placeholder=" ">
+                                        </div>
+                                    </label>
+                                    <button class="profile__social-networking-save button button--center button--disabled">
+                                        <div class="mask-bg mask-bg--accent mask-small"></div>
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+
                         </div>
 
                         <div class="profile__swiper-slide swiper-slide" data-hash="social-networking">
@@ -467,13 +704,15 @@
                                     <button class="modal__social-btn modal__social-btn--tw btn mask-modal mask-modal--border"></button>
                                     <button class="modal__social-btn modal__social-btn--fb btn mask-modal mask-modal--border"></button>
                                 </div>
-                                <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                                    Save <img class="profile__info-btn-icon" src="img/user/icon-checked.svg" alt="Done">
+                                <button class="profile__social-networking-save button button--center button--disabled">
+                                    <div class="mask-bg mask-bg--accent mask-small"></div>
+                                    Save
                                 </button>
                             </div>
                         </div>
 
                         <div class="profile__swiper-slide swiper-slide" data-hash="notifications">
+
                             <div class="profile__info-content">
                                 <h2 class="profile__info-title">
                                     <span class="profile__info-title-text profile__info-title-text--notifications">NOTIFICATIONS</span>
@@ -522,241 +761,12 @@
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
 
                     </div>
-                </div>
-                
-
-                <div class="profile__info-content profile__info-content--verification-step-2">
-                    <h2 class="profile__info-title">
-                        <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
-                    </h2>
-                    <div class="profile__info-persent-wrapper">
-                        <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                        <div class="profile__info-persent-line">
-                            <div class="profile__info-persent-line-persent"></div>
-                        </div>
-                        <div class="profile__info-persent-text">ID CARD</div>
-                        <div class="profile__info-persent-text">SELFIE</div>
-                        <div class="profile__info-persent-icon profile__info-persent-icon--finish">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                    </div>
-                    <div class="profile__info-verification-about">
-                        <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
-                        <div class="profile__info-verification-content profile__info-verification-content--step-2">
-                            <h2 class="profile__info-verification-title">ID CARD</h2>
-                            <div class="profile__info-verification-country-wrapper">
-                                <label class="modal__label btn mask-modal mask-modal--border">
-                                    <div class="modal__label-icon modal__label-icon--ukraine"></div>
-                                    <div class="modal__input-wrapper">
-                                        <div class="modal__input-name">Select the country of issue</div>
-                                        <input class="modal__input" type="text" placeholder=" ">
-                                    </div>
-                                </label>
-                            </div>
-                            <h3 class="profile__info-verification-title">Select the document type</h3>
-                            <div class="profile__info-verification-checkbox-wrapper">
-                                <div class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" id="verification-step-2-1">
-                                    <label class="checkbox__label" for="verification-step-2-1">
-                                        <div class="checkbox__pseudo-checkbox">
-                                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                                        </div>
-                                        <div class="profile__info-verification-checkbox-text">ID CARD</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" id="verification-step-2-2">
-                                    <label class="checkbox__label" for="verification-step-2-2">
-                                        <div class="checkbox__pseudo-checkbox">
-                                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                                        </div>
-                                        <div class="profile__info-verification-checkbox-text">PASSPORT</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" id="verification-step-2-3">
-                                    <label class="checkbox__label" for="verification-step-2-3">
-                                        <div class="checkbox__pseudo-checkbox">
-                                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                                        </div>
-                                        <div class="profile__info-verification-checkbox-text">RESIDENCE PERMIT</div>
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" id="verification-step-2-4">
-                                    <label class="checkbox__label" for="verification-step-2-4">
-                                        <div class="checkbox__pseudo-checkbox">
-                                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                                        </div>
-                                        <div class="profile__info-verification-checkbox-text">DRIVING LICENSE</div>
-                                    </label>
-                                </div>
-                            </div>
-                            <h3 class="profile__info-verification-title profile__info-verification-title--left">Take a photo of the ID card. The photo must be:</h3>
-                            <ul class="profile__info-verification-list profile__info-verification-list--left">
-                                <li class="profile__info-verification-item">Light and clear (good quality),</li>
-                                <li class="profile__info-verification-item">uncropped (all corners of the document are visible).</li>
-                            </ul>
-                            <div class="profile__info-verification-example-wrapper">
-                                <img class="profile__info-verification-example-img" src="img/user/icon-example-1.svg" alt="Good photo">
-                                <img class="profile__info-verification-example-img" src="img/user/icon-example-2.svg" alt="Bad photo">
-                                <img class="profile__info-verification-example-img" src="img/user/icon-example-3.svg" alt="Bad photo">
-                            </div>
-                            <img  class="profile__info-verification-img-tmp" src="img/user/tmp.svg" alt="tmp">
-                            <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                                NEXT <img class="profile__info-btn-icon profile__info-btn-icon--next" src="img/user/icon-next.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="profile__info-content profile__info-content--verification-step-3">
-                    <h2 class="profile__info-title">
-                        <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
-                    </h2>
-                    <div class="profile__info-persent-wrapper">
-                        <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                        <div class="profile__info-persent-line">
-                            <div class="profile__info-persent-line-persent"></div>
-                        </div>
-                        <div class="profile__info-persent-text">ID CARD</div>
-                        <div class="profile__info-persent-text">SELFIE</div>
-                        <div class="profile__info-persent-icon profile__info-persent-icon--finish">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                    </div>
-                    <div class="profile__info-verification-about">
-                        <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
-                        <div class="profile__info-verification-content profile__info-verification-content--step-3">
-                            <h2 class="profile__info-verification-title">SELFI</h2>
-                            <p  class="profile__info-verification-text profile__info-verification-text--step-5">Look into the camera. Make a slight spinning motion<br>with your head in a circle, and that's it!</p>
-                            <div class="profile__info-verification-icon-selfi"></div>
-                            <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                                NEXT <img class="profile__info-btn-icon profile__info-btn-icon--next" src="img/user/icon-next.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-
-
-                <div class="profile__info-content profile__info-content--verification-step-4">
-                    <h2 class="profile__info-title">
-                        <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
-                    </h2>
-                    <div class="profile__info-persent-wrapper">
-                        <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                        <div class="profile__info-persent-line">
-                            <div class="profile__info-persent-line-persent"></div>
-                        </div>
-                        <div class="profile__info-persent-text">ID CARD</div>
-                        <div class="profile__info-persent-text">SELFIE</div>
-                        <div class="profile__info-persent-icon profile__info-persent-icon--finish">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                    </div>
-                    <div class="profile__info-verification-about">
-                        <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
-                        <div class="profile__info-verification-content profile__info-verification-content--step-4">
-                            <h2 class="profile__info-verification-title">Warning!</h2>
-                            <p  class="profile__info-verification-text profile__info-verification-text--step-4">Access to the camera is required to successfully complete the test.<br>Follow the steps below to turn on the camera:</p>
-                            <div class="profile__info-verification-icon-warning"></div>
-                            <ul class="profile__info-verification-list">
-                                <li class="profile__info-verification-item">In the address bar of your browser, click on the <img class="profile__info-verification-item-camera" src="img/user/icon-camera.svg" alt="Camera"></li>
-                                <li class="profile__info-verification-item">Select the Always provide ... access to my camera option.</li>
-                                <li class="profile__info-verification-item">Click Done</li>
-                            </ul>
-                            <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                                NEXT <img class="profile__info-btn-icon profile__info-btn-icon--next" src="img/user/icon-next.svg" alt="Next">
-                            </button>
-                        </div>
-                    </div>
-                </div>  
-
-
-                <div class="profile__info-content profile__info-content--verification-step-5">
-                    <h2 class="profile__info-title">
-                        <span class="profile__info-title-text profile__info-title-text--verification">VERIFICATION</span>
-                    </h2>
-                    <div class="profile__info-persent-wrapper">
-                        <div class="profile__info-persent-icon profile__info-persent-icon--start profile__info-persent-icon--active">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                        <div class="profile__info-persent-line">
-                            <div class="profile__info-persent-line-persent profile__info-persent-line-persent--100"></div>
-                        </div>
-                        <div class="profile__info-persent-text">ID CARD</div>
-                        <div class="profile__info-persent-text">SELFIE</div>
-                        <div class="profile__info-persent-icon profile__info-persent-icon--finish profile__info-persent-icon--active">
-                            <div class="mask-bg mask-bg--black mask-btn-small mask-btn-small--border"></div>
-                        </div>
-                    </div>
-                    <div class="profile__info-verification-about">
-                        <div class="mask-bg mask-bg--dark mask-bg--filter mask-block mask-block--border"></div>
-                        <div class="profile__info-verification-content profile__info-verification-content--step-5">
-                            <div class="profile__info-verification-icon-done"></div>
-                            <h2 class="profile__info-verification-title">Done!</h2>
-                            <p  class="profile__info-verification-text profile__info-verification-text--step-5">Your application has been sent for consideration!</p>
-                            <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                                DONE <img class="profile__info-btn-icon" src="img/user/icon-checked.svg" alt="Done">
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                <div class="profile__info-content profile__info-content--2fa">
-                    <h2 class="profile__info-title">
-                        <span class="profile__info-title-text profile__info-title-text--2fa">Two-factor authentication</span>
-                    </h2>
-                    <h2 class="profile__info-verification-title profile__info-verification-title--center">DOWNLOAD THE APP</h2>
-                    <p class="profile__info-verification-text profile__info-verification-text--2fa">Download and install Authy or Google<br>2FA for your phone or tablet</p>
-                    <div class="profile__info-line"></div>
-                    <div class="profile__info-qr-wrapper">
-                        <img class="profile__info-qr-img" src="img/user/icon-qr.svg" alt="QR-Code for 2fa">
-                        <div class="profile__info-qr-text">
-                            <h3 class="profile__info-verification-title profile__info-verification-title--qr">SCAN THE QR CODE</h3>
-                            <p class="profile__info-verification-text profile__info-verification-text--2fa-2">Scan the QR code on the<br>left with your phone camera.</p>
-                            <label class="modal__label btn mask-modal mask-modal--border">
-                                <div class="modal__label-icon modal__label-icon--password"></div>
-                                <div class="modal__input-wrapper modal__input-wrapper--password">
-                                    <div class="modal__input-name">2FA KEY (MANUAL INPUT)</div>
-                                    <input class="modal__input" type="text" placeholder=" ">
-                                    <div class="modal__input-btn modal__input-btn--key btn btn--small-mask btn--small-mask--border"></div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="profile__info-line"></div>
-                    <div class="profile__info-qr-bottom">
-                        <label class="modal__label btn mask-modal mask-modal--border">
-                            <div class="modal__label-icon modal__label-icon--password"></div>
-                            <div class="modal__input-wrapper modal__input-wrapper--password">
-                                <div class="modal__input-name">Enter your password</div>
-                                <input class="modal__input" type="text" placeholder=" ">
-                            </div>
-                        </label>
-                        <label class="modal__label btn mask-modal mask-modal--border">
-                            <div class="modal__label-icon modal__label-icon--code"></div>
-                            <div class="modal__input-wrapper  modal__input-wrapper--code">
-                                <div class="modal__input-name">Enter the 6-digit code from the application</div>
-                                <input class="modal__input modal__input--code" type="password" placeholder=" ">
-                            </div>
-                        </label>
-                        <button class="profile__info-btn button button--center modals__btn btn btn--accent mask-small">
-                            Save <img class="profile__info-btn-icon" src="img/user/icon-checked.svg" alt="Save">
-                        </button>
-                    </div>
-                </div>                
+                </div>               
+               
 
 			</div>
 

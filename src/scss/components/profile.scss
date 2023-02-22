@@ -220,9 +220,9 @@
             }
         }
 
-        &--verifications {
+        &--verification {
             &:before {
-                background-image: url("../img/user/icon-title-verifications.svg");
+                background-image: url("../img/user/icon-title-verification.svg");
             }
         }
 
@@ -275,6 +275,45 @@
         text-align: center;
     }
 
+    &__go-to-verification-step-2 {
+        margin-top: rem-calc(32);
+    }
+
+    &__go-to-verification-step-3,
+    &__go-to-verification-step-4,
+    &__go-to-verification-step-5 {
+        padding: rem-calc(15) rem-calc(72) rem-calc(16) rem-calc(54);
+
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: rem-calc(54);
+            width: rem-calc(8);
+            height: rem-calc(14);
+            background: url("../img/user/icon-next.svg") no-repeat 50% 50% /contain;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__go-to-verification-done,
+    &__social-networking-save,
+    &__go-to-2fa-step-2 {
+        padding: rem-calc(15) rem-calc(72) rem-calc(16) rem-calc(54);
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            right: rem-calc(52);
+            width: rem-calc(12);
+            height: rem-calc(10);
+            background: url("../img/user/icon-verification-done.svg") no-repeat 50% 50% /contain;
+            transform: translateY(-50%);
+        }
+    }
+
     &__info-verification-about-text {
         line-height: 1.5;
 
@@ -290,10 +329,6 @@
 
         &--three {
             margin-bottom: rem-calc(36);
-        }
-
-        &--four {
-            margin-bottom: rem-calc(32);
         }
 
         &--one,
@@ -403,7 +438,19 @@
     &__info-persent-line-persent {
         height: rem-calc(5);
         background: $clr-accent;
-        width: 50%;
+        width: 25%;
+
+        &--25 {
+            width: 25%;
+        }
+
+        &--50 {
+            width: 50%;
+        }
+
+        &--75 {
+            width: 75%;
+        }
 
         &--100 {
             width: 100%;
@@ -513,21 +560,6 @@
 
         &--2fa-2 {
             margin-bottom: rem-calc(19);
-        }
-    }
-
-    &__info-btn-icon {
-        display: inline-block;
-        width: rem-calc(13);
-        height: rem-calc(12);
-        margin-left: rem-calc(8);
-        transform: translateY(#{rem-calc(-3)});
-
-        &--next {
-            width: rem-calc(8);
-            height: rem-calc(14);
-            transform: translateY(0);
-            margin-left: rem-calc(10);
         }
     }
 

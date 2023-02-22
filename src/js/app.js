@@ -86,6 +86,61 @@ window.onload = function() {
 		});
 	};
 
+	if (document.getElementById('verification-step-1') !== null) {
+		document.getElementById('verification-step-1').addEventListener('change', () => {
+			document.querySelector('.profile__go-to-verification-step-2').classList.toggle('button--disabled');
+		})
+	};
+
+	if (document.querySelector('.profile__go-to-verification-step-2') !== null) {
+		let goToVerificationStep2  = document.querySelector('.profile__go-to-verification-step-2');
+		goToVerificationStep2.addEventListener('click', function(e) {
+			document.querySelector('.profile__info-content--verification-step-1').classList.add('visually-hidden');
+			document.querySelector('.profile__info-content--verification-step-2').classList.remove('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.profile__go-to-verification-step-3') !== null) {
+		let goToVerificationStep3  = document.querySelector('.profile__go-to-verification-step-3');
+		goToVerificationStep3.addEventListener('click', function(e) {
+			document.querySelector('.profile__info-content--verification-step-2').classList.add('visually-hidden');
+			document.querySelector('.profile__info-content--verification-step-3').classList.remove('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.profile__go-to-verification-step-4') !== null) {
+		let goToVerificationStep4  = document.querySelector('.profile__go-to-verification-step-4');
+		goToVerificationStep4.addEventListener('click', function(e) {
+			document.querySelector('.profile__info-content--verification-step-3').classList.add('visually-hidden');
+			document.querySelector('.profile__info-content--verification-step-4').classList.remove('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.profile__go-to-verification-step-5') !== null) {
+		let goToVerificationStep5  = document.querySelector('.profile__go-to-verification-step-5');
+		goToVerificationStep5.addEventListener('click', function(e) {
+			document.querySelector('.profile__info-content--verification-step-4').classList.add('visually-hidden');
+			document.querySelector('.profile__info-content--verification-step-5').classList.remove('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.profile__go-to-2fa-step-2') !== null) {
+		let goTo2FAStep2  = document.querySelector('.profile__go-to-2fa-step-2');
+		goTo2FAStep2.addEventListener('click', function(e) {
+			document.querySelector('.profile__info-content--2fa-step-1').classList.add('visually-hidden');
+			document.querySelector('.profile__info-content--2fa-step-2').classList.remove('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.profile__nav-link') !== null) {
+		let hashProfile = window.location.hash;
+		if (document.querySelector('.profile__nav-link[href="profile.html' + hashProfile + '"]') !== null) {
+			document.querySelector('.profile__nav-link--active').classList.remove('profile__nav-link--active');
+			document.querySelector('.profile__nav-link[href="profile.html' + hashProfile + '"]').classList.add('profile__nav-link--active');
+		};
+	}
+
+
 	//Page Slot
 
 	if (document.querySelector('.slot-open__button-demo') !== null) {
