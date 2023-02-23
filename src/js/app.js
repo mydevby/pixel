@@ -359,6 +359,22 @@ window.onload = function() {
 			});
 		});
 	};
+	if (document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1') !== null) {
+		document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1').addEventListener('click', () => {
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1').classList.remove('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1').classList.add('btn--active');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2').classList.add('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2').classList.remove('btn--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2') !== null) {
+		document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2').addEventListener('click', () => {
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2').classList.remove('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-2').classList.add('btn--active');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1').classList.add('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-buy-crypto-btn-1').classList.remove('btn--active');
+		});
+	};
 	//swap modal
 	if (document.querySelector('.modal__nav-btn--swap-go-to-deposit') !== null) {
 		document.querySelector('.modal__nav-btn--swap-go-to-deposit').addEventListener('click', () => {
@@ -518,6 +534,22 @@ window.onload = function() {
 				modalContent.classList.remove('modal__content--active');
 			});
 			document.querySelector('.modal__content--deposit-fiat').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1') !== null) {
+		document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1').addEventListener('click', () => {
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1').classList.remove('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1').classList.add('btn--active');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2').classList.add('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2').classList.remove('btn--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2') !== null) {
+		document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2').addEventListener('click', () => {
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2').classList.remove('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-2').classList.add('btn--active');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1').classList.add('mask-btn--border');
+			document.querySelector('.modal__nav-crypto-btn-withdraw-btn-1').classList.remove('btn--active');
 		});
 	};
 
