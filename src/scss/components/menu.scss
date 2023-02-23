@@ -5,6 +5,7 @@
     width: 100%;
     max-width: rem-calc(90);
     background: rgba(255, 255, 255, 0.01);
+    -webkit-backdrop-filter: blur(12.5px);
     backdrop-filter: blur(12.5px);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
