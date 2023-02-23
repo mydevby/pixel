@@ -2,6 +2,16 @@
     display: grid;
     grid-template-columns: rem-calc(500) rem-calc(1070);
     gap: rem-calc(30);
+    @media (max-width: 1024px) {
+		grid-template-columns: rem-calc(375) rem-calc(840);
+        gap: rem-calc(22);
+	}
+    @media (max-width: 768px) {
+		grid-template-columns: rem-calc(810);
+	}
+    @media (max-width: 480px) {
+		grid-template-columns: rem-calc(565);
+	}
 
     &__nav-list {
         position: relative;

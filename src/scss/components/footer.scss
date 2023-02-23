@@ -8,6 +8,17 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: rem-calc(100);
+    margin-top: auto;
+    @media (max-width: 1024px) {
+        grid-template-columns: 1.3fr 2fr 1fr;
+    }
+    @media (max-width: 768px) {
+		grid-template-columns: rem-calc(810);
+        gap: rem-calc(40);
+	}
+    @media (max-width: 480px) {
+		grid-template-columns: rem-calc(565);
+	}
 
     &:before {
         position: absolute;
@@ -23,9 +34,22 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        @media (max-width: 768px) {
+            justify-content: center;
+            gap: rem-calc(60);
+        }
 
         &--social {
             justify-content: flex-end;
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
+        }        
+    }
+
+    &__links-wrapper {
+        @media (max-width: 768px) {
+            text-align: center;
         }
     }
 

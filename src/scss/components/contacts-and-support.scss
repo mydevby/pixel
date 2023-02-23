@@ -3,6 +3,10 @@
     grid-template-columns: rem-calc(500) 1fr;
     gap: rem-calc(30);
 
+    @media (max-width: 1024px) {
+        grid-template-columns: rem-calc(430) 1fr;
+    }
+
     &__nav-list {
         position: relative;
         padding: rem-calc(30) rem-calc(20) rem-calc(30);
@@ -119,8 +123,9 @@
     }
 
     &__contacts-content-btn-wrapper {
-        max-width: rem-calc(150);
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .footer__support-btn {
             padding-top: rem-calc(15);

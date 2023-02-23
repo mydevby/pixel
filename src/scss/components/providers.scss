@@ -17,6 +17,9 @@
         grid-template-columns: 4fr 1fr 1fr;
         gap: rem-calc(15);
         margin-bottom: rem-calc(30);
+        @media (max-width: 1024px) {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
     }
 
     &__select {
@@ -101,7 +104,9 @@
         grid-template-columns: repeat(6, 1fr);
         gap: rem-calc(15);
         margin-bottom: rem-calc(30);
-        padding: 0 rem-calc(40);
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
     }
 
     &__swiper {
@@ -111,6 +116,7 @@
 
     &__swiper-slide {
         max-height: 0;
+        padding: 0 rem-calc(40);
         overflow: hidden;
 
         &.swiper-slide-active {

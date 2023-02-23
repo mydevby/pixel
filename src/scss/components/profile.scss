@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: rem-calc(500) rem-calc(1070);
     gap: rem-calc(30);
+    @media (max-width: 1024px) {
+		grid-template-columns: rem-calc(375) rem-calc(840);
+        gap: rem-calc(22);
+	}
 
     &__nav-list {
         position: relative;
@@ -311,6 +315,13 @@
             height: rem-calc(10);
             background: url("../img/user/icon-verification-done.svg") no-repeat 50% 50% /contain;
             transform: translateY(-50%);
+        }
+    }
+
+    &__go-to-2fa-step-2 {
+        @media (max-width: 1024px) {
+            min-width: rem-calc(250);
+            margin-left: rem-calc(30);
         }
     }
 

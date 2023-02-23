@@ -190,6 +190,10 @@
 	}
 
 	&--icon-all-slots {
+        @media (max-width: 1024px) {
+            min-width: rem-calc(155);
+        }
+
 		&:before {
             background-image: url("../img/icons/icon-all-slots.svg");
         }

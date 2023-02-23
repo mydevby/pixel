@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     gap: rem-calc(30);
     margin-bottom: rem-calc(30);
+    @media (max-width: 1024px) {
+        grid-template-columns: rem-calc(600) rem-calc(600);
+    }
 
     &__group {
         padding: rem-calc(16) rem-calc(18) rem-calc(19);
@@ -53,10 +56,15 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: rem-calc(15)
-    }
+        gap: rem-calc(15);
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, #{rem-calc(270)});
+        }
 
-    &__item {
-        min-width: calc(100% / 3);
+        .slot:nth-child(3) {
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
     }
 }

@@ -98,8 +98,14 @@ body {
 	overflow-x: hidden;
 	max-width: 100%;
 	font-size: calc(100vw / 120);
-	@media (max-width: 1600px) {
-		font-size: calc(100vw / 120);
+	@media (max-width: 1024px) {
+		font-size: calc(100vw / 90);
+	}
+	@media (max-width: 768px) {
+		font-size: calc(100vw / 60);
+	}
+	@media (max-width: 480px) {
+		font-size: calc(100vw / 45);
 	}
 }
 
@@ -184,10 +190,23 @@ main {
 }
 
 .page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 	padding-left: rem-calc(160);
 	padding-right: rem-calc(160);
 	z-index: 2;
 	overflow-x: hidden;
+
+	@media (max-width: 1024px) {
+		padding-left: rem-calc(140);
+		padding-right: rem-calc(60);
+	}
+
+	@media (max-width: 768px) {
+		padding-left: rem-calc(120);
+		padding-right: rem-calc(35);
+	}
 }
 
 .main {

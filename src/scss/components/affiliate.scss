@@ -4,6 +4,17 @@
     &__list {
         grid-template-columns: rem-calc(492) 1fr 1fr rem-calc(348);
         gap: rem-calc(60) rem-calc(32);
+        @media (max-width: 1024px) {
+            grid-template-columns: rem-calc(560) rem-calc(560);
+            grid-template-rows: 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: rem-calc(720);
+            gap: rem-calc(32);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: rem-calc(490);
+        }
     }
 
     &__item {
@@ -11,6 +22,9 @@
 
         &--1 {
             padding: rem-calc(40);
+            @media (max-width: 768px) {
+                grid-column: 1;
+            }
         }
 
         &--2,
@@ -19,12 +33,18 @@
             flex-direction: column;
             align-items: center;
             padding: rem-calc(30) rem-calc(20);
+            @media (max-width: 768px) {
+                grid-column: 1;
+            }
         }
 
         &--4 {
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (max-width: 768px) {
+                grid-column: 1;
+            }
         }
 
         &--5 {
@@ -33,8 +53,15 @@
             padding: rem-calc(30) rem-calc(30) rem-calc(30) rem-calc(130);
             background-image: url(../img/affiliate/affiliate-5-x2.min.png);
             background-size: rem-calc(563) rem-calc(220);
-            background-position: calc(20) 0;
             background-repeat: no-repeat;
+            @media (max-width: 1024px) {
+                grid-column: 2 span;
+            }
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+                grid-column: 1;
+                gap: rem-calc(30);
+            }
         }
     }
 
@@ -168,10 +195,21 @@
         margin-bottom: rem-calc(13);
         padding: rem-calc(15);
         display: grid;
-        grid-template-columns: rem-calc(50) rem-calc(100) 1fr;
+        grid-template-columns: rem-calc(50) rem-calc(110) rem-calc(170);
         width: 100%;
         gap: rem-calc(10);
         min-height: rem-calc(80);
+
+        @media (max-width: 1024px) {
+            grid-template-columns: rem-calc(50) rem-calc(300) rem-calc(170);
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: rem-calc(50) rem-calc(480) rem-calc(170);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: rem-calc(50) rem-calc(250) rem-calc(170);
+        }
     }
 
     &__label-icon {

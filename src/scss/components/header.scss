@@ -10,6 +10,12 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: rem-calc(20);
+		}
 	}
 
 	&__nav {
@@ -19,6 +25,10 @@
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		margin-right: auto;
+		@media (max-width: 768px) {
+			justify-content: center;
+			margin-right: 0;
+		}
 	}
 
 	&__nav-item {
@@ -143,6 +153,10 @@
 		opacity: 0;
 		pointer-events: none;
 		transition: .3s;
+		@media (max-width: 768px) {
+			justify-content: center;
+			right: 20%;
+		}
 
 		&--open {
 			opacity: 1;
