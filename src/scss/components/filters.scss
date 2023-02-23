@@ -11,12 +11,19 @@
         @media (max-width: 1024px) {
             gap: rem-calc(20); 
         }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__col {
         display: flex;
         align-items: center;
         gap: rem-calc(20);
+        @media (max-width: 768px) {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
 
         &:nth-child(2) {
             justify-content: center;
@@ -24,6 +31,9 @@
 
         &:nth-child(3) {
             justify-content: flex-end;
+            @media (max-width: 768px) {
+                justify-content: center;
+            }
         }
     }
 

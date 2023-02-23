@@ -46,11 +46,16 @@
 
     &__bottom {
         display: flex;
+        flex-wrap: wrap;
+        gap: rem-calc(15);
     }
 
     &__button-demo {
         margin-right: auto;
         padding-right: rem-calc(86);
+        @media (max-width: 480px) {
+            margin-left: auto;
+        }
 
         &:before {
             content: "";

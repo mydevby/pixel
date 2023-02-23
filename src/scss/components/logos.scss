@@ -6,6 +6,16 @@
         grid-template-columns: repeat(13, 1fr);
         align-items: center;
         gap: rem-calc(37);
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(9, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(7, 1fr);
+        }
+        @media (max-width: 480px) {
+            gap: rem-calc(27);
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 
     &__item {

@@ -6,6 +6,12 @@
     @media (max-width: 1024px) {
         grid-template-columns: rem-calc(600) rem-calc(600);
     }
+    @media (max-width: 768px) {
+        grid-template-columns: rem-calc(810);
+    }
+    @media (max-width: 480px) {
+        grid-template-columns: rem-calc(565);
+    }
 
     &__group {
         padding: rem-calc(16) rem-calc(18) rem-calc(19);
@@ -60,9 +66,21 @@
         @media (max-width: 1024px) {
             grid-template-columns: repeat(2, #{rem-calc(270)});
         }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(3, #{rem-calc(245)});
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(2, #{rem-calc(255)});
+        }
 
         .slot:nth-child(3) {
             @media (max-width: 1024px) {
+                display: none;
+            }
+            @media (max-width: 768px) {
+                display: block;
+            }
+            @media (max-width: 480px) {
                 display: none;
             }
         }

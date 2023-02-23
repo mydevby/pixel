@@ -6,6 +6,12 @@
 		grid-template-columns: rem-calc(375) rem-calc(840);
         gap: rem-calc(22);
 	}
+    @media (max-width: 768px) {
+		grid-template-columns: rem-calc(810);
+	}
+    @media (max-width: 480px) {
+		grid-template-columns: rem-calc(565);
+	}
 
     &__nav-list {
         position: relative;
@@ -630,9 +636,20 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: rem-calc(40);
+        flex-wrap: wrap;
+        gap: rem-calc(40);
+        @media (max-width: 1024px) {
+            gap: rem-calc(30);
+        }
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            gap: rem-calc(20);
+        }
 
         .checkbox__label {
             align-items: center;
+            padding-left: 0;
         }
 
         .checkbox:first-child {
@@ -750,6 +767,8 @@
         line-height: 1.5;
         color: $clr-white;
         opacity: 0.35;
+        min-width: rem-calc(140);
+        margin-left: rem-calc(15);
     }
 
     &__info-security-grid {

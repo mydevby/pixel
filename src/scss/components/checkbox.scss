@@ -28,6 +28,10 @@
         cursor: pointer;
         padding-left: rem-calc(45);
         display: flex;
+
+        &--verification-step-1 {
+            padding-left: 0;
+        }
     }
 
     &__pseudo-checkbox {

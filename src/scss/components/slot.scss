@@ -82,6 +82,10 @@
         position: relative;
         background: rgb(29 37 67);
         backdrop-filter: blur(27.5px);
+        -webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
         cursor: pointer;
         z-index: 2;
     }
@@ -101,6 +105,10 @@
         bottom: 0;
         background: rgba(30, 34, 52, 0.85);
         backdrop-filter: blur(5px);
+        -webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
         z-index: 1;
         display: flex;
         flex-direction: column;

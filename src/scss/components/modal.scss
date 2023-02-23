@@ -27,10 +27,16 @@
 
         &--registration {
             width: rem-calc(142);
+			@media (max-width: 768px) {
+				width: rem-calc(170);
+			}
         }
 
         &--login {
             width: rem-calc(142);
+			@media (max-width: 768px) {
+				width: rem-calc(170);
+			}
         }
     }
 
@@ -51,6 +57,10 @@
         pointer-events: auto;
         background: rgba(33, 38, 58, 0.65);
         backdrop-filter: blur(17.5px);
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
         cursor: pointer;
         opacity: 1;
     }
@@ -69,10 +79,15 @@
 
         &--login{
             width: rem-calc(840);
+			@media (max-width: 768px) {
+				width: rem-calc(430);
+			}
         }
 
         &--registration  {
-            width: rem-calc(1030);
+            @media (max-width: 768px) {
+				width: rem-calc(430);
+			}
         }
 
         &--code-confirm  {
@@ -93,6 +108,9 @@
         &--transactions {
             width: rem-calc(880);
             padding: rem-calc(28) rem-calc(30);
+			@media (max-width: 480px) {
+				width: rem-calc(630);
+			}
         }
     }
 
@@ -101,6 +119,9 @@
 
         &--2-col {
             grid-template-columns: rem-calc(420) 1fr;
+			@media (max-width: 768px) {
+				grid-template-columns: rem-calc(420);
+			}
         }
 
         &--2-col-login {
@@ -113,6 +134,10 @@
     &__img-wrapper {
         padding:  rem-calc(15) rem-calc(15) 0 rem-calc(30);
         border-right: rem-calc(1) solid rgba(255, 255, 255, .15);
+
+		@media (max-width: 768px) {
+			display: none;
+		}
     }
 
     &__img {
@@ -124,10 +149,16 @@
 
         &--login {
             padding:  rem-calc(22) rem-calc(88) rem-calc(45) rem-calc(30);
+			@media (max-width: 768px) {
+				padding:  rem-calc(80) rem-calc(30) rem-calc(45) rem-calc(30);
+			}
         }
 
         &--registration {
             padding:  rem-calc(22) rem-calc(20) rem-calc(26) rem-calc(28);
+			@media (max-width: 768px) {
+				padding:  rem-calc(80) rem-calc(30) rem-calc(45) rem-calc(30);
+			}
         }
 
         &--code-confirm {
@@ -299,6 +330,10 @@
             grid-template-columns: 1fr rem-calc(46) rem-calc(46) rem-calc(46) rem-calc(46);
             background-color: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(27.5px);
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
             gap: rem-calc(4);
         }
 
@@ -306,6 +341,10 @@
             grid-template-columns: 1fr;
             background-color: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(27.5px);
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
         }
 
         &--select {
@@ -374,6 +413,10 @@
         &--light {
             background-color: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(27.5px);
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
         }
     }
 
@@ -708,6 +751,7 @@
 
         &--transactions {
             margin: 0;
+			flex-wrap: wrap;
         }
     }
 

@@ -7,6 +7,13 @@
         grid-template-columns: rem-calc(430) 1fr;
     }
 
+    @media (max-width: 768px) {
+		grid-template-columns: rem-calc(810);
+	}
+    @media (max-width: 480px) {
+		grid-template-columns: rem-calc(565);
+	}
+
     &__nav-list {
         position: relative;
         padding: rem-calc(30) rem-calc(20) rem-calc(30);

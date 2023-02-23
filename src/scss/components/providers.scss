@@ -20,6 +20,12 @@
         @media (max-width: 1024px) {
             grid-template-columns: 2fr 1fr 1fr;
         }
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1.3fr 1fr;
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr 1.3fr;
+        }
     }
 
     &__select {
@@ -106,6 +112,12 @@
         margin-bottom: rem-calc(30);
         @media (max-width: 1024px) {
             grid-template-columns: repeat(5, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 

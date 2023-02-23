@@ -6,6 +6,10 @@
     max-width: rem-calc(90);
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(12.5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
