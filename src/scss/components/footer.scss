@@ -3,6 +3,10 @@
     z-index: 1;
     background: rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(22.5px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
     padding: rem-calc(46px) rem-calc(160);
     margin: 0 rem-calc(-160);
     display: grid;
