@@ -306,6 +306,210 @@ window.onload = function() {
 			});
 		});
 	};
+	//buy cripto modal
+	if (document.querySelector('.modal__nav-btn--buy-cripto-go-to-deposit') !== null) {
+		document.querySelector('.modal__nav-btn--buy-cripto-go-to-deposit').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--buy-cripto-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--buy-cripto-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--buy-cripto-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--buy-cripto-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--buy-cripto-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--buy-cripto-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-buy-cripto-1') !== null) {
+		let modalNavCryptoBtnSelectMoneyBuyCripto1  = document.querySelector('.modal__nav-crypto-btn-select-money-buy-cripto-1');
+		modalNavCryptoBtnSelectMoneyBuyCripto1.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-buy-cripto-1-text').forEach(modalNavCryptoBtnSelectMoneyBuyCripto1Text =>{
+				modalNavCryptoBtnSelectMoneyBuyCripto1Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-buy-cripto-2') !== null) {
+		let modalNavCryptoBtnSelectMoneyBuyCripto2  = document.querySelector('.modal__nav-crypto-btn-select-money-buy-cripto-2');
+		modalNavCryptoBtnSelectMoneyBuyCripto2.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-buy-cripto-2-text').forEach(modalNavCryptoBtnSelectMoneyBuyCripto2Text =>{
+				modalNavCryptoBtnSelectMoneyBuyCripto2Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	//swap modal
+	if (document.querySelector('.modal__nav-btn--swap-go-to-deposit') !== null) {
+		document.querySelector('.modal__nav-btn--swap-go-to-deposit').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--swap-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--swap-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--swap-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--swap-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--swap-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--swap-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-swap-1') !== null) {
+		let modalNavCryptoBtnSelectMoneySwap1  = document.querySelector('.modal__nav-crypto-btn-select-money-swap-1');
+		modalNavCryptoBtnSelectMoneySwap1.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-swap-1-text').forEach(modalNavCryptoBtnSelectMoneySwap1Text =>{
+				modalNavCryptoBtnSelectMoneySwap1Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-swap-2') !== null) {
+		let modalNavCryptoBtnSelectMoneySwap2  = document.querySelector('.modal__nav-crypto-btn-select-money-swap-2');
+		modalNavCryptoBtnSelectMoneySwap2.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-swap-2-text').forEach(modalNavCryptoBtnSelectMoneySwap2Text =>{
+				modalNavCryptoBtnSelectMoneySwap2Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	//transfer modal
+	if (document.querySelector('.modal__nav-btn--transfer-go-to-deposit') !== null) {
+		document.querySelector('.modal__nav-btn--transfer-go-to-deposit').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--transfer-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--transfer-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--transfer-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--transfer-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--transfer-go-to-withdraw') !== null) {
+		document.querySelector('.modal__nav-btn--transfer-go-to-withdraw').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-transfer-1') !== null) {
+		let modalNavCryptoBtnSelectMoneyTransfer1  = document.querySelector('.modal__nav-crypto-btn-select-money-transfer-1');
+		modalNavCryptoBtnSelectMoneyTransfer1.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-transfer-1-text').forEach(modalNavCryptoBtnSelectMoneyTransfer1Text =>{
+				modalNavCryptoBtnSelectMoneyTransfer1Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-transfer-2') !== null) {
+		let modalNavCryptoBtnSelectMoneyTransfer2  = document.querySelector('.modal__nav-crypto-btn-select-money-transfer-2');
+		modalNavCryptoBtnSelectMoneyTransfer2.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-transfer-2-text').forEach(modalNavCryptoBtnSelectMoneyTransfer2Text =>{
+				modalNavCryptoBtnSelectMoneyTransfer2Text.classList.toggle('visually-hidden');
+			});
+		});
+	};
+	//withdraw modal
+	if (document.querySelector('.modal__nav-btn--withdraw-go-to-deposit') !== null) {
+		document.querySelector('.modal__nav-btn--withdraw-go-to-deposit').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--deposit-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--withdraw-go-to-buy-crypto') !== null) {
+		document.querySelector('.modal__nav-btn--withdraw-go-to-buy-crypto').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--buy-crypto').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--withdraw-go-to-swap') !== null) {
+		document.querySelector('.modal__nav-btn--withdraw-go-to-swap').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--swap').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-btn--withdraw-go-to-transfer') !== null) {
+		document.querySelector('.modal__nav-btn--withdraw-go-to-transfer').addEventListener('click', () => {
+			let arrModalContent  = document.querySelectorAll('.modal__content');
+			arrModalContent.forEach(modalContent => {
+				modalContent.classList.remove('modal__content--active');
+			});
+			document.querySelector('.modal__content--transfer').classList.add('modal__content--active');
+		});
+	};
+	if (document.querySelector('.modal__nav-crypto-btn-select-money-without') !== null) {
+		let modalNavCryptoBtnSelectMoneyWithout  = document.querySelector('.modal__nav-crypto-btn-select-money-without');
+		modalNavCryptoBtnSelectMoneyWithout.addEventListener('click', (e) => {
+			document.querySelectorAll('.modal__nav-crypto-btn-select-money-without-text').forEach(modalNavCryptoBtnSelectMoneyWithoutText =>{
+				modalNavCryptoBtnSelectMoneyWithoutText.classList.toggle('visually-hidden');
+			});
+		});
+	};
 
 	if (document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-fiat') !== null) {
 		document.querySelector('.modal__nav-crypto-btn--nft-go-to-deposit-fiat').addEventListener('click', () => {

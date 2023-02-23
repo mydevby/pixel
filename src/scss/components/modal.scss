@@ -595,7 +595,7 @@
             cursor: text;
         }
 
-        &--withdraw {
+        &--withdraw:not([type=password]) {
             padding: rem-calc(10) rem-calc(20);
         }
 

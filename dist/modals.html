@@ -781,11 +781,11 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit modal__nav-btn--buy-cripto-go-to-deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
 					<button class="modal__nav-btn modal__nav-btn--buy-crypto btn mask-btn btn--active">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--swap modal__nav-btn--buy-cripto-go-to-swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer modal__nav-btn--buy-cripto-go-to-transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw modal__nav-btn--buy-cripto-go-to-withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__nav-crypto modal__nav-crypto--buy">
@@ -793,33 +793,39 @@
 						<button class="modal__nav-crypto-btn btn mask-btn mask-btn--border"><img class="modal__nav-crypto-btn-icon" src="img/modal/icon-banha.svg" alt="BANXA"> BANXA</button>
 					</div>
 					<div class="modal__buy-text">You pay with</div>
-					<label class="modal__label modal__label--custom-buy modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn btn btn--black mask-btn">
+					<div class="modal__label modal__label--custom-buy modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-buy-cripto-1 btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-dollar.svg" alt="Dollar">
-							USD
+							<span class="modal__nav-crypto-btn-select-money-buy-cripto-1-text">USD</span>
+							<span class="modal__nav-crypto-btn-select-money-buy-cripto-1-text visually-hidden">EUR</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							50.00
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								50.00
+							</div>
+						</label>
+					</div>
 					<div class="modal__buy-text">You get</div>
-					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn btn btn--black mask-btn">
+					<div class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-buy-cripto-2 btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-bitcoin.svg" alt="Bitcoin">
-							BTC
+							<span class="modal__nav-crypto-btn-select-money-buy-cripto-2-text">BTC</span>
+							<span class="modal__nav-crypto-btn-select-money-buy-cripto-2-text visually-hidden">USB</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-btc">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							0.00228246
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-btc">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								0.00228246
+							</div>
+						</label>
+					</div>
 					<div class="modal__fiat-text modal__fiat-text--buy">Payment Method Selection</div>
 					<div class="modal__fiat-grid modal__fiat-grid--buy">
 						<button class="modal__fiat-btn btn fiat-btn fiat-btn--border">
@@ -836,7 +842,7 @@
 						<button class="modal__nav-crypto-btn modal__nav-crypto-btn--buy btn btn--active mask-btn">Buy Now</button>
 					</div>
 					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
-						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
+						To secure your assets, please Enable <a href="profile.html#security" target="_blank" class="modal__about-more--accent">two-factor authentication</a>
 					</div>
 				</div>
 			</div>
@@ -861,11 +867,11 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit modal__nav-btn--swap-go-to-deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-crypto modal__nav-btn--swap-go-to-buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
 					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn btn--active">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer modal__nav-btn--swap-go-to-transfer btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw modal__nav-btn--swap-go-to-withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__swap-text-wrapper">
@@ -876,35 +882,41 @@
 							Record
 						</div>
 					</div>
-					<label class="modal__label modal__label--custom-swap modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn modal__nav-crypto-btn--swap btn btn--black mask-btn">
+					<div class="modal__label modal__label--custom-swap modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-swap-1 modal__nav-crypto-btn--swap btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-usdt.svg" alt="Dollar">
-							USDT
+							<span class="modal__nav-crypto-btn-select-money-swap-1-text">USDT</span>
+							<span class="modal__nav-crypto-btn-select-money-swap-1-text visually-hidden">EURT</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							<span class="modal__input-text-money--buy-small">Send</span><br>
-							50.00
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								<span class="modal__input-text-money--buy-small">Send</span><br>
+								50.00
+							</div>
+						</label>
+					</div>
 					<button class="modal__nav-btn modal__nav-btn--swap-2 btn mask-btn btn--active-swap"></button>
-					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn modal__nav-crypto-btn--swap btn btn--black mask-btn">
+					<div class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-swap-2 modal__nav-crypto-btn--swap btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-bitcoin.svg" alt="Bitcoin">
-							BTC
+							<span class="modal__nav-crypto-btn-select-money-swap-2-text">BTC</span>
+							<span class="modal__nav-crypto-btn-select-money-swap-2-text visually-hidden">DDT</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-btc">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							<span class="modal__input-text-money--buy-small">Get</span><br>
-							0.00228246
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-btc">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								<span class="modal__input-text-money--buy-small">Get</span><br>
+								0.00228246
+							</div>
+						</label>
+					</div>
 					<div class="modal__swap-text">
 						1 USDT ≈ 1.00000000 BCD<br>
 						Estimated Time* <span class="modal__swap-text--white">Seconds</span><br>
@@ -914,7 +926,7 @@
 						<button class="modal__nav-crypto-btn modal__nav-crypto-btn--buy btn btn--active mask-btn">Swap Now</button>
 					</div>
 					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
-						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
+						To secure your assets, please Enable <a href="profile.html#security" target="_blank" class="modal__about-more--accent">two-factor authentication</a>
 					</div>
 				</div>
 			</div>
@@ -939,40 +951,46 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit modal__nav-btn--transfer-go-to-deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-crypto modal__nav-btn--transfer-go-to-buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap btn modal__nav-btn--transfer-go-to-swap mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
 					<button class="modal__nav-btn modal__nav-btn--transfer btn mask-btn btn--active">Transfer to user</button>
-					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
+					<button class="modal__nav-btn modal__nav-btn--withdraw modal__nav-btn--transfer-go-to-withdraw btn mask-btn mask-btn--border mask-btn--border-custom">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
 					<div class="modal__buy-text modal__buy-text--top">User ID</div>
-					<label class="modal__label modal__label--custom-buy modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn modal__nav-crypto-btn--transfer btn btn--black mask-btn">
-							Friends 
+					<div class="modal__label modal__label--custom-buy modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-transfer-1 modal__nav-crypto-btn--transfer btn btn--black mask-btn">
+							<span class="modal__nav-crypto-btn-select-money-transfer-1-text">Friends</span>
+							<span class="modal__nav-crypto-btn-select-money-transfer-1-text visually-hidden">Parents</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							87-540
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-dollar">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								87-540
+							</div>
+						</label>
+					</div>
 					<div class="modal__buy-text modal__buy-text--center">Transfer amount</div>
-					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn btn btn--black mask-btn">
+					<div class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-transfer-2 btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-dollar.svg" alt="Dollar">
-							USD
+							<span class="modal__nav-crypto-btn-select-money-transfer-2-text">USD</span>
+							<span class="modal__nav-crypto-btn-select-money-transfer-2-text visually-hidden">EUR</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money-btc">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money modal__input-text-money--buy">
-							0.00228246
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money-btc">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money modal__input-text-money--buy">
+								0.00228246
+							</div>
+						</label>
+					</div>
 					<div class="modal__transfer-text">
 						Site Commission $1
 					</div>
@@ -980,7 +998,7 @@
 						<button class="modal__nav-crypto-btn modal__nav-crypto-btn--buy btn btn--active mask-btn">Swap Now</button>
 					</div>
 					<div class="modal__about-more modal__label--light btn mask-modal mask-modal--border">
-						To secure your assets, please Enable <span  class="modal__about-more--accent">two-factor authentication</span>
+						To secure your assets, please Enable <a href="profile.html#security" target="_blank" class="modal__about-more--accent">two-factor authentication</a>
 					</div>
 				</div>
 			</div>
@@ -1005,10 +1023,10 @@
 					</button>
 				</div>
 				<div class="modal__nav">
-					<button class="modal__nav-btn modal__nav-btn--deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
-					<button class="modal__nav-btn modal__nav-btn--buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
-					<button class="modal__nav-btn modal__nav-btn--swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
-					<button class="modal__nav-btn modal__nav-btn--transfer btn btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
+					<button class="modal__nav-btn modal__nav-btn--deposit modal__nav-btn--withdraw-go-to-deposit btn mask-btn mask-btn--border mask-btn--border-custom">DEPOSIT</button>
+					<button class="modal__nav-btn modal__nav-btn--buy-crypto modal__nav-btn--withdraw-go-to-buy-crypto btn mask-btn mask-btn--border mask-btn--border-custom">BUY CRYPTO</button>
+					<button class="modal__nav-btn modal__nav-btn--swap modal__nav-btn--withdraw-go-to-swap btn mask-btn mask-btn--border mask-btn--border-custom">SWAP</button>
+					<button class="modal__nav-btn modal__nav-btn--transfer modal__nav-btn--withdraw-go-to-transfer btn btn mask-btn mask-btn--border mask-btn--border-custom">Transfer to user</button>
 					<button class="modal__nav-btn modal__nav-btn--withdraw btn mask-btn btn--active">Withdraw</button>
 				</div>
 				<div class="modal__main-content-bg">
@@ -1019,20 +1037,23 @@
 					<div class="modal__withdraw-text modal__withdraw-text--right">
 						Record
 					</div>
-					<label class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
-						<div class="modal__nav-crypto-btn modal__nav-crypto-btn--swap btn btn--black mask-btn">
+					<div class="modal__label modal__label--flex modal__label--light btn mask-modal mask-modal--border">
+						<div class="modal__nav-crypto-btn modal__nav-crypto-btn-select-money-without modal__nav-crypto-btn--swap btn btn--black mask-btn">
 							<img class="modal__nav-crypto-btn-icon" src="img/icons/icon-buy-usdt.svg" alt="Dollar">
-							USDT
+							<span class="modal__nav-crypto-btn-select-money-without-text">USDT</span>
+							<span class="modal__nav-crypto-btn-select-money-without-text visually-hidden">EURT</span>
 							<img class="modal__nav-crypto-btn-icon" src="img/modal/icon-arrow-down.svg" alt="Arrow down">
 						</div>
-						<div class="modal__input-wrapper modal__input-wrapper--money">
-							<input class="modal__input" type="text" placeholder=" ">
-						</div>
-						<div class="modal__input-text-money">
-							<div class="modal__input-text-money-top">Balance</div>
-							<div class="modal__input-text-money-bottom"><span class="modal__input-text-money-bottom--green">$</span>500.34</div>
-						</div>
-					</label>
+						<label>
+							<div class="modal__input-wrapper modal__input-wrapper--money">
+								<input class="modal__input" type="text" placeholder=" ">
+							</div>
+							<div class="modal__input-text-money">
+								<div class="modal__input-text-money-top">Balance</div>
+								<div class="modal__input-text-money-bottom"><span class="modal__input-text-money-bottom--green">$</span>500.34</div>
+							</div>
+						</label>
+					</div>
 					<div class="modal__withdraw-text modal__withdraw-text--left">
 						Withdraw Address
 					</div>

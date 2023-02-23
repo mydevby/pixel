@@ -5261,7 +5261,7 @@ section,
   line-height: 1.5;
   cursor: text;
 }
-.modal__input--withdraw {
+.modal__input--withdraw:not([type=password]) {
   padding: 0.625rem 1.25rem;
 }
 .modal__input--code {
