@@ -1,6 +1,6 @@
 .documents {
     display: grid;
-    grid-template-columns: rem-calc(500) 1fr;
+    grid-template-columns: rem-calc(500) rem-calc(1070);
     gap: rem-calc(30);
 
     &__nav-list {

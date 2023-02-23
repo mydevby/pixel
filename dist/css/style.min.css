@@ -4122,14 +4122,14 @@ section,
 }
 .header__nav {
   display: flex;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-right: auto;
 }
 .header__nav-item {
-  margin-right: 34px;
+  margin-right: 2.125rem;
   position: relative;
 }
 .header__nav-item:last-child {
@@ -6362,7 +6362,7 @@ section,
 
 .documents {
   display: grid;
-  grid-template-columns: 31.25rem 1fr;
+  grid-template-columns: 31.25rem 66.875rem;
   gap: 1.875rem;
 }
 .documents__nav-list {
@@ -6487,7 +6487,7 @@ section,
 
 .guides {
   display: grid;
-  grid-template-columns: 31.25rem 1fr;
+  grid-template-columns: 31.25rem 66.875rem;
   gap: 1.875rem;
 }
 .guides__nav-list {
@@ -6612,7 +6612,7 @@ section,
 
 .profile {
   display: grid;
-  grid-template-columns: 31.25rem 1fr;
+  grid-template-columns: 31.25rem 66.875rem;
   gap: 1.875rem;
 }
 .profile__nav-list {

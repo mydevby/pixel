@@ -14,7 +14,7 @@
 
 	&__nav {
 		display: flex;
-		font-size: 14px;
+		font-size: rem-calc(14);
 		line-height: 1.5;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
@@ -22,7 +22,7 @@
 	}
 
 	&__nav-item {
-		margin-right: 34px;
+		margin-right: rem-calc(34);
 		position: relative;
 
 		&:last-child {
