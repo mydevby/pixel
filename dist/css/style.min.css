@@ -4736,7 +4736,7 @@ section,
   position: absolute;
   width: 2.25rem;
   height: 2.1875rem;
-  background: url("../img/icons/icon-slot-favorites.svg") no-repeat 50% 50%/contain;
+  background: url("../img/icons/icon-slot-favorites.svg") no-repeat 50% 50%/100% auto;
   z-index: 5;
   top: 1.125rem;
   right: 1.25rem;
@@ -7467,7 +7467,8 @@ section,
   width: 1.3125rem;
   height: 1.75rem;
   margin-left: 0.25rem;
-  margin-bottom: -0.75rem;
+  margin-bottom: -0.625rem;
+  background: url("../img/user/icon-camera.svg") no-repeat 50% 50%/100% auto;
 }
 .profile__info-verification-country-wrapper {
   max-width: 30rem;
@@ -7515,8 +7516,10 @@ section,
 }
 .profile__info-verification-example-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  gap: 5rem;
+  justify-content: space-between;
+  gap: 1.25rem;
   margin-bottom: 1.875rem;
 }
 .profile__info-verification-example-img {

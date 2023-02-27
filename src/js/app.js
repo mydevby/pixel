@@ -795,6 +795,19 @@ window.onload = function() {
 		});
 	};
 
+	if (document.querySelector('.checkbox__input--radio') !== null) {
+		let arrCheckboxInputRadio = document.querySelectorAll('.checkbox__input--radio');
+		arrCheckboxInputRadio.forEach(checkboxInputRadio => {
+			checkboxInputRadio.addEventListener('change', function(e) {
+				let arrCheckboxInputRadioMore = document.querySelectorAll('.checkbox__input--radio');
+				arrCheckboxInputRadioMore.forEach(checkboxInputRadioMore => {
+					checkboxInputRadioMore.checked = false;
+				});
+				this.checked = true;
+			});
+		});
+	}
+
 
 	//FAQ
 	if (document.querySelector('.js-faq-item') !== null) {

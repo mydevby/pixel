@@ -614,7 +614,8 @@
         width: rem-calc(21);
         height: rem-calc(28);
         margin-left: rem-calc(4);
-        margin-bottom: rem-calc(-12);
+        margin-bottom: rem-calc(-10);
+        background: url("../img/user/icon-camera.svg") no-repeat 50% 50% / 100% auto;
     }
 
     &__info-verification-country-wrapper {
@@ -669,8 +670,10 @@
 
     &__info-verification-example-wrapper {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
-        gap: rem-calc(80);
+        justify-content: space-between;
+        gap: rem-calc(20);
         margin-bottom: rem-calc(30);
     }
 
