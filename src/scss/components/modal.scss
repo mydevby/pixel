@@ -358,7 +358,7 @@
         &:has(.modal__input:not(:placeholder-shown)),
         &:has(.modal__input:focus) {
             .modal__input-name {
-                top: 0;
+                top: rem-calc(2);
                 transform: translate(0);
             }
             .modal__input {
@@ -633,7 +633,7 @@
         &:not([type="password"]) {
             overflow: hidden;
             text-overflow: ellipsis;
-            padding-top: 0;
+            padding-top: rem-calc(12);
         }
 
         &:read-only {

@@ -3197,8 +3197,70 @@
   -moz-transform: translate3d(0, 0, 0);
 }
 
+.mask-modal {
+  clip-path: polygon(0% calc(3 * 0.1875rem), 0.1875rem calc(3 * 0.1875rem), 0.1875rem calc(2 * 0.1875rem), calc(2 * 0.1875rem) calc(2 * 0.1875rem), calc(2 * 0.1875rem) 0.1875rem, calc(3 * 0.1875rem) 0.1875rem, calc(3 * 0.1875rem) 0, calc(100% - calc(3 * 0.1875rem)) 0, calc(100% - calc(3 * 0.1875rem)) 0.1875rem, calc(100% - calc(2 * 0.1875rem)) 0.1875rem, calc(100% - calc(2 * 0.1875rem)) calc(2 * 0.1875rem), calc(100% - 0.1875rem) calc(2 * 0.1875rem), calc(100% - 0.1875rem) calc(3 * 0.1875rem), 100% calc(3 * 0.1875rem), 100% calc(100% - calc(3 * 0.1875rem)), calc(100% - 0.1875rem) calc(100% - calc(3 * 0.1875rem)), calc(100% - 0.1875rem) calc(100% - calc(2 * 0.1875rem)), calc(100% - calc(2 * 0.1875rem)) calc(100% - calc(2 * 0.1875rem)), calc(100% - calc(2 * 0.1875rem)) calc(100% - 0.1875rem), calc(100% - calc(3 * 0.1875rem)) calc(100% - 0.1875rem), calc(100% - calc(3 * 0.1875rem)) 100%, calc(3 * 0.1875rem) 100%, calc(3 * 0.1875rem) calc(100% - 0.1875rem), calc(2 * 0.1875rem) calc(100% - 0.1875rem), calc(2 * 0.1875rem) calc(100% - calc(2 * 0.1875rem)), 0.1875rem calc(100% - calc(2 * 0.1875rem)), 0.1875rem calc(100% - calc(3 * 0.1875rem)), 0% calc(100% - calc(3 * 0.1875rem)));
+}
+.mask-modal--border {
+  position: absolute;
+}
+.mask-modal--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  pointer-events: none;
+  z-index: 5;
+  transition: 0.3s;
+  clip-path: polygon(0% calc(3 * 0.1875rem), 0.1875rem calc(3 * 0.1875rem), 0.1875rem calc(2 * 0.1875rem), calc(2 * 0.1875rem) calc(2 * 0.1875rem), calc(2 * 0.1875rem) 0.1875rem, calc(3 * 0.1875rem) 0.1875rem, calc(3 * 0.1875rem) 0, calc(100% - calc(3 * 0.1875rem)) 0, calc(100% - calc(3 * 0.1875rem)) 0.1875rem, calc(100% - calc(2 * 0.1875rem)) 0.1875rem, calc(100% - calc(2 * 0.1875rem)) calc(2 * 0.1875rem), calc(100% - 0.1875rem) calc(2 * 0.1875rem), calc(100% - 0.1875rem) calc(3 * 0.1875rem), 100% calc(3 * 0.1875rem), 100% calc(100% - calc(3 * 0.1875rem)), calc(100% - 0.1875rem) calc(100% - calc(3 * 0.1875rem)), calc(100% - 0.1875rem) calc(100% - calc(2 * 0.1875rem)), calc(100% - calc(2 * 0.1875rem)) calc(100% - calc(2 * 0.1875rem)), calc(100% - calc(2 * 0.1875rem)) calc(100% - 0.1875rem), calc(100% - calc(3 * 0.1875rem)) calc(100% - 0.1875rem), calc(100% - calc(3 * 0.1875rem)) 100%, calc(3 * 0.1875rem) 100%, calc(3 * 0.1875rem) calc(100% - 0.1875rem), calc(2 * 0.1875rem) calc(100% - 0.1875rem), calc(2 * 0.1875rem) calc(100% - calc(2 * 0.1875rem)), 0.1875rem calc(100% - calc(2 * 0.1875rem)), 0.1875rem calc(100% - calc(3 * 0.1875rem)), 0% calc(100% - calc(3 * 0.1875rem)), 0% calc(3 * 0.1875rem), 1.3px calc(calc(3 * 0.1875rem) + 1.3px), 1.3px calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)), calc(0.1875rem + 1.3px) calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)), calc(0.1875rem + 1.3px) calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)), calc(calc(2 * 0.1875rem) + 1.3px) calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)), calc(calc(2 * 0.1875rem) + 1.3px) calc(100% - calc(0.1875rem + 1.3px)), calc(calc(3 * 0.1875rem) + 1.3px) calc(100% - calc(0.1875rem + 1.3px)), calc(calc(3 * 0.1875rem) + 1.3px) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)) calc(100% - calc(0.1875rem + 1.3px)), calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)) calc(100% - calc(0.1875rem + 1.3px)), calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)) calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)), calc(100% - calc(0.1875rem + 1.3px)) calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)), calc(100% - calc(0.1875rem + 1.3px)) calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)), calc(100% - 1.3px) calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)), calc(100% - 1.3px) calc(calc(3 * 0.1875rem) + 1.3px), calc(100% - calc(0.1875rem + 1.3px)) calc(calc(3 * 0.1875rem) + 1.3px), calc(100% - calc(0.1875rem + 1.3px)) calc(calc(2 * 0.1875rem) + 1.3px), calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)) calc(calc(2 * 0.1875rem) + 1.3px), calc(100% - calc(calc(2 * 0.1875rem) + 1.3px)) calc(0.1875rem + 1.3px), calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)) calc(0.1875rem + 1.3px), calc(100% - calc(calc(3 * 0.1875rem) + 1.3px)) 1.3px, calc(calc(3 * 0.1875rem) + 1.3px) 1.3px, calc(calc(3 * 0.1875rem) + 1.3px) calc(0.1875rem + 1.3px), calc(calc(2 * 0.1875rem) + 1.3px) calc(0.1875rem + 1.3px), calc(calc(2 * 0.1875rem) + 1.3px) calc(calc(2 * 0.1875rem) + 1.3px), calc(0.1875rem + 1.3px) calc(calc(2 * 0.1875rem) + 1.3px), calc(0.1875rem + 1.3px) calc(calc(3 * 0.1875rem) + 1.3px), 0 calc(calc(3 * 0.1875rem) + 1.3px));
+}
+
+.mask-block {
+  clip-path: polygon(0% calc(3 * 0.3125rem), 0.3125rem calc(3 * 0.3125rem), 0.3125rem calc(2 * 0.3125rem), calc(2 * 0.3125rem) calc(2 * 0.3125rem), calc(2 * 0.3125rem) 0.3125rem, calc(3 * 0.3125rem) 0.3125rem, calc(3 * 0.3125rem) 0, calc(100% - calc(3 * 0.3125rem)) 0, calc(100% - calc(3 * 0.3125rem)) 0.3125rem, calc(100% - calc(2 * 0.3125rem)) 0.3125rem, calc(100% - calc(2 * 0.3125rem)) calc(2 * 0.3125rem), calc(100% - 0.3125rem) calc(2 * 0.3125rem), calc(100% - 0.3125rem) calc(3 * 0.3125rem), 100% calc(3 * 0.3125rem), 100% calc(100% - calc(3 * 0.3125rem)), calc(100% - 0.3125rem) calc(100% - calc(3 * 0.3125rem)), calc(100% - 0.3125rem) calc(100% - calc(2 * 0.3125rem)), calc(100% - calc(2 * 0.3125rem)) calc(100% - calc(2 * 0.3125rem)), calc(100% - calc(2 * 0.3125rem)) calc(100% - 0.3125rem), calc(100% - calc(3 * 0.3125rem)) calc(100% - 0.3125rem), calc(100% - calc(3 * 0.3125rem)) 100%, calc(3 * 0.3125rem) 100%, calc(3 * 0.3125rem) calc(100% - 0.3125rem), calc(2 * 0.3125rem) calc(100% - 0.3125rem), calc(2 * 0.3125rem) calc(100% - calc(2 * 0.3125rem)), 0.3125rem calc(100% - calc(2 * 0.3125rem)), 0.3125rem calc(100% - calc(3 * 0.3125rem)), 0% calc(100% - calc(3 * 0.3125rem)));
+}
+.mask-block--border {
+  position: absolute;
+}
+.mask-block--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  pointer-events: none;
+  z-index: 5;
+  transition: 0.3s;
+  clip-path: polygon(0% calc(3 * 0.3125rem), 0.3125rem calc(3 * 0.3125rem), 0.3125rem calc(2 * 0.3125rem), calc(2 * 0.3125rem) calc(2 * 0.3125rem), calc(2 * 0.3125rem) 0.3125rem, calc(3 * 0.3125rem) 0.3125rem, calc(3 * 0.3125rem) 0, calc(100% - calc(3 * 0.3125rem)) 0, calc(100% - calc(3 * 0.3125rem)) 0.3125rem, calc(100% - calc(2 * 0.3125rem)) 0.3125rem, calc(100% - calc(2 * 0.3125rem)) calc(2 * 0.3125rem), calc(100% - 0.3125rem) calc(2 * 0.3125rem), calc(100% - 0.3125rem) calc(3 * 0.3125rem), 100% calc(3 * 0.3125rem), 100% calc(100% - calc(3 * 0.3125rem)), calc(100% - 0.3125rem) calc(100% - calc(3 * 0.3125rem)), calc(100% - 0.3125rem) calc(100% - calc(2 * 0.3125rem)), calc(100% - calc(2 * 0.3125rem)) calc(100% - calc(2 * 0.3125rem)), calc(100% - calc(2 * 0.3125rem)) calc(100% - 0.3125rem), calc(100% - calc(3 * 0.3125rem)) calc(100% - 0.3125rem), calc(100% - calc(3 * 0.3125rem)) 100%, calc(3 * 0.3125rem) 100%, calc(3 * 0.3125rem) calc(100% - 0.3125rem), calc(2 * 0.3125rem) calc(100% - 0.3125rem), calc(2 * 0.3125rem) calc(100% - calc(2 * 0.3125rem)), 0.3125rem calc(100% - calc(2 * 0.3125rem)), 0.3125rem calc(100% - calc(3 * 0.3125rem)), 0% calc(100% - calc(3 * 0.3125rem)), 0% calc(3 * 0.3125rem), 1.3px calc(calc(3 * 0.3125rem) + 1.3px), 1.3px calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)), calc(0.3125rem + 1.3px) calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)), calc(0.3125rem + 1.3px) calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)), calc(calc(2 * 0.3125rem) + 1.3px) calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)), calc(calc(2 * 0.3125rem) + 1.3px) calc(100% - calc(0.3125rem + 1.3px)), calc(calc(3 * 0.3125rem) + 1.3px) calc(100% - calc(0.3125rem + 1.3px)), calc(calc(3 * 0.3125rem) + 1.3px) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)) calc(100% - calc(0.3125rem + 1.3px)), calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)) calc(100% - calc(0.3125rem + 1.3px)), calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)) calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)), calc(100% - calc(0.3125rem + 1.3px)) calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)), calc(100% - calc(0.3125rem + 1.3px)) calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)), calc(100% - 1.3px) calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)), calc(100% - 1.3px) calc(calc(3 * 0.3125rem) + 1.3px), calc(100% - calc(0.3125rem + 1.3px)) calc(calc(3 * 0.3125rem) + 1.3px), calc(100% - calc(0.3125rem + 1.3px)) calc(calc(2 * 0.3125rem) + 1.3px), calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)) calc(calc(2 * 0.3125rem) + 1.3px), calc(100% - calc(calc(2 * 0.3125rem) + 1.3px)) calc(0.3125rem + 1.3px), calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)) calc(0.3125rem + 1.3px), calc(100% - calc(calc(3 * 0.3125rem) + 1.3px)) 1.3px, calc(calc(3 * 0.3125rem) + 1.3px) 1.3px, calc(calc(3 * 0.3125rem) + 1.3px) calc(0.3125rem + 1.3px), calc(calc(2 * 0.3125rem) + 1.3px) calc(0.3125rem + 1.3px), calc(calc(2 * 0.3125rem) + 1.3px) calc(calc(2 * 0.3125rem) + 1.3px), calc(0.3125rem + 1.3px) calc(calc(2 * 0.3125rem) + 1.3px), calc(0.3125rem + 1.3px) calc(calc(3 * 0.3125rem) + 1.3px), 0 calc(calc(3 * 0.3125rem) + 1.3px));
+}
+.mask-block--border-white:before {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.mask-card {
+  clip-path: polygon(0% calc(3 * 0.625rem), 0.625rem calc(3 * 0.625rem), 0.625rem calc(2 * 0.625rem), calc(2 * 0.625rem) calc(2 * 0.625rem), calc(2 * 0.625rem) 0.625rem, calc(3 * 0.625rem) 0.625rem, calc(3 * 0.625rem) 0, calc(100% - calc(3 * 0.625rem)) 0, calc(100% - calc(3 * 0.625rem)) 0.625rem, calc(100% - calc(2 * 0.625rem)) 0.625rem, calc(100% - calc(2 * 0.625rem)) calc(2 * 0.625rem), calc(100% - 0.625rem) calc(2 * 0.625rem), calc(100% - 0.625rem) calc(3 * 0.625rem), 100% calc(3 * 0.625rem), 100% calc(100% - calc(3 * 0.625rem)), calc(100% - 0.625rem) calc(100% - calc(3 * 0.625rem)), calc(100% - 0.625rem) calc(100% - calc(2 * 0.625rem)), calc(100% - calc(2 * 0.625rem)) calc(100% - calc(2 * 0.625rem)), calc(100% - calc(2 * 0.625rem)) calc(100% - 0.625rem), calc(100% - calc(3 * 0.625rem)) calc(100% - 0.625rem), calc(100% - calc(3 * 0.625rem)) 100%, calc(3 * 0.625rem) 100%, calc(3 * 0.625rem) calc(100% - 0.625rem), calc(2 * 0.625rem) calc(100% - 0.625rem), calc(2 * 0.625rem) calc(100% - calc(2 * 0.625rem)), 0.625rem calc(100% - calc(2 * 0.625rem)), 0.625rem calc(100% - calc(3 * 0.625rem)), 0% calc(100% - calc(3 * 0.625rem)));
+}
+.mask-card--border {
+  position: absolute;
+}
+.mask-card--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  pointer-events: none;
+  transition: 0.3s;
+  clip-path: polygon(0% calc(3 * 0.625rem), 0.625rem calc(3 * 0.625rem), 0.625rem calc(2 * 0.625rem), calc(2 * 0.625rem) calc(2 * 0.625rem), calc(2 * 0.625rem) 0.625rem, calc(3 * 0.625rem) 0.625rem, calc(3 * 0.625rem) 0, calc(100% - calc(3 * 0.625rem)) 0, calc(100% - calc(3 * 0.625rem)) 0.625rem, calc(100% - calc(2 * 0.625rem)) 0.625rem, calc(100% - calc(2 * 0.625rem)) calc(2 * 0.625rem), calc(100% - 0.625rem) calc(2 * 0.625rem), calc(100% - 0.625rem) calc(3 * 0.625rem), 100% calc(3 * 0.625rem), 100% calc(100% - calc(3 * 0.625rem)), calc(100% - 0.625rem) calc(100% - calc(3 * 0.625rem)), calc(100% - 0.625rem) calc(100% - calc(2 * 0.625rem)), calc(100% - calc(2 * 0.625rem)) calc(100% - calc(2 * 0.625rem)), calc(100% - calc(2 * 0.625rem)) calc(100% - 0.625rem), calc(100% - calc(3 * 0.625rem)) calc(100% - 0.625rem), calc(100% - calc(3 * 0.625rem)) 100%, calc(3 * 0.625rem) 100%, calc(3 * 0.625rem) calc(100% - 0.625rem), calc(2 * 0.625rem) calc(100% - 0.625rem), calc(2 * 0.625rem) calc(100% - calc(2 * 0.625rem)), 0.625rem calc(100% - calc(2 * 0.625rem)), 0.625rem calc(100% - calc(3 * 0.625rem)), 0% calc(100% - calc(3 * 0.625rem)), 0% calc(3 * 0.625rem), 1.3px calc(calc(3 * 0.625rem) + 1.3px), 1.3px calc(100% - calc(calc(3 * 0.625rem) + 1.3px)), calc(0.625rem + 1.3px) calc(100% - calc(calc(3 * 0.625rem) + 1.3px)), calc(0.625rem + 1.3px) calc(100% - calc(calc(2 * 0.625rem) + 1.3px)), calc(calc(2 * 0.625rem) + 1.3px) calc(100% - calc(calc(2 * 0.625rem) + 1.3px)), calc(calc(2 * 0.625rem) + 1.3px) calc(100% - calc(0.625rem + 1.3px)), calc(calc(3 * 0.625rem) + 1.3px) calc(100% - calc(0.625rem + 1.3px)), calc(calc(3 * 0.625rem) + 1.3px) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.625rem) + 1.3px)) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.625rem) + 1.3px)) calc(100% - calc(0.625rem + 1.3px)), calc(100% - calc(calc(2 * 0.625rem) + 1.3px)) calc(100% - calc(0.625rem + 1.3px)), calc(100% - calc(calc(2 * 0.625rem) + 1.3px)) calc(100% - calc(calc(2 * 0.625rem) + 1.3px)), calc(100% - calc(0.625rem + 1.3px)) calc(100% - calc(calc(2 * 0.625rem) + 1.3px)), calc(100% - calc(0.625rem + 1.3px)) calc(100% - calc(calc(3 * 0.625rem) + 1.3px)), calc(100% - 1.3px) calc(100% - calc(calc(3 * 0.625rem) + 1.3px)), calc(100% - 1.3px) calc(calc(3 * 0.625rem) + 1.3px), calc(100% - calc(0.625rem + 1.3px)) calc(calc(3 * 0.625rem) + 1.3px), calc(100% - calc(0.625rem + 1.3px)) calc(calc(2 * 0.625rem) + 1.3px), calc(100% - calc(calc(2 * 0.625rem) + 1.3px)) calc(calc(2 * 0.625rem) + 1.3px), calc(100% - calc(calc(2 * 0.625rem) + 1.3px)) calc(0.625rem + 1.3px), calc(100% - calc(calc(3 * 0.625rem) + 1.3px)) calc(0.625rem + 1.3px), calc(100% - calc(calc(3 * 0.625rem) + 1.3px)) 1.3px, calc(calc(3 * 0.625rem) + 1.3px) 1.3px, calc(calc(3 * 0.625rem) + 1.3px) calc(0.625rem + 1.3px), calc(calc(2 * 0.625rem) + 1.3px) calc(0.625rem + 1.3px), calc(calc(2 * 0.625rem) + 1.3px) calc(calc(2 * 0.625rem) + 1.3px), calc(0.625rem + 1.3px) calc(calc(2 * 0.625rem) + 1.3px), calc(0.625rem + 1.3px) calc(calc(3 * 0.625rem) + 1.3px), 0 calc(calc(3 * 0.625rem) + 1.3px));
+}
+
 .mask-section {
-  clip-path: polygon(0% 2.8125rem, 0.9375rem 2.8125rem, 0.9375rem 1.875rem, 1.875rem 1.875rem, 1.875rem 0.9375rem, 2.8125rem 0.9375rem, 2.8125rem 0, calc(100% - 2.8125rem) 0, calc(100% - 2.8125rem) 0.9375rem, calc(100% - 1.875rem) 0.9375rem, calc(100% - 1.875rem) 1.875rem, calc(100% - 0.9375rem) 1.875rem, calc(100% - 0.9375rem) 2.8125rem, 100% 2.8125rem, 100% calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) 100%, 2.8125rem 100%, 2.8125rem calc(100% - 0.9375rem), 1.875rem calc(100% - 0.9375rem), 1.875rem calc(100% - 1.875rem), 0.9375rem calc(100% - 1.875rem), 0.9375rem calc(100% - 2.8125rem), 0% calc(100% - 2.8125rem));
+  clip-path: polygon(0% calc(3 * 0.9375rem), 0.9375rem calc(3 * 0.9375rem), 0.9375rem calc(2 * 0.9375rem), calc(2 * 0.9375rem) calc(2 * 0.9375rem), calc(2 * 0.9375rem) 0.9375rem, calc(3 * 0.9375rem) 0.9375rem, calc(3 * 0.9375rem) 0, calc(100% - calc(3 * 0.9375rem)) 0, calc(100% - calc(3 * 0.9375rem)) 0.9375rem, calc(100% - calc(2 * 0.9375rem)) 0.9375rem, calc(100% - calc(2 * 0.9375rem)) calc(2 * 0.9375rem), calc(100% - 0.9375rem) calc(2 * 0.9375rem), calc(100% - 0.9375rem) calc(3 * 0.9375rem), 100% calc(3 * 0.9375rem), 100% calc(100% - calc(3 * 0.9375rem)), calc(100% - 0.9375rem) calc(100% - calc(3 * 0.9375rem)), calc(100% - 0.9375rem) calc(100% - calc(2 * 0.9375rem)), calc(100% - calc(2 * 0.9375rem)) calc(100% - calc(2 * 0.9375rem)), calc(100% - calc(2 * 0.9375rem)) calc(100% - 0.9375rem), calc(100% - calc(3 * 0.9375rem)) calc(100% - 0.9375rem), calc(100% - calc(3 * 0.9375rem)) 100%, calc(3 * 0.9375rem) 100%, calc(3 * 0.9375rem) calc(100% - 0.9375rem), calc(2 * 0.9375rem) calc(100% - 0.9375rem), calc(2 * 0.9375rem) calc(100% - calc(2 * 0.9375rem)), 0.9375rem calc(100% - calc(2 * 0.9375rem)), 0.9375rem calc(100% - calc(3 * 0.9375rem)), 0% calc(100% - calc(3 * 0.9375rem)));
 }
 .mask-section--border:before {
   content: "";
@@ -3211,7 +3273,22 @@
   pointer-events: none;
   z-index: 2;
   transition: 0.3s;
-  clip-path: polygon(0% 2.8125rem, 0.9375rem 2.8125rem, 0.9375rem 1.875rem, 1.875rem 1.875rem, 1.875rem 0.9375rem, 2.8125rem 0.9375rem, 2.8125rem 0, calc(100% - 2.8125rem) 0, calc(100% - 2.8125rem) 0.9375rem, calc(100% - 1.875rem) 0.9375rem, calc(100% - 1.875rem) 1.875rem, calc(100% - 0.9375rem) 1.875rem, calc(100% - 0.9375rem) 2.8125rem, 100% 2.8125rem, 100% calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 2.8125rem), calc(100% - 0.9375rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 1.875rem), calc(100% - 1.875rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) calc(100% - 0.9375rem), calc(100% - 2.8125rem) 100%, 2.8125rem 100%, 2.8125rem calc(100% - 0.9375rem), 1.875rem calc(100% - 0.9375rem), 1.875rem calc(100% - 1.875rem), 0.9375rem calc(100% - 1.875rem), 0.9375rem calc(100% - 2.8125rem), 0% calc(100% - 2.8125rem), 0% 2.8125rem, 0.0625rem 2.875rem, 0.0625rem calc(100% - 2.875rem), 1rem calc(100% - 2.875rem), 1rem calc(100% - 1.9375rem), 1.9375rem calc(100% - 1.9375rem), 1.9375rem calc(100% - 1rem), 2.875rem calc(100% - 1rem), 2.875rem calc(100% - 0.0625rem), calc(100% - 2.875rem) calc(100% - 0.0625rem), calc(100% - 2.875rem) calc(100% - 1rem), calc(100% - 1.9375rem) calc(100% - 1rem), calc(100% - 1.9375rem) calc(100% - 1.9375rem), calc(100% - 1rem) calc(100% - 1.9375rem), calc(100% - 1rem) calc(100% - 2.875rem), calc(100% - 0.0625rem) calc(100% - 2.875rem), calc(100% - 0.0625rem) 2.875rem, calc(100% - 1rem) 2.875rem, calc(100% - 1rem) 1.9375rem, calc(100% - 1.9375rem) 1.9375rem, calc(100% - 1.9375rem) 1rem, calc(100% - 2.875rem) 1rem, calc(100% - 2.875rem) 0.0625rem, 2.875rem 0.0625rem, 2.875rem 1rem, 1.9375rem 1rem, 1.9375rem 1.9375rem, 1rem 1.9375rem, 1rem 2.875rem);
+  clip-path: polygon(0% calc(3 * 0.9375rem), 0.9375rem calc(3 * 0.9375rem), 0.9375rem calc(2 * 0.9375rem), calc(2 * 0.9375rem) calc(2 * 0.9375rem), calc(2 * 0.9375rem) 0.9375rem, calc(3 * 0.9375rem) 0.9375rem, calc(3 * 0.9375rem) 0, calc(100% - calc(3 * 0.9375rem)) 0, calc(100% - calc(3 * 0.9375rem)) 0.9375rem, calc(100% - calc(2 * 0.9375rem)) 0.9375rem, calc(100% - calc(2 * 0.9375rem)) calc(2 * 0.9375rem), calc(100% - 0.9375rem) calc(2 * 0.9375rem), calc(100% - 0.9375rem) calc(3 * 0.9375rem), 100% calc(3 * 0.9375rem), 100% calc(100% - calc(3 * 0.9375rem)), calc(100% - 0.9375rem) calc(100% - calc(3 * 0.9375rem)), calc(100% - 0.9375rem) calc(100% - calc(2 * 0.9375rem)), calc(100% - calc(2 * 0.9375rem)) calc(100% - calc(2 * 0.9375rem)), calc(100% - calc(2 * 0.9375rem)) calc(100% - 0.9375rem), calc(100% - calc(3 * 0.9375rem)) calc(100% - 0.9375rem), calc(100% - calc(3 * 0.9375rem)) 100%, calc(3 * 0.9375rem) 100%, calc(3 * 0.9375rem) calc(100% - 0.9375rem), calc(2 * 0.9375rem) calc(100% - 0.9375rem), calc(2 * 0.9375rem) calc(100% - calc(2 * 0.9375rem)), 0.9375rem calc(100% - calc(2 * 0.9375rem)), 0.9375rem calc(100% - calc(3 * 0.9375rem)), 0% calc(100% - calc(3 * 0.9375rem)), 0% calc(3 * 0.9375rem), 1.3px calc(calc(3 * 0.9375rem) + 1.3px), 1.3px calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)), calc(0.9375rem + 1.3px) calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)), calc(0.9375rem + 1.3px) calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)), calc(calc(2 * 0.9375rem) + 1.3px) calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)), calc(calc(2 * 0.9375rem) + 1.3px) calc(100% - calc(0.9375rem + 1.3px)), calc(calc(3 * 0.9375rem) + 1.3px) calc(100% - calc(0.9375rem + 1.3px)), calc(calc(3 * 0.9375rem) + 1.3px) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)) calc(100% - 1.3px), calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)) calc(100% - calc(0.9375rem + 1.3px)), calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)) calc(100% - calc(0.9375rem + 1.3px)), calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)) calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)), calc(100% - calc(0.9375rem + 1.3px)) calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)), calc(100% - calc(0.9375rem + 1.3px)) calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)), calc(100% - 1.3px) calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)), calc(100% - 1.3px) calc(calc(3 * 0.9375rem) + 1.3px), calc(100% - calc(0.9375rem + 1.3px)) calc(calc(3 * 0.9375rem) + 1.3px), calc(100% - calc(0.9375rem + 1.3px)) calc(calc(2 * 0.9375rem) + 1.3px), calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)) calc(calc(2 * 0.9375rem) + 1.3px), calc(100% - calc(calc(2 * 0.9375rem) + 1.3px)) calc(0.9375rem + 1.3px), calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)) calc(0.9375rem + 1.3px), calc(100% - calc(calc(3 * 0.9375rem) + 1.3px)) 1.3px, calc(calc(3 * 0.9375rem) + 1.3px) 1.3px, calc(calc(3 * 0.9375rem) + 1.3px) calc(0.9375rem + 1.3px), calc(calc(2 * 0.9375rem) + 1.3px) calc(0.9375rem + 1.3px), calc(calc(2 * 0.9375rem) + 1.3px) calc(calc(2 * 0.9375rem) + 1.3px), calc(0.9375rem + 1.3px) calc(calc(2 * 0.9375rem) + 1.3px), calc(0.9375rem + 1.3px) calc(calc(3 * 0.9375rem) + 1.3px), 0 calc(calc(3 * 0.9375rem) + 1.3px));
+}
+
+.mask-btn-small {
+  clip-path: polygon(0% 0.375rem, 0.1875rem 0.375rem, 0.1875rem 0.1875rem, 0.375rem 0.1875rem, 0.375rem 0, calc(100% - 0.375rem) 0, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.1875rem) 0.1875rem, calc(100% - 0.1875rem) 0.375rem, 100% 0.375rem, 100% calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) 100%, 0.375rem 100%, 0.375rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.375rem), 0% calc(100% - 0.375rem));
+}
+.mask-btn-small--border:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3d445c;
+  transition: 0.3s;
+  clip-path: polygon(0% 0.375rem, 0.1875rem 0.375rem, 0.1875rem 0.1875rem, 0.375rem 0.1875rem, 0.375rem 0, calc(100% - 0.375rem) 0, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.1875rem) 0.1875rem, calc(100% - 0.1875rem) 0.375rem, 100% 0.375rem, 100% calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) 100%, 0.375rem 100%, 0.375rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.375rem), 0% calc(100% - 0.375rem), 0% 0.375rem, 0.0625rem 0.4375rem, 0.0625rem calc(100% - 0.4375rem), 0.25rem calc(100% - 0.4375rem), 0.25rem calc(100% - 0.25rem), 0.4375rem calc(100% - 0.25rem), 0.4375rem calc(100% - 0.0625rem), calc(100% - 0.4375rem) calc(100% - 0.0625rem), calc(100% - 0.4375rem) calc(100% - 0.25rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.25rem) calc(100% - 0.4375rem), calc(100% - 0.0625rem) calc(100% - 0.4375rem), calc(100% - 0.0625rem) 0.4375rem, calc(100% - 0.25rem) 0.4375rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.4375rem) 0.25rem, calc(100% - 0.4375rem) 0.0625rem, 0.4375rem 0.0625rem, 0.4375rem 0.25rem, 0.25rem 0.25rem, 0.25rem 0.4375rem, 0.0625rem 0.4375rem);
 }
 
 .mask-btn {
@@ -3235,89 +3312,12 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.mask-btn-small {
-  clip-path: polygon(0% 0.375rem, 0.1875rem 0.375rem, 0.1875rem 0.1875rem, 0.375rem 0.1875rem, 0.375rem 0, calc(100% - 0.375rem) 0, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.1875rem) 0.1875rem, calc(100% - 0.1875rem) 0.375rem, 100% 0.375rem, 100% calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) 100%, 0.375rem 100%, 0.375rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.375rem), 0% calc(100% - 0.375rem));
-}
-.mask-btn-small--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #3d445c;
-  transition: 0.3s;
-  clip-path: polygon(0% 0.375rem, 0.1875rem 0.375rem, 0.1875rem 0.1875rem, 0.375rem 0.1875rem, 0.375rem 0, calc(100% - 0.375rem) 0, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.1875rem) 0.1875rem, calc(100% - 0.1875rem) 0.375rem, 100% 0.375rem, 100% calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.1875rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.375rem) 100%, 0.375rem 100%, 0.375rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.1875rem), 0.1875rem calc(100% - 0.375rem), 0% calc(100% - 0.375rem), 0% 0.375rem, 0.0625rem 0.4375rem, 0.0625rem calc(100% - 0.4375rem), 0.25rem calc(100% - 0.4375rem), 0.25rem calc(100% - 0.25rem), 0.4375rem calc(100% - 0.25rem), 0.4375rem calc(100% - 0.0625rem), calc(100% - 0.4375rem) calc(100% - 0.0625rem), calc(100% - 0.4375rem) calc(100% - 0.25rem), calc(100% - 0.25rem) calc(100% - 0.25rem), calc(100% - 0.25rem) calc(100% - 0.4375rem), calc(100% - 0.0625rem) calc(100% - 0.4375rem), calc(100% - 0.0625rem) 0.4375rem, calc(100% - 0.25rem) 0.4375rem, calc(100% - 0.25rem) 0.25rem, calc(100% - 0.4375rem) 0.25rem, calc(100% - 0.4375rem) 0.0625rem, 0.4375rem 0.0625rem, 0.4375rem 0.25rem, 0.25rem 0.25rem, 0.25rem 0.4375rem, 0.0625rem 0.4375rem);
-}
-
-.mask-card {
-  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem));
-}
-.mask-card--border {
-  position: absolute;
-}
-.mask-card--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #3d445c;
-  pointer-events: none;
-  transition: 0.3s;
-  clip-path: polygon(0% 1.875rem, 0.625rem 1.875rem, 0.625rem 1.25rem, 1.25rem 1.25rem, 1.25rem 0.625rem, 1.875rem 0.625rem, 1.875rem 0, calc(100% - 1.875rem) 0, calc(100% - 1.875rem) 0.625rem, calc(100% - 1.25rem) 0.625rem, calc(100% - 1.25rem) 1.25rem, calc(100% - 0.625rem) 1.25rem, calc(100% - 0.625rem) 1.875rem, 100% 1.875rem, 100% calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.875rem), calc(100% - 0.625rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 1.25rem), calc(100% - 1.25rem) calc(100% - 0.625rem), calc(100% - 1.875rem) calc(100% - 0.625rem), calc(100% - 1.875rem) 100%, 1.875rem 100%, 1.875rem calc(100% - 0.625rem), 1.25rem calc(100% - 0.625rem), 1.25rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.25rem), 0.625rem calc(100% - 1.875rem), 0% calc(100% - 1.875rem), 0% 1.875rem, 0.0625rem 1.9375rem, 0.0625rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.9375rem), 0.6875rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 1.3125rem), 1.3125rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.6875rem), 1.9375rem calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.0625rem), calc(100% - 1.9375rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 0.6875rem), calc(100% - 1.3125rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.3125rem), calc(100% - 0.6875rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) calc(100% - 1.9375rem), calc(100% - 0.0625rem) 1.9375rem, calc(100% - 0.6875rem) 1.9375rem, calc(100% - 0.6875rem) 1.3125rem, calc(100% - 1.3125rem) 1.3125rem, calc(100% - 1.3125rem) 0.6875rem, calc(100% - 1.9375rem) 0.6875rem, calc(100% - 1.9375rem) 0.0625rem, 1.9375rem 0.0625rem, 1.9375rem 0.6875rem, 1.3125rem 0.6875rem, 1.3125rem 1.3125rem, 0.6875rem 1.3125rem, 0.6875rem 1.9375rem);
-}
-
 .mask-small {
   clip-path: polygon(0% 0.875rem, 0.21875rem 0.875rem, 0.21875rem 0.4375rem, 0.4375rem 0.4375rem, 0.4375rem 0.21875rem, 0.875rem 0.21875rem, 0.875rem 0, calc(100% - 0.875rem) 0, calc(100% - 0.875rem) 0.21875rem, calc(100% - 0.4375rem) 0.21875rem, calc(100% - 0.4375rem) 0.4375rem, calc(100% - 0.21875rem) 0.4375rem, calc(100% - 0.21875rem) 0.875rem, 100% 0.875rem, 100% calc(100% - 0.875rem), calc(100% - 0.21875rem) calc(100% - 0.875rem), calc(100% - 0.21875rem) calc(100% - 0.4375rem), calc(100% - 0.4375rem) calc(100% - 0.4375rem), calc(100% - 0.4375rem) calc(100% - 0.21875rem), calc(100% - 0.875rem) calc(100% - 0.21875rem), calc(100% - 0.875rem) 100%, 0.875rem 100%, 0.875rem calc(100% - 0.21875rem), 0.4375rem calc(100% - 0.21875rem), 0.4375rem calc(100% - 0.4375rem), 0.21875rem calc(100% - 0.4375rem), 0.21875rem calc(100% - 0.875rem), 0% calc(100% - 0.875rem));
 }
 
-.mask-block {
-  clip-path: polygon(0% 0.9375rem, 0.3125rem 0.9375rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 0.9375rem 0.3125rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem));
-}
-.mask-block--border {
-  position: absolute;
-}
-.mask-block--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #3d445c;
-  pointer-events: none;
-  z-index: 5;
-  transition: 0.3s;
-  clip-path: polygon(0% 0.9375rem, 0.3125rem 0.9375rem, 0.3125rem 0.625rem, 0.625rem 0.625rem, 0.625rem 0.3125rem, 0.9375rem 0.3125rem, 0.9375rem 0, calc(100% - 0.9375rem) 0, calc(100% - 0.9375rem) 0.3125rem, calc(100% - 0.625rem) 0.3125rem, calc(100% - 0.625rem) 0.625rem, calc(100% - 0.3125rem) 0.625rem, calc(100% - 0.3125rem) 0.9375rem, 100% 0.9375rem, 100% calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.9375rem), calc(100% - 0.3125rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.625rem), calc(100% - 0.625rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) calc(100% - 0.3125rem), calc(100% - 0.9375rem) 100%, 0.9375rem 100%, 0.9375rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.3125rem), 0.625rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.625rem), 0.3125rem calc(100% - 0.9375rem), 0% calc(100% - 0.9375rem), 0% 0.9375rem, 0.0625rem 1rem, 0.0625rem calc(100% - 1rem), 0.375rem calc(100% - 1rem), 0.375rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.6875rem), 0.6875rem calc(100% - 0.375rem), 1rem calc(100% - 0.375rem), 1rem calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.0625rem), calc(100% - 1rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.375rem), calc(100% - 0.6875rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 0.6875rem), calc(100% - 0.375rem) calc(100% - 1rem), calc(100% - 0.0625rem) calc(100% - 1rem), calc(100% - 0.0625rem) 1rem, calc(100% - 0.375rem) 1rem, calc(100% - 0.375rem) 0.6875rem, calc(100% - 0.6875rem) 0.6875rem, calc(100% - 0.6875rem) 0.375rem, calc(100% - 1rem) 0.375rem, calc(100% - 1rem) 0.0625rem, 1rem 0.0625rem, 1rem 0.375rem, 0.6875rem 0.375rem, 0.6875rem 0.6875rem, 0.375rem 0.6875rem, 0.375rem 1rem);
-}
-.mask-block--border-white:before {
-  background: rgba(255, 255, 255, 0.15);
-}
-
 .mask-group-logo {
   clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
-}
-
-.mask-modal {
-  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem));
-}
-.mask-modal--border {
-  position: absolute;
-}
-.mask-modal--border:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #3d445c;
-  pointer-events: none;
-  z-index: 5;
-  transition: 0.3s;
-  clip-path: polygon(0% 0.5625rem, 0.1875rem 0.5625rem, 0.1875rem 0.375rem, 0.375rem 0.375rem, 0.375rem 0.1875rem, 0.5625rem 0.1875rem, 0.5625rem 0, calc(100% - 0.5625rem) 0, calc(100% - 0.5625rem) 0.1875rem, calc(100% - 0.375rem) 0.1875rem, calc(100% - 0.375rem) 0.375rem, calc(100% - 0.1875rem) 0.375rem, calc(100% - 0.1875rem) 0.5625rem, 100% 0.5625rem, 100% calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.5625rem), calc(100% - 0.1875rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.375rem), calc(100% - 0.375rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) calc(100% - 0.1875rem), calc(100% - 0.5625rem) 100%, 0.5625rem 100%, 0.5625rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.1875rem), 0.375rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.375rem), 0.1875rem calc(100% - 0.5625rem), 0% calc(100% - 0.5625rem), 0% 0.5625rem, 0.0625rem 0.625rem, 0.0625rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.625rem), 0.25rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.4375rem), 0.4375rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.25rem), 0.625rem calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.0625rem), calc(100% - 0.625rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.25rem), calc(100% - 0.4375rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.4375rem), calc(100% - 0.25rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) calc(100% - 0.625rem), calc(100% - 0.0625rem) 0.625rem, calc(100% - 0.25rem) 0.625rem, calc(100% - 0.25rem) 0.4375rem, calc(100% - 0.4375rem) 0.4375rem, calc(100% - 0.4375rem) 0.25rem, calc(100% - 0.625rem) 0.25rem, calc(100% - 0.625rem) 0.0625rem, 0.625rem 0.0625rem, 0.625rem 0.25rem, 0.4375rem 0.25rem, 0.4375rem 0.4375rem, 0.25rem 0.4375rem, 0.25rem 0.625rem);
 }
 
 .fiat-btn {
@@ -3738,7 +3738,7 @@ section,
   line-height: 1.5;
   cursor: pointer;
   transition: 0.3s;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: transparent;
   color: white;
 }
 .btn--withdraw {
@@ -4170,7 +4170,7 @@ section,
 }
 .header__container {
   padding: 1.5rem 0;
-  border-bottom: 0.0625rem dashed rgba(255, 255, 255, 0.25);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
   width: 100%;
   display: flex;
   align-items: center;
@@ -4593,7 +4593,7 @@ section,
   top: 0;
   left: 5.625rem;
   right: 0;
-  height: 0.0625rem;
+  height: 1.4px;
   background: rgba(255, 255, 255, 0.15);
 }
 .footer__col {
@@ -4734,7 +4734,7 @@ section,
 .slot__btn-favourites {
   display: none;
   position: absolute;
-  width: 2.1875rem;
+  width: 2.25rem;
   height: 2.1875rem;
   background: url("../img/icons/icon-slot-favorites.svg") no-repeat 50% 50%/contain;
   z-index: 5;
@@ -5226,7 +5226,7 @@ section,
   background: transparent;
 }
 .modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input-name, .modal__label:has(.modal__input:focus) .modal__input-name {
-  top: 0;
+  top: 0.125rem;
   transform: translate(0);
 }
 .modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input, .modal__label:has(.modal__input:focus) .modal__input {
@@ -5452,7 +5452,7 @@ section,
 .modal__input:not([type=password]) {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 0;
+  padding-top: 0.75rem;
 }
 .modal__input:read-only {
   font-size: 1rem;
@@ -5953,7 +5953,7 @@ section,
   padding: 1.375rem 5rem;
 }
 .faq__answer {
-  border-top: 0.0625rem solid rgba(255, 255, 255, 0.45);
+  border-top: 1px solid #3d445c;
   font-size: 0.875rem;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.45);
