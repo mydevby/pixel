@@ -620,7 +620,7 @@
     }
 
     &__input {
-        padding-top: rem-calc(15);
+        padding-top: rem-calc(12);
         display: inline-block;
         width: 100%;
         background-color: transparent;
@@ -633,7 +633,6 @@
         &:not([type="password"]) {
             overflow: hidden;
             text-overflow: ellipsis;
-            padding-top: rem-calc(12);
         }
 
         &:read-only {
@@ -800,6 +799,7 @@
 
         &--deposit {
             &:after {
+                left: rem-calc(18);
                 background-image: url("../img/modal/icon-add.svg");
             }
         }

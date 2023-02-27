@@ -795,6 +795,18 @@ window.onload = function() {
 		});
 	};
 
+	if (document.querySelector('.modal__input-btn--password') !== null)  {
+		let btnTypePassword = document.querySelector('.modal__input-btn--password');
+		btnTypePassword.addEventListener('click', function(e) {
+			let inputPasswordType = this.previousSibling.previousSibling.type;
+			if (inputPasswordType == 'password') {
+				this.previousSibling.previousSibling.type = 'text';
+			} else {
+				this.previousSibling.previousSibling.type = 'password';
+			}
+		});
+	};
+
 	if (document.querySelector('.checkbox__input--radio') !== null) {
 		let arrCheckboxInputRadio = document.querySelectorAll('.checkbox__input--radio');
 		arrCheckboxInputRadio.forEach(checkboxInputRadio => {

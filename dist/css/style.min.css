@@ -5439,7 +5439,7 @@ section,
   pointer-events: none;
 }
 .modal__input {
-  padding-top: 0.9375rem;
+  padding-top: 0.75rem;
   display: inline-block;
   width: 100%;
   background-color: transparent;
@@ -5452,7 +5452,6 @@ section,
 .modal__input:not([type=password]) {
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 0.75rem;
 }
 .modal__input:read-only {
   font-size: 1rem;
@@ -5584,6 +5583,7 @@ section,
   transform: translateY(-50%);
 }
 .modal__nav-btn--deposit:after {
+  left: 1.125rem;
   background-image: url("../img/modal/icon-add.svg");
 }
 .modal__nav-btn--buy-crypto:after {
