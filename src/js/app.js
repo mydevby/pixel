@@ -656,10 +656,9 @@ window.onload = function() {
 	//Index Page
 	if (document.querySelector('.filters__select') !== null) {
 		let filtersSelect  = document.querySelector('.filters__select');
-		let filtersSelectList = document.querySelector('.filters__select-list');
+		let slotsProvidersList = document.querySelector('.slots__providers');
 		filtersSelect.addEventListener('click', function(e) {
-			filtersSelect.classList.toggle('filters__select--active');
-			filtersSelectList.classList.toggle('filters__select-list--hidden');
+			slotsProvidersList.classList.toggle('visually-hidden');
 		});
 	};
 
@@ -676,10 +675,19 @@ window.onload = function() {
 
 	if (document.querySelector('.providers__select') !== null) {
 		let providersSelect  = document.querySelector('.providers__select');
-		let providersSelectList = document.querySelector('.providers__select-list');
+		let providersProvidersList = document.querySelector('.providers__providers');
 		providersSelect.addEventListener('click', function(e) {
-			providersSelect.classList.toggle('providers__select--active');
-			providersSelectList.classList.toggle('providers__select-list--hidden');
+			providersProvidersList.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.providers__providers-link') !== null) {
+		let arrProvidersLinks  = document.querySelectorAll('.providers__providers-link');
+		let providersProvidersList = document.querySelector('.providers__providers');
+		arrProvidersLinks.forEach(providersLink => {
+			providersLink.addEventListener('click', function(e) {
+				providersProvidersList.classList.toggle('visually-hidden');
+			});
 		});
 	};
 

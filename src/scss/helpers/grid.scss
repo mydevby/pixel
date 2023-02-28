@@ -50,6 +50,10 @@
         grid-template-columns: repeat(8, 1fr);
     }
 
+    &--gap-20 {
+        gap: rem-calc(20);
+    }
+
     &__item {
         position: relative;
 
