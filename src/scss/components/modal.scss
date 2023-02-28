@@ -1193,4 +1193,28 @@
             color: #66BE47;
         }
     }
+
+    &__super-select-wrapper {
+        position: relative;
+    }
+
+    &__super-select-list {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+
+        .select {
+            margin-bottom: 0;
+            &:not(:nth-child(2)) {
+                border-top: 1px solid rgba(255, 255, 255, 0.15);
+                height: rem-calc(56);
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
 }

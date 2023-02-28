@@ -63,6 +63,70 @@
         }
     }
 
+    &--icon-degenpass {
+        padding-left: rem-calc(55);
+        text-transform: none;
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-degenpass.svg");
+        }
+    }
+
+    &--icon-crypto-punks {
+        padding-left: rem-calc(55);
+        text-transform: none;
+        border: 1px solid #66BE47 !important;
+        background: rgba(102, 190, 71, 0.1);
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-crypto-punks.svg");
+        }
+
+        &:after {
+            display: block !important;
+            width: rem-calc(24);
+            height: rem-calc(24);
+            background-image: url("../img/icons/icon-crypto-punks-select.svg");
+        }
+    }
+
+    &--icon-clone-x {
+        padding-left: rem-calc(55);
+        text-transform: none;
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-clone-x.svg");
+        }
+    }
+
+    &--icon-azuki {
+        padding-left: rem-calc(55);
+        text-transform: none;
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-azuki.svg");
+        }
+    }
+
+    &--icon-doodles {
+        padding-left: rem-calc(55);
+        text-transform: none;
+        &:before {
+            width: rem-calc(30);
+            height: rem-calc(30);
+            left: rem-calc(15);
+            background-image: url("../img/icons/icon-doodles.svg");
+        }
+    }
+
     &__list {
         position: absolute;
         top: calc(100% - #{rem-calc(1)});

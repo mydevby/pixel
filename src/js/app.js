@@ -298,11 +298,14 @@ window.onload = function() {
 			document.querySelector('.modal__content--withdraw').classList.add('modal__content--active');
 		});
 	};
-	if (document.querySelector('.modal__nav-nft-btn-select-money') !== null) {
-		let modalNavNftBtnSelectMoney  = document.querySelector('.modal__nav-nft-btn-select-money');
-		modalNavNftBtnSelectMoney.addEventListener('click', (e) => {
-			document.querySelectorAll('.modal__nav-nft-btn-select-money-text').forEach(modalNavNftBtnSelectMoneyText =>{
-				modalNavNftBtnSelectMoneyText.classList.toggle('visually-hidden');
+	if (document.querySelector('.select--icon-bayk') !== null) {
+		let arrselectIconBayk  = document.querySelectorAll('.select--icon-bayk');
+		arrselectIconBayk.forEach(selectIconBayk => {
+			selectIconBayk.addEventListener('click', (e) => {
+				console.log('asdasdsad');
+				document.querySelectorAll('.modal__super-select-list').forEach(modalSuperSelectList =>{
+					modalSuperSelectList.classList.toggle('visually-hidden');
+				});
 			});
 		});
 	};

@@ -3131,6 +3131,9 @@
 .mask-bg--extra-dark {
   background: rgba(0, 0, 0, 0.15);
 }
+.mask-bg--select {
+  background: #2D3143;
+}
 .mask-bg--accent {
   background: #447ef7;
 }
@@ -5907,6 +5910,27 @@ section,
 .modal__withdraw-text-big--green {
   color: #66BE47;
 }
+.modal__super-select-wrapper {
+  position: relative;
+}
+.modal__super-select-list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.modal__super-select-list .select {
+  margin-bottom: 0;
+}
+.modal__super-select-list .select:not(:nth-child(2)) {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  height: 3.5rem;
+}
+.modal__super-select-list .select:not(:nth-child(2)):after {
+  display: none;
+}
 
 .faq__nav-link {
   position: relative;
@@ -6647,6 +6671,64 @@ section,
   height: 1.875rem;
   left: 0.9375rem;
   background-image: url("../img/icons/icon-bayk.svg");
+}
+.select--icon-degenpass {
+  padding-left: 3.4375rem;
+  text-transform: none;
+}
+.select--icon-degenpass:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-degenpass.svg");
+}
+.select--icon-crypto-punks {
+  padding-left: 3.4375rem;
+  text-transform: none;
+  border: 1px solid #66BE47 !important;
+  background: rgba(102, 190, 71, 0.1);
+}
+.select--icon-crypto-punks:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-crypto-punks.svg");
+}
+.select--icon-crypto-punks:after {
+  display: block !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../img/icons/icon-crypto-punks-select.svg");
+}
+.select--icon-clone-x {
+  padding-left: 3.4375rem;
+  text-transform: none;
+}
+.select--icon-clone-x:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-clone-x.svg");
+}
+.select--icon-azuki {
+  padding-left: 3.4375rem;
+  text-transform: none;
+}
+.select--icon-azuki:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-azuki.svg");
+}
+.select--icon-doodles {
+  padding-left: 3.4375rem;
+  text-transform: none;
+}
+.select--icon-doodles:before {
+  width: 1.875rem;
+  height: 1.875rem;
+  left: 0.9375rem;
+  background-image: url("../img/icons/icon-doodles.svg");
 }
 .select__list {
   position: absolute;
