@@ -932,7 +932,41 @@ window.onload = function() {
 				providersSelectText.textContent = this.dataset.providerName;
 			});
 		});
-	}
+	};
+
+	if (document.querySelector('.modal__select-nft') !== null) {
+		let selectNft  = document.querySelector('.modal__select-nft');
+		let superSelectList  = document.querySelector('.modal__super-select-list');
+		selectNft.addEventListener('click', function(e) {
+			superSelectList.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.modal__select-nft-content--select') !== null) {
+		let selectNftContentSelect  = document.querySelector('.modal__select-nft-content--select');
+		let superSelectList  = document.querySelector('.modal__super-select-list');
+		selectNftContentSelect.addEventListener('click', function(e) {
+			superSelectList.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.modal__select-nft-content-item') !== null) {
+		let arrSelectNftContentItems  = document.querySelectorAll('.modal__select-nft-content-item');
+		let superSelectList  = document.querySelector('.modal__super-select-list');
+		arrSelectNftContentItems.forEach(selectNftContentItem => {
+			selectNftContentItem.addEventListener('click', function(e) {
+				let arrSelectNftContentItemsMore  = document.querySelectorAll('.modal__select-nft-content-item');
+				arrSelectNftContentItemsMore.forEach(selectNftContentItemMore => {
+					selectNftContentItemMore.classList.remove('modal__select-nft-content-item--active');
+				});
+				let content = this.innerHTML;
+				document.querySelector('.modal__select-nft-content--select').innerHTML = content;
+				document.querySelector('.modal__select-nft-content--select-main').innerHTML = content;
+				superSelectList.classList.toggle('visually-hidden');
+				this.classList.add('modal__select-nft-content-item--active');
+			});
+		});
+	};
 
 	//Page Documents
 

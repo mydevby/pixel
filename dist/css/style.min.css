@@ -5989,8 +5989,77 @@ section,
 .modal__withdraw-text-big--green {
   color: #66BE47;
 }
+.modal__row {
+  display: flex;
+}
+.modal__select-nft {
+  position: relative;
+  display: flex;
+  margin-bottom: 0.9375rem;
+  justify-content: flex-start;
+  padding: 0.6875rem 2.5rem 0.6875rem 0.9375rem;
+}
+.modal__select-nft:before {
+  top: 1.25rem;
+}
+.modal__select-nft-content {
+  display: flex;
+  align-items: center;
+  min-height: 1.875rem;
+}
+.modal__select-nft-content--select {
+  cursor: pointer;
+  padding-bottom: 0.6875rem;
+  min-height: 2.5625rem;
+}
+.modal__select-nft-content-item {
+  padding-top: 0.6875rem;
+  padding-bottom: 0.6875rem;
+  padding-left: 0.625rem;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+}
+.modal__select-nft-content-item:hover {
+  background: rgba(102, 190, 71, 0.1);
+  border-color: #66BE47;
+}
+.modal__select-nft-content-item:last-child {
+  margin-bottom: 0;
+}
+.modal__select-nft-content-item--active {
+  position: relative;
+  background: rgba(102, 190, 71, 0.1);
+  border: 1px solid #66BE47;
+  pointer-events: none;
+}
+.modal__select-nft-content-item--active:before {
+  content: "";
+  position: absolute;
+  top: 0.875rem;
+  right: 0.9375rem;
+  background: url(../img/modal/select-nft-check.png) no-repeat 50% 50%/contain;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.modal__select-nft-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
+}
 .modal__super-select-wrapper {
   position: relative;
+}
+.modal__select-nft-list-wrapper {
+  height: 100%;
+  max-height: calc(100% - 2.625rem);
+  overflow-y: auto;
+}
+.modal__select-nft-list {
+  margin-right: 0.9375rem;
 }
 .modal__super-select-list {
   position: absolute;
@@ -5999,9 +6068,7 @@ section,
   left: 0;
   right: 0;
   z-index: 20;
-}
-.modal__super-select-list .select {
-  margin-bottom: 0;
+  padding: 0.6875rem 0.9375rem;
 }
 .modal__super-select-list .select:not(:nth-child(2)) {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -6009,9 +6076,6 @@ section,
 }
 .modal__super-select-list .select:not(:nth-child(2)):after {
   display: none;
-}
-.modal__row {
-  display: flex;
 }
 
 .faq__nav-link {
