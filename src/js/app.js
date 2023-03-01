@@ -791,6 +791,7 @@ window.onload = function() {
 		new Swiper('.profile__swiper', {
 			slidesPerView: 1,
 			effect: "fade",
+			allowTouchMove: false,
 			hashNavigation: {
 				watchState: true,
 			},
@@ -945,6 +946,7 @@ window.onload = function() {
 		const SWIPERDOCUMENTS = new Swiper(".documents__swiper", {
 			slidesPerView: 1,
 			effect: "fade",
+			allowTouchMove: false,
 			hashNavigation: {
 				watchState: true,
 			},
@@ -974,6 +976,7 @@ window.onload = function() {
 		const SWIPEGUIDES = new Swiper(".guides__swiper", {
 			slidesPerView: 1,
 			effect: "fade",
+			allowTouchMove: false,
 			hashNavigation: {
 				watchState: true,
 			},
