@@ -58,7 +58,7 @@
         background-color: $clr-accent;
         margin: rem-calc(-22) auto;
         position: relative;
-        z-index: 2;
+        z-index: 10;
         &:before {
             opacity: 1;           
         }

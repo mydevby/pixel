@@ -3128,6 +3128,9 @@
 .mask-bg--dark {
   background: rgba(30, 34, 52, 0.65);
 }
+.mask-bg--green-select {
+  background: #66BE47;
+}
 .mask-bg--extra-dark {
   background: rgba(0, 0, 0, 0.15);
 }
@@ -3160,6 +3163,12 @@
 }
 .mask-bg--light {
   background: rgba(255, 255, 255, 0.03);
+}
+.mask-bg--light-select {
+  background: #3d445c;
+}
+.mask-bg--gray-select {
+  background: #1E2234;
 }
 .mask-bg--black-blue {
   background: #1e2234;
@@ -3793,7 +3802,7 @@ section,
   background-color: #447ef7;
   margin: -1.375rem auto;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 }
 .btn--active-swap:before {
   opacity: 1;
@@ -3990,6 +3999,64 @@ section,
 }
 .button--hover:hover {
   transform: translateY(-0.3125rem);
+}
+.button--select {
+  padding-right: 2.5rem;
+  z-index: 2;
+}
+.button--select:before {
+  position: absolute;
+  content: "";
+  top: 1.125rem;
+  right: 0.9375rem;
+  width: 0.875rem;
+  height: 0.5rem;
+  background: url(../img/modal/icon-arrow-down.svg) no-repeat 50% 50%/contain;
+}
+.button--select-3, .button--select-5, .button--select-7 {
+  z-index: 3;
+}
+.button--select-icon {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-right: 0.625rem;
+  pointer-events: none;
+}
+.button--select-text {
+  pointer-events: none;
+}
+.button--select-content, .button--select-content-list {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.button--select-content-item {
+  margin-bottom: 0.625rem;
+}
+.button--select-content-item:nth-child(2) {
+  padding-top: 0.3125rem;
+}
+.button--select-content-item:last-child {
+  margin-bottom: 0;
+}
+.button--select-content-small {
+  width: 4.0625rem;
+}
+.button--select-content-medium {
+  width: 4.0625rem;
+}
+.button--select-content-big {
+  width: 6.25rem;
+}
+.button--select-list {
+  position: absolute;
+  top: 1.75rem;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  opacity: 1;
+  padding: 0.625rem 3.125rem 0.625rem 0.9375rem;
 }
 .button--icon {
   padding-left: 3.125rem;
@@ -5207,10 +5274,21 @@ section,
   grid-template-columns: 3.25rem 1fr;
   width: 100%;
   gap: 0.1875rem;
-  background: rgba(0, 0, 0, 0.15);
 }
-.modal__label:hover {
-  transform: translate(0);
+.modal__label--btn-no-hover:hover {
+  transform: translateY(0);
+}
+.modal__label--select .mask-modal--border {
+  z-index: 2;
+}
+.modal__label--select .modal--select-label {
+  z-index: 3;
+}
+.modal__label--select:hover .mask-bg:before {
+  background: white;
+}
+.modal__label--bg-transparent {
+  background: transparent;
 }
 .modal__label--withdraw {
   grid-template-columns: 1fr 2.875rem 2.875rem 2.875rem 2.875rem;
@@ -5283,12 +5361,13 @@ section,
 }
 .modal__label--light {
   background-color: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(27.5px);
-  backdrop-filter: blur(27.5px);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
+}
+.modal__label--bg-transparent {
+  background: transparent;
 }
 .modal__label-icon {
   width: 2.625rem;
@@ -5544,7 +5623,7 @@ section,
 }
 .modal__btn--code-confirm {
   max-width: 10.25rem;
-  background: rgba(0, 0, 0, 0.15);
+  background: transparent;
   margin: 1.25rem auto 0;
 }
 .modal__nav {
@@ -5706,7 +5785,7 @@ section,
   padding: 0.75rem 1.125rem;
 }
 .modal__nav-crypto-btn--select.btn--active {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 .modal__nav-crypto-btn--select.btn--active:before {
   background: #447ef7;
@@ -5930,6 +6009,9 @@ section,
 }
 .modal__super-select-list .select:not(:nth-child(2)):after {
   display: none;
+}
+.modal__row {
+  display: flex;
 }
 
 .faq__nav-link {
@@ -7646,10 +7728,9 @@ section,
 .profile__info-verification-item-camera {
   display: inline-block;
   width: 1.3125rem;
-  height: 1.75rem;
+  height: 1.125rem;
   margin-left: 0.25rem;
-  margin-bottom: -0.625rem;
-  background: url("../img/user/icon-camera.svg") no-repeat 50% 50%/100% auto;
+  margin-bottom: -0.5rem;
 }
 .profile__info-verification-country-wrapper {
   max-width: 30rem;

@@ -556,6 +556,235 @@ window.onload = function() {
 		});
 	};
 
+
+	//button-select
+	if (document.querySelector('.button--select-1') !== null) {
+		let buttonSelect1  = document.querySelector('.button--select-1');
+		let buttonSelectList1  = document.querySelector('.button--select-list-1');
+		let buttonSelectContentItem1  = document.querySelector('.button--select-content-item-1');
+		let buttonSelectContentItem2  = document.querySelector('.button--select-content-item-2');
+		buttonSelect1.addEventListener('click', (e) => {
+			buttonSelectList1.classList.toggle('visually-hidden');
+		});
+		buttonSelectList1.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem1.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content').innerHTML;
+			document.querySelector('.button--select-content').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList1.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem2.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content').innerHTML;
+			document.querySelector('.button--select-content').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList1.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-2') !== null) {
+		let buttonSelect2  = document.querySelector('.button--select-2');
+		let buttonSelectList2  = document.querySelector('.button--select-list-2');
+		let buttonSelectContentItem21  = document.querySelector('.button--select-content-item-2-1');
+		let buttonSelectContentItem22  = document.querySelector('.button--select-content-item-2-2');
+		buttonSelect2.addEventListener('click', (e) => {
+			buttonSelectList2.classList.toggle('visually-hidden');
+		});
+		buttonSelectList2.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem21.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-2').innerHTML;
+			document.querySelector('.button--select-content-2').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList2.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem22.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-2').innerHTML;
+			document.querySelector('.button--select-content-2').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList2.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-3') !== null) {
+		let buttonSelect3  = document.querySelector('.button--select-3');
+		let buttonSelectList3  = document.querySelector('.button--select-list-3');
+		let buttonSelectContentItem31  = document.querySelector('.button--select-content-item-3-1');
+		buttonSelect3.addEventListener('click', (e) => {
+			buttonSelectList3.classList.toggle('visually-hidden');
+		});
+		buttonSelectList3.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem31.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-3').innerHTML;
+			document.querySelector('.button--select-content-3').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList3.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-4') !== null) {
+		let buttonSelect4  = document.querySelector('.button--select-4');
+		let buttonSelectList4  = document.querySelector('.button--select-list-4');
+		let buttonSelectContentItem41  = document.querySelector('.button--select-content-item-4-1');
+		let buttonSelectContentItem42  = document.querySelector('.button--select-content-item-4-2');
+		buttonSelect4.addEventListener('click', (e) => {
+			buttonSelectList4.classList.toggle('visually-hidden');
+		});
+		buttonSelectList4.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem41.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-4').innerHTML;
+			document.querySelector('.button--select-content-4').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList4.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem42.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-4').innerHTML;
+			document.querySelector('.button--select-content-4').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList4.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-5') !== null) {
+		let buttonSelect5  = document.querySelector('.button--select-5');
+		let buttonSelectList5  = document.querySelector('.button--select-list-5');
+		let buttonSelectContentItem51  = document.querySelector('.button--select-content-item-5-1');
+		buttonSelect5.addEventListener('click', (e) => {
+			buttonSelectList5.classList.toggle('visually-hidden');
+		});
+		buttonSelectList5.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem51.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-5').innerHTML;
+			document.querySelector('.button--select-content-5').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList5.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-6') !== null) {
+		let buttonSelect6  = document.querySelector('.button--select-6');
+		let buttonSelectList6  = document.querySelector('.button--select-list-6');
+		let buttonSelectContentItem61  = document.querySelector('.button--select-content-item-6-1');
+		let buttonSelectContentItem62  = document.querySelector('.button--select-content-item-6-2');
+		buttonSelect6.addEventListener('click', (e) => {
+			buttonSelectList6.classList.toggle('visually-hidden');
+		});
+		buttonSelectList6.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem61.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-6').innerHTML;
+			document.querySelector('.button--select-content-6').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList6.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem62.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-6').innerHTML;
+			document.querySelector('.button--select-content-6').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList6.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-7') !== null) {
+		let buttonSelect7  = document.querySelector('.button--select-7');
+		let buttonSelectList7  = document.querySelector('.button--select-list-7');
+		let buttonSelectContentItem71  = document.querySelector('.button--select-content-item-7-1');
+		let buttonSelectContentItem72  = document.querySelector('.button--select-content-item-7-2');
+		buttonSelect7.addEventListener('click', (e) => {
+			buttonSelectList7.classList.toggle('visually-hidden');
+		});
+		buttonSelectList7.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem71.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-7').innerHTML;
+			document.querySelector('.button--select-content-7').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList7.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem72.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-7').innerHTML;
+			document.querySelector('.button--select-content-7').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList7.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-8') !== null) {
+		let buttonSelect8  = document.querySelector('.button--select-8');
+		let buttonSelectList8  = document.querySelector('.button--select-list-8');
+		let buttonSelectContentItem81  = document.querySelector('.button--select-content-item-8-1');
+		let buttonSelectContentItem82  = document.querySelector('.button--select-content-item-8-2');
+		buttonSelect8.addEventListener('click', (e) => {
+			buttonSelectList8.classList.toggle('visually-hidden');
+		});
+		buttonSelectList8.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem81.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-8').innerHTML;
+			document.querySelector('.button--select-content-8').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList8.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem82.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-8').innerHTML;
+			document.querySelector('.button--select-content-8').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList8.classList.toggle('visually-hidden');
+		});
+	};
+
+	if (document.querySelector('.button--select-9') !== null) {
+		let buttonSelect9  = document.querySelector('.button--select-9');
+		let buttonSelectList9  = document.querySelector('.button--select-list-9');
+		let buttonSelectContentItem91  = document.querySelector('.button--select-content-item-9-1');
+		let buttonSelectContentItem92  = document.querySelector('.button--select-content-item-9-2');
+		buttonSelect9.addEventListener('click', (e) => {
+			buttonSelectList9.classList.toggle('visually-hidden');
+		});
+		buttonSelectList9.addEventListener('click', (e) => {
+			e.stopPropagation();
+		});
+		buttonSelectContentItem91.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-9').innerHTML;
+			document.querySelector('.button--select-content-9').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList9.classList.toggle('visually-hidden');
+		});
+		buttonSelectContentItem92.addEventListener('click', (e) => {
+			let content = e.target.innerHTML;
+			let buttonSelectContent = document.querySelector('.button--select-content-9').innerHTML;
+			document.querySelector('.button--select-content-9').innerHTML = content;
+			e.target.innerHTML = buttonSelectContent;
+			buttonSelectList9.classList.toggle('visually-hidden');
+		});
+	};
+
 	//Page Profile
 
 	if (document.querySelector('.profile__swiper') !== null) {

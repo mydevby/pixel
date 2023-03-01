@@ -612,10 +612,9 @@
     &__info-verification-item-camera {
         display: inline-block;
         width: rem-calc(21);
-        height: rem-calc(28);
+        height: rem-calc(18);
         margin-left: rem-calc(4);
-        margin-bottom: rem-calc(-10);
-        background: url("../img/user/icon-camera.svg") no-repeat 50% 50% / 100% auto;
+        margin-bottom: rem-calc(-8);
     }
 
     &__info-verification-country-wrapper {

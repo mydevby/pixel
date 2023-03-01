@@ -14,6 +14,10 @@
 		background: rgba(30, 34, 52, .65);
 	}
 
+	&--green-select {
+		background: #66BE47;
+	}
+
 	&--extra-dark {
 		background: rgba(0, 0, 0, .15);
 	}
@@ -56,6 +60,14 @@
 
 	&--light {
 		background: rgba(255, 255, 255, .03);
+	}
+
+	&--light-select {
+		background: #3d445c;
+	}
+
+	&--gray-select {
+		background:  #1E2234;
 	}
 
 	&--black-blue {
