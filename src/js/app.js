@@ -953,6 +953,7 @@ window.onload = function() {
 	if (document.querySelector('.modal__select-nft-content-item') !== null) {
 		let arrSelectNftContentItems  = document.querySelectorAll('.modal__select-nft-content-item');
 		let superSelectList  = document.querySelector('.modal__super-select-list');
+		let inputNftSystem = document.querySelector('.nft_system');
 		arrSelectNftContentItems.forEach(selectNftContentItem => {
 			selectNftContentItem.addEventListener('click', function(e) {
 				let arrSelectNftContentItemsMore  = document.querySelectorAll('.modal__select-nft-content-item');
@@ -960,10 +961,12 @@ window.onload = function() {
 					selectNftContentItemMore.classList.remove('modal__select-nft-content-item--active');
 				});
 				let content = this.innerHTML;
+				let nftSystem = this.dataset.nftSystem;
 				document.querySelector('.modal__select-nft-content--select').innerHTML = content;
 				document.querySelector('.modal__select-nft-content--select-main').innerHTML = content;
 				superSelectList.classList.toggle('visually-hidden');
 				this.classList.add('modal__select-nft-content-item--active');
+				inputNftSystem.value = nftSystem;
 			});
 		});
 	};
