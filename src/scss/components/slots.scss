@@ -98,6 +98,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+        @media (max-width: 768px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__list {
@@ -105,13 +109,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap: rem-calc(15);
         @media (max-width: 1024px) {
-            grid-template-columns: repeat(2, #{rem-calc(270)});
+            grid-template-columns: repeat(2, 1fr);
         }
         @media (max-width: 768px) {
-            grid-template-columns: repeat(3, #{rem-calc(245)});
+            grid-template-columns: repeat(3, 1fr);
         }
         @media (max-width: 480px) {
-            grid-template-columns: repeat(2, #{rem-calc(255)});
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .slot:nth-child(3) {

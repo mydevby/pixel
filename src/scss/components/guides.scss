@@ -1,16 +1,19 @@
 .guides {
     display: grid;
-    grid-template-columns: rem-calc(500) rem-calc(1070);
+    grid-template-columns: rem-calc(500) rem-calc(1080);
     gap: rem-calc(30);
+    @media (max-width: 1600px) {
+		grid-template-columns: rem-calc(500) rem-calc(1180);
+	}
     @media (max-width: 1024px) {
-		grid-template-columns: rem-calc(375) rem-calc(840);
+		grid-template-columns: rem-calc(400) rem-calc(900);
         gap: rem-calc(22);
 	}
     @media (max-width: 768px) {
-		grid-template-columns: rem-calc(810);
+		grid-template-columns: rem-calc(890);
 	}
     @media (max-width: 480px) {
-		grid-template-columns: rem-calc(565);
+		grid-template-columns: rem-calc(650);
 	}
 
     &__nav-list {

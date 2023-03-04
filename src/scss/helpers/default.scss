@@ -198,13 +198,18 @@ main {
 	z-index: 2;
 	overflow-x: hidden;
 
-	@media (max-width: 1024px) {
+	@media (max-width: 1600px) {
 		padding-left: rem-calc(140);
+		padding-right: rem-calc(70);
+	}
+
+	@media (max-width: 1024px) {
+		padding-left: rem-calc(60);
 		padding-right: rem-calc(60);
 	}
 
 	@media (max-width: 768px) {
-		padding-left: rem-calc(120);
+		padding-left: rem-calc(35);
 		padding-right: rem-calc(35);
 	}
 }

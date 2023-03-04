@@ -1,21 +1,50 @@
 .logos {
     margin-bottom: rem-calc(30);
+    display: flex;
+    align-items: center;
+
+    &__info-wrapper {
+        display: flex;
+        gap: rem-calc(44);
+        margin-right: rem-calc(26);
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        width: rem-calc(102);
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 1px;
+            height: rem-calc(26);
+            background: rgba(255,255,255,.15);
+            right: rem-calc(-22);
+            transform: translateY(-50%);
+        }
+    }
+
+    &__count {
+        font-family: "Pixel", Arial, Helvetica, sans-serif;
+        font-size: rem-calc(42);
+        line-height: .9;
+        margin-right: rem-calc(12);
+        color: $clr-white;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, .65);
+        font-weight: 700;
+        font-size: rem-calc(12);
+        line-height: 1.17;
+    }
 
     &__list {
-        display: grid;
-        grid-template-columns: repeat(13, 1fr);
-        align-items: center;
-        gap: rem-calc(37);
-        @media (max-width: 1024px) {
-            grid-template-columns: repeat(9, 1fr);
-        }
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(7, 1fr);
-        }
-        @media (max-width: 480px) {
-            gap: rem-calc(27);
-            grid-template-columns: repeat(4, 1fr);
-        }
+        display: flex;
+        height: rem-calc(38);
     }
 
     &__item {
@@ -23,6 +52,8 @@
         align-items: center;
         justify-content: center;
         color: $clr-white;
+        min-height: rem-calc(38);
+        padding: 0 rem-calc(18);
     }
 
     &__img {
@@ -31,19 +62,5 @@
         max-width: 100%;
         height: auto;
         opacity: .65;
-    }
-
-    &__count {
-        font-family: "Pixel", Arial, Helvetica, sans-serif;
-        font-size: rem-calc(42);
-        line-height: .9;
-        margin-right: rem-calc(12);
-    }
-
-    &__text {
-        color: rgba(255, 255, 255, .65);
-        font-weight: 700;
-        font-size: rem-calc(12);
-        line-height: 1.17;
     }
 }

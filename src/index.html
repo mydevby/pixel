@@ -12,76 +12,7 @@
 
 <div class="page">
 
-	<header class="header">
-		<div class="header__container">
-			<menu class="header__nav">
-				<div class="header__nav-item header__nav-item--active">
-					<a href="index.html" class="header__nav-link">Home page</a>
-				</div>
-                <div class="header__nav-item">
-					<a href="slots.html" class="header__nav-link">Top slots</a>
-				</div>
-                <div class="header__nav-item">
-					<a href="modals.html" class="header__nav-link">Modals</a>
-				</div>
-				<div class="header__nav-item">
-					<a href="#" class="header__nav-link">Casino</a>
-				</div>
-				<div class="header__nav-item">
-					<a href="bonuses.html" class="header__nav-link header__nav-link--icon-bonus">
-						Bonus
-					</a>
-				</div>
-			</menu>
-			<div class="header__user-info">
-				<div class="header__user-money">
-					<div class="header__user-ballance btn btn--icon btn--money btn--header-mask btn--header-mask-border" disabled>500.34</div>
-					<a href="#" class="btn btn--header btn--header-mask">wallet</a>
-				</div>
-
-				<div class="header__user-about btn btn--header-mask btn--icon">
-					<img class="header__user-icon btn--header-mask" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
-					NIKITA
-					<img class="icon-more" src="img/svg/icon-more.svg">
-				</div>
-
-				<div class="header__user-information btn--header-mask">
-					<div class="header__user-information-top">
-						<img class="header__user-information-icon" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
-						<div class="header__user-information-text">
-							<div class="header__user-information-name header__user-information-name--pro">Nikita</div>
-							<div class="header__user-information-email">lucker777@gmail.com</div>
-						</div>
-					</div>
-					<ul class="header__user-information-list">
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Profile</a>
-						</li>
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Projects <span class="header__user-information-link--pink">3</span></a>
-						</li>
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Subscription</a>
-						</li>
-						<li class="header__user-information--item">
-							<a class="header__user-information-link" href="#">My Statements</a>
-						</li>
-					</ul>
-					<ul class="header__user-settings-list">
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-link" href="#">Language</a>
-						</li>
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-link" href="#">Account Settings</a>
-						</li>
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-ink" href="#">Sign Out</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+	@@include('html/header.html')
 
 	<main class="main">
 
@@ -89,8 +20,11 @@
 			<div class="hello__card">
 				<div class="mask-bg mask-bg--black mask-bg--filter mask-card mask-card--border"></div>
 				<div class="hello__card-content">
-					<h2 class="hello__card-title">Welcome <span class="hello__card-title--big">Bonus</span></h2>
-					<p class="hello__card-text">Win a cut of up to 24000 this monthly leaderboard!</p>
+					<h2 class="hello__card-title">
+						Welcome
+						<span class="hello__card-title-big">bonus</span>
+					</h2>
+					<p class="hello__card-text">Win a&nbsp;Cut of&nbsp;up&nbsp;to&nbsp;24000 This Monthly Leaderboard!</p>
 					<a class="hello__card-btn button button--load-more button--hover" href="#">
 						<div class="mask-bg mask-bg--accent mask-small"></div>
 						Learn More
@@ -103,8 +37,11 @@
 			<div class="hello__card">
 				<div class="mask-bg mask-bg--black mask-bg--filter mask-card mask-card--border"></div>
 				<div class="hello__card-content">
-					<h2 class="hello__card-title"><span class="hello__card-title--custom">Crashed</span> <span class="hello__card-title--big">Space</span></h2>
-					<p class="hello__card-text">Win a Cut of up to 24000 This Monthly Leaderboard!</p>
+					<h2 class="hello__card-title">
+						crashed
+						<span class="hello__card-title-big">space</span>
+					</h2>
+					<p class="hello__card-text">Win a&nbsp;Cut of&nbsp;up&nbsp;to&nbsp;24000 This Monthly Leaderboard!</p>
 					<a class="hello__card-btn button button--load-more button--hover" href="#">
 						<div class="mask-bg mask-bg--accent mask-small"></div>
 						Learn More
@@ -117,82 +54,123 @@
 		</section>
 
 		<section class="logos">
-			<ul class="logos__list">
-				<li class="logos__item">
+			<div class="logos__info-wrapper">
+				<li class="logos__info">
 					<div class="logos__count">12</div>
 					<p class="logos__text">Crypto networks</p>
 				</li>
-				<li class="logos__item">
+				<li class="logos__info">
 					<div class="logos__count">18</div>
 					<p class="logos__text">Crypto Currency</p>
 				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-3.svg" alt="Logo 3">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-4.svg" alt="Logo 4">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-5.svg" alt="Logo 5">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-6.svg" alt="Logo 6">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-7.svg" alt="Logo 7">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-8.svg" alt="Logo 8">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-9.svg" alt="Logo 9">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-10.svg" alt="Logo 10">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-11.svg" alt="Logo 11">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-12.svg" alt="Logo 12">
-				</li>
-				<li class="logos__item">
-					<img class="logos__img" src="img/logos/logo-13.svg" alt="Logo 13">
-				</li>
-			</ul>
+			</div>
+			<div class="logos__swiper swiper">
+				<ul class="logos__list swiper-wrapper">	
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-3.svg" alt="Logo 3">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-4.svg" alt="Logo 4">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-5.svg" alt="Logo 5">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-6.svg" alt="Logo 6">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-7.svg" alt="Logo 7">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-8.svg" alt="Logo 8">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-9.svg" alt="Logo 9">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-10.svg" alt="Logo 10">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-11.svg" alt="Logo 11">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-12.svg" alt="Logo 12">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-13.svg" alt="Logo 13">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-3.svg" alt="Logo 3">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-4.svg" alt="Logo 4">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-5.svg" alt="Logo 5">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-6.svg" alt="Logo 6">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-7.svg" alt="Logo 7">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-8.svg" alt="Logo 8">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-9.svg" alt="Logo 9">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-10.svg" alt="Logo 10">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-11.svg" alt="Logo 11">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-12.svg" alt="Logo 12">
+					</li>
+					<li class="logos__item swiper-slide">
+						<img class="logos__img" src="img/logos/logo-13.svg" alt="Logo 13">
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="filters">
 			<div class="mask-bg mask-bg--filter mask-block mask-block--border"></div>
 			<div class="filters__content">
 				<div class="filters__col">
-					<button class="button button--icon button--icon-all-slots">
+					<a class="filters__button button button--icon button--hover button--icon-all-slots" href="slot-providers.html">
 						<div class="mask-bg mask-bg--accent mask-btn"></div>
 						All slots
-					</button>
+					</a>
 					<div class="filters__select select--icon-providers">
 						<div class="mask-bg mask-bg--light mask-btn mask-btn--border mask-btn--border-light"></div>
 						<div class="filters__select-text">
 							Providers
 						</div>
 					</div>
+					<a class="filters__button button button--mob button--icon button--hover button--icon-search" href="slot-providers.html">
+						<div class="mask-bg mask-bg--light mask-btn"></div>
+						Search
+					</a>
 				</div>
 				<div class="filters__col">
-					<a href="slots-favorites.html" class="button button--hover button--icon button--icon-favorites-index">
+					<a class="filters__button button button--hover button--icon button--icon-favorites-index" href="slots-favorites.html">
 						<div class="mask-bg mask-bg--light mask-btn"></div>
 						Favorites
 					</a>
-					<button class="button button--hover button--icon button--icon-live-games">
+					<a class="filters__button button button--hover button--icon button--icon-live-games" href="slots-favorites.html">
 						<div class="mask-bg mask-bg--light mask-btn"></div>
 						Live Games
-					</button>
-					<button disabled class="button button--icon button--icon-recently-played">
+					</a>
+					<button class="filters__button button button--icon button--icon-recently-played" disabled>
 						<div class="mask-bg mask-bg--light mask-btn"></div>
-						Recently played
+						Last Plays
 					</button>
 				</div>
 				<div class="filters__col">
-					<label class="search search--icon search--icon-search">
+					<label class="filters__search search search--icon search--icon-search">
 						<div class="mask-bg mask-bg--light mask-btn mask-btn--border"></div>
 						<input  class="search__input" type="text" placeholder="Search">
 					</label>

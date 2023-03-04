@@ -5,15 +5,15 @@
         grid-template-columns: rem-calc(492) 1fr 1fr rem-calc(348);
         gap: rem-calc(60) rem-calc(32);
         @media (max-width: 1024px) {
-            grid-template-columns: rem-calc(560) rem-calc(560);
+            grid-template-columns: rem-calc(610) rem-calc(610);
             grid-template-rows: 1fr 1fr;
         }
         @media (max-width: 768px) {
-            grid-template-columns: rem-calc(720);
+            grid-template-columns: rem-calc(810);
             gap: rem-calc(32);
         }
         @media (max-width: 480px) {
-            grid-template-columns: rem-calc(490);
+            grid-template-columns: rem-calc(570);
         }
     }
 

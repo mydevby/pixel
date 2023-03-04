@@ -75,7 +75,11 @@
 	}
 
 	&--black-slot-open {
-		background: rgba(30, 34, 52, 0.65);
+		background: rgba(30, 34, 52, .65);
+	}
+
+	&--black-mob-mebu-open {
+		background: rgba(30, 34, 52, .85);
 	}
 
 	&--filter {

@@ -9,6 +9,10 @@
     transition: .3s;
     background-color: transparent;
     color: $clr-white;
+    @media (max-width: 768px) {
+        font-size: rem-calc(20);
+        font-size: rem-calc(15) rem-calc(25);
+    }
 
     &--withdraw {
         padding: rem-calc(5px);

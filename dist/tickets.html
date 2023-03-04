@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -113,6 +114,31 @@
 			</button>
 			<div class="menu__hover-title btn btn--small-mask btn--small-mask-border">Other Settings</div>
 		</li>
+
+		<li class="menu__settings-item menu__settings-item--mob">
+			<button class="menu__settings-btn">
+				Menu
+				<img class="menu__nav-icon menu__nav-icon--menu" width="24" height="24" src="img/svg/mob-menu.svg" alt="Menu">
+			</button>
+			<div class="menu__mob-menu visually-hidden">
+				<div class="mask-bg mask-bg--black-mob-mebu-open mask-bg--filter-27 mask-block mask-block--border"></div>
+				<a class="menu__mob-menu-item" href="index.html">
+					Home page
+				</a>
+				<a class="menu__mob-menu-item" href="slots-favorites.html">
+					Top slots
+				</a>
+				<a class="menu__mob-menu-item" href="modals.html">
+					Modals
+				</a>
+				<a class="menu__mob-menu-item" href="slot.html">
+					Casino
+				</a>
+				<a class="menu__mob-menu-item" href="bonuses.html">
+					Bonus
+				</a>
+			</div>
+		</li>
 	</ul>
 </div>
 
@@ -120,75 +146,76 @@
 <div class="page">
 
     <header class="header">
-		<div class="header__container">
-			<menu class="header__nav">
-				<div class="header__nav-item">
-					<a href="index.html" class="header__nav-link">Home page</a>
-				</div>
-                <div class="header__nav-item">
-					<a href="slots.html" class="header__nav-link">Top slots</a>
-				</div>
-                <div class="header__nav-item">
-					<a href="modals.html" class="header__nav-link">Modals</a>
-				</div>
-				<div class="header__nav-item">
-					<a href="#" class="header__nav-link">Casino</a>
-				</div>
-				<div class="header__nav-item">
-					<a href="bonuses.html" class="header__nav-link header__nav-link--icon-bonus">
-						Bonus
-					</a>
-				</div>
-			</menu>
-			<div class="header__user-info">
-				<div class="header__user-money">
-					<div class="header__user-ballance btn btn--icon btn--money btn--header-mask btn--header-mask-border" disabled>500.34</div>
-					<a href="#" class="btn btn--header btn--header-mask">wallet</a>
-				</div>
+    <div class="header__container">
+        <img class="header__logo" src="img/icons/logo.png" alt="Logo Mega Casino">
+        <menu class="header__nav">
+            <div class="header__nav-item">
+                <a href="index.html" class="header__nav-link">Home page</a>
+            </div>
+            <div class="header__nav-item">
+                <a href="slots-favorites.html" class="header__nav-link">Top slots</a>
+            </div>
+            <div class="header__nav-item">
+                <a href="modals.html" class="header__nav-link">Modals</a>
+            </div>
+            <div class="header__nav-item">
+                <a href="slot.html" class="header__nav-link">Casino</a>
+            </div>
+            <div class="header__nav-item">
+                <a href="bonuses.html" class="header__nav-link header__nav-link--icon-bonus">
+                    Bonus
+                </a>
+            </div>
+        </menu>
+        <div class="header__user-info">
+            <div class="header__user-money">
+                <div class="header__user-ballance btn btn--icon btn--money btn--header-mask btn--header-mask-border" disabled>500.34</div>
+                <a href="#" class="btn btn--header btn--header-mask">wallet</a>
+            </div>
 
-				<div class="header__user-about btn btn--header-mask btn--icon">
-					<img class="header__user-icon btn--header-mask" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
-					NIKITA
-					<img class="icon-more" src="img/svg/icon-more.svg">
-				</div>
+            <div class="header__user-about btn btn--header-mask btn--icon">
+                <img class="header__user-icon btn--header-mask" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
+                NIKITA
+                <img class="icon-more" src="img/svg/icon-more.svg">
+            </div>
 
-				<div class="header__user-information btn--header-mask">
-					<div class="header__user-information-top">
-						<img class="header__user-information-icon" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
-						<div class="header__user-information-text">
-							<div class="header__user-information-name header__user-information-name--pro">Nikita</div>
-							<div class="header__user-information-email">lucker777@gmail.com</div>
-						</div>
-					</div>
-					<ul class="header__user-information-list">
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Profile</a>
-						</li>
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Projects <span class="header__user-information-link--pink">3</span></a>
-						</li>
-						<li class="header__user-information-item">
-							<a class="header__user-information-link" href="#">My Subscription</a>
-						</li>
-						<li class="header__user-information--item">
-							<a class="header__user-information-link" href="#">My Statements</a>
-						</li>
-					</ul>
-					<ul class="header__user-settings-list">
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-link" href="#">Language</a>
-						</li>
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-link" href="#">Account Settings</a>
-						</li>
-						<li class="header__user-settings-item">
-							<a class="header__user-settings-ink" href="#">Sign Out</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
+            <div class="header__user-information btn--header-mask">
+                <div class="header__user-information-top">
+                    <img class="header__user-information-icon" src="img/user/header-user-icon-x2.min.png" alt="User Icon">
+                    <div class="header__user-information-text">
+                        <div class="header__user-information-name header__user-information-name--pro">Nikita</div>
+                        <div class="header__user-information-email">lucker777@gmail.com</div>
+                    </div>
+                </div>
+                <ul class="header__user-information-list">
+                    <li class="header__user-information-item">
+                        <a class="header__user-information-link" href="#">My Profile</a>
+                    </li>
+                    <li class="header__user-information-item">
+                        <a class="header__user-information-link" href="#">My Projects <span class="header__user-information-link--pink">3</span></a>
+                    </li>
+                    <li class="header__user-information-item">
+                        <a class="header__user-information-link" href="#">My Subscription</a>
+                    </li>
+                    <li class="header__user-information--item">
+                        <a class="header__user-information-link" href="#">My Statements</a>
+                    </li>
+                </ul>
+                <ul class="header__user-settings-list">
+                    <li class="header__user-settings-item">
+                        <a class="header__user-settings-link" href="#">Language</a>
+                    </li>
+                    <li class="header__user-settings-item">
+                        <a class="header__user-settings-link" href="#">Account Settings</a>
+                    </li>
+                    <li class="header__user-settings-item">
+                        <a class="header__user-settings-ink" href="#">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
 	<main class="main">
 
@@ -394,7 +421,7 @@
             </button>
         </div>
     </div>
-    <div class="footer__col">
+    <div class="footer__col footer__col--menu">
         <div class="footer__links-wrapper">
             <div class="footer__col-name">INFORMATIONS</div>
             <menu class="footer__link-list">

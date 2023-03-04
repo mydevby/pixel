@@ -785,6 +785,15 @@ window.onload = function() {
 		});
 	};
 
+
+	if (document.querySelector('.menu__settings-item--mob') !== null) {
+		let menuMobMenuBtn = document.querySelector('.menu__settings-item--mob');
+		let menuMobMenu = document.querySelector('.menu__mob-menu');
+		menuMobMenuBtn.addEventListener('click', (e) => {
+			menuMobMenu.classList.toggle('visually-hidden');
+		});
+	};
+
 	//Page Profile
 
 	if (document.querySelector('.profile__swiper') !== null) {
@@ -854,12 +863,11 @@ window.onload = function() {
 		});
 	};
 
-	if (document.querySelector('.profile__nav-link') !== null) {
-		let hashProfile = window.location.hash;
-		if (document.querySelector('.profile__nav-link[href="profile.html' + hashProfile + '"]') !== null) {
-			document.querySelector('.profile__nav-link--active').classList.remove('profile__nav-link--active');
-			document.querySelector('.profile__nav-link[href="profile.html' + hashProfile + '"]').classList.add('profile__nav-link--active');
-		};
+	if (document.querySelector('.profile__notifications-btn') !== null) {
+		let profileNotificationsButton  = document.querySelector('.profile__notifications-btn');
+		profileNotificationsButton.addEventListener('click', function(e) {
+			profileNotificationsButton.classList.toggle('profile__notifications-btn--active');
+		});
 	};
 
 	if (document.querySelector('.profile__notifications-btn') !== null) {
@@ -887,6 +895,31 @@ window.onload = function() {
 	};
 
 	//Index Page
+
+	if (document.querySelector('.logos__swiper') !== null) {
+		new Swiper('.logos__swiper', {
+			slidesPerView: 11,
+			loop: true,
+			autoplay: {
+				delay: 3000,
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 2,
+				},
+				481: {
+				  slidesPerView: 4,
+				},
+				769: {
+				  slidesPerView: 7,
+				},
+				1025: {
+				  slidesPerView: 11,
+				},
+			  },
+		});
+	};
+
 	if (document.querySelector('.filters__select') !== null) {
 		let filtersSelect  = document.querySelector('.filters__select');
 		let slotsProvidersList = document.querySelector('.slots__providers');
