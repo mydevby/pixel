@@ -5524,7 +5524,6 @@ section,
   -moz-transform: translate3d(0, 0, 0);
 }
 .modal__label--select {
-  height: 3.25rem;
   background: transparent;
 }
 .modal__label:has(.modal__input:not(:placeholder-shown)) .modal__input-name, .modal__label:has(.modal__input:focus) .modal__input-name {
@@ -7645,23 +7644,28 @@ section,
 
 .profile {
   display: grid;
-  grid-template-columns: 31.25rem 66.875rem;
+  grid-template-columns: 31.25rem 67.5rem;
   gap: 1.875rem;
+}
+@media (max-width: 1600px) {
+  .profile {
+    grid-template-columns: 31.25rem 73.75rem;
+  }
 }
 @media (max-width: 1024px) {
   .profile {
-    grid-template-columns: 23.4375rem 52.5rem;
+    grid-template-columns: 25rem 56.25rem;
     gap: 1.375rem;
   }
 }
 @media (max-width: 768px) {
   .profile {
-    grid-template-columns: 50.625rem;
+    grid-template-columns: 55.625rem;
   }
 }
 @media (max-width: 480px) {
   .profile {
-    grid-template-columns: 35.3125rem;
+    grid-template-columns: 40.625rem;
   }
 }
 .profile__nav-list {
