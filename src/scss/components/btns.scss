@@ -11,7 +11,7 @@
     color: $clr-white;
     @media (max-width: 768px) {
         font-size: rem-calc(20);
-        font-size: rem-calc(15) rem-calc(25);
+        padding: rem-calc(15) rem-calc(25);
     }
 
     &--withdraw {
@@ -20,6 +20,10 @@
         max-height: rem-calc(30);
         margin-top: rem-calc(8);
         transform: translateX(#{rem-calc(-10)});
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+            max-height: rem-calc(40);
+        }
 
         &:hover {
             transform: translateX(#{rem-calc(-10)}) translateY(0) !important;

@@ -56,12 +56,8 @@
                 }
             }
 
-            .documents__nav-link-icon-img {
-                fill: $clr-accent;
-            }
-
-            .documents__nav-link-icon-bg {
-                fill: $clr-white;
+            .documents__nav-link-icon {
+                background-image: url("../img/icon-png/icon-doc-active.png");
             }
         }
 
@@ -87,10 +83,7 @@
         width: rem-calc(50);
         height: rem-calc(50);
         margin-right: rem-calc(10);
-
-        path {
-            transition: .3s;
-        }
+        background: url("../img/icon-png/icon-doc.png") no-repeat 50% 50% /contain;
     }
 
     &__info {

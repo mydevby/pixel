@@ -86,8 +86,9 @@
         }
 
         &--registration  {
+            width: rem-calc(1030);
             @media (max-width: 768px) {
-				width: rem-calc(430);
+				width: rem-calc(630);
 			}
         }
 
@@ -118,14 +119,14 @@
     &__grid {
         display: grid;
 
-        &--2-col {
+        &--2-col-login {
             grid-template-columns: rem-calc(420) 1fr;
 			@media (max-width: 768px) {
-				grid-template-columns: rem-calc(420);
+                grid-template-columns: 1fr;
 			}
         }
 
-        &--2-col-login {
+        &--2-col-registration {
             grid-template-columns: 1fr 1fr;
             gap: 0 rem-calc(20);
             margin-bottom: rem-calc(20);
@@ -158,6 +159,7 @@
         &--registration {
             padding:  rem-calc(22) rem-calc(20) rem-calc(26) rem-calc(28);
 			@media (max-width: 768px) {
+                width: rem-calc(630);
 				padding:  rem-calc(80) rem-calc(30) rem-calc(45) rem-calc(30);
 			}
         }
@@ -322,6 +324,10 @@
         grid-template-columns: rem-calc(52) 1fr;
         width: 100%;
         gap: rem-calc(3);
+        @media (max-width: 768PX) {
+            padding: rem-calc(8);
+            gap: rem-calc(12);
+        }
 
         &--btn-no-hover {
             &:hover {
@@ -359,6 +365,11 @@
 			-webkit-transform: translate3d(0, 0, 0);
 			-moz-transform: translate3d(0, 0, 0);
             gap: rem-calc(4);
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr rem-calc(60) rem-calc(60) rem-calc(60) rem-calc(60);
+                gap: rem-calc(6);
+            }
         }
 
         &--withdraw-full {
@@ -404,7 +415,7 @@
             align-items: center;
             gap: 0 rem-calc(15);
 
-            .modal__nav-crypto-btn{
+            .modal__nav-crypto-btn {
                 display: flex;
                 padding: rem-calc(12);
                 align-items: center;
@@ -453,49 +464,53 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        @media (max-width: 768px) {
+            width: rem-calc(50);
+            height: rem-calc(50);
+        }
 
         &--email {
-            background-image: url("../img/icons/icon-blue-email.svg");
+            background-image: url("../img/icon-png/icon-blue-email.png");
         }
 
         &--password {
-            background-image: url("../img/icons/icon-blue-password.svg");
+            background-image: url("../img/icon-png/icon-blue-password.png");
         }
 
         &--math {
-            background-image: url("../img/icons/icon-blue-math.svg");
+            background-image: url("../img/icon-png/icon-blue-math.png");
         }
 
         &--name {
-            background-image: url("../img/icons/icon-blue-name.svg");
+            background-image: url("../img/icon-png/icon-blue-name.png");
         }
 
         &--flag {
-            background-image: url("../img/icons/icon-blue-flag.svg");
+            background-image: url("../img/icon-png/icon-blue-flag.png");
         }
 
         &--dollar {
-                background-image: url("../img/icons/icon-blue-dollar.svg");
+                background-image: url("../img/icon-png/icon-blue-dollar.png");
         }
 
         &--gift {
-            background-image: url("../img/icons/icon-blue-gift.svg");
+            background-image: url("../img/icon-png/icon-blue-gift.png");
         }
 
         &--nickname {
-            background-image: url("../img/icons/icon-blue-nickname.svg");
+            background-image: url("../img/icon-png/icon-blue-nickname.png");
         }
 
         &--birthday {
-            background-image: url("../img/icons/icon-blue-birthday.svg");
+            background-image: url("../img/icon-png/icon-blue-birthday.png");
         }
 
         &--gender {
-            background-image: url("../img/icons/icon-blue-gender.svg");
+            background-image: url("../img/icon-png/icon-blue-gender.png");
         }
 
         &--code {
-            background-image: url("../img/icons/icon-blue-code.svg");
+            background-image: url("../img/icon-png/icon-blue-code.png");
         }
 
         &--ukraine {
@@ -558,6 +573,10 @@
         line-height: 1.5;
         text-align: right;
         color: rgba(255, 255, 255, .35);
+
+        @media (max-width: 768px) {
+            font-size: rem-calc(16);
+        }
     }
 
     &__input-text-money-bottom {
@@ -567,10 +586,17 @@
         letter-spacing: -0.05em;
         color: $clr-white;
         margin-top: rem-calc(-5);
+        @media (max-width: 768px) {
+            margin-top: rem-calc(-2);
+            font-size: rem-calc(17);
+        }
 
         &--green {
             color: #66BE47;
             font-size: rem-calc(15);
+            @media (max-width: 768px) {
+                font-size: rem-calc(17);
+            }
         }
     }
 
@@ -640,6 +666,9 @@
         transform: translateY(-50%);
         color: $clr-gray;
         pointer-events: none;
+        @media (max-width: 768px) {
+            font-size: rem-calc(14);
+        }
     }
 
     &__input {
@@ -652,6 +681,10 @@
         font-size: rem-calc(13);
         line-height: 2;
         color: $clr-white;
+
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+        }
 
         &:not([type="password"]) {
             overflow: hidden;
@@ -964,12 +997,21 @@
 
     &__nav-crypto-btn {
         color: $clr-white;
+        @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         &.btn--active {
             background: #66BE47;
         }
 
         &--select {
             padding: rem-calc(12) rem-calc(18);
+            @media (max-width: 767px) {
+                text-align: center;
+                padding: rem-calc(18);
+            }
             &.btn--active {
                 background-color: rgba(0, 0, 0, .15);
 
@@ -1008,6 +1050,12 @@
         width: rem-calc(14);
         height: auto;
         transform: translateY(#{rem-calc(2)});
+
+        @media (max-width: 768px) {
+            width: rem-calc(24);
+            margin-right: rem-calc(8);
+            transform: translateY(0);
+        }
     }
 
     &__qr-wrapper {
@@ -1056,6 +1104,9 @@
         line-height: 1.5; 
         color: #A0ABD1;
         margin-bottom: rem-calc(15);
+        @media (max-width: 768px) {
+            font-size: rem-calc(14);
+        }
         &--white {
             color: $clr-white;
         }
@@ -1088,6 +1139,9 @@
         text-align: center;        
         color: #666D8A;
         margin-bottom: rem-calc(13);
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+        }
 
         &--buy {
             text-align: left;
@@ -1150,6 +1204,9 @@
         line-height: 1.5;
         color: #99A3C9;
         margin-bottom: rem-calc(5);
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+        }
 
         &--top {
             padding-top: rem-calc(30);
@@ -1165,6 +1222,9 @@
         line-height: 1.5;
         color: #99A3C9;
         margin-bottom: rem-calc(22);
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+        }
 
         &--white {
             color: $clr-white;
@@ -1184,6 +1244,9 @@
         color: #99A3C9;
         margin-bottom: rem-calc(28);
         margin-top: rem-calc(-10);
+        @media (max-width: 768px) {
+            font-size: rem-calc(18);
+        }
     }
 
     &__withdraw-text {
@@ -1228,10 +1291,6 @@
         margin-bottom: rem-calc(15);
         justify-content: flex-start;
         padding: rem-calc(11) rem-calc(40) rem-calc(11) rem-calc(15);
-
-        &:before {
-            top: rem-calc(20);
-        }
     }
 
     &__select-nft-content {
