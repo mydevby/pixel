@@ -9,8 +9,8 @@
     transition: .3s;
     background-color: transparent;
     color: $clr-white;
-    @media (max-width: 768px) {
-        font-size: rem-calc(20);
+    @media (max-width: 1024px) {
+        font-size: rem-calc(23);
         padding: rem-calc(15) rem-calc(25);
     }
 
@@ -20,7 +20,7 @@
         max-height: rem-calc(30);
         margin-top: rem-calc(8);
         transform: translateX(#{rem-calc(-10)});
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             font-size: rem-calc(18);
             max-height: rem-calc(40);
         }
@@ -85,7 +85,8 @@
         color: $clr-white;
         background-color: $clr-accent;
         @media (max-width: 1024px) {
-            font-size: rem-calc(20);
+            text-transform: uppercase;
+            font-size: rem-calc(23);
         }
 
         &:hover {

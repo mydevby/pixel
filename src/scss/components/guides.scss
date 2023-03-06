@@ -111,6 +111,9 @@
         max-width: calc(100% - #{rem-calc(100)});
         overflow: hidden;
         text-overflow: ellipsis;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__swiper-slide {
@@ -132,13 +135,13 @@
         border-bottom: rem-calc(1) solid rgba(255, 255, 255, .1);
         margin-bottom: rem-calc(30);
         @media (max-width: 1024px) {
-            font-size: rem-calc(22);
+            font-size: rem-calc(26);
         }
     }
 
     &__content {
         @media (max-width: 1024px) {
-            font-size: rem-calc(20);
+            font-size: rem-calc(23);
         }
     }
 

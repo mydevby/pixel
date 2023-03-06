@@ -443,6 +443,9 @@
             .modal__input-name {
                 top: rem-calc(2);
                 transform: translate(0);
+                @media (max-width: 1024px) {
+                    font-size: rem-calc(16);
+                }
             }
             .modal__input {
                 opacity: 1;
@@ -718,7 +721,7 @@
         color: $clr-gray;
         pointer-events: none;
         @media (max-width: 1024px) {
-            font-size: rem-calc(16);
+            font-size: rem-calc(20);
         }
     }
 

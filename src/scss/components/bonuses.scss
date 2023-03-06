@@ -127,6 +127,9 @@
         align-items: center;
         font-size: rem-calc(18);
         margin-bottom: rem-calc(-10);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(24);
+        }
     }
 
     &__time {

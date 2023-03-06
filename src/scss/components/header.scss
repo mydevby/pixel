@@ -40,6 +40,8 @@
 		margin-right: rem-calc(40);
 		@media (max-width: 1024px) {
 			display: block;
+			height: rem-calc(70);
+			width: rem-calc(70);
 		}
 	}
 
@@ -125,7 +127,7 @@
 		align-items: center;
 		margin-right: rem-calc(20);
 		@media (max-width: 1024px) {
-			font-size: rem-calc(20);
+			font-size: rem-calc(23);
 		}
 	}
 
@@ -150,7 +152,7 @@
 		display: flex;
 		align-items: center;
 		@media (max-width: 1024px) {
-			font-size: rem-calc(20);
+			font-size: rem-calc(23);
 		}
 
 
@@ -179,10 +181,13 @@
 		top: 100%;
 		right: 0;
 		color: $clr-white;
-		min-width: rem-calc(300);
+		min-width: rem-calc(320);
 		opacity: 0;
 		pointer-events: none;
 		transition: .3s;
+		@media (max-width: 1024px) {
+			min-width: rem-calc(350);
+		}
 
 		&--open {
 			opacity: 1;
@@ -212,8 +217,11 @@
 	}
 
 	&__user-information-name {
-		font-size: rem-calc(30);
+		font-size: rem-calc(26);
 		line-height: 1;
+		@media (max-width: 1024px) {
+			font-size: rem-calc(30);
+		}
 
 		&--pro {
 			position: relative;
@@ -238,6 +246,11 @@
 		padding: rem-calc(20);
 		font-size: rem-calc(20);
 		color: $clr-white;
+
+		@media (max-width: 1024px) {
+			padding: rem-calc(10) rem-calc(20) rem-calc(20);
+			font-size: rem-calc(22);
+		}
 	}
 
 	&__user-information-list {
@@ -246,7 +259,7 @@
 
 	&__user-settings-item,
 	&__user-information-item {
-		margin-bottom: rem-calc(15);
+		margin-bottom: rem-calc(5);
 
 		&:last-child {
 			margin-bottom: 0;
@@ -258,6 +271,9 @@
 		display: flex;
 		align-items: center;
 		transition: .3s;
+		width: 100%;
+		padding-top: rem-calc(10);
+		padding-bottom: rem-calc(10);
 		&:hover {
 			opacity: .45;
 		}
@@ -272,7 +288,7 @@
 			margin-top: rem-calc(-5);
 			margin-bottom: rem-calc(-5);
 			text-align: center;
-			margin-left: rem-calc(5);
+			margin-left: rem-calc(10);
 			color: rgb(255, 106, 228);
 		}
 	}

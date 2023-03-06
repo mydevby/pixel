@@ -26,11 +26,7 @@
         top: auto;
         right: 0;
         max-width: none;
-        padding: rem-calc(20) rem-calc(15);
-    }
-
-    @media (max-width: 768px) {
-        padding: rem-calc(30) rem-calc(15);
+        padding: rem-calc(15);
     }
 
     &:before {
@@ -161,6 +157,26 @@
                 display: block;
             }
         }
+
+        &--mob-768-hidden {
+            display: none;
+            @media (max-width: 1024px) {
+                display: flex;
+            }
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--mob-480-hidden {
+            display: none;
+            @media (max-width: 1024px) {
+                display: flex;
+            }
+            @media (max-width: 480px) {
+                display: none;
+            }
+        }
     }
 
     &__settings-link,
@@ -199,32 +215,32 @@
             width: rem-calc(23);
             height: rem-calc(22);
             @media (max-width: 1024px) {
-                width: rem-calc(46);
-                height: rem-calc(44);
+                width: rem-calc(32);
+                height: rem-calc(32);
             }
         }
         &--light-theme {
             width: rem-calc(23);
             height: rem-calc(23);
             @media (max-width: 1024px) {
-                width: rem-calc(46);
-                height: rem-calc(46);
+                width: rem-calc(32);
+                height: rem-calc(32);
             }
         }
         &--volume {
             width: rem-calc(23);
             height: rem-calc(23);
             @media (max-width: 1024px) {
-                width: rem-calc(46);
-                height: rem-calc(46);
+                width: rem-calc(32);
+                height: rem-calc(32);
             }
         }
         &--other {
             width: rem-calc(23);
             height: rem-calc(19);
             @media (max-width: 1024px) {
-                width: rem-calc(46);
-                height: rem-calc(38);
+                width: rem-calc(32);
+                height: rem-calc(28);
             }
         }
 
@@ -240,19 +256,18 @@
 
     .menu__mob-menu {
         position: absolute;
-        bottom: rem-calc(64);
-        left: 50%;
+        bottom: rem-calc(83);
+        right: 0;
         padding: rem-calc(30);
         width: rem-calc(250);
         max-width: rem-calc(250);
-        transform: translateX(-50%);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     &__mob-menu-item {
-        font-size: rem-calc(20);
+        font-size: rem-calc(26);
         text-transform: uppercase;
         color: $clr-white;
         margin-bottom: rem-calc(15);
@@ -261,6 +276,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        width: 100%;
 
 
         &:last-child {

@@ -95,6 +95,9 @@
         width: rem-calc(50);
         height: rem-calc(50);
         margin-right: rem-calc(10);
+        @media (max-width: 1024px) {
+            margin-right: rem-calc(20); 
+        }
 
         path {
             transition: .3s;
@@ -190,7 +193,7 @@
         display: flex;
         flex-direction: column;
         @media (max-width: 1024px) {
-            font-size: rem-calc(20);
+            font-size: rem-calc(23);
         }
     }
 
@@ -201,6 +204,9 @@
 
     &__nav-link-top--small {
         margin-left: rem-calc(15);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(23);
+        }
     }
 
     &__chat-wrapper {
@@ -224,6 +230,9 @@
         line-height: 1.5;
         color: $clr-gray;
         transition: .3s;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(23);
+        }
 
         &:focus,
         &:hover {
@@ -274,6 +283,7 @@
             text-align: left;
             @media (max-width: 1024px) {
                 padding-left: rem-calc(85);
+                padding-bottom: rem-calc(56);
             }
             
 
@@ -303,7 +313,7 @@
         font-size: rem-calc(16);
         line-height: 1.5;
         @media (max-width: 1024px) {
-            font-size: rem-calc(20);
+            font-size: rem-calc(24);
         }
     }
 
@@ -311,7 +321,7 @@
         font-size: rem-calc(14);
         line-height: 1.5;
         @media (max-width: 1024px) {
-            font-size: rem-calc(18);
+            font-size: rem-calc(22);
         }
     }
 

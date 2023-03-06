@@ -786,8 +786,8 @@ window.onload = function() {
 	};
 
 
-	if (document.querySelector('.menu__settings-item--mob') !== null) {
-		let menuMobMenuBtn = document.querySelector('.menu__settings-item--mob');
+	if (document.querySelector('.menu__settings-item--mob-menu') !== null) {
+		let menuMobMenuBtn = document.querySelector('.menu__settings-item--mob-menu');
 		let menuMobMenu = document.querySelector('.menu__mob-menu');
 		menuMobMenuBtn.addEventListener('click', (e) => {
 			menuMobMenu.classList.toggle('visually-hidden');
