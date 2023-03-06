@@ -159,7 +159,7 @@
         color: $clr-white;
         max-width: rem-calc(125);
         @media (max-width: 1024px) {
-            max-width: rem-calc(180);
+            max-width: rem-calc(100);
         }
     }
 

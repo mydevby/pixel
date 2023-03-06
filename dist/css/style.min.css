@@ -4942,6 +4942,7 @@ section,
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateX(35%);
 }
 .menu__mob-menu-item {
   font-size: 1.625rem;
@@ -5309,7 +5310,7 @@ section,
 }
 @media (max-width: 1024px) {
   .slot__info {
-    max-width: 11.25rem;
+    max-width: 6.25rem;
   }
 }
 .slot__name {
