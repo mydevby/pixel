@@ -6,6 +6,10 @@
         gap: rem-calc(20);
     }
 
+    &--gap-30 {
+        gap: rem-calc(30);
+    }
+
     &--col-2 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -50,8 +54,16 @@
         grid-template-columns: repeat(8, 1fr);
     }
 
-    &--gap-20 {
-        gap: rem-calc(20);
+    &--col-1-1024 {
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &--col-1-768 {
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {

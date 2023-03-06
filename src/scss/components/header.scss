@@ -163,11 +163,8 @@
 		position: absolute;
 		top: 100%;
 		right: 0;
-		background: rgb(161, 161, 161);
-		color: $clr-black;
-		font-family: "Pixel";
-		min-width: rem-calc(250);
-		text-transform: uppercase;
+		color: $clr-white;
+		min-width: rem-calc(300);
 		opacity: 0;
 		pointer-events: none;
 		transition: .3s;
@@ -182,6 +179,7 @@
 		display: flex;
 		padding: rem-calc(20);
 		border-bottom: rem-calc(1) solid rgb(148, 148, 148);
+		text-transform: uppercase;
 	}
 
 	&__user-information-icon {
@@ -223,8 +221,8 @@
 	&__user-settings-list,
 	&__user-information-list {
 		padding: rem-calc(20);
-		font-size: rem-calc(24);
-		color: $clr-black;
+		font-size: rem-calc(20);
+		color: $clr-white;
 	}
 
 	&__user-information-list {
@@ -251,9 +249,10 @@
 
 		&--pink {
 			display: inline-block;
+			display: inline-block;
 			background-color: rgb(251, 177, 230);
 			padding: rem-calc(5);
-			min-width: rem-calc(30);
+			width: rem-calc(40);
 			border-radius: 50%;
 			margin-top: rem-calc(-5);
 			margin-bottom: rem-calc(-5);

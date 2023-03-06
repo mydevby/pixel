@@ -84,6 +84,9 @@
     &--header {
         color: $clr-white;
         background-color: $clr-accent;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
 
         &:hover {
             transform: translateY(0);

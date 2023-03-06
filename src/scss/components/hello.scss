@@ -68,6 +68,9 @@
     &__card-btn {
         margin-top: rem-calc(30);
         padding: rem-calc(15) rem-calc(37);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
 	}
 
     &__card-img-wrapper {
