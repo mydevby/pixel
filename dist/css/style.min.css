@@ -6073,8 +6073,8 @@ section,
 }
 @media (max-width: 1024px) {
   .modal__input-btn--time {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 }
 .modal__input-text {
@@ -6090,7 +6090,7 @@ section,
 @media (max-width: 1024px) {
   .modal__input-text {
     font-size: 1.125rem;
-    right: 4.375rem;
+    right: 4.6875rem;
   }
 }
 .modal__input-name {

@@ -621,7 +621,7 @@ window.onload = function() {
 		let buttonSelectContentItem31  = document.querySelector('.button--select-content-item-3-1');
 		buttonSelect3.addEventListener('click', (e) => {
 			buttonSelectList3.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-4').classList.toggle('no-click');
+			document.querySelector('.button--select-list-4').classList.add('visually-hidden');
 		});
 		buttonSelectList3.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -632,7 +632,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-3').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList3.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-4').classList.toggle('no-click');
 		});
 	};
 
@@ -643,7 +642,7 @@ window.onload = function() {
 		let buttonSelectContentItem42  = document.querySelector('.button--select-content-item-4-2');
 		buttonSelect4.addEventListener('click', (e) => {
 			buttonSelectList4.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-3').classList.toggle('no-click');
+			document.querySelector('.button--select-list-3').classList.add('visually-hidden');
 		});
 		buttonSelectList4.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -654,7 +653,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-4').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList4.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-3').classList.toggle('no-click');
 		});
 		buttonSelectContentItem42.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
@@ -662,7 +660,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-4').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList4.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-3').classList.toggle('no-click');
 		});
 	};
 
@@ -672,7 +669,7 @@ window.onload = function() {
 		let buttonSelectContentItem51  = document.querySelector('.button--select-content-item-5-1');
 		buttonSelect5.addEventListener('click', (e) => {
 			buttonSelectList5.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-6').classList.toggle('no-click');
+			document.querySelector('.button--select-list-6').classList.add('visually-hidden');
 		});
 		buttonSelectList5.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -683,7 +680,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-5').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList5.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-6').classList.toggle('no-click');
 		});
 	};
 
@@ -694,7 +690,7 @@ window.onload = function() {
 		let buttonSelectContentItem62  = document.querySelector('.button--select-content-item-6-2');
 		buttonSelect6.addEventListener('click', (e) => {
 			buttonSelectList6.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-5').classList.toggle('no-click');
+			document.querySelector('.button--select-list-5').classList.add('visually-hidden');
 		});
 		buttonSelectList6.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -705,7 +701,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-6').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList6.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-5').classList.toggle('no-click');
 		});
 		buttonSelectContentItem62.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
@@ -713,7 +708,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-6').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList6.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-5').classList.toggle('no-click');
 		});
 	};
 
@@ -724,7 +718,7 @@ window.onload = function() {
 		let buttonSelectContentItem72  = document.querySelector('.button--select-content-item-7-2');
 		buttonSelect7.addEventListener('click', (e) => {
 			buttonSelectList7.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-8').classList.toggle('no-click');
+			document.querySelector('.button--select-list-8').classList.add('visually-hidden');
 		});
 		buttonSelectList7.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -735,7 +729,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-7').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList7.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-8').classList.toggle('no-click');
 		});
 		buttonSelectContentItem72.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
@@ -743,7 +736,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-7').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList7.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-8').classList.toggle('no-click');
 		});
 	};
 
@@ -754,7 +746,7 @@ window.onload = function() {
 		let buttonSelectContentItem82  = document.querySelector('.button--select-content-item-8-2');
 		buttonSelect8.addEventListener('click', (e) => {
 			buttonSelectList8.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-7').classList.toggle('no-click');
+			document.querySelector('.button--select-list-7').classList.add('visually-hidden');
 		});
 		buttonSelectList8.addEventListener('click', (e) => {
 			e.stopPropagation();
@@ -765,7 +757,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-8').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList8.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-7').classList.toggle('no-click');
 		});
 		buttonSelectContentItem82.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
@@ -773,7 +764,6 @@ window.onload = function() {
 			document.querySelector('.button--select-content-8').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList8.classList.toggle('visually-hidden');
-			document.querySelector('.button--select-7').classList.toggle('no-click');
 		});
 	};
 

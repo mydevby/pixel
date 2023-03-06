@@ -705,8 +705,8 @@
         &--time {
             background-image: url(../img/icons/icon-input-btn-time.svg);
             @media (max-width: 1024px) {
-                width: rem-calc(40);
-                height: rem-calc(40);
+                width: rem-calc(50);
+                height: rem-calc(50);
             }
         }
     }
@@ -722,7 +722,7 @@
         opacity: .25;
         @media (max-width: 1024px) {
             font-size: rem-calc(18);
-            right: rem-calc(70);
+            right: rem-calc(75);
         }
     }
 
