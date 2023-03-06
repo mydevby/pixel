@@ -1,5 +1,8 @@
 .slot-open {
     padding: rem-calc(40) rem-calc(40) rem-calc(52);
+    @media (max-width: 1024px) {
+        padding: rem-calc(50) rem-calc(30) 0;
+    }
 
     &__iframe {
         display: block;
@@ -7,11 +10,36 @@
         height: auto;
         margin-bottom: rem-calc(35);
         border-radius: rem-calc(10) rem-calc(10) 0 0;
+
+        @media (max-width: 1024px) {
+            position: relative;
+            z-index: 2;
+            margin-left: rem-calc(-29);
+            margin-right: rem-calc(-29);
+            min-width: calc(100% + #{rem-calc(58)});
+            margin-bottom: 0;
+        }
     }
 
     &__info {
         padding: rem-calc(45) rem-calc(45) rem-calc(35);
-        position: relative;        
+        position: relative;  
+        @media (max-width: 1024px) {
+            padding-top: rem-calc(70);
+            margin-left: rem-calc(-29);
+            margin-right: rem-calc(-29);
+            margin-top: rem-calc(-47);
+            min-width: calc(100% + #{rem-calc(58)});
+
+            .mask-section--border {
+                &:before {
+                    background: transparent;
+                }
+            }
+        }
+        @media (max-width: 480px) {
+           padding-bottom: rem-calc(50);
+        }
     }
 
     &__info-title {
@@ -22,8 +50,21 @@
         line-height: .9;
         margin-bottom: rem-calc(15);
         color: $clr-white;
-        @media (max-width: 1024px) {
-            font-size: rem-calc(34);
+
+        &--desk {
+            display: block;
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &--mob {
+            display: none;
+            font-size: rem-calc(54);
+            margin-bottom: rem-calc(25);
+            @media (max-width: 1024px) {
+                display: block;
+            }
         }
     }
 
@@ -37,6 +78,10 @@
         border-bottom: rem-calc(1) solid rgba(255, 255, 255, .15);
         @media (max-width: 1024px) {
             font-size: rem-calc(23);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-height: rem-calc(90);
+            margin-bottom: rem-calc(100);
         }
     }
 
@@ -62,6 +107,9 @@
         }
         @media (max-width: 480px) {
             justify-content: center;
+            margin-left: rem-calc(-15);
+            margin-right: rem-calc(-15);
+            flex-wrap: nowrap;
         }
     }
 
@@ -93,6 +141,9 @@
     &__button-chat {
         color: #66BE47;
         margin-right: rem-calc(15);
+        @media (max-width: 1024px) {
+            margin-right: 0;
+        }
 
         .mask-bg {
             background: rgba(102, 190, 71, .15);
@@ -125,6 +176,9 @@
         margin-right: rem-calc(15);
         width: rem-calc(56);
         height: rem-calc(56);
+        @media (max-width: 1024px) {
+            margin-right: 0;
+        }
 
         &:before {
             content: "";
@@ -143,10 +197,38 @@
         }
     }
 
+    &__button-more {
+        height: rem-calc(56);
+        display: none;
+        @media (max-width: 1024px) {
+            display: block;
+            margin-top: rem-calc(-76);
+            margin-bottom: rem-calc(20);
+        }
+    }
+
     &__button-full {
-        display: block;
         width: rem-calc(56);
         height: rem-calc(56);
         background: url("../img/icons/icon-slot-open-full.svg") no-repeat 50% 50% /contain;
+
+        &--desk {
+            display: block;
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        &--mob {
+            display: none;
+            position: absolute;
+            top: rem-calc(40);
+            right: rem-calc(40);
+            width: rem-calc(60);
+            height: rem-calc(60);
+            @media (max-width: 1024px) {
+                display: block;
+            }
+        }
     }
 }

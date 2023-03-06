@@ -3,6 +3,8 @@
 
 
     &__search {
+        display: flex;
+        align-items: center;
         @media (max-width: 768px) {
             font-size: rem-calc(20);
             padding: rem-calc(15) rem-calc(15) rem-calc(15) rem-calc(60);
@@ -11,6 +13,12 @@
             &:before {
                 left: rem-calc(15);
             }
+        }
+    }
+
+    &__search-input {
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
         }
     }
 
@@ -181,17 +189,17 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, rem-calc(256));
         gap: rem-calc(15);
         margin-bottom: rem-calc(30);
         @media (max-width: 1024px) {
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(5, rem-calc(234));
         }
         @media (max-width: 768px) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, rem-calc(256));
         }
         @media (max-width: 480px) {
-            grid-template-columns: repeat(2, 1fr); 
+            grid-template-columns: repeat(2, rem-calc(272)); 
         }
     }
 

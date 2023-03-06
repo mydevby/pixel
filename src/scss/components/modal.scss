@@ -98,6 +98,9 @@
 
         &--code-confirm  {
             width: rem-calc(364px);
+            @media (max-width: 1024px) {
+                width: rem-calc(464px);
+            }
         }
 
         &--deposit-crypto,
@@ -587,8 +590,14 @@
             padding: 0;
         }
 
-        &--money,
         &--code {
+            padding-right: rem-calc(100);
+            @media (max-width: 1024px) {
+                padding-right: rem-calc(140);
+            }
+        }
+
+        &--money {
             padding-right: rem-calc(100);
         }
 
@@ -695,6 +704,10 @@
 
         &--time {
             background-image: url(../img/icons/icon-input-btn-time.svg);
+            @media (max-width: 1024px) {
+                width: rem-calc(40);
+                height: rem-calc(40);
+            }
         }
     }
 
@@ -707,6 +720,10 @@
         line-height: 1.5;
         color: $clr-white;
         opacity: .25;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(18);
+            right: rem-calc(70);
+        }
     }
 
     &__input-name {

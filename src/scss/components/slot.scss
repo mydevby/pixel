@@ -35,6 +35,11 @@
         cursor: pointer;
         transition: .3s;
 
+        @media (max-width: 1024px) {
+            width: rem-calc(55);
+            height: rem-calc(54);
+        }
+
         &--active {
             opacity: .5;
         }
@@ -130,6 +135,10 @@
         height: rem-calc(58);
         margin-bottom: rem-calc(14);
         background: url("../img/svg/slots-play.svg") no-repeat 50% 50% /contain;
+        @media (max-width: 1024px) {
+            width: rem-calc(70);
+            height: rem-calc(70);
+        }
     }
 
     &__text-hover {
@@ -137,6 +146,9 @@
         font-size: rem-calc(20);
         line-height: .9;
         text-transform: uppercase;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(24);
+        }
     }
 
     &__img {
@@ -149,17 +161,24 @@
     }
 
     &__info-wrapper {
-        display: grid;
-        grid-template-columns: 1fr rem-calc(30);
         padding: 0  rem-calc(22) rem-calc(25);
-        gap: rem-calc(15)
+        position: relative;
     }
 
     &__info {
         color: $clr-white;
-        max-width: rem-calc(125);
+        padding-right: rem-calc(45);
+        font-family: "Pixel";
+        text-transform: uppercase;
+        font-size: rem-calc(16);
+        line-height: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-transform: uppercase;
         @media (max-width: 1024px) {
-            max-width: rem-calc(100);
+            padding-right: rem-calc(55);
+            font-size: rem-calc(20);
         }
     }
 
@@ -172,7 +191,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         text-transform: uppercase;
-        max-width: 100%;
+        width: 100%;
         @media (max-width: 1024px) {
             font-size: rem-calc(20);
         }
@@ -192,7 +211,9 @@
     }
 
     &__more {
-        flex-shrink: 0;
+        position: absolute;
+        top: 0;
+        right: rem-calc(22);
         width: rem-calc(30);
         height: rem-calc(30);
         background: url("../img/svg/slots-more.svg") no-repeat 50% 50% /contain;
@@ -200,6 +221,10 @@
         transition: .3s;
         cursor: pointer;
         margin-left: auto;
+        @media (max-width: 1024px) {
+            width: rem-calc(40);
+            height: rem-calc(40);
+        }
 
         &:hover {
             opacity: 1;

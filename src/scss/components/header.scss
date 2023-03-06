@@ -217,8 +217,9 @@
 	}
 
 	&__user-information-name {
-		font-size: rem-calc(26);
+		font-size: rem-calc(30);
 		line-height: 1;
+		font-family: "Pixel";
 		@media (max-width: 1024px) {
 			font-size: rem-calc(30);
 		}
@@ -244,7 +245,7 @@
 	&__user-settings-list,
 	&__user-information-list {
 		padding: rem-calc(20);
-		font-size: rem-calc(20);
+		font-size: rem-calc(18);
 		color: $clr-white;
 
 		@media (max-width: 1024px) {

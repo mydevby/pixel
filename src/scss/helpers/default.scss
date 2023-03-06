@@ -149,6 +149,10 @@ main {
 	}
 }
 
+.no-click {
+	pointer-events: none;
+}
+
 .no-scroll {
 	overflow: hidden;
 }
@@ -213,6 +217,7 @@ main {
 	padding-top: rem-calc(100);
 	z-index: 2;
 	overflow-x: hidden;
+	position: relative;
 
 	@media (max-width: 1600px) {
 		padding-left: rem-calc(140);

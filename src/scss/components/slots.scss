@@ -112,16 +112,16 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, rem-calc(254));
         gap: rem-calc(15);
         @media (max-width: 1024px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, rem-calc(292));
         }
         @media (max-width: 768px) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, rem-calc(274));
         }
         @media (max-width: 480px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, rem-calc(290));
         }
 
         .slot:nth-child(3) {
