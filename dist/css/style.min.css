@@ -3576,6 +3576,7 @@ main {
   flex-direction: column;
   padding-left: 10rem;
   padding-right: 10rem;
+  padding-top: 6.25rem;
   z-index: 2;
   overflow-x: hidden;
 }
@@ -4341,8 +4342,29 @@ section,
 .header {
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 100;
+  top: 0;
+  left: 10rem;
+  right: 10rem;
+}
+@media (max-width: 1600px) {
+  .header {
+    left: 8.75rem;
+    right: 4.375rem;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    left: 3.75rem;
+    right: 3.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    left: 2.1875rem;
+    right: 2.1875rem;
+  }
 }
 .header__container {
   padding: 1.5rem 0;
