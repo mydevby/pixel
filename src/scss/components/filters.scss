@@ -108,7 +108,8 @@
             font-size: rem-calc(20);
             padding: rem-calc(15) rem-calc(45);
             width: rem-calc(240);
-            justify-content: center;
+            justify-content: flex-start;
+            text-transform: capitalize;
         }
         @media (max-width: 480px) {
             width: rem-calc(190);
@@ -137,7 +138,7 @@
             transform: translateY(-50%);
             background: url("../img/icons/icon-providers.svg") no-repeat 50% 50% /contain;
             @media (max-width: 1024px) {
-                left: rem-calc(15);
+                left: rem-calc(10);
                 width: rem-calc(30);
                 height: rem-calc(24);
             }

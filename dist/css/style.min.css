@@ -6826,7 +6826,8 @@ section,
     font-size: 1.25rem;
     padding: 0.9375rem 2.8125rem;
     width: 15rem;
-    justify-content: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
   }
 }
 @media (max-width: 480px) {
@@ -6850,7 +6851,7 @@ section,
 }
 @media (max-width: 1024px) {
   .filters__select:before {
-    left: 0.9375rem;
+    left: 0.625rem;
     width: 1.875rem;
     height: 1.5rem;
   }
