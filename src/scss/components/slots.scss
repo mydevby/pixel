@@ -99,7 +99,13 @@
         text-overflow: ellipsis;
         white-space: nowrap;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
+    }
+
+    &__group-link {
+        @media (max-width: 1024px) {
             font-size: rem-calc(20);
         }
     }

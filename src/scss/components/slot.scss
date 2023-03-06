@@ -158,6 +158,9 @@
     &__info {
         color: $clr-white;
         max-width: rem-calc(125);
+        @media (max-width: 1024px) {
+            max-width: rem-calc(180);
+        }
     }
 
     &__name {
@@ -170,6 +173,9 @@
         white-space: nowrap;
         text-transform: uppercase;
         max-width: 100%;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__provider {
@@ -180,6 +186,9 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         color: $clr-gray;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(16);
+        }
     }
 
     &__more {

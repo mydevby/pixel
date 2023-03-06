@@ -9,9 +9,7 @@
         gap: rem-calc(30);
         padding: rem-calc(18);
         @media (max-width: 1024px) {
-            gap: rem-calc(20); 
-        }
-        @media (max-width: 768px) {
+            gap: rem-calc(20);
             grid-template-columns: 1fr;
         }
     }
@@ -20,7 +18,7 @@
         display: flex;
         align-items: center;
         gap: rem-calc(20);
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -31,14 +29,14 @@
 
         &:nth-child(3) {
             justify-content: flex-end;
-            @media (max-width: 768px) {
-                justify-content: center;
+            @media (max-width: 1024px) {
+                display: none;
             }
         }
     }
 
     &__search {
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             display: none;
         }
     }
@@ -49,11 +47,13 @@
     }
 
     &__button {
-        @media (max-width: 768px) {
-            width: rem-calc(260);
-            font-size: rem-calc(18);
+        white-space: nowrap;
+        @media (max-width: 1024px) {
+            width: rem-calc(240);
+            font-size: rem-calc(20);
+            padding: rem-calc(15) rem-calc(15) rem-calc(15) rem-calc(45); 
+            justify-content: flex-start;
         }
-
         @media (max-width: 480px) {
             width: rem-calc(180);
             font-size: rem-calc(16);
@@ -103,10 +103,11 @@
         padding: rem-calc(10) rem-calc(50);
         text-transform: uppercase;
         z-index: 10;
-        @media (max-width: 768px) {
-            font-size: rem-calc(18);
-            padding: rem-calc(15) rem-calc(55);
-            width: rem-calc(260);
+        white-space: nowrap;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+            padding: rem-calc(15) rem-calc(45);
+            width: rem-calc(240);
             justify-content: center;
         }
         @media (max-width: 480px) {
@@ -135,7 +136,7 @@
             height: rem-calc(16);
             transform: translateY(-50%);
             background: url("../img/icons/icon-providers.svg") no-repeat 50% 50% /contain;
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
                 left: rem-calc(15);
                 width: rem-calc(30);
                 height: rem-calc(24);
@@ -151,7 +152,7 @@
             height: rem-calc(24);
             transform: translateY(-50%);
             background: url("../img/icons/icon-select-more.svg") no-repeat 50% 50% /contain;
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
                 right: rem-calc(15);
                 width: rem-calc(30);
                 height: rem-calc(24);
@@ -160,7 +161,7 @@
     }
 
     &__select-text {
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             text-align: center;
         }
     }
