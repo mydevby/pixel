@@ -3590,6 +3590,7 @@ main {
   .page {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+    padding-top: 7.5rem;
   }
 }
 @media (max-width: 768px) {
