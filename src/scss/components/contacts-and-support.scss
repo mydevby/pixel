@@ -116,16 +116,29 @@
         font-family: inherit;
         font-size: rem-calc(18);
         line-height: 1.5;
+
+        @media (max-width: 1024px) {
+            font-size: rem-calc(24);
+        }
     }
 
     &__social-btn-list {
         display: flex;
         justify-content: center;
         margin-bottom: rem-calc(33);
+        gap: rem-calc(10);
+
+        @media (max-width: 1024px) {
+            gap: rem-calc(30);
+        }
 
         .footer__social-link {
             width: rem-calc(52);
             height: rem-calc(52);
+            @media (max-width: 1024px) {
+                width: rem-calc(60);
+                height: rem-calc(60);
+            }
         }
     }
 
@@ -133,6 +146,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: rem-calc(30);
 
         .footer__support-btn {
             padding-top: rem-calc(15);
@@ -141,6 +155,10 @@
             justify-content: flex-start;
             font-size: rem-calc(14);
             min-width: rem-calc(212);
+            @media (max-width: 1024px) {
+                font-size: rem-calc(20);
+                min-width: rem-calc(260);
+            }
 
             &:before {
                 left: rem-calc(25);
@@ -171,6 +189,9 @@
     &__nav-link-text-wrapper {
         display: flex;
         flex-direction: column;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__nav-link-top {
@@ -237,6 +258,9 @@
             padding-left: rem-calc(20);
             padding-right: rem-calc(65);
             text-align: right;
+            @media (max-width: 1024px) {
+                padding-right: rem-calc(85);
+            }
 
             &:before {
                 right: 0;
@@ -248,6 +272,10 @@
             padding-right: rem-calc(20);
             padding-left: rem-calc(65);
             text-align: left;
+            @media (max-width: 1024px) {
+                padding-left: rem-calc(85);
+            }
+            
 
             &:before {
                 left: 0;
@@ -264,17 +292,27 @@
             background-size: contain;
             background-repeat: no-repeat;
             background-position: 50% 50%;
+            @media (max-width: 1024px) {
+                width: rem-calc(60);
+                height: rem-calc(60);
+            }
         }
     }
 
     &__message-user-name {
         font-size: rem-calc(16);
         line-height: 1.5;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__message-user-text {
         font-size: rem-calc(14);
         line-height: 1.5;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(18);
+        }
     }
 
     &__message-time {

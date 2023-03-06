@@ -32,6 +32,9 @@
         padding-bottom: rem-calc(15);
         margin-bottom: rem-calc(20);
         border-bottom: rem-calc(1) solid rgba(255, 255, 255, .15);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     &__info-title-settings {
@@ -42,12 +45,18 @@
         line-height: 1.5;
         margin-bottom: rem-calc(15);
         color: $clr-white;
+        @media (max-width: 1024px) {
+            font-size: rem-calc(22);
+        }
     }
 
     &__bottom {
         display: flex;
         flex-wrap: wrap;
         gap: rem-calc(15);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
         @media (max-width: 480px) {
             justify-content: center;
         }

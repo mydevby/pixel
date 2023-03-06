@@ -131,6 +131,15 @@
         padding-bottom: rem-calc(44);
         border-bottom: rem-calc(1) solid rgba(255, 255, 255, .1);
         margin-bottom: rem-calc(30);
+        @media (max-width: 1024px) {
+            font-size: rem-calc(22);
+        }
+    }
+
+    &__content {
+        @media (max-width: 1024px) {
+            font-size: rem-calc(20);
+        }
     }
 
     h1,
