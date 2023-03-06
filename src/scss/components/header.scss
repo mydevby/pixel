@@ -245,7 +245,7 @@
 	&__user-settings-list,
 	&__user-information-list {
 		padding: rem-calc(20);
-		font-size: rem-calc(18);
+		font-size: rem-calc(16.75);
 		color: $clr-white;
 
 		@media (max-width: 1024px) {
@@ -260,7 +260,10 @@
 
 	&__user-settings-item,
 	&__user-information-item {
-		margin-bottom: rem-calc(5);
+		margin-bottom: 0;
+		@media (max-width: 1024px) {
+			margin-bottom: rem-calc(5);
+		}
 
 		&:last-child {
 			margin-bottom: 0;
@@ -284,13 +287,16 @@
 			display: inline-block;
 			background-color: rgb(251, 177, 230);
 			padding: rem-calc(5);
-			width: rem-calc(40);
+			width: rem-calc(35);
 			border-radius: 50%;
 			margin-top: rem-calc(-5);
 			margin-bottom: rem-calc(-5);
 			text-align: center;
 			margin-left: rem-calc(10);
 			color: rgb(255, 106, 228);
+			@media (max-width: 1024px) {
+				width: rem-calc(44);
+			}
 		}
 	}
 

@@ -4596,7 +4596,7 @@ section,
 }
 .header__user-settings-list, .header__user-information-list {
   padding: 1.25rem;
-  font-size: 1.125rem;
+  font-size: 1.046875rem;
   color: white;
 }
 @media (max-width: 1024px) {
@@ -4609,7 +4609,12 @@ section,
   border-bottom: 0.0625rem solid #949494;
 }
 .header__user-settings-item, .header__user-information-item {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .header__user-settings-item, .header__user-information-item {
+    margin-bottom: 0.3125rem;
+  }
 }
 .header__user-settings-item:last-child, .header__user-information-item:last-child {
   margin-bottom: 0;
@@ -4630,13 +4635,18 @@ section,
   display: inline-block;
   background-color: #fbb1e6;
   padding: 0.3125rem;
-  width: 2.5rem;
+  width: 2.1875rem;
   border-radius: 50%;
   margin-top: -0.3125rem;
   margin-bottom: -0.3125rem;
   text-align: center;
   margin-left: 0.625rem;
   color: #ff6ae4;
+}
+@media (max-width: 1024px) {
+  .header__user-settings-link--pink, .header__user-information-link--pink {
+    width: 2.75rem;
+  }
 }
 .header__user-information-email {
   font-size: rem-ca(15);
@@ -7745,6 +7755,23 @@ section,
 @media (max-width: 1024px) {
   .slot-open {
     padding: 3.125rem 1.875rem 0;
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+}
+@media (max-width: 1024px) and (max-width: 768px) {
+  .slot-open {
+    margin-left: -2.1875rem;
+    margin-right: -2.1875rem;
+  }
+}
+@media (max-width: 1024px) {
+  .slot-open > .mask-bg {
+    clip-path: none;
+  }
+  .slot-open > .mask-bg:before {
+    clip-path: none;
+    background: transparent;
   }
 }
 .slot-open__iframe {
@@ -7773,6 +7800,8 @@ section,
     padding-top: 4.375rem;
     margin-left: -1.8125rem;
     margin-right: -1.8125rem;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
     margin-top: -2.9375rem;
     min-width: calc(100% + 3.625rem);
   }
@@ -7809,6 +7838,8 @@ section,
 }
 @media (max-width: 1024px) {
   .slot-open__info-title--mob {
+    padding-left: 2.1875rem;
+    padding-right: 2.1875rem;
     display: block;
   }
 }
@@ -7959,7 +7990,7 @@ section,
   display: none;
   position: absolute;
   top: 2.5rem;
-  right: 2.5rem;
+  right: 3.75rem;
   width: 3.75rem;
   height: 3.75rem;
 }

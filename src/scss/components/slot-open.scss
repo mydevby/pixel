@@ -2,6 +2,21 @@
     padding: rem-calc(40) rem-calc(40) rem-calc(52);
     @media (max-width: 1024px) {
         padding: rem-calc(50) rem-calc(30) 0;
+        margin-left: rem-calc(-60);
+        margin-right: rem-calc(-60);
+        @media (max-width: 768px) {
+            margin-left: rem-calc(-35);
+            margin-right: rem-calc(-35);
+        }
+
+        > .mask-bg {
+            clip-path: none;
+
+            &:before {
+                clip-path: none;
+                background: transparent;  
+            }
+        }
     }
 
     &__iframe {
@@ -28,6 +43,8 @@
             padding-top: rem-calc(70);
             margin-left: rem-calc(-29);
             margin-right: rem-calc(-29);
+            padding-left: rem-calc(60);
+            padding-right: rem-calc(60);
             margin-top: rem-calc(-47);
             min-width: calc(100% + #{rem-calc(58)});
 
@@ -63,6 +80,8 @@
             font-size: rem-calc(54);
             margin-bottom: rem-calc(25);
             @media (max-width: 1024px) {
+                padding-left: rem-calc(35);
+                padding-right: rem-calc(35);
                 display: block;
             }
         }
@@ -223,7 +242,7 @@
             display: none;
             position: absolute;
             top: rem-calc(40);
-            right: rem-calc(40);
+            right: rem-calc(60);
             width: rem-calc(60);
             height: rem-calc(60);
             @media (max-width: 1024px) {
