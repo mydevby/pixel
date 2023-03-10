@@ -77,15 +77,21 @@
         position: relative;
         display: flex;
         justify-content: center;
+        overflow: hidden;
 
         &--hero {
             align-items: flex-end;
             margin-top: rem-calc(-20);
             margin-bottom: rem-calc(-40);
-            background: url("../img/hello/hero.gif") no-repeat 50% 100% /contain;
+            background: url("../img/hello/hero.min.png") no-repeat 50% 100% /contain;
+
             @media (max-width: 768px) {
                 margin-top: rem-calc(0);
             }
+        }
+
+        &--hero {
+            animation: hero 1s infinite alternate linear;
         }
 
         &--spaceship {
@@ -99,10 +105,6 @@
         width: auto;
         @media (max-width: 768px) {
             max-height: rem-calc(170);
-        }
-
-        &--hero {
-            opacity: 0;
         }
     }
 }

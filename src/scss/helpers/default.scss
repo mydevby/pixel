@@ -202,11 +202,12 @@ main {
 		right: 0;
 		top: 0;
 		bottom: 0;
-		background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0%;
+		background: #1E2234;
 		background-size: cover;
 		overflow: hidden;
 		min-height: 100%;
 		min-width: 100%;
+		object-fit: cover;
 		@media (orientation: landscape) {
 			width: 100%;
 		}
