@@ -4086,6 +4086,7 @@ a[href="#"] {
   height: 1.5rem;
   transition: 0.3s;
   opacity: 0.45;
+  background: url("../img/svg/icon-more.svg") no-repeat 50% 50%/contain;
 }
 .icon-more--providers {
   width: 0.875rem;
@@ -4538,6 +4539,9 @@ a[href="#"] {
     font-size: 1.4375rem;
   }
 }
+.header__user-about:before {
+  display: none;
+}
 .header__user-about--active, .header__user-about:hover {
   color: white;
   transform: translate(0);
@@ -4552,6 +4556,12 @@ a[href="#"] {
   margin-right: 0.75rem;
   margin-top: -0.75rem;
   margin-bottom: -0.75rem;
+}
+@media (max-width: 1024px) {
+  .header__user-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
 .header__user-information {
   position: absolute;

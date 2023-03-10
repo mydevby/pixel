@@ -138,6 +138,10 @@
 			font-size: rem-calc(23);
 		}
 
+		&:before {
+			display: none;
+		}
+
 
 		&--active,
 		&:hover {
@@ -157,6 +161,11 @@
 		margin-right: rem-calc(12);
 		margin-top: rem-calc(-12);
 		margin-bottom: rem-calc(-12);
+
+		@media (max-width: 1024px) {
+			width: rem-calc(56);
+			height: rem-calc(56);
+		}
 	}
 
 	&__user-information {

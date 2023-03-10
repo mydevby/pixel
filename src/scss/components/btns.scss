@@ -324,6 +324,7 @@
     height: rem-calc(24);
     transition: .3s;
 	opacity: .45;
+    background: url("../img/svg/icon-more.svg") no-repeat 50% 50% /contain;
 
     &--providers {
         width: rem-calc(14);
