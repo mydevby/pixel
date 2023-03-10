@@ -189,17 +189,20 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(6, rem-calc(256));
+        grid-template-columns: repeat(6, rem-calc(240));
         gap: rem-calc(15);
         margin-bottom: rem-calc(30);
+        @media (max-width: 1600px) {
+            grid-template-columns: repeat(6, rem-calc(254));
+        }
         @media (max-width: 1024px) {
-            grid-template-columns: repeat(5, rem-calc(234));
+            grid-template-columns: repeat(5, rem-calc(236));
         }
         @media (max-width: 768px) {
-            grid-template-columns: repeat(3, rem-calc(256));
+            grid-template-columns: repeat(3, rem-calc(259));
         }
         @media (max-width: 480px) {
-            grid-template-columns: repeat(2, rem-calc(272)); 
+            grid-template-columns: repeat(2, rem-calc(277)); 
         }
     }
 

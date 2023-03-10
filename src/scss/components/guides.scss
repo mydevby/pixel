@@ -1,25 +1,27 @@
 .guides {
-    display: grid;
-    grid-template-columns: rem-calc(500) rem-calc(1080);
+    display: flex;
     gap: rem-calc(30);
-    @media (max-width: 1600px) {
-		grid-template-columns: rem-calc(500) rem-calc(1180);
-	}
     @media (max-width: 1024px) {
-		grid-template-columns: rem-calc(400) rem-calc(900);
         gap: rem-calc(22);
 	}
     @media (max-width: 768px) {
-		grid-template-columns: rem-calc(890);
-	}
-    @media (max-width: 480px) {
-		grid-template-columns: rem-calc(650);
+		flex-wrap: wrap;
 	}
 
     &__nav-list {
         position: relative;
         padding: rem-calc(30);
         align-self: start;
+        min-width: rem-calc(500);
+        max-width: rem-calc(500);
+        @media (max-width: 1024px) {
+            min-width: rem-calc(400);
+            max-width: rem-calc(400);
+        }
+        @media (max-width: 768px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__nav-link {
@@ -93,6 +95,16 @@
         font-size: rem-calc(14);
         line-height: 1.79;
         color: #AFBBE9;
+        max-width: calc(100% - #{rem-calc(530)});
+
+        @media (max-width: 1024px) {
+            max-width: calc(100% - #{rem-calc(422)});
+        }
+
+        @media (max-width: 768px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__nav-link-icon-more {

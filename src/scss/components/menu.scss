@@ -72,11 +72,8 @@
 
     &__nav-item {
         position: relative;
-        margin-bottom: rem-calc(50);
-        @media (max-width: 1600px) {
-            margin-bottom: rem-calc(40);
-        }
-        @media (max-width: 768px) {
+        margin-bottom: rem-calc(40);
+        @media (max-width: 1024px) {
             margin-bottom: rem-calc(20);
         }
         &:last-child {

@@ -1,23 +1,27 @@
 .contacts-and-support {
-    display: grid;
-    grid-template-columns: rem-calc(500) 1fr;
+    display: flex;
     gap: rem-calc(30);
-
     @media (max-width: 1024px) {
-        grid-template-columns: rem-calc(430) 1fr;
-    }
-
-    @media (max-width: 768px) {
-		grid-template-columns: rem-calc(890);
+        gap: rem-calc(22);
 	}
-    @media (max-width: 480px) {
-		grid-template-columns: rem-calc(660);
+    @media (max-width: 768px) {
+		flex-wrap: wrap;
 	}
 
     &__nav-list {
         position: relative;
         padding: rem-calc(30) rem-calc(20) rem-calc(30);
         align-self: start;
+        min-width: rem-calc(500);
+        max-width: rem-calc(500);
+        @media (max-width: 1024px) {
+            min-width: rem-calc(400);
+            max-width: rem-calc(400);
+        }
+        @media (max-width: 768px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__nav-link {
@@ -107,7 +111,17 @@
     &__info {
         position: relative;
         padding: rem-calc(45) rem-calc(40) rem-calc(40);
-        min-height: rem-calc(600);
+        width: 100%;
+        max-width: calc(100% - #{rem-calc(530)});
+
+        @media (max-width: 1024px) {
+            max-width: calc(100% - #{rem-calc(422)});
+        }
+
+        @media (max-width: 768px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__title  {

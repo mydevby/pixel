@@ -203,8 +203,17 @@ main {
 		top: 0;
 		bottom: 0;
 		background: #1E2234 url("../img/bg-poster.min.png") no-repeat 0% 0%;
-		background-size: 100% 100%;
+		background-size: cover;
 		overflow: hidden;
+		min-height: 100%;
+		min-width: 100%;
+		@media (orientation: landscape) {
+			width: 100%;
+		}
+		  
+		@media (orientation: portrait) {
+			height: 100%;
+		}
 	}
 }
 
@@ -214,20 +223,18 @@ main {
 	flex-direction: column;
 	padding-left: rem-calc(160);
 	padding-right: rem-calc(160);
-	padding-top: rem-calc(100);
 	z-index: 2;
 	overflow-x: hidden;
 	position: relative;
 
 	@media (max-width: 1600px) {
-		padding-left: rem-calc(140);
-		padding-right: rem-calc(70);
+		padding-left: rem-calc(120);
+		padding-right: rem-calc(120);
 	}
 
 	@media (max-width: 1024px) {
 		padding-left: rem-calc(60);
 		padding-right: rem-calc(60);
-		padding-top: rem-calc(120);
 	}
 
 	@media (max-width: 768px) {
@@ -240,7 +247,18 @@ main {
 	padding: rem-calc(24) 0 rem-calc(30);
 }
 
+section {
+	max-width: rem-calc(1600);
+	@media (max-width: 1600px) {
+		max-width: rem-calc(1720);
+	}
+}
+
 section,
 .select {
 	position: relative;
+}
+
+a[href="#"] {
+	pointer-events: none;
 }

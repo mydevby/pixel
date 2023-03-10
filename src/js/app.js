@@ -561,28 +561,25 @@ window.onload = function() {
 	if (document.querySelector('.button--select-1') !== null) {
 		let buttonSelect1  = document.querySelector('.button--select-1');
 		let buttonSelectList1  = document.querySelector('.button--select-list-1');
-		let buttonSelectContentItem1  = document.querySelector('.button--select-content-item-1');
-		let buttonSelectContentItem2  = document.querySelector('.button--select-content-item-2');
+		let buttonSelectContentItem11  = document.querySelector('.button--select-content-item-1-1');
+		let buttonSelectContentItem12  = document.querySelector('.button--select-content-item-1-2');
 		buttonSelect1.addEventListener('click', (e) => {
 			buttonSelectList1.classList.toggle('visually-hidden');
 		});
 		buttonSelectList1.addEventListener('click', (e) => {
 			e.stopPropagation();
 		});
-		buttonSelectContentItem1.addEventListener('click', (e) => {
+		buttonSelectContentItem11.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
-			let buttonSelectContent = document.querySelector('.button--select-content').innerHTML;
-			document.querySelector('.button--select-content').innerHTML = content;
+			let buttonSelectContent = document.querySelector('.button--select-content-1').innerHTML;
+			document.querySelector('.button--select-content-1').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList1.classList.toggle('visually-hidden');
-			buttonSelect1.addEventListener('click', (e) => {
-				buttonSelectList1.classList.toggle('visually-hidden');
-			});
 		});
-		buttonSelectContentItem2.addEventListener('click', (e) => {
+		buttonSelectContentItem12.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
-			let buttonSelectContent = document.querySelector('.button--select-content').innerHTML;
-			document.querySelector('.button--select-content').innerHTML = content;
+			let buttonSelectContent = document.querySelector('.button--select-content-1').innerHTML;
+			document.querySelector('.button--select-content-1').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
 			buttonSelectList1.classList.toggle('visually-hidden');
 		});
@@ -728,14 +725,14 @@ window.onload = function() {
 			let buttonSelectContent = document.querySelector('.button--select-content-7').innerHTML;
 			document.querySelector('.button--select-content-7').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
-			buttonSelectList7.classList.toggle('visually-hidden');
+			buttonSelectList7.classList.add('visually-hidden');
 		});
 		buttonSelectContentItem72.addEventListener('click', (e) => {
 			let content = e.target.innerHTML;
 			let buttonSelectContent = document.querySelector('.button--select-content-7').innerHTML;
 			document.querySelector('.button--select-content-7').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
-			buttonSelectList7.classList.toggle('visually-hidden');
+			buttonSelectList7.classList.add('visually-hidden');
 		});
 	};
 
@@ -763,7 +760,7 @@ window.onload = function() {
 			let buttonSelectContent = document.querySelector('.button--select-content-8').innerHTML;
 			document.querySelector('.button--select-content-8').innerHTML = content;
 			e.target.innerHTML = buttonSelectContent;
-			buttonSelectList8.classList.toggle('visually-hidden');
+			buttonSelectList8.classList.remove('visually-hidden');
 		});
 	};
 

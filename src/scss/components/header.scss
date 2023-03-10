@@ -1,23 +1,6 @@
 .header {
-	display: flex;
-	align-items: center;
-	position: absolute;
-    z-index: 100;
-	top: 0;
-	left: rem-calc(160);
-	right: rem-calc(160);
-	@media (max-width: 1600px) {
-		left: rem-calc(140);
-		right: rem-calc(70);
-	}
-	@media (max-width: 1024px) {
-		left: rem-calc(60);
-		right: rem-calc(60);
-	}
-	@media (max-width: 768px) {
-		left: rem-calc(35);
-		right: rem-calc(35);
-	}
+	position: relative;
+	z-index: 2;
 
 	&__container {		
 		padding: rem-calc(24) 0;
@@ -184,7 +167,6 @@
 		min-width: rem-calc(320);
 		opacity: 0;
 		pointer-events: none;
-		transition: .3s;
 		@media (max-width: 1024px) {
 			min-width: rem-calc(350);
 		}

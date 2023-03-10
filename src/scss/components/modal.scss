@@ -1158,7 +1158,7 @@
         display: inline-block;
         width: rem-calc(14);
         height: auto;
-        transform: translateY(#{rem-calc(2)});
+        transform: translateX(#{rem-calc(-8)});
 
         @media (max-width: 768px) {
             width: rem-calc(24);
