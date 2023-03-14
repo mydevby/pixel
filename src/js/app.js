@@ -302,7 +302,6 @@ window.onload = function() {
 		let arrselectIconBayk  = document.querySelectorAll('.select--icon-bayk');
 		arrselectIconBayk.forEach(selectIconBayk => {
 			selectIconBayk.addEventListener('click', (e) => {
-				console.log('asdasdsad');
 				document.querySelectorAll('.modal__super-select-list').forEach(modalSuperSelectList =>{
 					modalSuperSelectList.classList.toggle('visually-hidden');
 				});
@@ -1029,9 +1028,7 @@ window.onload = function() {
 		});
 		arrNavDocumentLinks.forEach(navDocumentLink => {
 			navDocumentLink.addEventListener('click', function(e) {
-				//e.preventDefault();
 				let documentIndex = this.dataset.indexDocument;
-				console.log(documentIndex);
 				SWIPERDOCUMENTS.slideTo(parseInt(documentIndex), 0, true);
 				document.querySelector('.documents__nav-link--active').classList.remove('documents__nav-link--active');
 				this.classList.add('documents__nav-link--active');		
